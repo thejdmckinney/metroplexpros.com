@@ -34,19 +34,22 @@ export default function About() {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p>
-                Founded in 2010, Metroplex Pros began as a small family-owned business with a simple mission: 
-                to provide Dallas homeowners with exceptional home improvement services at fair prices. 
-                What started as a two-person operation has grown into a trusted team of skilled professionals, 
-                but our core values remain unchanged.
+                Construction and craftsmanship run deep in my family. I learned the trade from my father and 
+                grandfather, who instilled in me the values of hard work, attention to detail, and taking pride 
+                in every project. With over 20 years of experience in the industry, I honed my skills working 
+                at my father's construction company in Indianapolis, Indiana.
               </p>
               <p>
-                We believe that your home is more than just a building—it's where life happens. Every project 
-                we undertake is an opportunity to enhance your daily life, increase your property value, and 
-                create spaces where memories are made.
+                After years of experience in Indianapolis, I made the decision to bring my expertise and 
+                family's construction legacy to Texas. I founded Metroplex Pros to serve the Dallas-Fort Worth 
+                area with the same commitment to quality and integrity that was passed down through generations 
+                of my family.
               </p>
               <p>
-                Our commitment to quality, transparency, and customer satisfaction has earned us hundreds of 
-                five-star reviews and a reputation as one of Dallas's most reliable home improvement contractors.
+                Every project we take on reflects not just my 20+ years of professional experience, but also 
+                the generations of craftsmanship knowledge that shaped my approach to home improvement. We believe 
+                your home deserves the same level of care and attention that has been the hallmark of my family's 
+                work for decades.
               </p>
             </div>
             <div className="story-image">
