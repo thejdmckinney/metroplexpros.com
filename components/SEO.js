@@ -36,7 +36,7 @@ export default function SEO({
     "url": "https://metroplexpros.com",
     "logo": "https://metroplexpros.com/logo.svg",
     "image": "https://metroplexpros.com/logo.svg",
-    "telephone": "(555) 123-4567",
+    "telephone": "(682) 466-2130",
     "email": "info@metroplexpros.com",
     "address": {
       "@type": "PostalAddress",

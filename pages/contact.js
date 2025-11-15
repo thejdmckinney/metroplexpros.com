@@ -24,25 +24,39 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Thank you for your message! We\'ll get back to you within 24 hours.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: '',
-        budget: ''
+    try {
+      const response = await fetch('https://formspree.io/f/mvgdadnq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      setIsSubmitting(false);
-    }, 1000);
+      
+      if (response.ok) {
+        alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: '',
+          budget: ''
+        });
+      } else {
+        alert('Sorry, there was an error sending your message. Please try calling us directly.');
+      }
+    } catch (error) {
+      alert('Sorry, there was an error sending your message. Please try calling us directly.');
+    }
+    
+    setIsSubmitting(false);
   };
 
   return (
     <Layout 
       title="Contact Metroplex Pros - Dallas Home Improvement Contractors | Free Estimates"
-      description="Contact Metroplex Pros for your Dallas home improvement project. Free estimates, 24/7 emergency service. Call (555) 123-4567 or request quote online today!"
+      description="Contact Metroplex Pros for your Dallas home improvement project. Free estimates, 24/7 emergency service. Call (682) 466-2130 or request quote online today!"
       keywords="contact Dallas contractors, home improvement estimates Dallas, Dallas renovation quotes, Metroplex Pros contact, DFW contractors phone number"
       canonicalUrl="https://metroplexpros.com/contact"
     >
@@ -113,7 +127,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      placeholder="(555) 123-4567"
+                      placeholder="(682) 466-2130"
                     />
                   </div>
                   <div className="form-group">
@@ -187,7 +201,7 @@ export default function Contact() {
                   <div className="contact-icon">📞</div>
                   <div className="contact-details">
                     <h4>Phone</h4>
-                    <p>(555) 123-4567</p>
+                    <p>(682) 466-2130</p>
                     <p className="text-muted">Mon-Fri: 8AM-6PM</p>
                   </div>
                 </div>
@@ -300,8 +314,8 @@ export default function Contact() {
             <p>
               Water damage, electrical issues, or other home emergencies? We're available 24/7 for urgent repairs.
             </p>
-            <a href="tel:555-123-4567" className="btn emergency-btn">
-              Call Emergency Line: (555) 123-4567
+            <a href="tel:682-466-2130" className="btn emergency-btn">
+              Call Emergency Line: (682) 466-2130
             </a>
           </div>
         </div>

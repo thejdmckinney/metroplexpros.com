@@ -171,8 +171,8 @@ export default function Home() {
               <Link href="/contact" className="btn">
                 Get Free Estimate
               </Link>
-              <Link href="tel:555-123-4567" className="btn btn-outline">
-                Call (555) 123-4567
+              <Link href="tel:682-466-2130" className="btn btn-outline">
+                Call (682) 466-2130
               </Link>
             </div>
           </div>

@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="footer-title">Contact Info</h4>
             <div className="contact-info">
               <p>📍 Dallas, Texas</p>
-              <p>📞 (555) 123-4567</p>
+              <p>📞 (682) 466-2130</p>
               <p>✉️ info@metroplexpros.com</p>
               <p>🕒 Mon-Fri: 8AM-6PM</p>
             </div>
