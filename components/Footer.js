@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="site-footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
@@ -61,130 +61,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <style jsx>{`
-        .footer {
-          background: var(--color-bg-alt);
-          border-top: 1px solid var(--color-border);
-          padding: 3rem 0 1rem;
-          margin-top: auto;
-        }
 
-        .footer-content {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 2rem;
-          margin-bottom: 2rem;
-        }
-
-        .footer-logo {
-          margin-bottom: 1rem;
-        }
-
-        .footer-logo-image {
-          height: 60px;
-          width: auto;
-          opacity: 0.9;
-          transition: opacity 0.3s ease;
-        }
-
-        .footer-logo-image:hover {
-          opacity: 1;
-        }
-
-        .footer-section h3,
-        .footer-section h4 {
-          color: var(--color-accent);
-          margin-bottom: 1rem;
-          font-weight: 600;
-        }
-
-        .footer-text {
-          color: var(--color-text-muted);
-          line-height: 1.6;
-          margin-bottom: 1rem;
-        }
-
-        .footer-links {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        .footer-links li {
-          margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-          color: var(--color-text-muted);
-          text-decoration: none;
-          transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-          color: var(--color-accent);
-        }
-
-        .contact-info p {
-          color: var(--color-text-muted);
-          margin-bottom: 0.5rem;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-
-        .footer-bottom {
-          border-top: 1px solid var(--color-border);
-          padding-top: 1rem;
-        }
-
-        .footer-bottom-content {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
-
-        .footer-bottom p {
-          color: var(--color-text-muted);
-          margin: 0;
-        }
-
-        .footer-bottom-links {
-          display: flex;
-          gap: 2rem;
-        }
-
-        .footer-bottom-links a {
-          color: var(--color-text-muted);
-          text-decoration: none;
-          transition: color 0.3s ease;
-        }
-
-        .footer-bottom-links a:hover {
-          color: var(--color-accent);
-        }
-
-        @media (max-width: 768px) {
-          .footer {
-            padding: 2rem 0 1rem;
-          }
-          
-          .footer-content {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-          }
-          
-          .footer-bottom-content {
-            flex-direction: column;
-            text-align: center;
-          }
-          
-          .footer-bottom-links {
-            gap: 1rem;
-          }
-        }
-      `}</style>
     </footer>
   )
 }

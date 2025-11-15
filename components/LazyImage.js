@@ -98,21 +98,6 @@ export default function LazyImage({
         </div>
       )}
 
-      <style jsx>{`
-        .loading-spinner {
-          width: 40px;
-          height: 40px;
-          border: 3px solid var(--color-border);
-          border-top: 3px solid var(--color-accent);
-          border-radius: 50%;
-          animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   )
 }
