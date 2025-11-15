@@ -129,11 +129,7 @@ export default function About() {
       <section className="section certifications">
         <div className="container">
           <h2 className="section-title">Certifications & Awards</h2>
-          <div className="grid grid-4">
-            <div className="cert-card">
-              <div className="cert-icon">🏆</div>
-              <h4>Better Business Bureau A+</h4>
-            </div>
+          <div className="grid grid-2">
             <div className="cert-card">
               <div className="cert-icon">✅</div>
               <h4>Licensed & Insured</h4>
@@ -141,10 +137,6 @@ export default function About() {
             <div className="cert-card">
               <div className="cert-icon">⭐</div>
               <h4>Angie's List Super Service Award</h4>
-            </div>
-            <div className="cert-card">
-              <div className="cert-icon">🛡️</div>
-              <h4>HomeAdvisor Screened & Approved</h4>
             </div>
           </div>
         </div>
