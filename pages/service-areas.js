@@ -68,6 +68,25 @@ export default function ServiceAreas() {
         </div>
       </section>
 
+      {/* DFW Metroplex Image */}
+      <section className="section dfw-hero-image">
+        <div className="container">
+          <div className="metroplex-image-container">
+            <img 
+              src="/dfw-metroplex-hero.png" 
+              alt="Dallas-Fort Worth Metroplex Skyline - Service Area Coverage" 
+              className="metroplex-hero-image"
+            />
+            <div className="image-overlay">
+              <div className="overlay-content">
+                <h3>Serving the Entire DFW Metroplex</h3>
+                <p>Professional home improvement services across all major cities and suburbs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Grid */}
       <section className="section service-areas-grid">
         <div className="container">

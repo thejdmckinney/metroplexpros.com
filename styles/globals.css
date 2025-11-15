@@ -1573,6 +1573,86 @@ textarea.form-control {
   }
 }
 
+/* DFW Hero Image Styles */
+.dfw-hero-image {
+  padding: 0;
+  margin: 0;
+}
+
+.metroplex-image-container {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 240, 255, 0.3);
+  border: 2px solid var(--color-border);
+}
+
+.metroplex-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.95));
+  padding: 3rem 2rem 2rem;
+  color: var(--color-text);
+}
+
+.overlay-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.overlay-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile responsiveness for DFW image */
+@media (max-width: 768px) {
+  .metroplex-image-container {
+    max-height: 350px;
+    border-radius: 12px;
+  }
+  
+  .metroplex-hero-image {
+    max-height: 350px;
+  }
+  
+  .image-overlay {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+  
+  .overlay-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .overlay-content p {
+    font-size: 1rem;
+  }
+}
+
 /* Legal Pages Styles */
 .legal-page {
   padding: 4rem 0;
