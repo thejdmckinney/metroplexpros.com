@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import ServiceAreaMap from '../components/ServiceAreaMap'
 
 export default function ServiceAreas() {
   const serviceAreas = [
@@ -7,43 +8,37 @@ export default function ServiceAreas() {
       city: "Dallas",
       description: "Serving Dallas with comprehensive home improvement services including kitchen remodeling, bathroom renovation, electrical, plumbing, and HVAC services.",
       population: "1.3 million",
-      highlights: ["Downtown Dallas", "Oak Cliff", "East Dallas", "North Dallas"],
-      zipCodes: ["75201", "75202", "75203", "75204", "75205", "75206"]
+      highlights: ["Downtown Dallas", "Oak Cliff", "East Dallas", "North Dallas"]
     },
     {
       city: "Plano",
       description: "Premier home improvement contractor in Plano, TX. Specializing in luxury kitchen and bathroom remodels for Plano homeowners.",
       population: "287,000",
-      highlights: ["West Plano", "East Plano", "Legacy West", "Willow Bend"],
-      zipCodes: ["75023", "75024", "75025", "75074", "75075", "75093"]
+      highlights: ["West Plano", "East Plano", "Legacy West", "Willow Bend"]
     },
     {
       city: "Frisco",
       description: "Top-rated contractors serving Frisco with quality home renovations, flooring installation, and painting services.",
       population: "200,000",
-      highlights: ["The Star District", "Stonebriar", "Preston Road Corridor"],
-      zipCodes: ["75033", "75034", "75035"]
+      highlights: ["The Star District", "Stonebriar", "Preston Road Corridor"]
     },
     {
       city: "McKinney",
       description: "Professional home improvement services in McKinney, TX. Licensed contractors for all your renovation needs.",
       population: "195,000",
-      highlights: ["Historic Downtown", "Stonebridge Ranch", "Adriatica"],
-      zipCodes: ["75069", "75070", "75071"]
+      highlights: ["Historic Downtown", "Stonebridge Ranch", "Adriatica"]
     },
     {
       city: "Allen",
       description: "Trusted Allen contractors providing exceptional kitchen remodeling, bathroom renovation, and home addition services.",
       population: "105,000",
-      highlights: ["Bethany Lakes", "Twin Creeks", "Watters Creek"],
-      zipCodes: ["75013", "75002"]
+      highlights: ["Bethany Lakes", "Twin Creeks", "Watters Creek"]
     },
     {
       city: "Richardson",
       description: "Quality home improvement contractor serving Richardson with professional renovation and remodeling services.",
       population: "120,000",
-      highlights: ["Canyon Creek", "Cottonwood Heights", "Spring Valley"],
-      zipCodes: ["75080", "75081", "75082", "75083"]
+      highlights: ["Canyon Creek", "Cottonwood Heights", "Spring Valley"]
     }
   ];
 
@@ -96,15 +91,6 @@ export default function ServiceAreas() {
                   </div>
                 </div>
                 
-                <div className="zip-codes">
-                  <h4>Zip Codes Served:</h4>
-                  <div className="zip-list">
-                    {area.zipCodes.map((zip, idx) => (
-                      <span key={idx} className="zip-tag">{zip}</span>
-                    ))}
-                  </div>
-                </div>
-                
                 <Link href="/contact" className="btn area-cta">
                   Get Free Estimate
                 </Link>
@@ -137,22 +123,16 @@ export default function ServiceAreas() {
                   <span className="stat-label">Cities Served</span>
                 </div>
                 <div className="stat">
-                  <span className="stat-number">500+</span>
-                  <span className="stat-label">Projects Completed</span>
+                  <span className="stat-number">Licensed</span>
+                  <span className="stat-label">& Insured</span>
                 </div>
                 <div className="stat">
-                  <span className="stat-number">15+</span>
-                  <span className="stat-label">Years Local Experience</span>
+                  <span className="stat-number">20+</span>
+                  <span className="stat-label">Years Experience</span>
                 </div>
               </div>
             </div>
-            <div className="map-placeholder">
-              <div className="placeholder-content">
-                <h4>DFW Service Area Map</h4>
-                <p>Interactive map showing all cities and zip codes we serve</p>
-                <div className="map-icon">🗺️</div>
-              </div>
-            </div>
+            <ServiceAreaMap mapboxToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN} />
           </div>
         </div>
       </section>

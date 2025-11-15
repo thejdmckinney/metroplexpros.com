@@ -1377,6 +1377,183 @@ textarea.form-control {
   }
 }
 
+/* Interactive Map Styles */
+.interactive-map-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.2);
+  border: 1px solid var(--color-border);
+}
+
+.mapbox-map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg-alt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom map marker styles */
+.service-marker {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-marker:hover {
+  transform: scale(1.1);
+}
+
+.marker-content {
+  background: var(--color-bg);
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 240, 255, 0.3);
+  min-width: 80px;
+}
+
+.marker-icon {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.marker-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+/* Map popup styles */
+.mapboxgl-popup-content {
+  background: var(--color-bg-alt) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.2) !important;
+  padding: 0 !important;
+  max-width: 250px !important;
+}
+
+.map-popup {
+  padding: 1rem;
+  color: var(--color-text);
+}
+
+.map-popup h3 {
+  color: var(--color-accent);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.map-popup p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.popup-actions {
+  margin-top: 0.75rem;
+}
+
+.popup-btn {
+  background: linear-gradient(45deg, var(--color-accent), var(--color-accent2));
+  color: var(--color-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.popup-btn:hover {
+  transform: translateY(-1px);
+  color: var(--color-bg);
+}
+
+.mapboxgl-popup-close-button {
+  color: var(--color-accent) !important;
+  font-size: 18px !important;
+  padding: 8px !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background: var(--color-accent-20) !important;
+}
+
+/* Mapbox attribution styling */
+.mapboxgl-ctrl-attrib {
+  background: var(--color-bg-alt) !important;
+  color: var(--color-text-muted) !important;
+  font-size: 11px !important;
+}
+
+.mapboxgl-ctrl-attrib a {
+  color: var(--color-accent) !important;
+}
+
+/* Navigation controls styling */
+.mapboxgl-ctrl-group {
+  background: var(--color-bg-alt) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+.mapboxgl-ctrl button {
+  background: var(--color-bg-alt) !important;
+  color: var(--color-text) !important;
+}
+
+.mapboxgl-ctrl button:hover {
+  background: var(--color-accent-20) !important;
+}
+
+/* Mobile map responsiveness */
+@media (max-width: 768px) {
+  .interactive-map-container {
+    height: 300px;
+  }
+  
+  .marker-content {
+    padding: 0.25rem;
+    min-width: 60px;
+  }
+  
+  .marker-label {
+    font-size: 0.7rem;
+  }
+}
+
 /* Legal Pages Styles */
 .legal-page {
   padding: 4rem 0;
