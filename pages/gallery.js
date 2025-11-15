@@ -19,8 +19,8 @@ export default function Gallery() {
       category: "kitchen",
       description: "Contemporary kitchen design featuring premium finishes, custom cabinetry, and modern appliances for optimal functionality and style.",
       image: "/modern-kitchen.png",
-      location: "Dallas, TX",
-      year: "2024"
+      callToAction: "Transform Your Kitchen",
+      subtitle: "Create the heart of your home with custom designs"
     },
     {
       id: 2,
@@ -28,8 +28,8 @@ export default function Gallery() {
       category: "bathroom", 
       description: "Sophisticated bathroom renovation with high-end fixtures, elegant tilework, and spa-inspired design elements.",
       image: "/luxury-bathroom.png",
-      location: "Plano, TX",
-      year: "2024"
+      callToAction: "Upgrade Your Bathroom",
+      subtitle: "Turn your bathroom into a personal spa retreat"
     },
     {
       id: 3,
@@ -37,8 +37,8 @@ export default function Gallery() {
       category: "smart-home",
       description: "Professional electric vehicle charging station installation with proper electrical upgrades and safety compliance.",
       image: "/ev-charger-installation.png",
-      location: "Frisco, TX",
-      year: "2024"
+      callToAction: "Go Electric Today",
+      subtitle: "Future-proof your home with smart technology"
     }
   ];
 
@@ -106,9 +106,9 @@ export default function Gallery() {
                 <div className="project-info">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <div className="project-meta">
-                    <span>📍 {project.location}</span>
-                    <span>📅 {project.year}</span>
+                  <div className="project-cta">
+                    <h4 className="cta-title">{project.callToAction}</h4>
+                    <p className="cta-subtitle">{project.subtitle}</p>
                   </div>
                 </div>
               </div>
@@ -251,12 +251,24 @@ export default function Gallery() {
           color: var(--dark);
         }
 
-        .project-meta {
-          display: flex;
-          gap: 1rem;
-          font-size: 0.9rem;
+        .project-cta {
+          margin-top: 1.5rem;
+          padding-top: 1rem;
+          border-top: 1px solid #eee;
+        }
+
+        .cta-title {
+          margin: 0 0 0.25rem 0;
+          color: var(--primary);
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        .cta-subtitle {
+          margin: 0;
           color: var(--text-muted);
-          margin-top: 1rem;
+          font-size: 0.9rem;
+          line-height: 1.4;
         }
 
         .company-showcase {
@@ -298,9 +310,8 @@ export default function Gallery() {
             grid-template-columns: 1fr;
           }
 
-          .project-meta {
-            flex-direction: column;
-            gap: 0.5rem;
+          .cta-title {
+            font-size: 1rem;
           }
 
           .showcase-stats {
