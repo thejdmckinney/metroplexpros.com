@@ -18,7 +18,7 @@ export default function Gallery() {
       title: "Modern Kitchen Transformation",
       category: "kitchen",
       description: "Contemporary kitchen design featuring premium finishes, custom cabinetry, and modern appliances for optimal functionality and style.",
-      image: "/Gemini_Generated_Image_dctlysdctlysdctl.png",
+      image: "/modern-kitchen.png",
       location: "Dallas, TX",
       year: "2024"
     },
@@ -27,7 +27,7 @@ export default function Gallery() {
       title: "Luxury Bathroom Renovation",
       category: "bathroom", 
       description: "Sophisticated bathroom renovation with high-end fixtures, elegant tilework, and spa-inspired design elements.",
-      image: "/Gemini_Generated_Image_ndau9pndau9pndau.png",
+      image: "/luxury-bathroom.png",
       location: "Plano, TX",
       year: "2024"
     },
@@ -36,7 +36,7 @@ export default function Gallery() {
       title: "EV Charging Station Installation",
       category: "smart-home",
       description: "Professional electric vehicle charging station installation with proper electrical upgrades and safety compliance.",
-      image: "/Image of ev charger.png",
+      image: "/ev-charger-installation.png",
       location: "Frisco, TX",
       year: "2024"
     }
