@@ -85,9 +85,14 @@ export default function Home() {
               <p>Heating, ventilation, and air conditioning installation, repair, and maintenance services.</p>
             </div>
             <div className="card">
-              <div className="service-icon">�️</div>
+              <div className="service-icon">🔧</div>
               <h3>General Repairs</h3>
               <p>Handyman services for all your home maintenance and repair needs.</p>
+            </div>
+            <div className="card">
+              <div className="service-icon">🏡</div>
+              <h3>Smart Home Installations</h3>
+              <p>Modern smart home technology integration including thermostats, lighting, security systems, and automation.</p>
             </div>
           </div>
           <div className="text-center mt-4">
