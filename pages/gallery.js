@@ -102,13 +102,9 @@ export default function Gallery() {
                   <div className="project-badge">
                     {project.category.replace('-', ' ')}
                   </div>
-                </div>
-                <div className="project-info">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="project-cta">
-                    <h4 className="cta-title">{project.callToAction}</h4>
-                    <p className="cta-subtitle">{project.subtitle}</p>
+                  <div className="project-caption">
+                    <h3>{project.title}</h3>
+                    <p>{project.callToAction}</p>
                   </div>
                 </div>
               </div>
@@ -242,33 +238,27 @@ export default function Gallery() {
           text-transform: capitalize;
         }
 
-        .project-info {
-          padding: 1.5rem;
+        .project-caption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(transparent, rgba(0,0,0,0.8));
+          color: white;
+          padding: 2rem 1.5rem 1.5rem;
+          text-align: center;
         }
 
-        .project-info h3 {
+        .project-caption h3 {
           margin: 0 0 0.5rem 0;
-          color: var(--dark);
-        }
-
-        .project-cta {
-          margin-top: 1.5rem;
-          padding-top: 1rem;
-          border-top: 1px solid #eee;
-        }
-
-        .cta-title {
-          margin: 0 0 0.25rem 0;
-          color: var(--primary);
-          font-size: 1.1rem;
+          font-size: 1.25rem;
           font-weight: 600;
         }
 
-        .cta-subtitle {
+        .project-caption p {
           margin: 0;
-          color: var(--text-muted);
-          font-size: 0.9rem;
-          line-height: 1.4;
+          font-size: 0.95rem;
+          opacity: 0.9;
         }
 
         .company-showcase {
@@ -310,8 +300,12 @@ export default function Gallery() {
             grid-template-columns: 1fr;
           }
 
-          .cta-title {
-            font-size: 1rem;
+          .project-caption h3 {
+            font-size: 1.1rem;
+          }
+
+          .project-caption p {
+            font-size: 0.9rem;
           }
 
           .showcase-stats {
