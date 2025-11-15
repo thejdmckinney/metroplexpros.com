@@ -287,6 +287,27 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* Maintenance Plans CTA */}
+      <section className="section maintenance-cta">
+        <div className="container">
+          <div className="maintenance-cta-content text-center">
+            <h2>Interested in Ongoing Maintenance?</h2>
+            <p>
+              Keep your home in perfect condition with our comprehensive maintenance service plans. 
+              Visit Metroplex Shield to learn about preventive care options.
+            </p>
+            <a 
+              href="https://metroplexshield.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn maintenance-btn"
+            >
+              Explore Maintenance Plans
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="section emergency-cta">
         <div className="container">

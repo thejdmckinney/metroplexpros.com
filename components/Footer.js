@@ -38,6 +38,15 @@ export default function Footer() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
+
+          <div className="footer-section">
+            <h4 className="footer-title">Maintenance Plans</h4>
+            <ul className="footer-links">
+              <li><a href="https://metroplexshield.com" target="_blank" rel="noopener noreferrer">Metroplex Shield</a></li>
+              <li><a href="https://metroplexshield.com" target="_blank" rel="noopener noreferrer">Home Maintenance Plans</a></li>
+              <li><a href="https://metroplexshield.com" target="_blank" rel="noopener noreferrer">Preventive Care</a></li>
+            </ul>
+          </div>
           
           <div className="footer-section">
             <h4 className="footer-title">Contact Info</h4>

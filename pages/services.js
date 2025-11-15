@@ -267,6 +267,45 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Maintenance Plans Section */}
+      <section className="section maintenance-section">
+        <div className="container">
+          <div className="maintenance-content">
+            <div className="grid grid-2">
+              <div className="maintenance-text">
+                <h2>Protect Your Investment</h2>
+                <h3>Ongoing Home Maintenance Plans</h3>
+                <p>
+                  After we complete your home improvement project, keep it looking and functioning 
+                  like new with our comprehensive maintenance service plans through Metroplex Shield.
+                </p>
+                <ul className="maintenance-benefits">
+                  <li>✅ Regular preventive maintenance</li>
+                  <li>✅ Priority service scheduling</li>
+                  <li>✅ Discounted repair rates</li>
+                  <li>✅ Seasonal home inspections</li>
+                  <li>✅ Peace of mind protection</li>
+                </ul>
+                <a 
+                  href="https://metroplexshield.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn maintenance-btn"
+                >
+                  Learn About Maintenance Plans
+                </a>
+              </div>
+              <div className="maintenance-image">
+                <div className="shield-logo-placeholder">
+                  <h4>🛡️ Metroplex Shield</h4>
+                  <p>Complete Home Maintenance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="section cta">
         <div className="container">
