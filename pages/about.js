@@ -102,39 +102,20 @@ export default function About() {
       {/* Team Section */}
       <section className="section team-section">
         <div className="container">
-          <h2 className="section-title">Meet Our Team</h2>
-          <div className="grid grid-3">
+          <h2 className="section-title">Meet Our Founder</h2>
+          <div className="team-grid">
             <div className="team-member">
-              <div className="member-image">
-                <div className="image-placeholder">👨‍💼</div>
+              <div className="member-photo">
+                <div className="image-placeholder">👨‍�</div>
               </div>
-              <h3>John Smith</h3>
+              <h3>Jeremy McKinney</h3>
               <p className="member-title text-accent">Founder & Lead Contractor</p>
               <p>
-                With over 20 years of experience in construction and remodeling, John founded Metroplex Pros 
-                to bring quality craftsmanship to Dallas homeowners.
-              </p>
-            </div>
-            <div className="team-member">
-              <div className="member-image">
-                <div className="image-placeholder">👨‍🔧</div>
-              </div>
-              <h3>Mike Johnson</h3>
-              <p className="member-title text-accent">Project Manager</p>
-              <p>
-                Mike ensures every project runs smoothly from start to finish. His attention to detail and 
-                project management expertise keep us on track and on budget.
-              </p>
-            </div>
-            <div className="team-member">
-              <div className="member-image">
-                <div className="image-placeholder">👩‍💼</div>
-              </div>
-              <h3>Sarah Davis</h3>
-              <p className="member-title text-accent">Design Consultant</p>
-              <p>
-                Sarah helps clients visualize their dream spaces and makes design recommendations that 
-                maximize both function and aesthetic appeal.
+                With over 20 years of experience in construction and home improvement, Jeremy founded Metroplex Pros 
+                to bring exceptional quality and craftsmanship to Dallas-Fort Worth area homeowners. His extensive 
+                background in residential construction, combined with a passion for transforming homes, ensures every 
+                project meets the highest standards of excellence. Jeremy personally oversees each project to guarantee 
+                customer satisfaction and superior results.
               </p>
             </div>
           </div>
