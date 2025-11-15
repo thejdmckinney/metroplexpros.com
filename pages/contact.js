@@ -252,26 +252,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="service-areas-card">
-                <h3>We Serve These Areas</h3>
-                <div className="areas-list">
-                  <span>Dallas</span>
-                  <span>Plano</span>
-                  <span>Frisco</span>
-                  <span>McKinney</span>
-                  <span>Allen</span>
-                  <span>Richardson</span>
-                  <span>Garland</span>
-                  <span>Irving</span>
-                  <span>Carrollton</span>
-                  <span>Fort Worth</span>
-                  <span>Arlington</span>
-                  <span>Grand Prairie</span>
-                </div>
-                <p className="text-muted text-center mt-2">
-                  Don't see your city? <span className="text-accent">Call us!</span> We may still service your area.
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
