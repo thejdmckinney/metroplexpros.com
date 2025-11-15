@@ -106,7 +106,7 @@ export default function About() {
           <div className="team-grid">
             <div className="team-member">
               <div className="member-photo">
-                <div className="image-placeholder">👨‍�</div>
+                <img src="/logo.svg" alt="Metroplex Pros" className="founder-logo" />
               </div>
               <h3>Jeremy McKinney</h3>
               <p className="member-title text-accent">Founder & Lead Contractor</p>

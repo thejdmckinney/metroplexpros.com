@@ -823,6 +823,13 @@ p {
   align-items: center;
   justify-content: center;
   font-size: 4rem;
+  overflow: hidden;
+}
+
+.founder-logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 240, 255, 0.3));
 }
 
 /* Services Page */
