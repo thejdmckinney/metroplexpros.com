@@ -132,7 +132,7 @@ export default function ServiceAreas() {
                 </div>
               </div>
             </div>
-            <ServiceAreaMap mapboxToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN} />
+            <ServiceAreaMap mapboxToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN || 'pk.eyJ1IjoidGhlamRtY2tpbm5leSIsImEiOiJjbWdkeHd1enYwbTVvMm5vZ2cyNWloZzZsIn0.XDn0iUiSQ22h8y1HvqDb0g'} />
           </div>
         </div>
       </section>
