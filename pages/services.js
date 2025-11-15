@@ -14,8 +14,7 @@ export default function Services() {
         "Kitchen island construction",
         "Backsplash installation",
         "Plumbing and electrical work"
-      ],
-      price: "Starting at $15,000"
+      ]
     },
     {
       title: "Bathroom Renovation",
@@ -28,8 +27,7 @@ export default function Services() {
         "Bathroom lighting design",
         "Plumbing modifications",
         "ADA compliance modifications"
-      ],
-      price: "Starting at $8,000"
+      ]
     },
     {
       title: "Interior & Exterior Painting",
@@ -42,8 +40,7 @@ export default function Services() {
         "Trim and detail work",
         "Pressure washing preparation",
         "Color consultation"
-      ],
-      price: "Starting at $3,000"
+      ]
     },
     {
       title: "Flooring Installation",
@@ -56,8 +53,7 @@ export default function Services() {
         "Laminate flooring",
         "Carpet installation",
         "Floor refinishing and restoration"
-      ],
-      price: "Starting at $5,000"
+      ]
     },
     {
       title: "Electrical Services",
@@ -70,8 +66,7 @@ export default function Services() {
         "Lighting fixture installation",
         "GFCI outlet installation",
         "Electrical troubleshooting and repairs"
-      ],
-      price: "Starting at $200"
+      ]
     },
     {
       title: "Plumbing Services",
@@ -84,8 +79,7 @@ export default function Services() {
         "Water heater installation",
         "Pipe repair and replacement",
         "Emergency plumbing services"
-      ],
-      price: "Starting at $150"
+      ]
     },
     {
       title: "HVAC Services",
@@ -98,8 +92,7 @@ export default function Services() {
         "Thermostat installation",
         "Air quality improvement",
         "Energy efficiency upgrades"
-      ],
-      price: "Starting at $300"
+      ]
     },
     {
       title: "Roofing Services",
@@ -112,8 +105,7 @@ export default function Services() {
         "Skylight installation",
         "Roof inspection services",
         "Emergency roof repairs"
-      ],
-      price: "Starting at $8,000"
+      ]
     }
   ];
 
@@ -164,7 +156,6 @@ export default function Services() {
                 </div>
                 
                 <div className="service-footer">
-                  <div className="service-price text-accent">{service.price}</div>
                   <Link href="/contact" className="btn btn-outline">
                     Get Quote
                   </Link>
