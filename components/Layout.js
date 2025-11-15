@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react'
 import SEO from './SEO'
 import Header from './Header'
 import Footer from './Footer'
+import VisualEditor from './VisualEditor'
 
 export default function Layout({ 
   children, 
@@ -11,6 +13,32 @@ export default function Layout({
   openGraph,
   localBusiness = true
 }) {
+  const [isEditing, setIsEditing] = useState(false)
+
+  useEffect(() => {
+    // Check if visual editor should be active
+    const editorActive = localStorage.getItem('visualEditorActive') === 'true'
+    setIsEditing(editorActive)
+    
+    // Add editing class to body
+    if (editorActive) {
+      document.body.classList.add('editing')
+    } else {
+      document.body.classList.remove('editing')
+    }
+  }, [isEditing])
+
+  const handleEditorToggle = (active) => {
+    setIsEditing(active)
+    localStorage.setItem('visualEditorActive', active.toString())
+    
+    if (active) {
+      document.body.classList.add('editing')
+    } else {
+      document.body.classList.remove('editing')
+    }
+  }
+
   return (
     <>
       <SEO 
@@ -30,6 +58,7 @@ export default function Layout({
           {children}
         </main>
         <Footer />
+        <VisualEditor enabled={isEditing} onToggle={handleEditorToggle} />
       </div>
     </>
   )
