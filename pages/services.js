@@ -47,7 +47,7 @@ export default function Services() {
     },
     {
       title: "Flooring Installation",
-      icon: "🪟",
+      icon: "🏗️",
       description: "All types of flooring installation and refinishing",
       url: "/contact",
       features: [

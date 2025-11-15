@@ -65,7 +65,7 @@ export default function Home() {
               <p>Professional interior and exterior painting services with premium materials.</p>
             </div>
             <div className="card">
-              <div className="service-icon">🪟</div>
+              <div className="service-icon">🏗️</div>
               <h3>Flooring Installation</h3>
               <p>Hardwood, tile, laminate, and luxury vinyl flooring installation and refinishing.</p>
             </div>
