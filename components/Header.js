@@ -36,7 +36,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="mobile-menu-btn"
+            className={`mobile-menu-btn ${isMenuOpen ? 'menu-open' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
