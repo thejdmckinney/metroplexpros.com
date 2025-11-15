@@ -143,11 +143,11 @@ export default function Home() {
             <div className="stats-container">
               <div className="stats">
                 <div className="stat">
-                  <div className="stat-number text-accent">500+</div>
-                  <div className="stat-label">Projects Completed</div>
+                  <div className="stat-number text-accent">Licensed</div>
+                  <div className="stat-label">& Insured</div>
                 </div>
                 <div className="stat">
-                  <div className="stat-number text-accent">15+</div>
+                  <div className="stat-number text-accent">20+</div>
                   <div className="stat-label">Years Experience</div>
                 </div>
                 <div className="stat">

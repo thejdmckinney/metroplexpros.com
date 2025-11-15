@@ -214,11 +214,11 @@ export default function Gallery() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-card">
-              <div className="stat-number text-accent">500+</div>
-              <div className="stat-label">Projects Completed</div>
+              <div className="stat-number text-accent">Licensed</div>
+              <div className="stat-label">& Insured</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number text-accent">15+</div>
+              <div className="stat-number text-accent">20+</div>
               <div className="stat-label">Years of Experience</div>
             </div>
             <div className="stat-card">

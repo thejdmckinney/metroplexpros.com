@@ -171,7 +171,7 @@ export default function ServiceAreas() {
               <div className="feature">
                 <div className="feature-icon">🏠</div>
                 <h4>Local Expertise</h4>
-                <p>15+ years serving DFW communities with deep understanding of local building codes and styles.</p>
+                <p>20+ years serving DFW communities with deep understanding of local building codes and styles.</p>
               </div>
               <div className="feature">
                 <div className="feature-icon">⚡</div>
