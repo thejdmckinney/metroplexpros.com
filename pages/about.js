@@ -53,8 +53,8 @@ export default function About() {
               </p>
             </div>
             <div className="story-image">
-              <div className="image-placeholder">
-                <p className="text-center text-muted">Company Photo / Team Image</p>
+              <div className="hero-logo-container">
+                <img src="/logo.svg" alt="Metroplex Pros - Dallas Home Improvement Specialists" className="hero-logo" />
               </div>
             </div>
           </div>
