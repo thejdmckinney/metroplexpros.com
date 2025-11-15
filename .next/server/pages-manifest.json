@@ -1,1 +1,6 @@
-{"/_app":"pages/_app.js","/about":"pages/about.html","/contact":"pages/contact.html","/_error":"pages/_error.js","/gallery":"pages/gallery.html","/services":"pages/services.html","/":"pages/index.html","/service-areas":"pages/service-areas.html","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/service-areas": "pages/service-areas.js"
+}

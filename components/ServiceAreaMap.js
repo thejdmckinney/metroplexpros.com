@@ -23,7 +23,9 @@ export default function ServiceAreaMap({ mapboxToken }) {
   ]
 
   useEffect(() => {
+    console.log('Mapbox token received:', mapboxToken ? 'Yes' : 'No')
     if (!mapboxToken) {
+      console.log('No Mapbox token found')
       setMapError(true)
       return
     }
@@ -60,8 +62,8 @@ export default function ServiceAreaMap({ mapboxToken }) {
             markerElement.className = 'service-marker'
             markerElement.innerHTML = `
               <div class="marker-content">
-                <div class="marker-icon">🏠</div>
                 <div class="marker-label">${area.name}</div>
+                <div class="marker-population">${area.population}</div>
               </div>
             `
 
