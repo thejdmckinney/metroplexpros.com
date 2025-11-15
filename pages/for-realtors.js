@@ -9,6 +9,46 @@ export default function ForRealtors() {
       keywords="market ready homes Dallas, rental make ready services, realtor contractors Dallas, property management contractors, pre-listing home services Dallas, investment property renovation"
       canonicalUrl="https://metroplexpros.com/for-realtors"
     >
+      {/* Structured Data for Better SEO */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Real Estate Professional Services",
+            "description": "Market ready home preparation and rental make ready services for Dallas realtors and property managers",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Metroplex Pros",
+              "url": "https://metroplexpros.com",
+              "telephone": "(682) 466-2130",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dallas",
+                "addressRegion": "TX",
+                "addressCountry": "US"
+              }
+            },
+            "serviceType": "Home Improvement Services for Real Estate",
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 32.7767,
+                "longitude": -96.7970
+              },
+              "geoRadius": 50000
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Real Estate Professionals"
+            },
+            "url": "https://metroplexpros.com/for-realtors"
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="hero">
         <div className="container">

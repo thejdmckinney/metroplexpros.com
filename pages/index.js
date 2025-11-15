@@ -180,6 +180,9 @@ export default function Home() {
                 Call (682) 466-2130
               </Link>
             </div>
+            <p className="mt-3 text-sm">
+              <em>Real estate professionals: Check out our <Link href="/for-realtors" className="text-accent">specialized services for realtors & property managers</Link></em>
+            </p>
           </div>
         </div>
       </section>
