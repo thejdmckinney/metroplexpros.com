@@ -129,7 +129,9 @@ export default function Contact() {
                       <option value="bathroom">Bathroom Renovation</option>
                       <option value="painting">Painting Services</option>
                       <option value="flooring">Flooring Installation</option>
-                      <option value="additions">Home Additions</option>
+                      <option value="electrical">Electrical Services</option>
+                      <option value="plumbing">Plumbing Services</option>
+                      <option value="hvac">HVAC Services</option>
                       <option value="roofing">Roofing Services</option>
                       <option value="other">Other/Multiple Services</option>
                     </select>

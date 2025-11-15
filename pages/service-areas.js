@@ -5,7 +5,7 @@ export default function ServiceAreas() {
   const serviceAreas = [
     {
       city: "Dallas",
-      description: "Serving Dallas with comprehensive home improvement services including kitchen remodeling, bathroom renovation, and home additions.",
+      description: "Serving Dallas with comprehensive home improvement services including kitchen remodeling, bathroom renovation, electrical, plumbing, and HVAC services.",
       population: "1.3 million",
       highlights: ["Downtown Dallas", "Oak Cliff", "East Dallas", "North Dallas"],
       zipCodes: ["75201", "75202", "75203", "75204", "75205", "75206"]

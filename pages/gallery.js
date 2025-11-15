@@ -97,7 +97,7 @@ export default function Gallery() {
   return (
     <Layout 
       title="Project Gallery - Dallas Home Improvement Before & After Photos | Metroplex Pros"
-      description="View our Dallas home improvement project gallery featuring kitchen remodels, bathroom renovations, flooring installations & home additions throughout DFW metroplex."
+      description="View our Dallas home improvement project gallery featuring kitchen remodels, bathroom renovations, flooring installations, electrical, plumbing & HVAC projects throughout DFW metroplex."
       keywords="Dallas home improvement gallery, before after photos Dallas, kitchen remodel pictures, bathroom renovation gallery, DFW contractor portfolio, Metroplex Pros projects"
       canonicalUrl="https://metroplexpros.com/gallery"
     >

@@ -60,18 +60,46 @@ export default function Services() {
       price: "Starting at $5,000"
     },
     {
-      title: "Home Additions",
-      icon: "🏗️",
-      description: "Expand your living space with custom additions",
+      title: "Electrical Services",
+      icon: "⚡",
+      description: "Professional electrical installations and repairs",
       features: [
-        "Room additions",
-        "Second story additions",
-        "Garage construction",
-        "Outdoor decks and patios",
-        "Pergolas and outdoor structures",
-        "ADU (Accessory Dwelling Units)"
+        "Electrical panel upgrades",
+        "Outlet and switch installation",
+        "Ceiling fan installation",
+        "Lighting fixture installation",
+        "GFCI outlet installation",
+        "Electrical troubleshooting and repairs"
       ],
-      price: "Starting at $25,000"
+      price: "Starting at $200"
+    },
+    {
+      title: "Plumbing Services",
+      icon: "🔧",
+      description: "Complete plumbing solutions for your home",
+      features: [
+        "Leak detection and repair",
+        "Fixture installation and replacement",
+        "Drain cleaning and unclogging",
+        "Water heater installation",
+        "Pipe repair and replacement",
+        "Emergency plumbing services"
+      ],
+      price: "Starting at $150"
+    },
+    {
+      title: "HVAC Services",
+      icon: "❄️",
+      description: "Heating and cooling system services",
+      features: [
+        "AC installation and repair",
+        "Heating system maintenance",
+        "Ductwork installation and repair",
+        "Thermostat installation",
+        "Air quality improvement",
+        "Energy efficiency upgrades"
+      ],
+      price: "Starting at $300"
     },
     {
       title: "Roofing Services",
@@ -91,9 +119,9 @@ export default function Services() {
 
   return (
     <Layout 
-      title="Home Improvement Services Dallas | Kitchen, Bathroom, Flooring - Metroplex Pros"
-      description="Comprehensive home improvement services in Dallas: kitchen remodeling, bathroom renovation, flooring installation, painting, roofing & home additions. Free estimates!"
-      keywords="Dallas home improvement services, kitchen remodeling Dallas, bathroom renovation DFW, flooring installation Plano, painting contractors Dallas, roofing services Texas"
+      title="Home Improvement Services Dallas | Kitchen, Bathroom, Electrical, Plumbing - Metroplex Pros"
+      description="Comprehensive home improvement services in Dallas: kitchen remodeling, bathroom renovation, flooring installation, painting, electrical, plumbing, HVAC & roofing services. Free estimates!"
+      keywords="Dallas home improvement services, kitchen remodeling Dallas, bathroom renovation DFW, flooring installation Plano, painting contractors Dallas, electrical services Dallas, plumbing contractors Texas, HVAC services Dallas, roofing services Texas"
       canonicalUrl="https://metroplexpros.com/services"
     >
       {/* Hero Section */}

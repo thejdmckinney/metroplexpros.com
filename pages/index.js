@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <Layout 
       title="Metroplex Pros - Dallas Home Improvement Contractors | Kitchen & Bathroom Remodeling"
-      description="Top-rated Dallas home improvement contractors specializing in kitchen remodeling, bathroom renovation, flooring, painting & home additions. Serving Dallas, Plano, Frisco & DFW. Free estimates!"
-      keywords="Dallas home improvement, Dallas contractors, kitchen remodeling Dallas, bathroom renovation Plano, Frisco contractors, DFW home renovation, Dallas home additions, licensed contractors Texas"
+      description="Top-rated Dallas home improvement contractors specializing in kitchen remodeling, bathroom renovation, flooring, painting, electrical, plumbing & HVAC services. Serving Dallas, Plano, Frisco & DFW. Free estimates!"
+      keywords="Dallas home improvement, Dallas contractors, kitchen remodeling Dallas, bathroom renovation Plano, Frisco contractors, DFW home renovation, electrical services Dallas, plumbing contractors Texas, HVAC Dallas, licensed contractors Texas"
       canonicalUrl="https://metroplexpros.com"
     >
       {/* Hero Section */}
@@ -48,7 +48,7 @@ export default function Home() {
       <section className="section services-overview">
         <div className="container">
           <h2 className="section-title">Our Services</h2>
-          <div className="grid grid-3">
+          <div className="grid grid-4">
             <div className="card">
               <div className="service-icon">🏠</div>
               <h3>Kitchen Remodeling</h3>
@@ -70,12 +70,22 @@ export default function Home() {
               <p>Hardwood, tile, laminate, and luxury vinyl flooring installation and refinishing.</p>
             </div>
             <div className="card">
-              <div className="service-icon">🏗️</div>
-              <h3>Home Additions</h3>
-              <p>Expand your living space with room additions, outdoor decks, and patios.</p>
+              <div className="service-icon">⚡</div>
+              <h3>Electrical Services</h3>
+              <p>Professional electrical installations, repairs, and upgrades for residential properties.</p>
             </div>
             <div className="card">
               <div className="service-icon">🔧</div>
+              <h3>Plumbing Services</h3>
+              <p>Complete plumbing solutions including repairs, installations, and maintenance services.</p>
+            </div>
+            <div className="card">
+              <div className="service-icon">❄️</div>
+              <h3>HVAC Services</h3>
+              <p>Heating, ventilation, and air conditioning installation, repair, and maintenance services.</p>
+            </div>
+            <div className="card">
+              <div className="service-icon">�️</div>
               <h3>General Repairs</h3>
               <p>Handyman services for all your home maintenance and repair needs.</p>
             </div>

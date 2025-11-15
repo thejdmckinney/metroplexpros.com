@@ -25,7 +25,7 @@ export default function Footer() {
               <li><Link href="/services">Bathroom Renovation</Link></li>
               <li><Link href="/services">Flooring Installation</Link></li>
               <li><Link href="/services">Painting Services</Link></li>
-              <li><Link href="/services">Home Additions</Link></li>
+              <li><Link href="/services">Electrical Services</Link></li>
             </ul>
           </div>
           
