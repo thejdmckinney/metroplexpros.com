@@ -7,6 +7,7 @@ export default function Services() {
       title: "Kitchen Remodeling",
       icon: "🏠",
       description: "Complete kitchen transformations from design to completion",
+      url: "/services/kitchen-remodeling",
       features: [
         "Custom cabinet installation",
         "Countertop installation (granite, quartz, marble)",
@@ -20,6 +21,7 @@ export default function Services() {
       title: "Bathroom Renovation",
       icon: "🚿",
       description: "Luxury bathroom upgrades and complete renovations",
+      url: "/services/bathroom-renovation",
       features: [
         "Tile and flooring installation",
         "Vanity and fixture installation",
@@ -33,6 +35,7 @@ export default function Services() {
       title: "Interior & Exterior Painting",
       icon: "🎨",
       description: "Professional painting services inside and out",
+      url: "/contact",
       features: [
         "Interior wall painting",
         "Exterior house painting",
@@ -46,6 +49,7 @@ export default function Services() {
       title: "Flooring Installation",
       icon: "🪟",
       description: "All types of flooring installation and refinishing",
+      url: "/contact",
       features: [
         "Hardwood flooring installation",
         "Tile and stone installation",
@@ -59,6 +63,7 @@ export default function Services() {
       title: "Electrical Services",
       icon: "⚡",
       description: "Professional electrical installations and repairs",
+      url: "/contact",
       features: [
         "Electrical panel upgrades",
         "Outlet and switch installation",
@@ -72,6 +77,7 @@ export default function Services() {
       title: "Plumbing Services",
       icon: "🔧",
       description: "Complete plumbing solutions for your home",
+      url: "/contact",
       features: [
         "Leak detection and repair",
         "Fixture installation and replacement",
@@ -85,6 +91,7 @@ export default function Services() {
       title: "HVAC Services",
       icon: "❄️",
       description: "Heating and cooling system services",
+      url: "/contact",
       features: [
         "AC installation and repair",
         "Heating system maintenance",
@@ -95,25 +102,26 @@ export default function Services() {
       ]
     },
     {
-      title: "Roofing Services",
-      icon: "🏠",
-      description: "Complete roofing solutions and repairs",
+      title: "Smart Home Installations",
+      icon: "🏡",
+      description: "Modern smart home technology integration and automation",
+      url: "/services/smart-home-installations",
       features: [
-        "Roof replacement",
-        "Roof repair and maintenance",
-        "Gutter installation and repair",
-        "Skylight installation",
-        "Roof inspection services",
-        "Emergency roof repairs"
+        "Smart thermostat installation",
+        "Smart lighting systems",
+        "Security camera installation",
+        "Smart doorbell and lock systems",
+        "Home automation setup",
+        "WiFi network optimization"
       ]
     }
   ];
 
   return (
     <Layout 
-      title="Home Improvement Services Dallas | Kitchen, Bathroom, Electrical, Plumbing - Metroplex Pros"
-      description="Comprehensive home improvement services in Dallas: kitchen remodeling, bathroom renovation, flooring installation, painting, electrical, plumbing, HVAC & roofing services. Free estimates!"
-      keywords="Dallas home improvement services, kitchen remodeling Dallas, bathroom renovation DFW, flooring installation Plano, painting contractors Dallas, electrical services Dallas, plumbing contractors Texas, HVAC services Dallas, roofing services Texas"
+      title="Home Improvement Services Dallas | Kitchen, Bathroom, Electrical, Smart Home - Metroplex Pros"
+      description="Comprehensive home improvement services in Dallas: kitchen remodeling, bathroom renovation, flooring installation, painting, electrical, plumbing, HVAC & smart home installations. Free estimates!"
+      keywords="Dallas home improvement services, kitchen remodeling Dallas, bathroom renovation DFW, flooring installation Plano, painting contractors Dallas, electrical services Dallas, plumbing contractors Texas, HVAC services Dallas, smart home installation Dallas"
       canonicalUrl="https://metroplexpros.com/services"
     >
       {/* Hero Section */}
@@ -156,6 +164,9 @@ export default function Services() {
                 </div>
                 
                 <div className="service-footer">
+                  <Link href={service.url} className="btn">
+                    Learn More
+                  </Link>
                   <Link href="/contact" className="btn btn-outline">
                     Get Quote
                   </Link>
