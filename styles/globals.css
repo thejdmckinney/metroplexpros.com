@@ -324,7 +324,7 @@ p {
 }
 
 .logo-image {
-  height: 90px;
+  height: 140px;
   width: auto;
   transition: transform 0.3s ease;
   max-width: 100%;
@@ -333,11 +333,11 @@ p {
 /* Larger screens - bigger logo */
 @media (min-width: 1025px) {
   .logo-image {
-    height: 110px;
+    height: 180px;
   }
   
   .header-logo-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
 
