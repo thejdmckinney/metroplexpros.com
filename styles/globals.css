@@ -152,7 +152,23 @@ p {
 }
 
 .grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .text-center {
@@ -225,7 +241,8 @@ p {
   
   .grid-2,
   .grid-3,
-  .grid-4 {
+  .grid-4,
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -304,7 +321,7 @@ p {
 }
 
 .logo-image {
-  height: 50px;
+  height: 70px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -634,6 +651,18 @@ p {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.card h3 {
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  text-align: center;
+  line-height: 1.6;
 }
 
 .features {

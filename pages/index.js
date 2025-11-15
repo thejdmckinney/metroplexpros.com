@@ -48,7 +48,7 @@ export default function Home() {
       <section className="section services-overview">
         <div className="container">
           <h2 className="section-title">Our Services</h2>
-          <div className="grid grid-4">
+          <div className="grid services-grid">
             <div className="card">
               <div className="service-icon">🏠</div>
               <h3>Kitchen Remodeling</h3>
