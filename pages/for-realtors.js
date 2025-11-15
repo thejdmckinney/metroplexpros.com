@@ -219,70 +219,182 @@ export default function ForRealtors() {
             </div>
             <div className="partnership-stats">
               <div className="stat-card">
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Properties Prepared</div>
+                <div className="stat-number">20+</div>
+                <div className="stat-label">Years Experience</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">50+</div>
-                <div className="stat-label">Realtor Partners</div>
+                <div className="stat-number">Licensed</div>
+                <div className="stat-label">& Insured</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">48hr</div>
-                <div className="stat-label">Average Turnaround</div>
+                <div className="stat-number">Fast</div>
+                <div className="stat-label">Turnaround</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">100%</div>
-                <div className="stat-label">On-Time Completion</div>
+                <div className="stat-number">Quality</div>
+                <div className="stat-label">Guaranteed</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="section testimonials">
+      {/* Why Partner With Us */}
+      <section className="section why-partner">
         <div className="container">
-          <h2 className="section-title">What Real Estate Professionals Say</h2>
-          <div className="grid grid-2">
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"Metroplex Pros has been instrumental in helping me prepare properties for market. Their fast turnaround and quality work have helped me close deals faster and at better prices."</p>
-              </div>
-              <div className="testimonial-author">
-                <strong>Sarah Johnson</strong>
-                <span>Keller Williams Realtor</span>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"As a property manager with 50+ rental units, I need contractors I can rely on. Jeremy and his team consistently deliver quality work on time and within budget."</p>
-              </div>
-              <div className="testimonial-author">
-                <strong>Mike Rodriguez</strong>
-                <span>Property Management Company</span>
-              </div>
+          <h2 className="section-title">Ready to Build a Partnership?</h2>
+          <p className="section-description text-center">
+            We're looking to establish long-term relationships with Dallas area real estate professionals. 
+            Let's discuss how we can support your business with reliable, quality home preparation services.
+          </p>
+          <div className="partnership-intro">
+            <div className="intro-content">
+              <h3>What We Offer Partners:</h3>
+              <ul>
+                <li>Responsive communication and quick project estimates</li>
+                <li>Flexible scheduling to meet your closing timelines</li>
+                <li>Professional work that helps properties show their best</li>
+                <li>Honest, transparent pricing with no surprises</li>
+                <li>Licensed and insured for your peace of mind</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="section cta">
+      {/* Partner Application Form */}
+      <section className="section partner-application">
         <div className="container">
-          <div className="cta-content text-center">
-            <h2>Ready to Partner With Us?</h2>
-            <p className="text-muted mb-4">
-              Let's discuss how we can help you prepare more properties efficiently and profitably. 
-              Contact us today to learn about our partnership program and get started.
-            </p>
-            <div className="cta-buttons">
-              <Link href="/contact" className="btn">
-                Become a Partner
-              </Link>
-              <Link href="/services" className="btn btn-outline">
-                View All Services
-              </Link>
+          <div className="application-content">
+            <div className="application-intro">
+              <h2>Become a Partner</h2>
+              <p>
+                Ready to work together? Fill out this quick form to get started. We'll contact you within 
+                24 hours to discuss partnership opportunities and how we can support your business.
+              </p>
             </div>
+            
+            <form className="partner-form" action="https://formspree.io/f/mvgdadnq" method="POST">
+              <input type="hidden" name="_subject" value="New Realtor Partnership Inquiry" />
+              <input type="hidden" name="form_type" value="partner_application" />
+              
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="partner_name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="partner_name"
+                    name="partner_name"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="partner_email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="partner_email"
+                    name="partner_email"
+                    required
+                    placeholder="your.email@company.com"
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="partner_phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="partner_phone"
+                    name="partner_phone"
+                    required
+                    placeholder="(682) 466-2130"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="partner_company">Company/Brokerage</label>
+                  <input
+                    type="text"
+                    id="partner_company"
+                    name="partner_company"
+                    placeholder="Your brokerage or company name"
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="partner_role">Your Role *</label>
+                <select id="partner_role" name="partner_role" required>
+                  <option value="">Select your role</option>
+                  <option value="realtor">Real Estate Agent/Realtor</option>
+                  <option value="broker">Broker</option>
+                  <option value="property_manager">Property Manager</option>
+                  <option value="investor">Real Estate Investor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="monthly_volume">Approximate Monthly Property Volume</label>
+                <select id="monthly_volume" name="monthly_volume">
+                  <option value="">Select volume range</option>
+                  <option value="1-3">1-3 properties per month</option>
+                  <option value="4-8">4-8 properties per month</option>
+                  <option value="9-15">9-15 properties per month</option>
+                  <option value="16+">16+ properties per month</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="service_interest">Services You're Most Interested In *</label>
+                <div className="checkbox-group">
+                  <label className="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="market_ready" />
+                    <span>Market Ready Home Preparation</span>
+                  </label>
+                  <label className="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="rental_make_ready" />
+                    <span>Rental Make Ready Services</span>
+                  </label>
+                  <label className="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="minor_repairs" />
+                    <span>Minor Repairs & Touch-ups</span>
+                  </label>
+                  <label className="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="major_renovations" />
+                    <span>Major Renovations</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="partnership_goals">What are your main goals for this partnership?</label>
+                <textarea
+                  id="partnership_goals"
+                  name="partnership_goals"
+                  rows="4"
+                  placeholder="Tell us about your business needs, typical project timelines, budget ranges, or any specific requirements..."
+                ></textarea>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="preferred_contact">Preferred Contact Method</label>
+                <select id="preferred_contact" name="preferred_contact">
+                  <option value="phone">Phone Call</option>
+                  <option value="email">Email</option>
+                  <option value="text">Text Message</option>
+                </select>
+              </div>
+
+              <button type="submit" className="btn btn-submit">
+                Submit Partnership Application
+              </button>
+              
+              <p className="form-note">
+                We'll review your application and contact you within 24 hours to discuss partnership opportunities.
+              </p>
+            </form>
           </div>
         </div>
       </section>
