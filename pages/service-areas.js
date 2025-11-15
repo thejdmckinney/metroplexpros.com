@@ -106,7 +106,7 @@ export default function ServiceAreas() {
                 </div>
                 
                 <Link href="/contact" className="btn area-cta">
-                  Get Free Estimate in {area.city}
+                  Get Free Estimate
                 </Link>
               </div>
             ))}
