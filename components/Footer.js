@@ -63,8 +63,8 @@ export default function Footer() {
           <div className="footer-bottom-content">
             <p>&copy; 2025 Metroplex Pros. All rights reserved.</p>
             <div className="footer-bottom-links">
-              <Link href="/privacy">Privacy Policy</Link>
-              <Link href="/terms">Terms of Service</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
             </div>
           </div>
         </div>
