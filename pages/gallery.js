@@ -18,7 +18,7 @@ export default function Gallery() {
       title: "Custom LED Lighting Installation",
       category: "electrical",
       description: "Modern LED recessed lighting installation with dimmer controls, creating perfect ambiance while reducing energy costs by 75%.",
-      image: "/led-lighting-installation.png",
+      image: "/light_install.png",
       callToAction: "Upgrade Your Lighting",
       subtitle: "Transform your space with energy-efficient lighting"
     },
@@ -27,7 +27,7 @@ export default function Gallery() {
       title: "Emergency Leak Repair",
       category: "plumbing", 
       description: "Fast response to water leak emergency with professional pipe repair, preventing further damage and restoring peace of mind.",
-      image: "/leak-repair.png",
+      image: "/leak_repair.png",
       callToAction: "Get Emergency Service",
       subtitle: "24/7 emergency plumbing when you need it most"
     },
