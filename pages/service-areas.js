@@ -132,36 +132,36 @@ export default function ServiceAreas() {
       </section>
 
       {/* Popular Services by City */}
-      <section style={{padding: '3rem 0', backgroundColor: '#f8f9fa'}}>
+      <section style={{padding: '3rem 0', backgroundColor: '#0d1117'}}>
         <div className="container">
-          <h2 style={{textAlign: 'center', marginBottom: '1rem'}}>Popular Services by City</h2>
-          <p style={{textAlign: 'center', color: '#666', marginBottom: '3rem'}}>
+          <h2 style={{textAlign: 'center', marginBottom: '1rem', color: '#ffffff'}}>Popular Services by City</h2>
+          <p style={{textAlign: 'center', color: '#8b949e', marginBottom: '3rem'}}>
             Our most requested electrical, plumbing, and smart home services across the Dallas-Fort Worth metroplex
           </p>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem'}}>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Dallas Electrical Services</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Licensed Dallas electricians for panel upgrades, outlet installation, lighting, EV charger installation, and 24/7 emergency electrical repairs.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>Dallas Electrical Services</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Licensed Dallas electricians for panel upgrades, outlet installation, lighting, EV charger installation, and 24/7 emergency electrical repairs.</p>
             </div>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Plano Plumbing Repairs</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Expert Plano plumbers for leak repairs, drain cleaning, water heater installation, fixture upgrades, and emergency plumbing services.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>Plano Plumbing Repairs</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Expert Plano plumbers for leak repairs, drain cleaning, water heater installation, fixture upgrades, and emergency plumbing services.</p>
             </div>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Frisco Smart Home Installations</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Complete smart home automation in Frisco including smart thermostats, lighting systems, video doorbells, and whole-home integration.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>Frisco Smart Home Installations</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Complete smart home automation in Frisco including smart thermostats, lighting systems, video doorbells, and whole-home integration.</p>
             </div>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>McKinney Electricians</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Trusted McKinney electricians for residential electrical work, ceiling fans, recessed lighting, generators, and code compliance inspections.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>McKinney Electricians</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Trusted McKinney electricians for residential electrical work, ceiling fans, recessed lighting, generators, and code compliance inspections.</p>
             </div>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Allen Plumbing Services</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Expert Allen plumbers specializing in water heater repairs, sewer line cleaning, fixture installation, and 24/7 emergency plumbing.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>Allen Plumbing Services</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Expert Allen plumbers specializing in water heater repairs, sewer line cleaning, fixture installation, and 24/7 emergency plumbing.</p>
             </div>
-            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Richardson EV Charger Installation</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Professional EV charger installation in Richardson for Tesla, Chevy, Ford & all electric vehicles. Level 1 & 2 charging stations.</p>
+            <div style={{padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{color: '#00f0ff', marginBottom: '1rem'}}>Richardson EV Charger Installation</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Professional EV charger installation in Richardson for Tesla, Chevy, Ford & all electric vehicles. Level 1 & 2 charging stations.</p>
             </div>
           </div>
         </div>
