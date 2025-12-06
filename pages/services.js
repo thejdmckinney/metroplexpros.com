@@ -19,8 +19,7 @@ export default function Services() {
         "Electrical troubleshooting & repairs",
         "Code compliance & safety inspections",
         "24/7 emergency electrical service"
-      ],
-      pricing: "$75-$200/hour | Emergency service available"
+      ]
     },
     {
       title: "Plumbing Services",
@@ -38,8 +37,7 @@ export default function Services() {
         "Sump pump installation",
         "Water pressure issues & solutions",
         "24/7 emergency plumbing service"
-      ],
-      pricing: "$85-$175/hour | Emergency service available"
+      ]
     },
     {
       title: "Smart Home Installations",
@@ -57,8 +55,7 @@ export default function Services() {
         "Whole-home integration & programming",
         "WiFi network optimization",
         "Consultation & system design"
-      ],
-      pricing: "Starting at $150 | Free consultation"
+      ]
     }
   ];
 
@@ -104,9 +101,6 @@ export default function Services() {
                 <div className="service-icon-large">{service.icon}</div>
                 <h2>{service.title}</h2>
                 <p className="service-description">{service.description}</p>
-                <div className="service-pricing" style={{padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '8px', marginBottom: '1.5rem', fontWeight: 'bold', color: '#ff6b35'}}>
-                  {service.pricing}
-                </div>
                 <ul className="service-features">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex}>{feature}</li>
