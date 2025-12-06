@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Gallery() {
@@ -94,10 +95,14 @@ export default function Gallery() {
             {filteredProjects.map(project => (
               <div key={project.id} className="project-card">
                 <div className="project-image">
-                  <img 
+                  <Image 
                     src={project.image} 
                     alt={project.title}
+                    width={800}
+                    height={600}
                     className="project-photo"
+                    loading="lazy"
+                    quality={85}
                   />
                   <div className="project-badge">
                     {project.category.replace('-', ' ')}
@@ -137,10 +142,14 @@ export default function Gallery() {
               </div>
             </div>
             <div className="showcase-image">
-              <img 
+              <Image 
                 src="/metroplexprostruck.png" 
                 alt="Metroplex Pros service truck - professional home improvement services in Dallas"
+                width={800}
+                height={600}
                 className="truck-image"
+                loading="lazy"
+                quality={85}
               />
             </div>
           </div>
