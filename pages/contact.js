@@ -150,20 +150,20 @@ export default function Contact() {
       </section>
 
       {/* Quick Contact Info Banner */}
-      <section style={{backgroundColor: '#f8f9fa', padding: '2rem 0', borderTop: '3px solid #ff6b35', borderBottom: '3px solid #ff6b35'}}>
+      <section style={{backgroundColor: '#161b22', padding: '2rem 0', borderTop: '3px solid #00f0ff', borderBottom: '3px solid #00f0ff'}}>
         <div className="container">
           <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap', gap: '2rem', textAlign: 'center'}}>
             <div>
-              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>📞 Call or Text</strong>
-              <a href="tel:682-466-2130" style={{fontSize: '1.5rem', color: '#ff6b35', fontWeight: 'bold', textDecoration: 'none'}}>(682) 466-2130</a>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem', color: '#ffffff'}}>📞 Call or Text</strong>
+              <a href="tel:682-466-2130" style={{fontSize: '1.5rem', color: '#00f0ff', fontWeight: 'bold', textDecoration: 'none'}}>(682) 466-2130</a>
             </div>
             <div>
-              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>📧 Email Us</strong>
-              <a href="mailto:info@metroplexpros.com" style={{color: '#ff6b35', textDecoration: 'none'}}>info@metroplexpros.com</a>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem', color: '#ffffff'}}>📧 Email Us</strong>
+              <a href="mailto:info@metroplexpros.com" style={{color: '#00f0ff', textDecoration: 'none'}}>info@metroplexpros.com</a>
             </div>
             <div>
-              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>⏰ Business Hours</strong>
-              <span>Mon-Fri: 8am-6pm | Sat: 9am-4pm</span>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem', color: '#ffffff'}}>⏰ Business Hours</strong>
+              <span style={{color: '#c9d1d9'}}>Mon-Fri: 8am-6pm | Sat: 9am-4pm</span>
             </div>
           </div>
         </div>
