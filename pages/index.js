@@ -74,51 +74,51 @@ export default function Home() {
           
           {/* Detailed Service Lists */}
           <div className="service-details-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '4rem'}}>
-            <div style={{padding: '2rem', backgroundColor: '#f8f9fa', borderRadius: '8px'}}>
-              <h4 style={{color: '#ff6b35', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <div style={{padding: '2rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h4 style={{color: '#00f0ff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 <span style={{fontSize: '1.5rem'}}>⚡</span> Electrical Services Include:
               </h4>
               <ul style={{listStyle: 'none', padding: 0}}>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Circuit breaker panel upgrades</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Outlet & switch installation/repair</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ LED & recessed lighting</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Ceiling fan installation</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Whole-house surge protection</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Electric vehicle (EV) charger installation</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Generator installation & hookup</li>
-                <li style={{padding: '0.5rem 0'}}>✓ 24/7 emergency electrical repairs</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Circuit breaker panel upgrades</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Outlet & switch installation/repair</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ LED & recessed lighting</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Ceiling fan installation</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Whole-house surge protection</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Electric vehicle (EV) charger installation</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Generator installation & hookup</li>
+                <li style={{padding: '0.5rem 0', color: '#c9d1d9'}}>✓ 24/7 emergency electrical repairs</li>
               </ul>
             </div>
             
-            <div style={{padding: '2rem', backgroundColor: '#f8f9fa', borderRadius: '8px'}}>
-              <h4 style={{color: '#ff6b35', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <div style={{padding: '2rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h4 style={{color: '#00f0ff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 <span style={{fontSize: '1.5rem'}}>🔧</span> Plumbing Services Include:
               </h4>
               <ul style={{listStyle: 'none', padding: 0}}>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Leak detection & repair</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Drain cleaning & unclogging</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Water heater installation & repair</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Faucet & fixture replacement</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Toilet repair & installation</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Garbage disposal installation</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Pipe repair & repiping</li>
-                <li style={{padding: '0.5rem 0'}}>✓ 24/7 emergency plumbing service</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Leak detection & repair</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Drain cleaning & unclogging</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Water heater installation & repair</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Faucet & fixture replacement</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Toilet repair & installation</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Garbage disposal installation</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Pipe repair & repiping</li>
+                <li style={{padding: '0.5rem 0', color: '#c9d1d9'}}>✓ 24/7 emergency plumbing service</li>
               </ul>
             </div>
             
-            <div style={{padding: '2rem', backgroundColor: '#f8f9fa', borderRadius: '8px'}}>
-              <h4 style={{color: '#ff6b35', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <div style={{padding: '2rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h4 style={{color: '#00f0ff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 <span style={{fontSize: '1.5rem'}}>🏡</span> Smart Home Services Include:
               </h4>
               <ul style={{listStyle: 'none', padding: 0}}>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Smart thermostat installation (Nest, Ecobee)</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Smart lighting systems (Philips Hue, Lutron)</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Video doorbell & security cameras</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Smart door locks & access control</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Home automation hubs (Alexa, Google Home)</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Smart switches & dimmers</li>
-                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #e0e0e0'}}>✓ Whole-home integration</li>
-                <li style={{padding: '0.5rem 0'}}>✓ Consultation & planning</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Smart thermostat installation (Nest, Ecobee)</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Smart lighting systems (Philips Hue, Lutron)</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Video doorbell & security cameras</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Smart door locks & access control</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Home automation hubs (Alexa, Google Home)</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Smart switches & dimmers</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Whole-home integration</li>
+                <li style={{padding: '0.5rem 0', color: '#c9d1d9'}}>✓ Consultation & planning</li>
               </ul>
             </div>
           </div>
