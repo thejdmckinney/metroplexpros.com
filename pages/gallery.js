@@ -7,29 +7,29 @@ export default function Gallery() {
 
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'kitchen', name: 'Kitchen Remodels' },
-    { id: 'bathroom', name: 'Bathroom Renovations' },
+    { id: 'electrical', name: 'Electrical Work' },
+    { id: 'plumbing', name: 'Plumbing Services' },
     { id: 'smart-home', name: 'Smart Home' }
   ];
 
   const projects = [
     {
       id: 1,
-      title: "Modern Kitchen Transformation",
-      category: "kitchen",
-      description: "Contemporary kitchen design featuring premium finishes, custom cabinetry, and modern appliances for optimal functionality and style.",
-      image: "/modern-kitchen.png",
-      callToAction: "Transform Your Kitchen",
-      subtitle: "Create the heart of your home with custom designs"
+      title: "Custom LED Lighting Installation",
+      category: "electrical",
+      description: "Modern LED recessed lighting installation with dimmer controls, creating perfect ambiance while reducing energy costs by 75%.",
+      image: "/led-lighting-installation.png",
+      callToAction: "Upgrade Your Lighting",
+      subtitle: "Transform your space with energy-efficient lighting"
     },
     {
       id: 2,
-      title: "Luxury Bathroom Renovation",
-      category: "bathroom", 
-      description: "Sophisticated bathroom renovation with high-end fixtures, elegant tilework, and spa-inspired design elements.",
-      image: "/luxury-bathroom.png",
-      callToAction: "Upgrade Your Bathroom",
-      subtitle: "Turn your bathroom into a personal spa retreat"
+      title: "Emergency Leak Repair",
+      category: "plumbing", 
+      description: "Fast response to water leak emergency with professional pipe repair, preventing further damage and restoring peace of mind.",
+      image: "/leak-repair.png",
+      callToAction: "Get Emergency Service",
+      subtitle: "24/7 emergency plumbing when you need it most"
     },
     {
       id: 3,
@@ -48,9 +48,9 @@ export default function Gallery() {
 
   return (
     <Layout 
-      title="Project Gallery - Dallas Home Improvement Photos | Metroplex Pros"
-      description="View our Dallas home improvement project gallery featuring real kitchen remodels, bathroom renovations, and smart home installations throughout DFW metroplex."
-      keywords="Dallas home improvement gallery, kitchen remodel photos, bathroom renovation gallery, smart home installation, EV charger installation, DFW construction projects"
+      title="Project Gallery - Dallas Electrical & Plumbing Work | Metroplex Pros"
+      description="View our Dallas electrical, plumbing, and smart home installation gallery featuring real projects throughout DFW metroplex. Licensed electricians & plumbers."
+      keywords="Dallas electrical work photos, plumbing repair gallery, smart home installation, EV charger installation, LED lighting, emergency plumbing, DFW electrician projects"
     >
       {/* Hero Section */}
       <section className="hero">
