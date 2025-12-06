@@ -116,39 +116,39 @@ export default function Services() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section why-choose-section" style={{backgroundColor: '#f8f9fa'}}>
+      <section className="section why-choose-section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">
-          <h2 className="section-title text-center">Why Choose Metroplex Pros?</h2>
+          <h2 className="section-title text-center" style={{color: '#ffffff'}}>Why Choose Metroplex Pros?</h2>
           <div className="grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem'}}>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>✅</div>
-              <h3>Licensed & Insured</h3>
-              <p>All electricians and plumbers are fully licensed in Texas with comprehensive insurance coverage</p>
+              <h3 style={{color: '#00f0ff'}}>Licensed & Insured</h3>
+              <p style={{color: '#c9d1d9'}}>All electricians and plumbers are fully licensed in Texas with comprehensive insurance coverage</p>
             </div>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⚡</div>
-              <h3>24/7 Emergency Service</h3>
-              <p>Electrical and plumbing emergencies don't wait. We're available around the clock</p>
+              <h3 style={{color: '#00f0ff'}}>24/7 Emergency Service</h3>
+              <p style={{color: '#c9d1d9'}}>Electrical and plumbing emergencies don't wait. We're available around the clock</p>
             </div>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>💰</div>
-              <h3>Upfront Pricing</h3>
-              <p>No surprises. You'll know the cost before we start any work</p>
+              <h3 style={{color: '#00f0ff'}}>Upfront Pricing</h3>
+              <p style={{color: '#c9d1d9'}}>No surprises. You'll know the cost before we start any work</p>
             </div>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⭐</div>
-              <h3>5-Star Rated</h3>
-              <p>Consistently rated 5 stars by hundreds of satisfied customers across DFW</p>
+              <h3 style={{color: '#00f0ff'}}>5-Star Rated</h3>
+              <p style={{color: '#c9d1d9'}}>Consistently rated 5 stars by hundreds of satisfied customers across DFW</p>
             </div>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🛡️</div>
-              <h3>Warranty Backed</h3>
-              <p>All work is backed by our comprehensive warranty on parts and labor</p>
+              <h3 style={{color: '#00f0ff'}}>Warranty Backed</h3>
+              <p style={{color: '#c9d1d9'}}>All work is backed by our comprehensive warranty on parts and labor</p>
             </div>
             <div className="feature-card text-center">
               <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🎓</div>
-              <h3>Expert Technicians</h3>
-              <p>Ongoing training in the latest electrical, plumbing, and smart home technologies</p>
+              <h3 style={{color: '#00f0ff'}}>Expert Technicians</h3>
+              <p style={{color: '#c9d1d9'}}>Ongoing training in the latest electrical, plumbing, and smart home technologies</p>
             </div>
           </div>
         </div>
