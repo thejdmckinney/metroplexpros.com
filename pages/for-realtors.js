@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ForRealtors() {
   return (
@@ -171,49 +172,88 @@ export default function ForRealtors() {
       <section className="section service-packages">
         <div className="container">
           <h2 className="section-title">Popular Service Packages</h2>
-          <div className="packages-grid">
-            <div className="package-card">
-              <h3>Basic Refresh Package</h3>
-              <div className="package-price">Starting at competitive rates</div>
-              <div className="package-description">Perfect for properties in good condition that need minor updates</div>
-              <ul className="package-features">
-                <li>Interior paint touch-ups</li>
-                <li>Deep cleaning</li>
-                <li>Minor repairs</li>
-                <li>Fixture cleaning and polishing</li>
-                <li>Landscaping cleanup</li>
+          
+          {/* Package 1 - Basic Refresh */}
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center', marginBottom: '4rem', padding: '2rem', backgroundColor: '#161b22', borderRadius: '12px', border: '1px solid #30363d'}}>
+            <div>
+              <h3 style={{color: '#00f0ff', fontSize: '2rem', marginBottom: '1rem'}}>Basic Refresh Package</h3>
+              <div style={{color: '#8b949e', fontSize: '1.2rem', marginBottom: '1rem'}}>Starting at competitive rates</div>
+              <p style={{color: '#c9d1d9', marginBottom: '1.5rem', fontSize: '1.1rem'}}>Perfect for properties in good condition that need minor updates</p>
+              <ul style={{color: '#c9d1d9', lineHeight: '2', marginBottom: '2rem'}}>
+                <li>✓ Interior paint touch-ups</li>
+                <li>✓ Deep cleaning</li>
+                <li>✓ Minor repairs</li>
+                <li>✓ Fixture cleaning and polishing</li>
+                <li>✓ Landscaping cleanup</li>
               </ul>
-              <Link href="/contact" className="package-btn">Get Quote</Link>
+              <Link href="/contact" className="btn">Get Quote</Link>
             </div>
-            <div className="package-card featured">
-              <h3>Market Ready Package</h3>
-              <div className="package-price">Custom pricing available</div>
-              <div className="package-description">Comprehensive preparation for maximum market appeal</div>
-              <ul className="package-features">
-                <li>Complete interior painting</li>
-                <li>Flooring updates</li>
-                <li>Kitchen and bath improvements</li>
-                <li>Lighting and fixture upgrades</li>
-                <li>Curb appeal enhancements</li>
-                <li>All repairs and maintenance</li>
-              </ul>
-              <Link href="/contact" className="package-btn">Get Quote</Link>
-            </div>
-            <div className="package-card">
-              <h3>Rental Make Ready</h3>
-              <div className="package-price">Fast turnaround guaranteed</div>
-              <div className="package-description">Complete tenant turnover preparation</div>
-              <ul className="package-features">
-                <li>Full cleaning and sanitizing</li>
-                <li>Paint and touch-ups</li>
-                <li>Carpet cleaning/replacement</li>
-                <li>Appliance service</li>
-                <li>Safety inspections</li>
-                <li>Move-in ready certification</li>
-              </ul>
-              <Link href="/contact" className="package-btn">Get Quote</Link>
+            <div style={{position: 'relative', height: '400px', borderRadius: '8px', overflow: 'hidden'}}>
+              <Image 
+                src="/basic_refresh.png" 
+                alt="Basic Refresh Package - Minor updates and cleaning"
+                fill
+                style={{objectFit: 'cover'}}
+                loading="lazy"
+              />
             </div>
           </div>
+
+          {/* Package 2 - Market Ready (Featured - Image on Left) */}
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center', marginBottom: '4rem', padding: '2rem', backgroundColor: '#161b22', borderRadius: '12px', border: '2px solid #00f0ff', boxShadow: '0 0 20px rgba(0,240,255,0.3)'}}>
+            <div style={{position: 'relative', height: '400px', borderRadius: '8px', overflow: 'hidden'}}>
+              <Image 
+                src="/market_ready.png" 
+                alt="Market Ready Package - Comprehensive property preparation"
+                fill
+                style={{objectFit: 'cover'}}
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <div style={{display: 'inline-block', backgroundColor: '#00f0ff', color: '#0d1117', padding: '0.3rem 1rem', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '1rem'}}>MOST POPULAR</div>
+              <h3 style={{color: '#00f0ff', fontSize: '2rem', marginBottom: '1rem'}}>Market Ready Package</h3>
+              <div style={{color: '#8b949e', fontSize: '1.2rem', marginBottom: '1rem'}}>Custom pricing available</div>
+              <p style={{color: '#c9d1d9', marginBottom: '1.5rem', fontSize: '1.1rem'}}>Comprehensive preparation for maximum market appeal</p>
+              <ul style={{color: '#c9d1d9', lineHeight: '2', marginBottom: '2rem'}}>
+                <li>✓ Complete interior painting</li>
+                <li>✓ Flooring updates</li>
+                <li>✓ Kitchen and bath improvements</li>
+                <li>✓ Lighting and fixture upgrades</li>
+                <li>✓ Curb appeal enhancements</li>
+                <li>✓ All repairs and maintenance</li>
+              </ul>
+              <Link href="/contact" className="btn">Get Quote</Link>
+            </div>
+          </div>
+
+          {/* Package 3 - Rental Make Ready */}
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center', padding: '2rem', backgroundColor: '#161b22', borderRadius: '12px', border: '1px solid #30363d'}}>
+            <div>
+              <h3 style={{color: '#00f0ff', fontSize: '2rem', marginBottom: '1rem'}}>Rental Make Ready</h3>
+              <div style={{color: '#8b949e', fontSize: '1.2rem', marginBottom: '1rem'}}>Fast turnaround guaranteed</div>
+              <p style={{color: '#c9d1d9', marginBottom: '1.5rem', fontSize: '1.1rem'}}>Complete tenant turnover preparation</p>
+              <ul style={{color: '#c9d1d9', lineHeight: '2', marginBottom: '2rem'}}>
+                <li>✓ Full cleaning and sanitizing</li>
+                <li>✓ Paint and touch-ups</li>
+                <li>✓ Carpet cleaning/replacement</li>
+                <li>✓ Appliance service</li>
+                <li>✓ Safety inspections</li>
+                <li>✓ Move-in ready certification</li>
+              </ul>
+              <Link href="/contact" className="btn">Get Quote</Link>
+            </div>
+            <div style={{position: 'relative', height: '400px', borderRadius: '8px', overflow: 'hidden'}}>
+              <Image 
+                src="/rmr.png" 
+                alt="Rental Make Ready Package - Tenant turnover services"
+                fill
+                style={{objectFit: 'cover'}}
+                loading="lazy"
+              />
+            </div>
+          </div>
+
         </div>
       </section>
 
