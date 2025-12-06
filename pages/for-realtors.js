@@ -192,8 +192,9 @@ export default function ForRealtors() {
               <Image 
                 src="/basic_refrest.png" 
                 alt="Basic Refresh Package - Minor updates and cleaning"
-                fill
-                style={{objectFit: 'cover'}}
+                width={600}
+                height={400}
+                style={{width: '100%', height: '100%', objectFit: 'cover'}}
                 loading="lazy"
               />
             </div>
@@ -205,8 +206,9 @@ export default function ForRealtors() {
               <Image 
                 src="/market_ready.png" 
                 alt="Market Ready Package - Comprehensive property preparation"
-                fill
-                style={{objectFit: 'cover'}}
+                width={600}
+                height={400}
+                style={{width: '100%', height: '100%', objectFit: 'cover'}}
                 loading="lazy"
               />
             </div>
@@ -247,8 +249,9 @@ export default function ForRealtors() {
               <Image 
                 src="/rmr.png" 
                 alt="Rental Make Ready Package - Tenant turnover services"
-                fill
-                style={{objectFit: 'cover'}}
+                width={600}
+                height={400}
+                style={{width: '100%', height: '100%', objectFit: 'cover'}}
                 loading="lazy"
               />
             </div>
