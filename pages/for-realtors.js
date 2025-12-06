@@ -190,7 +190,7 @@ export default function ForRealtors() {
             </div>
             <div style={{position: 'relative', height: '400px', borderRadius: '8px', overflow: 'hidden'}}>
               <Image 
-                src="/basic_refresh.png" 
+                src="/basic_refrest.png" 
                 alt="Basic Refresh Package - Minor updates and cleaning"
                 fill
                 style={{objectFit: 'cover'}}
