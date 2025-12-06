@@ -170,15 +170,15 @@ export default function Contact() {
       </section>
 
       {/* Service Areas Highlight */}
-      <section style={{padding: '3rem 0', backgroundColor: 'white'}}>
+      <section style={{padding: '3rem 0', backgroundColor: '#0d1117'}}>
         <div className="container" style={{textAlign: 'center'}}>
-          <h2 style={{marginBottom: '1rem'}}>Serving Dallas-Fort Worth Metroplex</h2>
-          <p style={{fontSize: '1.1rem', color: '#666', marginBottom: '1.5rem'}}>
-            Professional home improvement contractors serving 30+ cities across DFW
+          <h2 style={{marginBottom: '1rem', color: '#ffffff'}}>Serving Dallas-Fort Worth Metroplex</h2>
+          <p style={{fontSize: '1.1rem', color: '#8b949e', marginBottom: '1.5rem'}}>
+            Professional electrical, plumbing, and smart home services across 30+ DFW cities
           </p>
           <div style={{display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', maxWidth: '800px', margin: '0 auto'}}>
             {['Dallas', 'Plano', 'Frisco', 'McKinney', 'Allen', 'Richardson', 'Garland', 'Irving', 'Carrollton', 'Lewisville', 'Denton', 'Arlington'].map(city => (
-              <span key={city} style={{padding: '0.5rem 1rem', backgroundColor: '#f8f9fa', borderRadius: '20px', fontSize: '0.95rem', border: '1px solid #e0e0e0'}}>
+              <span key={city} style={{padding: '0.5rem 1rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '20px', fontSize: '0.95rem', color: '#c9d1d9'}}>
                 📍 {city}
               </span>
             ))}
