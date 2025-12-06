@@ -99,15 +99,15 @@ export default function ServiceAreas() {
         <div className="container">
           <div className="hero-content text-center">
             <h1 className="hero-title">
-              <span className="text-accent">Dallas-Fort Worth</span> Home Improvement Contractors
+              <span className="text-accent">Dallas-Fort Worth</span> Electrical & Plumbing Services
             </h1>
             <p className="hero-subtitle text-tagline">
-              Expert Kitchen & Bathroom Remodeling Across 30+ DFW Cities
+              Licensed Electricians & Plumbers Serving 30+ DFW Cities
             </p>
             <p className="hero-description">
               Metroplex Pros proudly serves homeowners in Dallas, Plano, Frisco, McKinney, Allen, Richardson, and all surrounding DFW communities with 
-              professional home improvement services. Licensed contractors with 15+ years of experience bringing quality craftsmanship to your neighborhood. 
-              <strong> Call (682) 466-2130 for FREE estimates!</strong>
+              professional electrical, plumbing, and smart home installation services. Licensed professionals with 15+ years of experience bringing quality workmanship to your neighborhood. 
+              <strong> Call (682) 466-2130 for FREE estimates or 24/7 emergency service!</strong>
             </p>
             <div style={{marginTop: '2rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap'}}>
               <div style={{textAlign: 'center'}}>
@@ -136,32 +136,32 @@ export default function ServiceAreas() {
         <div className="container">
           <h2 style={{textAlign: 'center', marginBottom: '1rem'}}>Popular Services by City</h2>
           <p style={{textAlign: 'center', color: '#666', marginBottom: '3rem'}}>
-            Our most requested home improvement services across the Dallas-Fort Worth metroplex
+            Our most requested electrical, plumbing, and smart home services across the Dallas-Fort Worth metroplex
           </p>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem'}}>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Dallas Kitchen Remodeling</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Transform your Dallas kitchen with custom cabinets, granite countertops, and modern appliances. Full-service remodeling from design to completion.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Dallas Electrical Services</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Licensed Dallas electricians for panel upgrades, outlet installation, lighting, EV charger installation, and 24/7 emergency electrical repairs.</p>
             </div>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Plano Bathroom Renovation</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Luxury bathroom remodels in Plano featuring tile showers, custom vanities, and spa-like features. Licensed plumbers & electricians on staff.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Plano Plumbing Repairs</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Expert Plano plumbers for leak repairs, drain cleaning, water heater installation, fixture upgrades, and emergency plumbing services.</p>
             </div>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Frisco Home Renovations</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Complete home renovations in Frisco including flooring, painting, electrical, and smart home installations. Modern upgrades for growing families.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Frisco Smart Home Installations</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Complete smart home automation in Frisco including smart thermostats, lighting systems, video doorbells, and whole-home integration.</p>
             </div>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>McKinney Contractors</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Trusted McKinney contractors for kitchen, bathroom, and whole-home remodels. A+ BBB rated with 100% customer satisfaction guarantee.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>McKinney Electricians</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Trusted McKinney electricians for residential electrical work, ceiling fans, recessed lighting, generators, and code compliance inspections.</p>
             </div>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Allen Home Improvements</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Expert home improvement services in Allen TX. Specializing in kitchen updates, bathroom remodels, and emergency repair services.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Allen Plumbing Services</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Expert Allen plumbers specializing in water heater repairs, sewer line cleaning, fixture installation, and 24/7 emergency plumbing.</p>
             </div>
             <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Richardson Remodeling</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Professional remodeling contractors serving Richardson with kitchen renovations, bathroom updates, and custom home improvements.</p>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Richardson EV Charger Installation</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Professional EV charger installation in Richardson for Tesla, Chevy, Ford & all electric vehicles. Level 1 & 2 charging stations.</p>
             </div>
           </div>
         </div>

@@ -247,15 +247,14 @@ export default function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select a service</option>
-                      <option value="kitchen">Kitchen Remodeling</option>
-                      <option value="bathroom">Bathroom Renovation</option>
-                      <option value="painting">Painting Services</option>
-                      <option value="flooring">Flooring Installation</option>
                       <option value="electrical">Electrical Services</option>
                       <option value="plumbing">Plumbing Services</option>
-                      <option value="hvac">HVAC Services</option>
-                      <option value="roofing">Roofing Services</option>
-                      <option value="other">Other/Multiple Services</option>
+                      <option value="smart-home">Smart Home Installation</option>
+                      <option value="ev-charger">EV Charger Installation</option>
+                      <option value="electrical-repair">Electrical Repair/Troubleshooting</option>
+                      <option value="plumbing-repair">Plumbing Repair/Emergency</option>
+                      <option value="water-heater">Water Heater Service</option>
+                      <option value="other">Other Service</option>
                     </select>
                   </div>
                 </div>
@@ -269,11 +268,12 @@ export default function Contact() {
                     onChange={handleChange}
                   >
                     <option value="">Select budget range</option>
+                    <option value="under-500">Under $500</option>
+                    <option value="500-1k">$500 - $1,000</option>
+                    <option value="1k-2.5k">$1,000 - $2,500</option>
+                    <option value="2.5k-5k">$2,500 - $5,000</option>
                     <option value="5k-10k">$5,000 - $10,000</option>
-                    <option value="10k-25k">$10,000 - $25,000</option>
-                    <option value="25k-50k">$25,000 - $50,000</option>
-                    <option value="50k-100k">$50,000 - $100,000</option>
-                    <option value="100k+">$100,000+</option>
+                    <option value="10k+">$10,000+</option>
                   </select>
                 </div>
 

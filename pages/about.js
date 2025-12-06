@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function About() {
   return (
     <Layout 
-      title="About Us - Licensed Dallas Contractors Since 2010 | Metroplex Pros"
-      description="⭐ Trusted by 500+ DFW homeowners! Licensed & insured contractors with 15+ years experience in kitchen remodels, bathroom renovations & home improvements. A+ BBB rated. Call (682) 466-2130!"
-      keywords="Dallas contractors about, Metroplex Pros history, licensed Dallas contractors, DFW home improvement company, experienced contractors Texas, BBB rated contractors Dallas"
+      title="About Us - Licensed Dallas Electricians & Plumbers | Metroplex Pros"
+      description="⭐ Trusted by 500+ DFW homeowners! Licensed electricians & plumbers with 15+ years experience in electrical repairs, plumbing services & smart home installations. 24/7 emergency service. Call (682) 466-2130!"
+      keywords="Dallas electrician about, Dallas plumber about, licensed electrician Dallas, licensed plumber DFW, smart home installer Dallas, electrical contractor Dallas, plumbing contractor Dallas"
       canonicalUrl="https://metroplexpros.com/about"
     >
       {/* Hero Section */}
@@ -17,11 +17,11 @@ export default function About() {
               About <span className="text-accent">Metroplex Pros</span>
             </h1>
             <p className="hero-subtitle text-tagline">
-              Your Trusted Home Improvement Partners in Dallas
+              Your Trusted Electrical & Plumbing Experts in Dallas
             </p>
             <p className="hero-description">
-              For over 15 years, we've been transforming homes throughout the Dallas-Fort Worth metroplex 
-              with quality craftsmanship, innovative solutions, and unwavering commitment to excellence.
+              For over 15 years, we've been providing expert electrical services, plumbing solutions, and smart home installations throughout the Dallas-Fort Worth metroplex 
+              with quality workmanship, innovative technology, and unwavering commitment to excellence.
             </p>
           </div>
         </div>
@@ -34,22 +34,23 @@ export default function About() {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p>
-                Construction and craftsmanship run deep in my family. I learned the trade from my father and 
+                Electrical and plumbing expertise run deep in my family. I learned the trades from my father and 
                 grandfather, who instilled in me the values of hard work, attention to detail, and taking pride 
                 in every project. With over 20 years of experience in the industry, I honed my skills working 
-                at my father's construction company in Indianapolis, Indiana.
+                at my father's construction company in Indianapolis, Indiana, specializing in electrical systems 
+                and plumbing installations.
               </p>
               <p>
                 After years of experience in Indianapolis, I made the decision to bring my expertise and 
-                family's construction legacy to Texas. I founded Metroplex Pros to serve the Dallas-Fort Worth 
-                area with the same commitment to quality and integrity that was passed down through generations 
-                of my family.
+                family's legacy to Texas. I founded Metroplex Pros to serve the Dallas-Fort Worth 
+                area with licensed electrical and plumbing services, backed by the same commitment to quality 
+                and integrity that was passed down through generations of my family.
               </p>
               <p>
-                Every project we take on reflects not just my 20+ years of professional experience, but also 
-                the generations of craftsmanship knowledge that shaped my approach to home improvement. We believe 
-                your home deserves the same level of care and attention that has been the hallmark of my family's 
-                work for decades.
+                Every electrical panel we upgrade, every plumbing repair we complete, and every smart home system 
+                we install reflects not just my 20+ years of professional experience, but also the generations of 
+                technical knowledge that shaped my approach to home services. We believe your home deserves the 
+                same level of care and precision that has been the hallmark of my family's work for decades.
               </p>
             </div>
             <div className="story-image">
@@ -86,8 +87,8 @@ export default function About() {
               <div className="value-icon">💡</div>
               <h3>Innovation</h3>
               <p>
-                We stay current with the latest techniques, materials, and technologies to provide you 
-                with cutting-edge solutions for your home.
+                We stay current with the latest electrical codes, plumbing techniques, and smart home technologies 
+                to provide you with cutting-edge solutions for your home.
               </p>
             </div>
             <div className="value-card">
@@ -112,13 +113,14 @@ export default function About() {
                 <img src="/logo.svg" alt="Metroplex Pros" className="founder-logo" />
               </div>
               <h3>Jeremy McKinney</h3>
-              <p className="member-title text-accent">Founder & Lead Contractor</p>
+              <p className="member-title text-accent">Founder & Licensed Professional</p>
               <p>
-                With over 20 years of experience in construction and home improvement, Jeremy founded Metroplex Pros 
-                to bring exceptional quality and craftsmanship to Dallas-Fort Worth area homeowners. His extensive 
-                background in residential construction, combined with a passion for transforming homes, ensures every 
-                project meets the highest standards of excellence. Jeremy personally oversees each project to guarantee 
-                customer satisfaction and superior results.
+                With over 20 years of experience in electrical and plumbing services, Jeremy founded Metroplex Pros 
+                to bring exceptional quality and expertise to Dallas-Fort Worth area homeowners. His extensive 
+                background in residential electrical systems, plumbing installations, and smart home technology, 
+                combined with a passion for modernizing homes, ensures every project meets the highest standards 
+                of safety and excellence. Jeremy personally oversees each project to guarantee customer satisfaction 
+                and superior results.
               </p>
             </div>
           </div>
@@ -146,9 +148,9 @@ export default function About() {
       <section className="section cta">
         <div className="container">
           <div className="cta-content text-center">
-            <h2>Ready to Work with Dallas's Best?</h2>
+            <h2>Ready to Work with Dallas's Best Electricians & Plumbers?</h2>
             <p className="text-muted mb-4">
-              Experience the Metroplex Pros difference. Contact us today to discuss your next home improvement project.
+              Experience the Metroplex Pros difference. Contact us today to discuss your electrical, plumbing, or smart home project.
             </p>
             <div className="cta-buttons">
               <Link href="/contact" className="btn">
