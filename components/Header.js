@@ -8,6 +8,7 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Shop', href: '/shop' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Service Areas', href: '/service-areas' },
     { name: 'For Realtors', href: '/for-realtors' },
