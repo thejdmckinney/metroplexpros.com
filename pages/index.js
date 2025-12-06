@@ -207,40 +207,40 @@ export default function Home() {
       </section>
 
       {/* FAQ Section with Schema */}
-      <section className="section faq-section" style={{backgroundColor: '#f8f9fa'}}>
+      <section className="section faq-section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">
           <h2 className="section-title text-center">Frequently Asked Questions</h2>
           <p className="text-center text-muted mb-5">Common questions about our Dallas electrical, plumbing, and smart home services</p>
           
           <div className="faq-grid" style={{maxWidth: '900px', margin: '0 auto'}}>
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>Are your electricians and plumbers licensed in Texas?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Yes! All our electricians and plumbers are fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>Are your electricians and plumbers licensed in Texas?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! All our electricians and plumbers are fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>Do you offer 24/7 emergency electrical and plumbing services?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Absolutely! We provide 24/7 emergency services for urgent issues like electrical outages, circuit breaker problems, plumbing leaks, burst pipes, and clogged drains. Call (682) 466-2130 anytime for immediate assistance. Our emergency response team is available nights, weekends, and holidays.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>Do you offer 24/7 emergency electrical and plumbing services?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Absolutely! We provide 24/7 emergency services for urgent issues like electrical outages, circuit breaker problems, plumbing leaks, burst pipes, and clogged drains. Call (682) 466-2130 anytime for immediate assistance. Our emergency response team is available nights, weekends, and holidays.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>What smart home systems do you install?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>We install all major smart home brands including Nest and Ecobee thermostats, Philips Hue and Lutron lighting, Ring and Nest video doorbells, smart locks, security cameras, and whole-home automation hubs like Amazon Alexa and Google Home. We'll help you design a system that fits your needs and budget.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>What smart home systems do you install?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>We install all major smart home brands including Nest and Ecobee thermostats, Philips Hue and Lutron lighting, Ring and Nest video doorbells, smart locks, security cameras, and whole-home automation hubs like Amazon Alexa and Google Home. We'll help you design a system that fits your needs and budget.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>How much does it cost to install an EV charger at my home?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>EV charger installation typically ranges from $800-$2,500 depending on your electrical panel capacity, distance from the panel, and charger type (Level 1 or Level 2). We offer free in-home assessments to provide accurate quotes and can help you take advantage of available rebates and tax credits.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>How much does it cost to install an EV charger at my home?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>EV charger installation typically ranges from $800-$2,500 depending on your electrical panel capacity, distance from the panel, and charger type (Level 1 or Level 2). We offer free in-home assessments to provide accurate quotes and can help you take advantage of available rebates and tax credits.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>What areas do you serve in the Dallas-Fort Worth metroplex?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>We serve Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, Carrollton, and all surrounding DFW areas. We offer free estimates for all electrical, plumbing, and smart home services with same-day availability for emergency repairs.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>What areas do you serve in the Dallas-Fort Worth metroplex?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>We serve Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, Carrollton, and all surrounding DFW areas. We offer free estimates for all electrical, plumbing, and smart home services with same-day availability for emergency repairs.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>Do you offer financing for larger electrical or plumbing projects?</h3>
-              <p style={{color: '#666', lineHeight: '1.6'}}>Yes! We offer flexible financing options with approved credit, including 0% interest plans for 12-18 months on qualifying projects. We also accept all major credit cards and can work with your home equity line of credit. Payment plans can be customized to fit your budget.</p>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>Do you offer financing for larger electrical or plumbing projects?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! We offer flexible financing options with approved credit, including 0% interest plans for 12-18 months on qualifying projects. We also accept all major credit cards and can work with your home equity line of credit. Payment plans can be customized to fit your budget.</p>
             </div>
           </div>
         </div>
