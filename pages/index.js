@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <Layout 
-      title="Metroplex Pros - Dallas Home Improvement Contractors | Kitchen & Bathroom Remodeling"
-      description="Top-rated Dallas home improvement contractors specializing in kitchen remodeling, bathroom renovation, flooring, painting, electrical, plumbing & HVAC services. Serving Dallas, Plano, Frisco & DFW. Free estimates!"
+      title="Dallas Home Improvement Contractors | Kitchen & Bath Remodel | Metroplex Pros"
+      description="⭐ Top-Rated Dallas Contractors! Kitchen remodels from $15K, bathroom renovations, flooring, electrical & plumbing. Licensed, insured, 5-year warranty. FREE estimates! Call (682) 466-2130 today!"
       keywords="Dallas home improvement, Dallas contractors, kitchen remodeling Dallas, bathroom renovation Plano, Frisco contractors, DFW home renovation, electrical services Dallas, plumbing contractors Texas, HVAC Dallas, licensed contractors Texas"
       canonicalUrl="https://metroplexpros.com"
     >
@@ -163,6 +163,107 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section with Schema */}
+      <section className="section faq-section" style={{backgroundColor: '#f8f9fa'}}>
+        <div className="container">
+          <h2 className="section-title text-center">Frequently Asked Questions</h2>
+          <p className="text-center text-muted mb-5">Common questions about our Dallas home improvement services</p>
+          
+          <div className="faq-grid" style={{maxWidth: '900px', margin: '0 auto'}}>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>What areas do you serve in the Dallas-Fort Worth metroplex?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>We serve Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, and surrounding DFW areas. We offer free in-home estimates throughout the entire metroplex with same-day availability for emergency services.</p>
+            </div>
+            
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>How much does a kitchen remodel cost in Dallas?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Kitchen remodels in Dallas typically range from $15,000 for basic updates to $75,000+ for high-end renovations. We offer free detailed estimates and flexible financing options including 0% financing for qualified homeowners. Final costs depend on materials, size, and scope of work.</p>
+            </div>
+            
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>Are you licensed and insured contractors?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Yes! Metroplex Pros is fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. All our work comes with a 5-year craftsmanship warranty and we're A+ rated with the BBB.</p>
+            </div>
+            
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>How long does a typical bathroom renovation take?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Most bathroom renovations take 2-3 weeks from start to finish. Simple updates can be completed in 5-7 days, while luxury master bath remodels may take 4-6 weeks. We provide detailed project timelines during your free consultation and keep you informed throughout the entire process.</p>
+            </div>
+            
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>Do you offer emergency home repair services?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Yes! We provide 24/7 emergency services for urgent issues like plumbing leaks, electrical problems, HVAC failures, and storm damage. Call (682) 466-2130 anytime for immediate assistance. Our emergency response team is available nights, weekends, and holidays.</p>
+            </div>
+            
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#1a1a1a'}}>What financing options are available?</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>We offer flexible financing with approved credit, including 0% interest plans for 12-18 months. We also accept all major credit cards, personal checks, and can work with your home equity line of credit. Payment plans can be customized to fit your budget.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What areas do you serve in the Dallas-Fort Worth metroplex?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, and surrounding DFW areas. We offer free in-home estimates throughout the entire metroplex with same-day availability for emergency services."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does a kitchen remodel cost in Dallas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kitchen remodels in Dallas typically range from $15,000 for basic updates to $75,000+ for high-end renovations. We offer free detailed estimates and flexible financing options including 0% financing for qualified homeowners."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you licensed and insured contractors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Metroplex Pros is fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. All our work comes with a 5-year craftsmanship warranty and we're A+ rated with the BBB."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a typical bathroom renovation take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most bathroom renovations take 2-3 weeks from start to finish. Simple updates can be completed in 5-7 days, while luxury master bath remodels may take 4-6 weeks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer emergency home repair services?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! We provide 24/7 emergency services for urgent issues like plumbing leaks, electrical problems, HVAC failures, and storm damage. Call (682) 466-2130 anytime for immediate assistance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What financing options are available?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer flexible financing with approved credit, including 0% interest plans for 12-18 months. We also accept all major credit cards, personal checks, and can work with your home equity line of credit."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* Call to Action */}
       <section className="section cta">

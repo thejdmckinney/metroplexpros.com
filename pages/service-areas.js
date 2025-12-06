@@ -44,26 +44,125 @@ export default function ServiceAreas() {
 
   return (
     <Layout 
-      title="Service Areas - Dallas DFW Home Improvement Contractors | Metroplex Pros"
-      description="Metroplex Pros serves Dallas, Plano, Frisco, McKinney, Allen, Richardson & all DFW cities. Licensed home improvement contractors for kitchen remodeling, bathroom renovation & more."
-      keywords="Dallas contractors service area, DFW home improvement, Plano contractors, Frisco renovation, McKinney remodeling, Allen contractors, Richardson home improvement"
+      title="Service Areas: Dallas, Plano, Frisco, McKinney | Licensed DFW Contractors"
+      description="⭐ Serving 30+ DFW Cities! Expert kitchen & bathroom remodeling in Dallas, Plano, Frisco, McKinney, Allen, Richardson. Same-day estimates. Licensed & insured. Call (682) 466-2130!"
+      keywords="Dallas contractors, Plano home remodeling, Frisco contractors, McKinney renovation, Allen contractors, Richardson home improvement, DFW contractors, North Dallas contractors"
       canonicalUrl="https://metroplexpros.com/service-areas"
     >
+      {/* Service Areas Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Home Improvement & Remodeling Services",
+            "provider": {
+              "@type": "HomeImprovementBusiness",
+              "name": "Metroplex Pros",
+              "telephone": "(682) 466-2130",
+              "priceRange": "$$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "127"
+              }
+            },
+            "areaServed": [
+              {"@type": "City", "name": "Dallas", "sameAs": "https://en.wikipedia.org/wiki/Dallas"},
+              {"@type": "City", "name": "Plano", "sameAs": "https://en.wikipedia.org/wiki/Plano,_Texas"},
+              {"@type": "City", "name": "Frisco", "sameAs": "https://en.wikipedia.org/wiki/Frisco,_Texas"},
+              {"@type": "City", "name": "McKinney", "sameAs": "https://en.wikipedia.org/wiki/McKinney,_Texas"},
+              {"@type": "City", "name": "Allen", "sameAs": "https://en.wikipedia.org/wiki/Allen,_Texas"},
+              {"@type": "City", "name": "Richardson", "sameAs": "https://en.wikipedia.org/wiki/Richardson,_Texas"},
+              {"@type": "City", "name": "Garland", "sameAs": "https://en.wikipedia.org/wiki/Garland,_Texas"},
+              {"@type": "City", "name": "Irving", "sameAs": "https://en.wikipedia.org/wiki/Irving,_Texas"}
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Home Improvement Services",
+              "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kitchen Remodeling"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bathroom Renovation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Flooring Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Services"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plumbing Services"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HVAC Services"}}
+              ]
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
           <div className="hero-content text-center">
             <h1 className="hero-title">
-              <span className="text-accent">Dallas-Fort Worth</span> Service Areas
+              <span className="text-accent">Dallas-Fort Worth</span> Home Improvement Contractors
             </h1>
             <p className="hero-subtitle text-tagline">
-              Professional Home Improvement Throughout the Metroplex
+              Expert Kitchen & Bathroom Remodeling Across 30+ DFW Cities
             </p>
             <p className="hero-description">
-              Metroplex Pros proudly serves homeowners across the Dallas-Fort Worth metroplex with 
-              quality home improvement services. From downtown Dallas to suburban Plano, we bring 
-              exceptional craftsmanship to your neighborhood.
+              Metroplex Pros proudly serves homeowners in Dallas, Plano, Frisco, McKinney, Allen, Richardson, and all surrounding DFW communities with 
+              professional home improvement services. Licensed contractors with 15+ years of experience bringing quality craftsmanship to your neighborhood. 
+              <strong> Call (682) 466-2130 for FREE estimates!</strong>
             </p>
+            <div style={{marginTop: '2rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>500+</div>
+                <div>Happy Customers</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>30+</div>
+                <div>Cities Served</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>15+</div>
+                <div>Years Experience</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>⭐ 5.0</div>
+                <div>Average Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Services by City */}
+      <section style={{padding: '3rem 0', backgroundColor: '#f8f9fa'}}>
+        <div className="container">
+          <h2 style={{textAlign: 'center', marginBottom: '1rem'}}>Popular Services by City</h2>
+          <p style={{textAlign: 'center', color: '#666', marginBottom: '3rem'}}>
+            Our most requested home improvement services across the Dallas-Fort Worth metroplex
+          </p>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem'}}>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Dallas Kitchen Remodeling</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Transform your Dallas kitchen with custom cabinets, granite countertops, and modern appliances. Full-service remodeling from design to completion.</p>
+            </div>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Plano Bathroom Renovation</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Luxury bathroom remodels in Plano featuring tile showers, custom vanities, and spa-like features. Licensed plumbers & electricians on staff.</p>
+            </div>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Frisco Home Renovations</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Complete home renovations in Frisco including flooring, painting, electrical, and smart home installations. Modern upgrades for growing families.</p>
+            </div>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>McKinney Contractors</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Trusted McKinney contractors for kitchen, bathroom, and whole-home remodels. A+ BBB rated with 100% customer satisfaction guarantee.</p>
+            </div>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Allen Home Improvements</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Expert home improvement services in Allen TX. Specializing in kitchen updates, bathroom remodels, and emergency repair services.</p>
+            </div>
+            <div style={{padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <h3 style={{color: '#ff6b35', marginBottom: '1rem'}}>Richardson Remodeling</h3>
+              <p style={{color: '#666', lineHeight: '1.6'}}>Professional remodeling contractors serving Richardson with kitchen renovations, bathroom updates, and custom home improvements.</p>
+            </div>
           </div>
         </div>
       </section>

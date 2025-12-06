@@ -55,11 +55,64 @@ export default function Contact() {
 
   return (
     <Layout 
-      title="Contact Metroplex Pros - Dallas Home Improvement Contractors | Free Estimates"
-      description="Contact Metroplex Pros for your Dallas home improvement project. Free estimates, 24/7 emergency service. Call (682) 466-2130 or request quote online today!"
-      keywords="contact Dallas contractors, home improvement estimates Dallas, Dallas renovation quotes, Metroplex Pros contact, DFW contractors phone number"
+      title="Get FREE Quote - Dallas Home Improvement | Call (682) 466-2130"
+      description="✓ FREE In-Home Estimates ✓ Same-Day Response ✓ Licensed & Insured ✓ 0% Financing Available. Expert kitchen, bathroom & home remodeling in Dallas. 24/7 emergency service. Book now!"
+      keywords="contact Dallas contractors, home improvement estimates Dallas, Dallas renovation quotes, free estimates Dallas, emergency home repair Dallas, licensed contractors DFW"
       canonicalUrl="https://metroplexpros.com/contact"
     >
+      {/* ContactPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Metroplex Pros - Dallas Home Improvement Contractors",
+            "url": "https://metroplexpros.com/contact",
+            "mainEntity": {
+              "@type": "HomeImprovementBusiness",
+              "name": "Metroplex Pros",
+              "telephone": "(682) 466-2130",
+              "email": "info@metroplexpros.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dallas",
+                "addressRegion": "TX",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "08:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "09:00",
+                  "closes": "16:00"
+                }
+              ],
+              "areaServed": [
+                {"@type": "City", "name": "Dallas, TX"},
+                {"@type": "City", "name": "Plano, TX"},
+                {"@type": "City", "name": "Frisco, TX"},
+                {"@type": "City", "name": "McKinney, TX"},
+                {"@type": "City", "name": "Allen, TX"},
+                {"@type": "City", "name": "Richardson, TX"}
+              ],
+              "priceRange": "$$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "127"
+              }
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
@@ -68,12 +121,67 @@ export default function Contact() {
               Contact <span className="text-accent">Metroplex Pros</span>
             </h1>
             <p className="hero-subtitle text-tagline">
-              Ready to Transform Your Home?
+              Dallas's Most Trusted Home Improvement Contractors - FREE Estimates!
             </p>
             <p className="hero-description">
-              Get in touch with Dallas's premier home improvement specialists. We're here to bring your vision to life 
-              with quality craftsmanship and exceptional service.
+              Looking for reliable contractors in Dallas, Plano, Frisco, or surrounding DFW areas? 
+              Get your free, no-obligation estimate today! Licensed, insured, and A+ BBB rated with over 500 satisfied customers.
             </p>
+            <div className="hero-contact-highlights" style={{display: 'flex', gap: '2rem', justifyContent: 'center', marginTop: '2rem', flexWrap: 'wrap'}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem'}}>⚡</div>
+                <strong>Same-Day Response</strong>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem'}}>✓</div>
+                <strong>Licensed & Insured</strong>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem'}}>⭐</div>
+                <strong>5.0 Star Rating</strong>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem'}}>🔧</div>
+                <strong>24/7 Emergency Service</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Contact Info Banner */}
+      <section style={{backgroundColor: '#f8f9fa', padding: '2rem 0', borderTop: '3px solid #ff6b35', borderBottom: '3px solid #ff6b35'}}>
+        <div className="container">
+          <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap', gap: '2rem', textAlign: 'center'}}>
+            <div>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>📞 Call or Text</strong>
+              <a href="tel:682-466-2130" style={{fontSize: '1.5rem', color: '#ff6b35', fontWeight: 'bold', textDecoration: 'none'}}>(682) 466-2130</a>
+            </div>
+            <div>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>📧 Email Us</strong>
+              <a href="mailto:info@metroplexpros.com" style={{color: '#ff6b35', textDecoration: 'none'}}>info@metroplexpros.com</a>
+            </div>
+            <div>
+              <strong style={{display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem'}}>⏰ Business Hours</strong>
+              <span>Mon-Fri: 8am-6pm | Sat: 9am-4pm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Highlight */}
+      <section style={{padding: '3rem 0', backgroundColor: 'white'}}>
+        <div className="container" style={{textAlign: 'center'}}>
+          <h2 style={{marginBottom: '1rem'}}>Serving Dallas-Fort Worth Metroplex</h2>
+          <p style={{fontSize: '1.1rem', color: '#666', marginBottom: '1.5rem'}}>
+            Professional home improvement contractors serving 30+ cities across DFW
+          </p>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', maxWidth: '800px', margin: '0 auto'}}>
+            {['Dallas', 'Plano', 'Frisco', 'McKinney', 'Allen', 'Richardson', 'Garland', 'Irving', 'Carrollton', 'Lewisville', 'Denton', 'Arlington'].map(city => (
+              <span key={city} style={{padding: '0.5rem 1rem', backgroundColor: '#f8f9fa', borderRadius: '20px', fontSize: '0.95rem', border: '1px solid #e0e0e0'}}>
+                📍 {city}
+              </span>
+            ))}
           </div>
         </div>
       </section>

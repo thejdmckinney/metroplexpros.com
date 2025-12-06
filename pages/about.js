@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function About() {
   return (
     <Layout 
-      title="About Metroplex Pros - Dallas Home Improvement Contractors Since 2010"
-      description="Learn about Metroplex Pros, Dallas's trusted home improvement contractors since 2010. Licensed, insured, and committed to quality craftsmanship in DFW. Meet our experienced team."
-      keywords="Dallas contractors about, Metroplex Pros history, licensed Dallas contractors, DFW home improvement company, experienced contractors Texas"
+      title="About Us - Licensed Dallas Contractors Since 2010 | Metroplex Pros"
+      description="⭐ Trusted by 500+ DFW homeowners! Licensed & insured contractors with 15+ years experience in kitchen remodels, bathroom renovations & home improvements. A+ BBB rated. Call (682) 466-2130!"
+      keywords="Dallas contractors about, Metroplex Pros history, licensed Dallas contractors, DFW home improvement company, experienced contractors Texas, BBB rated contractors Dallas"
       canonicalUrl="https://metroplexpros.com/about"
     >
       {/* Hero Section */}
