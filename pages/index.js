@@ -59,13 +59,13 @@ export default function Home() {
               <Link href="/services" className="btn-link">Learn More →</Link>
             </div>
             <div className="card">
-              <div className="service-icon">�</div>
+              <div className="service-icon">🔧</div>
               <h3>Plumbing Services</h3>
               <p>Expert plumbers for leak repairs, drain cleaning, water heater installation, fixture replacement, pipe repairs, and emergency plumbing available 24/7.</p>
               <Link href="/services" className="btn-link">Learn More →</Link>
             </div>
             <div className="card">
-              <div className="service-icon">�</div>
+              <div className="service-icon">🏠</div>
               <h3>Smart Home Installations</h3>
               <p>Transform your home with smart thermostats, automated lighting, security systems, door locks, cameras, voice control, and whole-home automation.</p>
               <Link href="/services/smart-home-installations" className="btn-link">Learn More →</Link>
