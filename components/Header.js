@@ -4,11 +4,22 @@ import { useState } from 'react'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLocationsOpen, setIsLocationsOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
+    { 
+      name: 'Services', 
+      href: '/services',
+      dropdown: [
+        { name: 'All Services', href: '/services' },
+        { name: 'Electrical', href: '/services/electrical' },
+        { name: 'Plumbing', href: '/services/plumbing' },
+        { name: 'Smart Home', href: '/services/smart-home-installations' },
+        { name: 'Handyman', href: '/services/handyman' },
+      ]
+    },
     { name: 'Shop', href: '/shop' },
     { name: 'Gallery', href: '/gallery' },
     { 
@@ -48,13 +59,13 @@ export default function Header() {
                   {item.dropdown ? (
                     <div 
                       className="nav-dropdown-wrapper"
-                      onMouseEnter={() => setIsLocationsOpen(true)}
-                      onMouseLeave={() => setIsLocationsOpen(false)}
+                      onMouseEnter={() => item.name === 'Services' ? setIsServicesOpen(true) : setIsLocationsOpen(true)}
+                      onMouseLeave={() => item.name === 'Services' ? setIsServicesOpen(false) : setIsLocationsOpen(false)}
                     >
                       <Link href={item.href} className="nav-link">
                         {item.name} ▼
                       </Link>
-                      {isLocationsOpen && (
+                      {((item.name === 'Services' && isServicesOpen) || (item.name === 'Locations' && isLocationsOpen)) && (
                         <div className="nav-dropdown-menu">
                           {item.dropdown.map((subItem) => (
                             <Link
@@ -96,11 +107,11 @@ export default function Header() {
                 <div key={item.name}>
                   <div 
                     className="nav-mobile-link nav-mobile-dropdown"
-                    onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+                    onClick={() => item.name === 'Services' ? setIsServicesOpen(!isServicesOpen) : setIsLocationsOpen(!isLocationsOpen)}
                   >
-                    {item.name} {isLocationsOpen ? '▲' : '▼'}
+                    {item.name} {(item.name === 'Services' ? isServicesOpen : isLocationsOpen) ? '▲' : '▼'}
                   </div>
-                  {isLocationsOpen && (
+                  {((item.name === 'Services' && isServicesOpen) || (item.name === 'Locations' && isLocationsOpen)) && (
                     <div className="nav-mobile-dropdown-menu">
                       {item.dropdown.map((subItem) => (
                         <Link
@@ -109,6 +120,7 @@ export default function Header() {
                           className="nav-mobile-dropdown-link"
                           onClick={() => {
                             setIsMenuOpen(false)
+                            setIsServicesOpen(false)
                             setIsLocationsOpen(false)
                           }}
                         >

@@ -25,7 +25,25 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/services/electrical',
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing',
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/services/smart-home-installations',
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman',
       changefreq: 'monthly',
       priority: '0.8',
       lastmod: new Date().toISOString().split('T')[0]
