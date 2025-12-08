@@ -6,37 +6,37 @@ export default function ServiceAreas() {
   const serviceAreas = [
     {
       city: "Dallas",
-      description: "Serving Dallas with comprehensive home improvement services including kitchen remodeling, bathroom renovation, electrical, plumbing, and HVAC services.",
+      description: "Licensed Dallas electricians & plumbers providing expert electrical repairs, plumbing services, and smart home installations throughout Dallas, TX.",
       population: "1.3 million",
       highlights: ["Downtown Dallas", "Oak Cliff", "East Dallas", "North Dallas"]
     },
     {
       city: "Plano",
-      description: "Premier home improvement contractor in Plano, TX. Specializing in luxury kitchen and bathroom remodels for Plano homeowners.",
+      description: "Professional Plano electricians & plumbers specializing in electrical repairs, plumbing services, and smart home automation for Plano homes.",
       population: "287,000",
       highlights: ["West Plano", "East Plano", "Legacy West", "Willow Bend"]
     },
     {
       city: "Frisco",
-      description: "Top-rated contractors serving Frisco with quality home renovations, flooring installation, and painting services.",
+      description: "Top-rated Frisco electricians & plumbers offering electrical repairs, plumbing solutions, and smart home technology installations.",
       population: "200,000",
       highlights: ["The Star District", "Stonebriar", "Preston Road Corridor"]
     },
     {
       city: "McKinney",
-      description: "Professional home improvement services in McKinney, TX. Licensed contractors for all your renovation needs.",
+      description: "Expert McKinney electricians & plumbers providing electrical services, plumbing repairs, and smart home installations with 24/7 emergency service.",
       population: "195,000",
       highlights: ["Historic Downtown", "Stonebridge Ranch", "Adriatica"]
     },
     {
       city: "Allen",
-      description: "Trusted Allen contractors providing exceptional kitchen remodeling, bathroom renovation, and home addition services.",
+      description: "Trusted Allen electricians & plumbers delivering professional electrical repairs, plumbing services, and home automation solutions.",
       population: "105,000",
       highlights: ["Bethany Lakes", "Twin Creeks", "Watters Creek"]
     },
     {
       city: "Richardson",
-      description: "Quality home improvement contractor serving Richardson with professional renovation and remodeling services.",
+      description: "Licensed Richardson electricians & plumbers offering quality electrical services, plumbing repairs, and smart home installations.",
       population: "120,000",
       highlights: ["Canyon Creek", "Cottonwood Heights", "Spring Valley"]
     }
@@ -44,9 +44,9 @@ export default function ServiceAreas() {
 
   return (
     <Layout 
-      title="Service Areas: Dallas, Plano, Frisco, McKinney | Licensed DFW Contractors"
-      description="⭐ Serving 30+ DFW Cities! Expert kitchen & bathroom remodeling in Dallas, Plano, Frisco, McKinney, Allen, Richardson. Same-day estimates. Licensed & insured. Call (682) 466-2130!"
-      keywords="Dallas contractors, Plano home remodeling, Frisco contractors, McKinney renovation, Allen contractors, Richardson home improvement, DFW contractors, North Dallas contractors"
+      title="Electrician & Plumber Service Areas: Dallas, Plano, Frisco | DFW"
+      description="⭐ Licensed electricians & plumbers serving 30+ DFW cities! Expert electrical repairs, plumbing services & smart home installations in Dallas, Plano, Frisco, McKinney, Allen. 24/7 emergency service. Call (682) 466-2130!"
+      keywords="Dallas electrician service area, Plano plumber, Frisco electrician, McKinney plumber, Allen electrician, Richardson plumber, DFW electrician, North Dallas plumber, smart home installer DFW"
       canonicalUrl="https://metroplexpros.com/service-areas"
     >
       {/* Service Areas Schema */}
@@ -56,9 +56,9 @@ export default function ServiceAreas() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Home Improvement & Remodeling Services",
+            "serviceType": "Electrical, Plumbing & Smart Home Services",
             "provider": {
-              "@type": "HomeImprovementBusiness",
+              "@type": "Electrician",
               "name": "Metroplex Pros",
               "telephone": "(682) 466-2130",
               "priceRange": "$$$",
@@ -80,14 +80,14 @@ export default function ServiceAreas() {
             ],
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Home Improvement Services",
+              "name": "Electrical, Plumbing & Smart Home Services",
               "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kitchen Remodeling"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bathroom Renovation"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Flooring Installation"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Services"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Repairs"}},
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plumbing Services"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HVAC Services"}}
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smart Home Installations"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Electrical Service"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing Service"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Automation"}}
               ]
             }
           })

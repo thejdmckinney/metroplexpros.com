@@ -55,9 +55,9 @@ export default function Contact() {
 
   return (
     <Layout 
-      title="Get FREE Quote - Dallas Home Improvement | Call (682) 466-2130"
-      description="✓ FREE In-Home Estimates ✓ Same-Day Response ✓ Licensed & Insured ✓ 0% Financing Available. Expert kitchen, bathroom & home remodeling in Dallas. 24/7 emergency service. Book now!"
-      keywords="contact Dallas contractors, home improvement estimates Dallas, Dallas renovation quotes, free estimates Dallas, emergency home repair Dallas, licensed contractors DFW"
+      title="Contact Dallas Electrician & Plumber | FREE Quote | (682) 466-2130"
+      description="⭐ Get FREE estimates for electrical, plumbing & smart home services! Licensed Dallas electricians & plumbers. Same-day service. 24/7 emergency repairs. Call now (682) 466-2130!"
+      keywords="contact Dallas electrician, Dallas plumber contact, emergency electrician Dallas, emergency plumber Dallas, electrical repair quotes Dallas, plumbing estimates Dallas, smart home installation Dallas"
       canonicalUrl="https://metroplexpros.com/contact"
     >
       {/* ContactPage Schema */}
