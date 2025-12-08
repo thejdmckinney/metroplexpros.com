@@ -85,7 +85,7 @@ export default function UniversityPark() {
         <div className="container" style={{position: 'relative', zIndex: 1}}>
           <div className="hero-content text-center">
             <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', backgroundColor: 'rgba(0, 240, 255, 0.1)', border: '1px solid #00f0ff', borderRadius: '30px', marginBottom: '2rem', fontSize: '0.9rem', letterSpacing: '1px', color: '#00f0ff'}}>
-              SERVING UNIVERSITY PARK SINCE 2010
+              SERVING UNIVERSITY PARK SINCE 2023
             </div>
             <h1 className="hero-title" style={{fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.2'}}>
               Premium <span className="text-accent">Home Services</span><br />
