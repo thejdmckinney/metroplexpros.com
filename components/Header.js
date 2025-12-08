@@ -17,6 +17,7 @@ export default function Header() {
       dropdown: [
         { name: 'All Service Areas', href: '/service-areas' },
         { name: 'University Park', href: '/university-park' },
+        { name: 'Lakewood', href: '/lakewood' },
       ]
     },
     { name: 'For Realtors', href: '/for-realtors' },
