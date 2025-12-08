@@ -307,6 +307,38 @@ export default function UniversityPark() {
         </div>
       </section>
 
+      {/* Smart Home Integration */}
+      <section className="section" style={{backgroundColor: '#161b22'}}>
+        <div className="container">
+          <div style={{textAlign: 'center', marginBottom: '3rem'}}>
+            <h2 className="section-title" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>
+              Smart Home Installations for Modern University Park Living
+            </h2>
+            <p style={{fontSize: '1.1rem', color: '#8b949e', maxWidth: '800px', margin: '0 auto'}}>
+              University Park homeowners are blending historic elegance with cutting-edge technology
+            </p>
+          </div>
+
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem'}}>
+            {[
+              { icon: '🌡️', title: 'Smart Thermostats', desc: 'Nest, Ecobee (C-wire installation)' },
+              { icon: '💡', title: 'Smart Lighting', desc: 'Switches and dimmers' },
+              { icon: '🔔', title: 'Video Doorbells', desc: 'Ring, Nest Hello' },
+              { icon: '🔐', title: 'Smart Locks', desc: 'Front and back doors' },
+              { icon: '📹', title: 'Security Cameras', desc: 'Outdoor monitoring' },
+              { icon: '📶', title: 'WiFi Outlets', desc: 'Whole-home placement' },
+              { icon: '🔌', title: 'USB Charging', desc: 'Kitchen and bedroom outlets' }
+            ].map((item, index) => (
+              <div key={index} style={{padding: '1.5rem', backgroundColor: '#0d1117', borderRadius: '8px', border: '1px solid #30363d', textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', marginBottom: '0.75rem'}}>{item.icon}</div>
+                <div style={{color: '#00f0ff', fontSize: '1.1rem', fontWeight: '500', marginBottom: '0.5rem'}}>{item.title}</div>
+                <div style={{color: '#8b949e', fontSize: '0.9rem'}}>{item.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Common Service Needs */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">
