@@ -19,6 +19,7 @@ export default function Header() {
         { name: 'Highland Park', href: '/highland-park' },
         { name: 'University Park', href: '/university-park' },
         { name: 'Lakewood', href: '/lakewood' },
+        { name: 'Richardson', href: '/richardson' },
       ]
     },
     { name: 'For Realtors', href: '/for-realtors' },

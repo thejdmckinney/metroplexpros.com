@@ -61,6 +61,12 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/richardson',
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/for-realtors',
       changefreq: 'monthly',
       priority: '0.7',
