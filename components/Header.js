@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false)
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -10,7 +11,14 @@ export default function Header() {
     { name: 'Services', href: '/services' },
     { name: 'Shop', href: '/shop' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Service Areas', href: '/service-areas' },
+    { 
+      name: 'Locations', 
+      href: '/service-areas',
+      dropdown: [
+        { name: 'All Service Areas', href: '/service-areas' },
+        { name: 'University Park', href: '/university-park' },
+      ]
+    },
     { name: 'For Realtors', href: '/for-realtors' },
     { name: 'Contact', href: '/contact' },
   ]
@@ -33,10 +41,35 @@ export default function Header() {
             {/* Desktop Navigation */}
             <ul className="nav-desktop">
               {navigation.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="nav-link">
-                    {item.name}
-                  </Link>
+                <li key={item.name} className={item.dropdown ? 'nav-dropdown' : ''}>
+                  {item.dropdown ? (
+                    <div 
+                      className="nav-dropdown-wrapper"
+                      onMouseEnter={() => setIsLocationsOpen(true)}
+                      onMouseLeave={() => setIsLocationsOpen(false)}
+                    >
+                      <Link href={item.href} className="nav-link">
+                        {item.name} ▼
+                      </Link>
+                      {isLocationsOpen && (
+                        <div className="nav-dropdown-menu">
+                          {item.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="nav-dropdown-link"
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link href={item.href} className="nav-link">
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -56,14 +89,42 @@ export default function Header() {
           {/* Mobile Navigation */}
           <div className={`nav-mobile ${isMenuOpen ? 'nav-mobile-open' : ''}`}>
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="nav-mobile-link"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
+              item.dropdown ? (
+                <div key={item.name}>
+                  <div 
+                    className="nav-mobile-link nav-mobile-dropdown"
+                    onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+                  >
+                    {item.name} {isLocationsOpen ? '▲' : '▼'}
+                  </div>
+                  {isLocationsOpen && (
+                    <div className="nav-mobile-dropdown-menu">
+                      {item.dropdown.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="nav-mobile-dropdown-link"
+                          onClick={() => {
+                            setIsMenuOpen(false)
+                            setIsLocationsOpen(false)
+                          }}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="nav-mobile-link"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
         </nav>
