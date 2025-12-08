@@ -474,8 +474,8 @@ export default function HighlandPark() {
               Perfect for busy executives, second homes, and homeowners who expect white-glove service.
             </p>
 
-            <a href="https://creativeshield.com" target="_blank" rel="noopener noreferrer" className="btn" style={{fontSize: '1.2rem', padding: '1rem 3rem', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.3)'}}>
-              Learn More at CreativeShield.com
+            <a href="https://metroplexshield.com" target="_blank" rel="noopener noreferrer" className="btn" style={{fontSize: '1.2rem', padding: '1rem 3rem', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.3)'}}>
+              Learn More at MetroplexShield.com
             </a>
           </div>
         </div>
