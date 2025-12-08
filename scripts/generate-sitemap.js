@@ -25,6 +25,12 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/services/smart-home-installations',
+      changefreq: 'monthly',
+      priority: '0.8',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/gallery',
       changefreq: 'weekly',
       priority: '0.8',
@@ -37,9 +43,33 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/for-realtors',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/shop',
+      changefreq: 'weekly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/contact',
       changefreq: 'monthly',
       priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/terms-of-service',
+      changefreq: 'yearly',
+      priority: '0.3',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/privacy-policy',
+      changefreq: 'yearly',
+      priority: '0.3',
       lastmod: new Date().toISOString().split('T')[0]
     }
   ]

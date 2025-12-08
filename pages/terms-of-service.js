@@ -3,9 +3,9 @@ import Layout from '../components/Layout'
 export default function TermsOfService() {
   return (
     <Layout 
-      title="Terms of Service - Metroplex Pros"
-      description="Terms of Service for Metroplex Pros home improvement contractor services in Dallas, Texas. Review our service terms and conditions."
-      keywords="terms of service, Metroplex Pros terms, contractor terms, service conditions Dallas"
+      title="Terms of Service - Metroplex Pros Electrician & Plumber Dallas"
+      description="Terms of Service for Metroplex Pros electrical, plumbing, and smart home installation services in Dallas, Texas. Review our service terms and conditions."
+      keywords="terms of service, Metroplex Pros terms, electrician terms, plumber terms, service conditions Dallas"
       canonicalUrl="https://metroplexpros.com/terms-of-service"
     >
       <div className="legal-page">

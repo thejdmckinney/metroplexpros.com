@@ -3,8 +3,8 @@ import Layout from '../components/Layout'
 export default function PrivacyPolicy() {
   return (
     <Layout 
-      title="Privacy Policy - Metroplex Pros"
-      description="Privacy Policy for Metroplex Pros home improvement services. Learn how we collect, use, and protect your personal information."
+      title="Privacy Policy - Metroplex Pros Electrician & Plumber Dallas"
+      description="Privacy Policy for Metroplex Pros electrical, plumbing, and smart home services. Learn how we collect, use, and protect your personal information."
       keywords="privacy policy, Metroplex Pros privacy, data protection, personal information"
       canonicalUrl="https://metroplexpros.com/privacy-policy"
     >
