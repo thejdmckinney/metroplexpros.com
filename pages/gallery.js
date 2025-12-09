@@ -224,14 +224,15 @@ export default function Gallery() {
 
         .project-image {
           position: relative;
-          height: 250px;
+          height: 400px;
           overflow: hidden;
+          background: #f5f5f5;
         }
 
         .project-photo {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
         }
 
         .project-badge {
