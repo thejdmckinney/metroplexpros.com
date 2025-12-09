@@ -26,23 +26,27 @@ export default function SEO({
 
   const ogData = { ...defaultOpenGraph, ...openGraph }
 
-  // Local Business Schema Markup
+  // Local Business Schema Markup - Updated for Electrician/Plumber Business
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "HomeImprovementBusiness",
+    "@type": ["Electrician", "Plumber", "HomeImprovementBusiness"],
     "name": "Metroplex Pros",
-    "alternateName": "Metroplex Pros Home Improvement",
-    "description": "Professional home improvement services in Dallas, Texas. Specializing in kitchen remodeling, bathroom renovation, flooring installation, painting, electrical, plumbing, and HVAC services.",
+    "alternateName": ["Metroplex Pros Electrical & Plumbing", "MetroPlex Pros Dallas"],
+    "description": "Licensed Dallas electricians and plumbers providing expert electrical repairs, plumbing services, smart home installations, and 24/7 emergency service throughout the DFW metroplex since 2010.",
     "url": "https://metroplexpros.com",
     "logo": "https://metroplexpros.com/logo.svg",
     "image": "https://metroplexpros.com/logo.svg",
     "telephone": "(682) 466-2130",
     "email": "info@metroplexpros.com",
+    "priceRange": "$$-$$$",
+    "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Check", "Financing Available"],
+    "currenciesAccepted": "USD",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Dallas",
       "addressRegion": "TX",
-      "addressCountry": "US"
+      "addressCountry": "US",
+      "postalCode": "75201"
     },
     "geo": {
       "@type": "GeoCoordinates",
@@ -79,29 +83,111 @@ export default function SEO({
         "@type": "City",
         "name": "Richardson",
         "sameAs": "https://en.wikipedia.org/wiki/Richardson,_Texas"
+      },
+      {
+        "@type": "City",
+        "name": "Garland",
+        "sameAs": "https://en.wikipedia.org/wiki/Garland,_Texas"
+      },
+      {
+        "@type": "City",
+        "name": "Irving",
+        "sameAs": "https://en.wikipedia.org/wiki/Irving,_Texas"
+      },
+      {
+        "@type": "City",
+        "name": "Highland Park"
+      },
+      {
+        "@type": "City",
+        "name": "University Park"
       }
     ],
     "serviceType": [
-      "Kitchen Remodeling",
-      "Bathroom Renovation", 
-      "Interior Painting",
-      "Exterior Painting",
-      "Flooring Installation",
-      "Electrical Services",
-      "Plumbing Services",
-      "HVAC Services",
-      "Roofing Services",
-      "General Contracting"
+      "Electrical Panel Upgrades",
+      "Electrical Wiring & Rewiring",
+      "Outlet & Switch Installation",
+      "Lighting Installation",
+      "Ceiling Fan Installation",
+      "EV Charger Installation",
+      "Generator Installation",
+      "Emergency Electrical Service",
+      "Plumbing Repairs",
+      "Drain Cleaning",
+      "Water Heater Installation",
+      "Leak Detection & Repair",
+      "Fixture Installation",
+      "Pipe Repair & Repiping",
+      "Emergency Plumbing Service",
+      "Smart Thermostat Installation",
+      "Smart Home Automation",
+      "Security Camera Installation",
+      "Smart Lighting Systems",
+      "Video Doorbell Installation",
+      "Home Network Setup"
     ],
-    "priceRange": "$$$",
-    "openingHours": [
-      "Mo-Fr 08:00-18:00",
-      "Sa 09:00-16:00"
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Electrical, Plumbing & Smart Home Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Electrical Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Panel Upgrade"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outlet Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lighting Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Electrical Repair"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Plumbing Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Heater Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leak Repair"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Smart Home Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smart Thermostat Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Security Camera Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smart Lighting Automation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Automation Integration"}}
+          ]
+        }
+      ]
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "23:59",
+        "description": "Emergency Service Only"
+      }
     ],
     "sameAs": [
       "https://www.facebook.com/metroplexpros",
       "https://www.instagram.com/metroplexpros", 
-      "https://www.linkedin.com/company/metroplexpros"
+      "https://www.linkedin.com/company/metroplexpros",
+      "https://www.yelp.com/biz/metroplex-pros-dallas"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -109,17 +195,50 @@ export default function SEO({
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
-    }
+    },
+    "slogan": "Dallas's Trusted Licensed Electricians & Plumbers",
+    "foundingDate": "2010",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "8"
+    },
+    "knowsAbout": [
+      "Electrical Systems",
+      "Plumbing Systems",
+      "Smart Home Technology",
+      "Home Automation",
+      "Energy Efficiency",
+      "Emergency Repairs",
+      "Texas Building Codes"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "24/7 Emergency Service",
+        "description": "Round-the-clock emergency electrical and plumbing service available"
+      },
+      {
+        "@type": "Offer",
+        "name": "Free Estimates",
+        "description": "Complimentary estimates for all non-emergency work"
+      },
+      {
+        "@type": "Offer",
+        "name": "Licensed & Insured",
+        "description": "Fully licensed, bonded, and insured for your protection"
+      }
+    ]
   }
 
-  // Service Area Schema
+  // Service Area Schema - Updated for Electrical & Plumbing
   const serviceAreaSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Home Improvement Services",
+    "serviceType": "Electrical, Plumbing & Smart Home Services",
     "provider": {
-      "@type": "HomeImprovementBusiness",
-      "name": "Metroplex Pros"
+      "@type": "Electrician",
+      "name": "Metroplex Pros",
+      "additionalType": "Plumber"
     },
     "areaServed": {
       "@type": "State",
@@ -156,8 +275,30 @@ export default function SEO({
         {
           "@type": "City",
           "name": "Irving, TX"
+        },
+        {
+          "@type": "City",
+          "name": "Highland Park, TX"
+        },
+        {
+          "@type": "City",
+          "name": "University Park, TX"
+        },
+        {
+          "@type": "City",
+          "name": "Lakewood, TX"
         }
       ]
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "+1-682-466-2130",
+        "contactType": "Customer Service",
+        "areaServed": "US-TX",
+        "availableLanguage": "English"
+      }
     }
   }
 

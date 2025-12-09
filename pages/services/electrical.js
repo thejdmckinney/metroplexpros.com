@@ -306,6 +306,81 @@ export default function ElectricalServices() {
         </div>
       </section>
 
+      {/* Related Services - Internal Linking for SEO */}
+      <section className="section" style={{backgroundColor: '#161b22', borderTop: '1px solid #30363d'}}>
+        <div className="container">
+          <div style={{textAlign: 'center', marginBottom: '3rem'}}>
+            <h2 className="section-title" style={{fontSize: '2rem'}}>
+              Related Services
+            </h2>
+            <p style={{color: '#8b949e', fontSize: '1.1rem'}}>
+              We also offer these complementary services for your home
+            </p>
+          </div>
+          
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem'}}>
+            <Link href="/services/smart-home-installations" style={{textDecoration: 'none'}}>
+              <div style={{padding: '2rem', backgroundColor: '#0d1117', borderRadius: '12px', border: '1px solid rgba(0, 240, 255, 0.2)', transition: 'all 0.3s', cursor: 'pointer'}} className="hover-lift">
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🏠</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '1rem'}}>Smart Home Installation</h3>
+                <p style={{color: '#c9d1d9', lineHeight: '1.7', marginBottom: '1rem'}}>
+                  Smart thermostats, lighting automation, security systems, and whole-home integration.
+                </p>
+                <span style={{color: '#00f0ff', fontSize: '0.95rem'}}>Learn More →</span>
+              </div>
+            </Link>
+            
+            <Link href="/services/plumbing" style={{textDecoration: 'none'}}>
+              <div style={{padding: '2rem', backgroundColor: '#0d1117', borderRadius: '12px', border: '1px solid rgba(0, 240, 255, 0.2)', transition: 'all 0.3s', cursor: 'pointer'}} className="hover-lift">
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🔧</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '1rem'}}>Plumbing Services</h3>
+                <p style={{color: '#c9d1d9', lineHeight: '1.7', marginBottom: '1rem'}}>
+                  Water heaters, leak detection, drain cleaning, fixture installation, and emergency plumbing.
+                </p>
+                <span style={{color: '#00f0ff', fontSize: '0.95rem'}}>Learn More →</span>
+              </div>
+            </Link>
+            
+            <Link href="/services/handyman" style={{textDecoration: 'none'}}>
+              <div style={{padding: '2rem', backgroundColor: '#0d1117', borderRadius: '12px', border: '1px solid rgba(0, 240, 255, 0.2)', transition: 'all 0.3s', cursor: 'pointer'}} className="hover-lift">
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🛠️</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '1rem'}}>Handyman Services</h3>
+                <p style={{color: '#c9d1d9', lineHeight: '1.7', marginBottom: '1rem'}}>
+                  Painting, drywall, carpentry, door/window installation, and general home repairs.
+                </p>
+                <span style={{color: '#00f0ff', fontSize: '0.95rem'}}>Learn More →</span>
+              </div>
+            </Link>
+          </div>
+          
+          <div style={{textAlign: 'center', marginTop: '3rem'}}>
+            <h3 style={{color: '#00f0ff', fontSize: '1.5rem', marginBottom: '1.5rem'}}>
+              Serving Dallas-Fort Worth Metroplex
+            </h3>
+            <div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+              <Link href="/dallas" style={{color: '#c9d1d9', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d'}}>
+                Dallas Electrician
+              </Link>
+              <Link href="/plano" style={{color: '#c9d1d9', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d'}}>
+                Plano Electrician
+              </Link>
+              <Link href="/frisco" style={{color: '#c9d1d9', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d'}}>
+                Frisco Electrician
+              </Link>
+              <Link href="/highland-park" style={{color: '#c9d1d9', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d'}}>
+                Highland Park
+              </Link>
+              <Link href="/richardson" style={{color: '#c9d1d9', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid #30363d'}}>
+                Richardson
+              </Link>
+              <Link href="/service-areas" style={{color: '#00f0ff', textDecoration: 'none', padding: '0.5rem 1rem', backgroundColor: '#161b22', borderRadius: '6px', border: '1px solid rgba(0, 240, 255, 0.3)'}}>
+                View All Areas →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </Layout>
   )
 }
