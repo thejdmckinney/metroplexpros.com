@@ -722,23 +722,22 @@ p {
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  width: 2rem;
-  height: 1.5rem;
+  justify-content: space-around;
+  width: 44px;
+  height: 44px;
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.25rem;
-  min-width: 44px;
-  min-height: 44px;
+  padding: 8px;
   align-items: center;
   z-index: 1001;
-  position: relative;
+  position: absolute;
+  right: 1rem;
 }
 
 .mobile-menu-btn span {
-  width: 1.5rem;
-  height: 2px;
+  width: 28px;
+  height: 3px;
   background: var(--color-accent);
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -1040,9 +1039,7 @@ p {
   }
 
   .mobile-menu-btn {
-    display: flex;
-    position: absolute;
-    right: 0;
+    display: flex !important;
   }
 
   .nav-mobile {
