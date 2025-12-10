@@ -309,6 +309,10 @@ export default function Gallery() {
           .projects-grid {
             grid-template-columns: 1fr;
           }
+          
+          .project-image {
+            height: 300px;
+          }
 
           .project-caption h3 {
             font-size: 1.1rem;
@@ -320,6 +324,10 @@ export default function Gallery() {
 
           .showcase-stats {
             justify-content: center;
+          }
+          
+          .grid-2 {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>
