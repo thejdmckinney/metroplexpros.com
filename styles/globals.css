@@ -337,6 +337,8 @@ p {
 /* Navigation Section - Centered */
 .header-nav-section {
   padding: 0.75rem 0;
+  overflow: visible;
+  position: relative;
 }
 
 .nav-wrapper {
@@ -344,6 +346,8 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
+  min-height: 44px;
 }
 
 .logo-image {
@@ -732,7 +736,8 @@ p {
   align-items: center;
   z-index: 1001;
   position: absolute;
-  right: 1rem;
+  right: 0;
+  top: 0;
 }
 
 .mobile-menu-btn span {
@@ -1069,6 +1074,7 @@ p {
   
   .nav-wrapper {
     justify-content: center;
+    overflow: visible;
   }
   
   .container {
