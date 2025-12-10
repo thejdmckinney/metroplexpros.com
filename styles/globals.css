@@ -270,6 +270,17 @@ p {
     overflow-wrap: break-word;
     hyphens: auto;
   }
+  
+  /* CRITICAL: Ensure mobile menu shows on tablets */
+  .nav-desktop {
+    display: none !important;
+  }
+  
+  .mobile-menu-btn {
+    display: flex !important;
+    position: absolute !important;
+    right: 0 !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1034,16 +1045,18 @@ p {
   }
 }
 
-/* Mobile Header and Footer */
+/* Mobile Header and Footer - FORCE MOBILE MENU VISIBILITY */
 @media (max-width: 1024px) {
   .nav-desktop {
     display: none !important;
   }
 
   .mobile-menu-btn {
-    display: flex;
-    position: absolute;
-    right: 0;
+    display: flex !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
   }
 
   .nav-mobile {
