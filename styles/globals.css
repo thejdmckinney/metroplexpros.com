@@ -269,26 +269,6 @@ p {
     overflow-wrap: break-word;
     hyphens: auto;
   }
-  
-  /* Fix inline styles for mobile */
-  [style*="fontSize: '3.5rem'"],
-  [style*="fontSize: '2.5rem'"] {
-    font-size: 2rem !important;
-  }
-  
-  [style*="fontSize: '1.4rem'"],
-  [style*="fontSize: '1.3rem'"],
-  [style*="fontSize: '1.2rem'"],
-  [style*="fontSize: '1.1rem'"] {
-    font-size: 1rem !important;
-  }
-  
-  /* Fix padding on mobile buttons */
-  [style*="padding: '1rem 2.5rem'"],
-  [style*="padding: '1rem 3rem'"],
-  [style*="padding: '1.2rem 3rem'"] {
-    padding: 0.75rem 1rem !important;
-  }
 }
 
 @media (max-width: 480px) {
