@@ -67,6 +67,18 @@ function generateSitemap() {
       priority: '0.7',
       lastmod: new Date().toISOString().split('T')[0]
     },
+    {
+      url: '/services/electrical/generators',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/electrical/code-compliance',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
     // Plumbing Service Pages
     {
       url: '/services/plumbing/water-heater-repair',
