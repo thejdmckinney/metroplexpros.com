@@ -48,6 +48,130 @@ function generateSitemap() {
       priority: '0.8',
       lastmod: new Date().toISOString().split('T')[0]
     },
+    // Electrical Service Pages
+    {
+      url: '/services/electrical/panel-upgrades',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/electrical/lighting',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/electrical/outlets',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    // Plumbing Service Pages
+    {
+      url: '/services/plumbing/water-heater-repair',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing/leak-repair',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing/drain-cleaning',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing/fixture-installation',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing/sewer-repair',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/plumbing/pipe-replacement',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    // Smart Home Service Pages
+    {
+      url: '/services/smart-home/thermostats',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/smart-home/lighting',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/smart-home/security',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/smart-home/doorbells',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/smart-home/locks',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/smart-home/automation',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    // Handyman Service Pages
+    {
+      url: '/services/handyman/drywall-repair',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman/painting',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman/fixture-installation',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman/door-repair',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman/general-repairs',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
     {
       url: '/gallery',
       changefreq: 'weekly',
