@@ -43,6 +43,7 @@ export default function SEO({
     "currenciesAccepted": "USD",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Dallas-Fort Worth Metroplex",
       "addressLocality": "Dallas",
       "addressRegion": "TX",
       "addressCountry": "US",
