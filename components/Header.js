@@ -96,6 +96,8 @@ export default function Header() {
           { name: 'Painting', href: '/services/handyman/painting' },
           { name: 'Fixture Installation', href: '/services/handyman/fixture-installation' },
           { name: 'Door Repair', href: '/services/handyman/door-repair' },
+          { name: 'Picture & Art Hanging', href: '/services/handyman/wall-art-hanging' },
+          { name: 'Window Treatments', href: '/services/handyman/window-treatments' },
           { name: 'General Repairs', href: '/services/handyman/general-repairs' },
         ],
         link: { name: 'View All Handyman', href: '/services/handyman' }

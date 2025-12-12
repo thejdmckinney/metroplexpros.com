@@ -179,6 +179,18 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/services/handyman/wall-art-hanging',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
+      url: '/services/handyman/window-treatments',
+      changefreq: 'monthly',
+      priority: '0.7',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/services/handyman/general-repairs',
       changefreq: 'monthly',
       priority: '0.7',
