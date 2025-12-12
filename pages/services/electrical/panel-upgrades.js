@@ -24,7 +24,7 @@ export default function PanelUpgrades() {
               "url": "https://metroplexpros.com"
             },
             "areaServed": {
-              "@type": "State",
+              "@type": "AdministrativeArea",
               "name": "Texas"
             }
           })

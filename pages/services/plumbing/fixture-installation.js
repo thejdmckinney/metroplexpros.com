@@ -24,7 +24,7 @@ export default function FixtureInstallation() {
               "url": "https://metroplexpros.com"
             },
             "areaServed": {
-              "@type": "State",
+              "@type": "AdministrativeArea",
               "name": "Texas"
             }
           })

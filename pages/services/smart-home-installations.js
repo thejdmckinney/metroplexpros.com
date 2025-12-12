@@ -24,7 +24,7 @@ export default function SmartHomeInstallations() {
               "url": "https://metroplexpros.com"
             },
             "areaServed": {
-              "@type": "State",
+              "@type": "AdministrativeArea",
               "name": "Texas"
             },
             "hasOfferCatalog": {
