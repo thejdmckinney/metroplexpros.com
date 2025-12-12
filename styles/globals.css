@@ -320,6 +320,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
+  overflow: visible;
 }
 
 /* Logo Section - Full Width */
@@ -327,6 +328,7 @@ p {
   padding: 1.5rem 0;
   text-align: center;
   border-bottom: 1px solid var(--color-border);
+  overflow: visible;
 }
 
 .site-logo {
@@ -470,7 +472,7 @@ p {
   border: 1px solid var(--color-border);
   border-radius: 12px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
-  z-index: 1000;
+  z-index: 1001;
   animation: fadeIn 0.3s ease;
   width: 90vw;
   max-width: 1100px;
