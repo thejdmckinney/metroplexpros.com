@@ -185,6 +185,10 @@ export default function Home() {
             <div className="stats-container">
               <div className="stats">
                 <div className="stat">
+                  <div className="stat-number text-accent">⭐</div>
+                  <div className="stat-label">Nextdoor Neighborhood Fave 2025</div>
+                </div>
+                <div className="stat">
                   <div className="stat-number text-accent">Licensed</div>
                   <div className="stat-label">& Insured</div>
                 </div>

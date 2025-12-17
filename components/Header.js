@@ -204,6 +204,13 @@ export default function Header() {
                   <path d="M163.6 49.3c-2.2-2.2-5-3.9-8.3-5.1-3.3-1.2-7-1.7-11.1-1.7H55.8c-4.1 0-7.8.6-11.1 1.7-3.3 1.2-6.1 2.9-8.3 5.1-2.2 2.2-3.9 5-5.1 8.3-1.2 3.3-1.7 7-1.7 11.1v62.6c0 4.1.6 7.8 1.7 11.1 1.2 3.3 2.9 6.1 5.1 8.3 2.2 2.2 5 3.9 8.3 5.1 3.3 1.2 7 1.7 11.1 1.7h39.7V108l-13.9 13.9c-1.1 1.1-2.5 1.7-4.1 1.7s-3-.6-4.1-1.7c-1.1-1.1-1.7-2.5-1.7-4.1s.6-3 1.7-4.1l22.2-22.2c1.1-1.1 2.5-1.7 4.1-1.7 1.6 0 3 .6 4.1 1.7l22.2 22.2c1.1 1.1 1.7 2.5 1.7 4.1s-.6 3-1.7 4.1c-1.1 1.1-2.5 1.7-4.1 1.7s-3-.6-4.1-1.7L108.6 108v44.5h35.6c4.1 0 7.8-.6 11.1-1.7 3.3-1.2 6.1-2.9 8.3-5.1 2.2-2.2 3.9-5 5.1-8.3 1.2-3.3 1.7-7 1.7-11.1V68.7c0-4.1-.6-7.8-1.7-11.1-1.2-3.3-2.9-6.1-5.1-8.3z"/>
                 </svg>
               </a>
+              <a href="https://nextdoor.com/page/creative-constructors-garland-tx/" target="_blank" rel="noopener noreferrer" className="nextdoor-badge">
+                <span className="badge-icon">⭐</span>
+                <span className="badge-text">
+                  <strong>Neighborhood Fave</strong>
+                  <small>2025</small>
+                </span>
+              </a>
             </div>
             <Link href="/" className="site-logo">
               <img src="/logo-header.svg" alt="Metroplex Pros" className="logo-image" />
