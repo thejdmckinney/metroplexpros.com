@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React from 'react'
 
 export default function SEO({ 
   title = 'Metroplex Pros - Dallas Home Improvement Services',
@@ -14,12 +15,14 @@ export default function SEO({
     type: 'website',
     locale: 'en_US',
     site_name: 'Metroplex Pros',
+    url: canonicalUrl || 'https://metroplexpros.com',
     images: [
       {
-        url: '/logo.svg',
-        width: 400,
-        height: 400,
-        alt: 'Metroplex Pros Logo'
+        url: 'https://metroplexpros.com/metroplexprostruck.png',
+        width: 1200,
+        height: 630,
+        alt: 'Metroplex Pros - Dallas Electrician & Plumber Services',
+        type: 'image/png'
       }
     ]
   }
@@ -327,8 +330,16 @@ export default function SEO({
       <meta property="og:description" content={ogData.description} />
       <meta property="og:site_name" content={ogData.site_name} />
       <meta property="og:locale" content={ogData.locale} />
+      {ogData.url && <meta property="og:url" content={ogData.url} />}
       {ogData.images && ogData.images.map((image, index) => (
-        <meta key={index} property="og:image" content={image.url} />
+        <React.Fragment key={index}>
+          <meta property="og:image" content={image.url} />
+          <meta property="og:image:secure_url" content={image.url} />
+          <meta property="og:image:type" content={image.type || 'image/png'} />
+          <meta property="og:image:width" content={image.width?.toString()} />
+          <meta property="og:image:height" content={image.height?.toString()} />
+          <meta property="og:image:alt" content={image.alt} />
+        </React.Fragment>
       ))}
       
       {/* Twitter Card */}
@@ -336,6 +347,7 @@ export default function SEO({
       <meta name="twitter:title" content={ogData.title} />
       <meta name="twitter:description" content={ogData.description} />
       {ogData.images && <meta name="twitter:image" content={ogData.images[0].url} />}
+      {ogData.images && <meta name="twitter:image:alt" content={ogData.images[0].alt} />}
       
       {/* Local SEO */}
       <meta name="geo.region" content="US-TX" />
