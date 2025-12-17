@@ -345,16 +345,16 @@ p {
 }
 
 .header-social-icons a {
-  color: var(--color-primary);
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.9;
 }
 
 .header-social-icons a:hover {
-  color: var(--color-accent);
   transform: translateY(-2px);
+  opacity: 1;
 }
 
 .site-logo {
@@ -948,16 +948,16 @@ p {
 }
 
 .social-links a {
-  color: var(--color-text-muted);
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.9;
 }
 
 .social-links a:hover {
-  color: var(--color-accent);
   transform: translateY(-2px);
+  opacity: 1;
 }
 
 .footer-logo-image {
