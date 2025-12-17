@@ -18,7 +18,7 @@ export default function SEO({
     url: canonicalUrl || 'https://metroplexpros.com',
     images: [
       {
-        url: 'https://metroplexpros.com/Gemini_Generated_Image_9oyqc49oyqc49oyq.png',
+        url: 'https://metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png',
         width: 1456,
         height: 816,
         alt: 'Metroplex Pros - Electrical, Plumbing & Smart Home Services in Dallas',
