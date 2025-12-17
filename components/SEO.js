@@ -18,10 +18,10 @@ export default function SEO({
     url: canonicalUrl || 'https://metroplexpros.com',
     images: [
       {
-        url: 'https://metroplexpros.com/metroplexprostruck.png',
-        width: 1200,
-        height: 630,
-        alt: 'Metroplex Pros - Dallas Electrician & Plumber Services',
+        url: 'https://metroplexpros.com/Gemini_Generated_Image_9oyqc49oyqc49oyq.png',
+        width: 1456,
+        height: 816,
+        alt: 'Metroplex Pros - Electrical, Plumbing & Smart Home Services in Dallas',
         type: 'image/png'
       }
     ]
