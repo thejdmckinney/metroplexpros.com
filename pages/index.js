@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <Layout 
       title="Dallas Electrician & Plumber | Smart Home Installation | Metroplex Pros"
-      description="⭐ Licensed Dallas Electricians & Plumbers! Expert electrical repairs, plumbing services & smart home installations. 24/7 emergency service. Same-day appointments. FREE estimates! Call (682) 466-2130!"
-      keywords="Dallas electrician, Dallas plumber, smart home installation Dallas, electrical repairs Dallas, plumbing repairs Plano, emergency electrician DFW, licensed electrician Texas, emergency plumber Dallas, home automation Dallas"
+      description="⭐ Licensed Dallas Electricians & Plumbers! Expert home electrical repair service, electrical home repair, plumbing services & smart home installations. 24/7 emergency service. Same-day appointments. FREE estimates! Call (682) 466-2130!"
+      keywords="Dallas electrician, Dallas plumber, home electrical repair service, electrical home repair, home electrical repair near me, home electrical repair, smart home installation Dallas, electrical repairs Dallas, plumbing repairs Plano, emergency electrician DFW"
       canonicalUrl="https://metroplexpros.com"
     >
       {/* Hero Section */}
@@ -22,9 +22,9 @@ export default function Home() {
                 Dallas's Trusted Licensed Electricians & Plumbers
               </p>
               <p className="hero-description">
-                Professional electrical repairs, plumbing services, and smart home installations throughout the 
+                Professional home electrical repair, plumbing services, and smart home installations throughout the 
                 Dallas-Fort Worth metroplex. Licensed, insured, and available 24/7 for emergencies. From fixing a 
-                leaky faucet to installing whole-home automation systems - we do it all with expert craftsmanship.
+                leaky faucet to complete electrical home repair - we do it all with expert craftsmanship.
               </p>
               <div className="hero-buttons">
                 <Link href="/contact" className="btn">
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="card">
               <div className="service-icon">⚡</div>
               <h3>Electrical Services</h3>
-              <p>Licensed electricians for installations, repairs, panel upgrades, outlets, lighting, ceiling fans, troubleshooting, and 24/7 emergency electrical service.</p>
+              <p>Licensed electricians for home electrical repair service, installations, panel upgrades, outlets, lighting, ceiling fans, troubleshooting, and 24/7 emergency electrical repair near me.</p>
               <Link href="/services" className="btn-link">Learn More →</Link>
             </div>
             <div className="card">
@@ -79,6 +79,7 @@ export default function Home() {
                 <span style={{fontSize: '1.5rem'}}>⚡</span> Electrical Services Include:
               </h4>
               <ul style={{listStyle: 'none', padding: 0}}>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Home electrical repair & troubleshooting</li>
                 <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Circuit breaker panel upgrades</li>
                 <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Outlet & switch installation/repair</li>
                 <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ LED & recessed lighting</li>

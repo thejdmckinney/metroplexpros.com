@@ -5,8 +5,8 @@ export default function OutletsSwitchRepair() {
   return (
     <Layout 
       title="Outlet & Switch Repair Dallas-Fort Worth | MetroPlex Pros"
-      description="Professional outlet and switch installation, repair, and replacement in DFW. USB outlets, GFCI, dimmer switches, smart switches. Call (682) 466-2130."
-      keywords="outlet repair Dallas, switch replacement, GFCI outlet, USB outlet installation, dimmer switch, electrical outlet repair, Dallas electrician"
+      description="Professional outlet and switch installation, repair, and replacement in DFW. Home electrical repair service for outlets, USB outlets, GFCI, dimmer switches, smart switches. Call (682) 466-2130."
+      keywords="outlet repair Dallas, switch replacement, GFCI outlet, USB outlet installation, home electrical repair, electrical home repair, dimmer switch, electrical outlet repair, Dallas electrician"
       canonicalUrl="https://metroplexpros.com/services/electrical/outlets"
     >
       {/* Service Schema */}
@@ -62,12 +62,12 @@ export default function OutletsSwitchRepair() {
         <div className="container">
           <div style={{maxWidth: '900px', margin: '0 auto'}}>
             <h2 style={{fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
-              Professional Outlet & Switch Services
+              Professional Home Electrical Repair for Outlets & Switches
             </h2>
             <p style={{fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '2rem', color: '#c9d1d9'}}>
               Faulty outlets and switches are more than just inconvenient—they're safety hazards. MetroPlex Pros provides 
-              expert outlet and switch repair, replacement, and installation services throughout Dallas-Fort Worth. Whether 
-              you need a simple switch replacement or want to upgrade to modern smart switches and USB outlets, our licensed 
+              expert home electrical repair service including outlet and switch repair, replacement, and installation throughout Dallas-Fort Worth. Whether 
+              you need electrical home repair for a simple switch replacement or want to upgrade to modern smart switches and USB outlets, our licensed 
               electricians ensure safe, code-compliant work.
             </p>
 

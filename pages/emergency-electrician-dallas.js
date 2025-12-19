@@ -5,8 +5,8 @@ export default function EmergencyElectricianDallas() {
   return (
     <Layout 
       title="24/7 Emergency Electrician Dallas TX | (682) 466-2130 | Same-Day Service"
-      description="⚡ EMERGENCY ELECTRICIAN DALLAS - Available 24/7! Power outages, sparking outlets, electrical fires, panel problems. Licensed electrician responds fast. Call (682) 466-2130 NOW!"
-      keywords="emergency electrician Dallas, 24 hour electrician Dallas, emergency electrical service Dallas, power outage electrician, sparking outlet repair, electrical emergency Dallas, same day electrician, urgent electrical repair Dallas"
+      description="⚡ EMERGENCY ELECTRICIAN DALLAS - Available 24/7! Power outages, sparking outlets, electrical fires, panel problems. Licensed home electrical repair service responds fast. Call (682) 466-2130 NOW!"
+      keywords="emergency electrician Dallas, 24 hour electrician Dallas, emergency electrical service Dallas, home electrical repair service, home electrical repair near me, power outage electrician, sparking outlet repair, electrical emergency Dallas, same day electrician"
       canonicalUrl="https://metroplexpros.com/emergency-electrician-dallas"
     >
       {/* Emergency Service Schema */}
@@ -63,8 +63,8 @@ export default function EmergencyElectricianDallas() {
             </p>
             <p className="hero-description" style={{maxWidth: '900px', margin: '0 auto 2rem', fontSize: '1.2rem', lineHeight: '1.8', color: '#fff'}}>
               Electrical emergency? Don't wait! Power outages, sparking outlets, burning smells, tripped breakers, and 
-              electrical shocks require immediate attention. Our licensed Dallas electricians are standing by 24/7 
-              to respond to your emergency.
+              electrical shocks require immediate home electrical repair. Our licensed Dallas electricians provide 24/7 
+              emergency home electrical repair service and are standing by to respond to your emergency within 60 minutes.
             </p>
             <div className="hero-buttons" style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem'}}>
               <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.4rem', padding: '1.5rem 3rem', backgroundColor: '#FFD700', color: '#000', border: 'none', fontWeight: 'bold', boxShadow: '0 6px 30px rgba(255, 215, 0, 0.6)', animation: 'pulse 2s infinite'}}>

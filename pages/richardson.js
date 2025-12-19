@@ -5,8 +5,8 @@ export default function Richardson() {
   return (
     <Layout 
       title="Richardson Handyman, Electrical & Plumbing plus Smart Home Services TX | MetroPlex Pros"
-      description="Professional handyman, electrical, and plumbing services for Richardson homes. Panel upgrades, slab leak repair, aluminum wiring, older home specialists. Fast service, honest pricing."
-      keywords="Richardson electrician, Richardson plumber, Richardson handyman, electrical panel upgrade Richardson, slab leak Richardson, aluminum wiring Richardson, Richardson home repair, Canyon Creek electrician"
+      description="Professional home electrical repair service, handyman, and plumbing for Richardson homes. Panel upgrades, slab leak repair, aluminum wiring, older home specialists. Fast service, honest pricing."
+      keywords="Richardson electrician, home electrical repair Richardson, electrical home repair, home electrical repair near me, Richardson plumber, Richardson handyman, electrical panel upgrade Richardson, slab leak Richardson, aluminum wiring Richardson"
       canonicalUrl="https://metroplexpros.com/richardson"
     >
       {/* LocalBusiness Schema for Richardson */}

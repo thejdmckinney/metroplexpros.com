@@ -5,8 +5,8 @@ export default function HighlandPark() {
   return (
     <Layout 
       title="Highland Park Handyman, Electrical & Plumbing, Smart Home Integrations TX | MetroPlex Pros"
-      description="Premium Handyman, electrical, plumbing, and smart home services for Highland Park Estates. Licensed technicians, luxury fixture expertise, 24/7 emergency service. Park Cities trusted contractor."
-      keywords="Highland Park electrician, Highland Park plumber, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, Armstrong Parkway electrician, smart home Highland Park"
+      description="Premium home electrical repair service, handyman, plumbing, and smart home services for Highland Park Estates. Licensed technicians, luxury fixture expertise, 24/7 emergency service. Park Cities trusted contractor."
+      keywords="Highland Park electrician, home electrical repair Highland Park, electrical home repair, Highland Park plumber, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, smart home Highland Park"
       canonicalUrl="https://metroplexpros.com/highland-park"
     >
       {/* LocalBusiness Schema for Highland Park */}

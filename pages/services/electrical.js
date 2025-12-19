@@ -5,8 +5,8 @@ export default function ElectricalServices() {
   return (
     <Layout 
       title="Professional Electrical Services Dallas-Fort Worth | MetroPlex Pros"
-      description="Licensed electricians serving DFW. Panel upgrades, wiring, lighting, smart home electrical, generators, EV chargers. 24/7 emergency service. Call (682) 466-2130."
-      keywords="electrician Dallas, electrical services DFW, panel upgrade, electrical wiring, lighting installation, generator installation, EV charger installation, emergency electrician"
+      description="Licensed electricians serving DFW. Home electrical repair service, electrical home repair near me, panel upgrades, wiring, lighting, smart home electrical, generators. 24/7 emergency service. Call (682) 466-2130."
+      keywords="electrician Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician"
       canonicalUrl="https://metroplexpros.com/services/electrical"
     >
       {/* Service Schema */}
@@ -60,9 +60,10 @@ export default function ElectricalServices() {
               Panel Upgrades • Wiring • Lighting • Smart Home • Generators
             </p>
             <p className="hero-description" style={{maxWidth: '900px', margin: '0 auto 2rem', fontSize: '1.1rem', lineHeight: '1.9', color: '#8b949e'}}>
-              MetroPlex Pros provides comprehensive electrical services throughout the Dallas-Fort Worth area. Our licensed 
+              MetroPlex Pros provides comprehensive home electrical repair service throughout the Dallas-Fort Worth area. Our licensed 
               electricians handle everything from simple outlet installations to complete electrical panel upgrades, ensuring 
-              your home's electrical system is safe, efficient, and up to code.
+              your home's electrical system is safe, efficient, and up to code. Whether you need electrical home repair near me 
+              or scheduled installations, we're here to help 24/7.
             </p>
             <div className="hero-buttons" style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem'}}>
               <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
@@ -228,8 +229,11 @@ export default function ElectricalServices() {
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 className="section-title" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>
-              Common Electrical Problems We Fix
+              Common Home Electrical Repair Issues We Fix
             </h2>
+            <p style={{fontSize: '1.1rem', color: '#8b949e', maxWidth: '700px', margin: '0 auto'}}>
+              Experienced home electrical repair service for all residential electrical problems
+            </p>
           </div>
 
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem'}}>
@@ -278,11 +282,11 @@ export default function ElectricalServices() {
         <div className="container">
           <div style={{maxWidth: '800px', margin: '0 auto'}}>
             <h2 style={{color: '#00f0ff', fontSize: '3rem', marginBottom: '1.5rem'}}>
-              Schedule Your Electrical Service
+              Schedule Your Home Electrical Repair Service
             </h2>
             <p style={{fontSize: '1.2rem', color: '#c9d1d9', marginBottom: '3rem', lineHeight: '1.8'}}>
-              Whether you need a simple outlet installation or a complete electrical panel upgrade, our licensed electricians 
-              are ready to help. Contact us today for a free estimate.
+              Whether you need electrical home repair, a simple outlet installation, or a complete electrical panel upgrade, our licensed electricians 
+              are ready to help. Looking for home electrical repair near me? Contact us today for a free estimate.
             </p>
             
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '2rem'}}>

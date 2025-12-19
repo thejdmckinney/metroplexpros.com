@@ -6,9 +6,10 @@ export default function Services() {
     {
       title: "Electrical Services",
       icon: "⚡",
-      description: "Professional electrical installations, repairs, and upgrades by licensed electricians",
+      description: "Professional home electrical repair service, installations, repairs, and upgrades by licensed electricians",
       url: "/contact",
       features: [
+        "Home electrical repair & troubleshooting",
         "Circuit breaker panel upgrades & replacement",
         "Outlet and switch installation/repair (GFCI, USB, etc.)",
         "Ceiling fan installation & repair",

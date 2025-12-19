@@ -6,8 +6,8 @@ export default function UniversityPark() {
   return (
     <Layout 
       title="University Park Handyman, Electrical & Plumbing | Smart Home Integrations | MetroPlex Pros"
-      description="Professional Handyman, electrical, plumbing, and smart home integrations for University Park, TX homes. Licensed, insured, fast response. Serving Highland Park ISD area. Call today!"
-      keywords="University Park electrician, University Park plumber, University Park handyman, SMU area electrician, Highland Park ISD electrician, Turtle Creek plumber, luxury home services Dallas"
+      description="Professional home electrical repair service, handyman, plumbing, and smart home integrations for University Park, TX homes. Licensed, insured, fast response. Serving Highland Park ISD area. Call today!"
+      keywords="University Park electrician, home electrical repair University Park, electrical home repair, University Park plumber, University Park handyman, SMU area electrician, Highland Park ISD electrician, luxury home services Dallas"
       canonicalUrl="https://metroplexpros.com/university-park"
     >
       {/* LocalBusiness Schema for University Park */}
