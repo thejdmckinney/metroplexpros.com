@@ -12,6 +12,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "mapbox-gl": "^3.16.0",
     "next": "14.0.3",
     "react": "^18.2.0",

@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import '../styles/globals.css'
 
 // Optimize Inter font loading
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={inter.className}>
       <Component {...pageProps} />
+      <Analytics />
     </div>
   )
 }
