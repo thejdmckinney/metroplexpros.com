@@ -13,7 +13,7 @@ export default function Document() {
         {/* Google tag (gtag.js) - Deferred for better performance */}
         <script 
           async 
-          src="https://www.googletagmanager.com/gtag/js?id=G-0SRQ9GXM7Y"
+          src="https://www.googletagmanager.com/gtag/js?id=G-KMX9NEE54X"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -21,13 +21,7 @@ export default function Document() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-0SRQ9GXM7Y', {
-                'send_page_view': false
-              });
-              // Send pageview after page is interactive
-              window.addEventListener('load', function() {
-                gtag('event', 'page_view');
-              });
+              gtag('config', 'G-KMX9NEE54X');
             `,
           }}
         />
