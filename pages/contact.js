@@ -120,6 +120,20 @@ export default function Contact() {
           // Don't fail the form submission if Slack fails
         }
         
+        // Send email notification
+        try {
+          await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+        } catch (emailError) {
+          console.error('Email notification error:', emailError);
+          // Don't fail the form submission if email fails
+        }
+        
         alert('Thank you for your message! We\'ll get back to you within 24 hours.');
         setFormData({
           name: '',
