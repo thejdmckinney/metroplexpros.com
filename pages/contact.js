@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import { useState } from 'react'
+import { supabase } from '../lib/supabase'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,15 +26,30 @@ export default function Contact() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formspree.io/f/mvgdadnq', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      // Insert lead into Supabase
+      const { data, error } = await supabase
+        .from('lead_tracking')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            business_type: formData.service,
+            source: 'metroplexpros.com',
+            action: 'contact_form_submission',
+            metadata: {
+              phone: formData.phone,
+              message: formData.message,
+              budget: formData.budget,
+              submitted_at: new Date().toISOString()
+            }
+          }
+        ])
+        .select();
       
-      if (response.ok) {
+      if (error) {
+        console.error('Supabase error:', error);
+        alert('Sorry, there was an error sending your message. Please try calling us directly at (682) 466-2130.');
+      } else {
         alert('Thank you for your message! We\'ll get back to you within 24 hours.');
         setFormData({
           name: '',
@@ -43,11 +59,10 @@ export default function Contact() {
           message: '',
           budget: ''
         });
-      } else {
-        alert('Sorry, there was an error sending your message. Please try calling us directly.');
       }
     } catch (error) {
-      alert('Sorry, there was an error sending your message. Please try calling us directly.');
+      console.error('Submission error:', error);
+      alert('Sorry, there was an error sending your message. Please try calling us directly at (682) 466-2130.');
     }
     
     setIsSubmitting(false);
