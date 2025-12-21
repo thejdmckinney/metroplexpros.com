@@ -60,54 +60,50 @@ export default function Contact() {
       keywords="contact Dallas electrician, Dallas plumber contact, emergency electrician Dallas, emergency plumber Dallas, electrical repair quotes Dallas, plumbing estimates Dallas, smart home installation Dallas"
       canonicalUrl="https://metroplexpros.com/contact"
     >
-      {/* ContactPage Schema */}
+      {/* LocalBusiness Schema for Contact Page */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Metroplex Pros - Dallas Home Improvement Contractors",
+            "@type": "LocalBusiness",
+            "name": "Metroplex Pros",
             "url": "https://metroplexpros.com/contact",
-            "mainEntity": {
-              "@type": "HomeImprovementBusiness",
-              "name": "Metroplex Pros",
-              "telephone": "(682) 466-2130",
-              "email": "info@metroplexpros.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Dallas",
-                "addressRegion": "TX",
-                "addressCountry": "US"
+            "telephone": "(682) 466-2130",
+            "email": "info@metroplexpros.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Dallas",
+              "addressRegion": "TX",
+              "addressCountry": "US"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
               },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "08:00",
-                  "closes": "18:00"
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": "Saturday",
-                  "opens": "09:00",
-                  "closes": "16:00"
-                }
-              ],
-              "areaServed": [
-                {"@type": "City", "name": "Dallas, TX"},
-                {"@type": "City", "name": "Plano, TX"},
-                {"@type": "City", "name": "Frisco, TX"},
-                {"@type": "City", "name": "McKinney, TX"},
-                {"@type": "City", "name": "Allen, TX"},
-                {"@type": "City", "name": "Richardson, TX"}
-              ],
-              "priceRange": "$$$",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "127"
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
               }
+            ],
+            "areaServed": [
+              {"@type": "City", "name": "Dallas", "addressRegion": "TX"},
+              {"@type": "City", "name": "Plano", "addressRegion": "TX"},
+              {"@type": "City", "name": "Frisco", "addressRegion": "TX"},
+              {"@type": "City", "name": "McKinney", "addressRegion": "TX"},
+              {"@type": "City", "name": "Allen", "addressRegion": "TX"},
+              {"@type": "City", "name": "Richardson", "addressRegion": "TX"}
+            ],
+            "priceRange": "$$$",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "127"
             }
           })
         }}
