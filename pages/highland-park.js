@@ -8,7 +8,7 @@ export default function HighlandPark() {
       title="Highland Park Electrician & Plumber Near Me | Luxury Home Specialists | MetroPlex Pros"
       description="Highland Park Electrician & Plumber Near Me | Luxury Home Specialists | 24/7 Emergency Service | Same-Day | Licensed & Insured | Call (682) 466-2130 for FREE estimate!"
       keywords="Highland Park electrician, electrician near me Highland Park, home electrical repair Highland Park, Highland Park plumber, plumber near me Highland Park, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, smart home Highland Park, emergency electrician Highland Park"
-      canonicalUrl="https://www.metroplexpros.com/highland-park"
+      canonicalUrl="https://www.metroplexpros.com/highland-park/"
     
 
       openGraph={{

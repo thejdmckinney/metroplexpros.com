@@ -8,7 +8,7 @@ export default function SmartHomeInstallations() {
       title="Dallas Smart Home Installation Near Me | Licensed Electricians | MetroPlex Pros"
       description="Dallas Smart Home Installation Near Me | Licensed Electricians | Smart Locks, Thermostats, Lighting, Security | Same-Day Installation | FREE Consultation | Call (682) 466-2130 now!"
       keywords="smart home installation Dallas, smart home installation near me, home automation DFW, smart thermostat installation Dallas, security camera installation, smart lighting Dallas, smart lock installation, WiFi network Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/smart-home-installations"
+      canonicalUrl="https://www.metroplexpros.com/services/smart-home-installations/"
     
 
       openGraph={{

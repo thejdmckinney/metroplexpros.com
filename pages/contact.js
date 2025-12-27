@@ -87,7 +87,7 @@ export default function Contact() {
       title="Contact Dallas Electrician & Plumber | FREE Quote | (682) 466-2130"
       description="⭐ Get FREE estimates for electrical, plumbing & smart home services! Licensed Dallas electricians & plumbers. Same-day service. 24/7 emergency repairs. Call now (682) 466-2130!"
       keywords="contact Dallas electrician, Dallas plumber contact, emergency electrician Dallas, emergency plumber Dallas, electrical repair quotes Dallas, plumbing estimates Dallas, smart home installation Dallas"
-      canonicalUrl="https://www.metroplexpros.com/contact"
+      canonicalUrl="https://www.metroplexpros.com/contact/"
     >
       {/* LocalBusiness Schema for Contact Page */}
       <script

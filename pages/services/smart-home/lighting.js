@@ -9,7 +9,7 @@ export default function SmartLighting() {
       title="Smart Lighting Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional smart lighting installation in DFW. Philips Hue, LIFX, smart switches. Voice and app control. Call (682) 466-2130."
       keywords="smart lighting Dallas, Philips Hue installation, smart light bulbs, smart switches, home automation lighting, Dallas electrician"
-      canonicalUrl="https://www.metroplexpros.com/services/smart-home/lighting"
+      canonicalUrl="https://www.metroplexpros.com/services/smart-home/lighting/"
     
 
       openGraph={{

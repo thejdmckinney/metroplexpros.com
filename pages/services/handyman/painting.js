@@ -9,7 +9,7 @@ export default function Painting() {
       title="Interior & Exterior Painting Dallas-Fort Worth | MetroPlex Pros"
       description="Professional painting services in DFW. Interior & exterior painting, cabinet refinishing, color consultation. Licensed painters. Call (682) 466-2130."
       keywords="painting Dallas, interior painting, exterior painting, house painter, cabinet painting, Dallas painting contractor"
-      canonicalUrl="https://www.metroplexpros.com/services/handyman/painting"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman/painting/"
     
 
       openGraph={{

@@ -9,7 +9,7 @@ export default function DrainCleaning() {
       title="Drain Cleaning Services Dallas-Fort Worth | MetroPlex Pros"
       description="Professional drain cleaning and unclogging in DFW. Clear slow drains, clogged sinks, tubs, and main sewer lines. Same-day service. Call (682) 466-2130."
       keywords="drain cleaning Dallas, clogged drain, drain unclogging, sewer line cleaning, hydro jetting, plumber Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/plumbing/drain-cleaning"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing/drain-cleaning/"
     
 
       openGraph={{

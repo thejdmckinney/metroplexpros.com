@@ -9,7 +9,7 @@ export default function HomeAutomation() {
       title="Home Automation Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional home automation installation in DFW. Complete smart home systems, integration, voice control. Turn your home into a smart home. Call (682) 466-2130."
       keywords="home automation Dallas, smart home installation, home integration, Google Home, Amazon Alexa, Dallas electrician"
-      canonicalUrl="https://www.metroplexpros.com/services/smart-home/automation"
+      canonicalUrl="https://www.metroplexpros.com/services/smart-home/automation/"
     
 
       openGraph={{

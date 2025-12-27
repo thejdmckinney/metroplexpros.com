@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
       title="Privacy Policy - Metroplex Pros Electrician & Plumber Dallas"
       description="Privacy Policy for Metroplex Pros electrical, plumbing, and smart home services. Learn how we collect, use, and protect your personal information."
       keywords="privacy policy, Metroplex Pros privacy, data protection, personal information"
-      canonicalUrl="https://www.metroplexpros.com/privacy-policy"
+      canonicalUrl="https://www.metroplexpros.com/privacy-policy/"
     >
       <div className="legal-page">
         <div className="container">

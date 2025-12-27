@@ -8,7 +8,7 @@ export default function Garland() {
       title="Garland Electrician & Plumber | 24/7 Emergency Service | Same-Day Appointments | MetroPlex Pros"
       description="Licensed Garland electrician & plumber near me! 24/7 emergency service, same-day appointments, FREE estimates. Electrical repair, plumbing, handyman services. Call (682) 466-2130 now!"
       keywords="Garland electrician, electrician near me Garland, Garland plumber, plumber near me Garland, emergency electrician Garland, Garland handyman, electrician Garland TX, same day electrician Garland, 24 hour plumber Garland, licensed electrician Garland"
-      canonicalUrl="https://www.metroplexpros.com/garland"
+      canonicalUrl="https://www.metroplexpros.com/garland/"
       openGraph={{
         images: [
           {

@@ -8,7 +8,7 @@ export default function PlumbingServices() {
       title="Dallas Plumber Near Me | 24/7 Emergency Service | Licensed & Insured | MetroPlex Pros"
       description="Dallas Plumber Near Me | Licensed & Insured | 24/7 Emergency Plumbing Service | Water Heaters, Leaks, Drains, Sewer Repair | Same-Day Appointments | FREE Estimates | Call (682) 466-2130!"
       keywords="plumber Dallas, plumber near me Dallas, plumbing services DFW, emergency plumber near me, water heater repair, slab leak detection, drain cleaning, emergency plumber, fixture installation, pipe repair, 24 hour plumber Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/plumbing"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing/"
     
 
       openGraph={{

@@ -13,7 +13,7 @@ export default function Shop() {
       title="Shop Smart Home Products | MetroPlex Smart Home Supply"
       description="Browse and buy smart home devices, thermostats, lighting, security cameras, and electrical/plumbing supplies. Professional-grade products with expert installation available."
       keywords="buy smart home devices Dallas, smart thermostat shop, smart lighting online, video doorbell purchase, EV charger buy, plumbing supplies Dallas"
-      canonicalUrl="https://www.metroplexpros.com/shop"
+      canonicalUrl="https://www.metroplexpros.com/shop/"
     >
       {/* Hero Section */}
       <section className="hero">

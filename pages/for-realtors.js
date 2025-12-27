@@ -8,7 +8,7 @@ export default function ForRealtors() {
       title="For Realtors & Property Managers | Market Ready Home Services - Metroplex Pros"
       description="Professional market ready home preparation and rental make ready services for Dallas realtors and property managers. Fast turnaround, competitive pricing, reliable service."
       keywords="market ready homes Dallas, rental make ready services, realtor contractors Dallas, property management contractors, pre-listing home services Dallas, investment property renovation"
-      canonicalUrl="https://www.metroplexpros.com/for-realtors"
+      canonicalUrl="https://www.metroplexpros.com/for-realtors/"
     >
       {/* Structured Data for Better SEO */}
       <script 

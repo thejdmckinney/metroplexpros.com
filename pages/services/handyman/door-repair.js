@@ -9,7 +9,7 @@ export default function DoorRepair() {
       title="Door Repair & Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional door repair in DFW. Fix sticking doors, broken hinges, locksets, weather stripping. Door installation and replacement. Call (682) 466-2130."
       keywords="door repair Dallas, door installation, hinge repair, lockset installation, weather stripping, Dallas handyman"
-      canonicalUrl="https://www.metroplexpros.com/services/handyman/door-repair"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman/door-repair/"
     
 
       openGraph={{

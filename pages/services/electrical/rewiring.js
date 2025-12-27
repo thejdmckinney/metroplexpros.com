@@ -8,7 +8,7 @@ export default function Rewiring() {
       title="House Rewiring Services Dallas | Whole Home Electrical Rewiring | MetroPlex Pros"
       description="Professional house rewiring services in Dallas-Fort Worth. Whole home rewiring, aluminum wiring replacement, knob & tube removal. Licensed electricians. Safe, code-compliant electrical upgrades. Call (682) 466-2130."
       keywords="house rewiring Dallas, whole home rewiring, electrical rewiring near me, aluminum wiring replacement, knob and tube wiring, old house rewiring, home electrical repair service, residential rewiring Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/electrical/rewiring"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/rewiring/"
       openGraph={{
         images: [
           {
