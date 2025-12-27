@@ -29,16 +29,26 @@ export default function SEO({
 
   const ogData = { ...defaultOpenGraph, ...openGraph }
 
-  // Local Business Schema Markup - Updated for Electrician/Plumber Business
+  // Local Business Schema Markup - Updated for Electrician/Plumber/Handyman Business
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": ["Electrician", "Plumber", "HomeImprovementBusiness"],
+    "@type": ["Electrician", "Plumber", "GeneralContractor", "HomeImprovementBusiness"],
     "name": "Metroplex Pros",
-    "alternateName": ["Metroplex Pros Electrical & Plumbing", "MetroPlex Pros Dallas"],
-    "description": "Licensed Dallas electricians and plumbers providing expert electrical repairs, plumbing services, smart home installations, and 24/7 emergency service throughout the DFW metroplex since 2010.",
+    "alternateName": ["Metroplex Pros Electrical, Plumbing & Handyman", "MetroPlex Pros Dallas"],
+    "description": "Licensed Dallas electricians, plumbers, and handymen providing expert electrical repairs, plumbing services, handyman work, smart home installations, and 24/7 emergency service throughout the DFW metroplex.",
     "url": "https://www.metroplexpros.com",
-    "logo": "https://www.metroplexpros.com/logo.svg",
-    "image": "https://www.metroplexpros.com/logo.svg",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png",
+      "width": 1456,
+      "height": 816
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png",
+      "width": 1456,
+      "height": 816
+    },
     "telephone": "(682) 466-2130",
     "email": "info@metroplexpros.com",
     "priceRange": "$$-$$$",
@@ -123,6 +133,13 @@ export default function SEO({
       "Fixture Installation",
       "Pipe Repair & Repiping",
       "Emergency Plumbing Service",
+      "Handyman Services",
+      "Drywall Repair",
+      "Painting Services",
+      "Door Repair & Installation",
+      "Window Treatment Installation",
+      "Wall Art Hanging",
+      "General Home Repairs",
       "Smart Thermostat Installation",
       "Smart Home Automation",
       "Security Camera Installation",
@@ -132,7 +149,7 @@ export default function SEO({
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Electrical, Plumbing & Smart Home Services",
+      "name": "Electrical, Plumbing, Handyman & Smart Home Services",
       "itemListElement": [
         {
           "@type": "OfferCatalog",
@@ -152,6 +169,16 @@ export default function SEO({
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Cleaning"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leak Repair"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing"}}
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Handyman Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drywall Repair"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Painting Services"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Repair & Installation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Home Repairs"}}
           ]
         },
         {
