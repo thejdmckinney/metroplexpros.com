@@ -106,6 +106,19 @@ export default function PlumbingServices() {
 
       <TrustSignals variant="compact" />
 
+      {/* Hero Image */}
+      <section style={{backgroundColor: '#0d1117', padding: '2rem 0'}}>
+        <div className="container">
+          <div style={{borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d', maxWidth: '1000px', margin: '0 auto'}}>
+            <img 
+              src="/og-image-plumbingx2.png" 
+              alt="Professional Plumbing Services in Dallas-Fort Worth" 
+              style={{width: '100%', height: 'auto', display: 'block'}}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Our Plumbing Services */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">

@@ -105,6 +105,15 @@ export default function WallArtHanging() {
               ))}
             </div>
 
+            {/* Hero Image */}
+            <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
+              <img 
+                src="/og-image-wall-art.png" 
+                alt="Professional Wall Art Hanging Services" 
+                style={{width: '100%', height: 'auto', display: 'block'}}
+              />
+            </div>
+
             <div className="card" style={{padding: '2rem', marginBottom: '3rem', background: 'linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(0, 240, 255, 0.05))', border: '1px solid #00f0ff'}}>
               <h3 style={{fontSize: '1.8rem', marginBottom: '1rem', color: '#00f0ff'}}>
                 Our Professional Hanging Process

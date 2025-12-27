@@ -125,6 +125,15 @@ export default function SecuritySystems() {
               </div>
             </div>
 
+            {/* Additional Security Image */}
+            <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
+              <img 
+                src="/og-smart-home-security.png" 
+                alt="Complete Smart Home Security System" 
+                style={{width: '100%', height: 'auto', display: 'block'}}
+              />
+            </div>
+
             <div style={{textAlign: 'center', padding: '3rem 0'}}>
               <h3 style={{fontSize: '2rem', marginBottom: '1.5rem'}}>
                 Secure Your Home Today
