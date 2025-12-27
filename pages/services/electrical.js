@@ -8,6 +8,19 @@ export default function ElectricalServices() {
       description="Licensed electricians serving DFW. Home electrical repair service, electrical home repair near me, panel upgrades, wiring, lighting, smart home electrical, generators. 24/7 emergency service. Call (682) 466-2130."
       keywords="electrician Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician"
       canonicalUrl="https://www.metroplexpros.com/services/electrical"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-electrical-metroplex.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

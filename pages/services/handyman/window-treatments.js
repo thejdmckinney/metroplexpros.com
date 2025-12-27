@@ -8,6 +8,19 @@ export default function WindowTreatments() {
       description="Professional window treatment installation in DFW. Blinds, roman shades, smart shades, curtain rods. Expert mounting and precise measurements. Call (682) 466-2130."
       keywords="window treatment installation Dallas, blinds installation, roman shades, smart shades, motorized blinds, Dallas handyman"
       canonicalUrl="https://www.metroplexpros.com/services/handyman/window-treatments"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-window-treatments.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

@@ -8,6 +8,19 @@ export default function VideoDoorbells() {
       description="Professional video doorbell installation in DFW. Ring, Nest, Arlo doorbells. See who's at your door from anywhere. Call (682) 466-2130."
       keywords="video doorbell installation Dallas, Ring doorbell, Nest doorbell, smart doorbell, doorbell camera, Dallas electrician"
       canonicalUrl="https://www.metroplexpros.com/services/smart-home/doorbells"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-smart-locks.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

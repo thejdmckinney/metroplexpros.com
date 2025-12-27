@@ -8,6 +8,19 @@ export default function SmartThermostats() {
       description="Professional smart thermostat installation in DFW. Nest, Ecobee, Honeywell. Save energy and control temperature remotely. Call (682) 466-2130."
       keywords="smart thermostat installation Dallas, Nest thermostat, Ecobee, programmable thermostat, WiFi thermostat, Dallas electrician"
       canonicalUrl="https://www.metroplexpros.com/services/smart-home/thermostats"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-smart-locks.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

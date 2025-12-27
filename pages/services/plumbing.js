@@ -8,6 +8,19 @@ export default function PlumbingServices() {
       description="Licensed plumbers serving DFW. Water heater repair, slab leak detection, drain cleaning, fixture installation, emergency plumbing. Call (682) 466-2130."
       keywords="plumber Dallas, plumbing services DFW, water heater repair, slab leak detection, drain cleaning, emergency plumber, fixture installation, pipe repair"
       canonicalUrl="https://www.metroplexpros.com/services/plumbing"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-plumbingx2.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

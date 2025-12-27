@@ -8,6 +8,19 @@ export default function SmartLocks() {
       description="Professional smart lock installation in DFW. Keyless entry, remote access, auto-lock features. August, Yale, Schlage locks. Call (682) 466-2130."
       keywords="smart lock installation Dallas, keyless entry, August lock, Yale lock, Schlage Encode, Dallas locksmith electrician"
       canonicalUrl="https://www.metroplexpros.com/services/smart-home/locks"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-smart-locks.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

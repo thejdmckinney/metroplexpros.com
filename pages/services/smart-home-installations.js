@@ -8,6 +8,19 @@ export default function SmartHomeInstallations() {
       description="Professional smart home installation services in Dallas. Smart thermostats, security systems, lighting automation & WiFi optimization. Modernize your home today!"
       keywords="smart home installation Dallas, home automation DFW, smart thermostat installation Dallas, security camera installation, smart lighting Dallas, WiFi network Dallas"
       canonicalUrl="https://www.metroplexpros.com/services/smart-home-installations"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-smart-locks.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

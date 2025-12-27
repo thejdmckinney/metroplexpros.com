@@ -8,6 +8,19 @@ export default function LeakRepair() {
       description="Expert leak detection and repair services in DFW. Find hidden water leaks fast with advanced technology. Emergency leak repair available 24/7. Call (682) 466-2130."
       keywords="leak detection Dallas, water leak repair, pipe leak, plumbing leak, leak detection service, emergency plumber Dallas"
       canonicalUrl="https://www.metroplexpros.com/services/plumbing/leak-repair"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-plumbingx2.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

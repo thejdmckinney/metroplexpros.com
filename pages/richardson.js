@@ -8,6 +8,19 @@ export default function Richardson() {
       description="Professional home electrical repair service, handyman, and plumbing for Richardson homes. Panel upgrades, slab leak repair, aluminum wiring, older home specialists. Fast service, honest pricing."
       keywords="Richardson electrician, home electrical repair Richardson, electrical home repair, home electrical repair near me, Richardson plumber, Richardson handyman, electrical panel upgrade Richardson, slab leak Richardson, aluminum wiring Richardson"
       canonicalUrl="https://www.metroplexpros.com/richardson"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-university-park.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* LocalBusiness Schema for Richardson */}
       <script

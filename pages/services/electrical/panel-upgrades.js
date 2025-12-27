@@ -8,6 +8,19 @@ export default function PanelUpgrades() {
       description="Professional electrical panel upgrades and replacements in DFW. Home electrical repair service to increase your home's power capacity safely. Licensed electricians. Call (682) 466-2130."
       keywords="electrical panel upgrade, home electrical repair service, home electrical repair near me, breaker box replacement, electrical panel installation, 200 amp service upgrade, Dallas electrician"
       canonicalUrl="https://www.metroplexpros.com/services/electrical/panel-upgrades"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-electrical-metroplex.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

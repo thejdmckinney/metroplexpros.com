@@ -8,6 +8,19 @@ export default function HighlandPark() {
       description="Premium home electrical repair service, handyman, plumbing, and smart home services for Highland Park Estates. Licensed technicians, luxury fixture expertise, 24/7 emergency service. Park Cities trusted contractor."
       keywords="Highland Park electrician, home electrical repair Highland Park, electrical home repair, Highland Park plumber, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, smart home Highland Park"
       canonicalUrl="https://www.metroplexpros.com/highland-park"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-university-park.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* LocalBusiness Schema for Highland Park */}
       <script

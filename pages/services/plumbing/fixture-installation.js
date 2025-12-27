@@ -8,6 +8,19 @@ export default function FixtureInstallation() {
       description="Professional installation of faucets, sinks, toilets, showers, and tubs in DFW. Quality fixtures installed correctly. Licensed plumbers. Call (682) 466-2130."
       keywords="fixture installation Dallas, faucet installation, toilet installation, sink installation, shower installation, bathtub install, plumber Dallas"
       canonicalUrl="https://www.metroplexpros.com/services/plumbing/fixture-installation"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-plumbingx2.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* Service Schema */}
       <script

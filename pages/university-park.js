@@ -9,6 +9,17 @@ export default function UniversityPark() {
       description="Professional home electrical repair service, handyman, plumbing, and smart home integrations for University Park, TX homes. Licensed, insured, fast response. Serving Highland Park ISD area. Call today!"
       keywords="University Park electrician, home electrical repair University Park, electrical home repair, University Park plumber, University Park handyman, SMU area electrician, Highland Park ISD electrician, luxury home services Dallas"
       canonicalUrl="https://www.metroplexpros.com/university-park"
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-university-park.png',
+            width: 1200,
+            height: 630,
+            alt: 'University Park Home Services - Metroplex Pros',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       {/* LocalBusiness Schema for University Park */}
       <script

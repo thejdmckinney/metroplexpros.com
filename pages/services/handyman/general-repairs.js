@@ -8,6 +8,19 @@ export default function GeneralRepairs() {
       description="General home repair services in DFW. Fix anything in your home. Carpentry, assembly, maintenance. Your trusted handyman. Call (682) 466-2130."
       keywords="handyman Dallas, home repairs, general repairs, furniture assembly, carpentry, Dallas handyman services"
       canonicalUrl="https://www.metroplexpros.com/services/handyman/general-repairs"
+    
+
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-handyman.png',
+            width: 1200,
+            height: 630,
+            alt: 'Metroplex Pros - Professional Home Services in Dallas',
+            type: 'image/png'
+          }
+        ]
+      }}
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">
