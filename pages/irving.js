@@ -5,9 +5,9 @@ import TrustSignals, { InlineTrustBadges } from '../components/TrustSignals'
 export default function Irving() {
   return (
     <Layout 
-      title="Irving Electrician & Plumber | 24/7 Emergency Service Near Me | Same-Day | MetroPlex Pros"
-      description="Licensed Irving electrician & plumber near me! 24/7 emergency electrical & plumbing service, same-day appointments, FREE estimates. Serving Las Colinas, Valley Ranch & all Irving. Call (682) 466-2130!"
-      keywords="Irving electrician, electrician near me Irving, Irving plumber, plumber near me Irving, emergency electrician Irving, Irving handyman, electrician Irving TX, same day plumber Irving, 24 hour electrician Irving, licensed plumber Irving, Las Colinas electrician"
+      title="Irving Electrician, Plumber & Handyman | 24/7 Emergency Service Near Me | Same-Day | MetroPlex Pros"
+      description="Licensed Irving electrician, plumber & handyman near me! 24/7 emergency electrical & plumbing service, same-day appointments, FREE estimates. Serving Las Colinas, Valley Ranch & all Irving. Call (682) 466-2130!"
+      keywords="Irving electrician, electrician near me Irving, Irving plumber, plumber near me Irving, emergency electrician Irving, Irving handyman, handyman near me Irving, electrician Irving TX, same day plumber Irving, 24 hour electrician Irving, licensed plumber Irving, Las Colinas electrician"
       canonicalUrl="https://www.metroplexpros.com/irving/"
       openGraph={{
         images: [

@@ -5,9 +5,9 @@ import TrustSignals from '../components/TrustSignals'
 export default function Lakewood() {
   return (
     <Layout 
-      title="Lakewood Dallas Electrician & Plumber Near Me | Historic Home Specialists | MetroPlex Pros"
-      description="Lakewood Dallas Electrician & Plumber Near Me | Historic Home Specialists | 24/7 Emergency Service | Same-Day Appointments | Licensed & Insured | Call (682) 466-2130!"
-      keywords="Lakewood electrician, electrician near me Lakewood, home electrical repair Lakewood, Lakewood plumber, plumber near me Lakewood Dallas, Lakewood handyman, White Rock Lake electrician, East Dallas plumber, historic home electrician Dallas, emergency electrician Lakewood"
+      title="Lakewood Dallas Electrician, Plumber & Handyman Near Me | Historic Home Specialists | MetroPlex Pros"
+      description="Lakewood Dallas Electrician, Plumber & Handyman Near Me | Historic Home Specialists | 24/7 Emergency Service | Same-Day Appointments | Licensed & Insured | Call (682) 466-2130!"
+      keywords="Lakewood electrician, electrician near me Lakewood, home electrical repair Lakewood, Lakewood plumber, plumber near me Lakewood Dallas, Lakewood handyman, handyman near me Lakewood, White Rock Lake electrician, East Dallas plumber, historic home electrician Dallas, emergency electrician Lakewood"
       canonicalUrl="https://www.metroplexpros.com/lakewood/"
     
 
