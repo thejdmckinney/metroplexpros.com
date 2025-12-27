@@ -54,6 +54,7 @@ export default function HomeAutomation() {
               to sophisticated whole-home automation with custom scenes and routines.
             </p>
 
+            {/* Temporarily commented until Vercel deployment completes
             <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
               <img 
                 src="/voice-assistant-hub.png" 
@@ -61,6 +62,7 @@ export default function HomeAutomation() {
                 style={{width: '100%', height: 'auto', display: 'block'}}
               />
             </div>
+            */}
 
             <h3 style={{fontSize: '2rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
               Home Automation Systems

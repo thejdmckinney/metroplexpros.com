@@ -117,6 +117,7 @@ export default function SmartHomeInstallations() {
             </p>
           </div>
 
+          {/* Temporarily commented until Vercel deployment completes
           <div style={{marginBottom: '4rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(0, 240, 255, 0.3)', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.1)'}}>
             <img 
               src="/smart-home-hub.png" 
@@ -124,6 +125,7 @@ export default function SmartHomeInstallations() {
               style={{width: '100%', height: 'auto', display: 'block'}}
             />
           </div>
+          */}
 
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem'}}>
             {[
