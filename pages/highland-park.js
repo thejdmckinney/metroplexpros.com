@@ -17,9 +17,9 @@ export default function HighlandPark() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "MetroPlex Pros - Highland Park",
-            "image": "https://metroplexpros.com/logo.svg",
-            "@id": "https://metroplexpros.com/highland-park",
-            "url": "https://metroplexpros.com/highland-park",
+            "image": "https://www.metroplexpros.com/logo.svg",
+            "@id": "https://www.metroplexpros.com/highland-park",
+            "url": "https://www.metroplexpros.com/highland-park",
             "telephone": "(682) 466-2130",
             "priceRange": "$$$$",
             "address": {

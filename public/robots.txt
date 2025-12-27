@@ -9,7 +9,7 @@ Disallow: /api/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://metroplexpros.com/sitemap.xml
+Sitemap: https://www.metroplexpros.com/sitemap.xml
 
 # Allow Google Image Bot
 User-agent: Googlebot-Image

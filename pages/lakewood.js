@@ -17,9 +17,9 @@ export default function Lakewood() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "MetroPlex Pros - Lakewood",
-            "image": "https://metroplexpros.com/logo.svg",
-            "@id": "https://metroplexpros.com/lakewood",
-            "url": "https://metroplexpros.com/lakewood",
+            "image": "https://www.metroplexpros.com/logo.svg",
+            "@id": "https://www.metroplexpros.com/lakewood",
+            "url": "https://www.metroplexpros.com/lakewood",
             "telephone": "(682) 466-2130",
             "priceRange": "$$-$$$",
             "address": {

@@ -21,7 +21,7 @@ export default function FixtureInstallation() {
               "@type": "ProfessionalService",
               "name": "MetroPlex Pros",
               "telephone": "(682) 466-2130",
-              "url": "https://metroplexpros.com"
+              "url": "https://www.metroplexpros.com"
             },
             "areaServed": {
               "@type": "AdministrativeArea",

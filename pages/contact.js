@@ -97,7 +97,7 @@ export default function Contact() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Metroplex Pros",
-            "url": "https://metroplexpros.com/contact",
+            "url": "https://www.metroplexpros.com/contact",
             "telephone": "(682) 466-2130",
             "email": "info@metroplexpros.com",
             "address": {

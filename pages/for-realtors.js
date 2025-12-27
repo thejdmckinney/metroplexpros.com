@@ -22,7 +22,7 @@ export default function ForRealtors() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "Metroplex Pros",
-              "url": "https://metroplexpros.com",
+              "url": "https://www.metroplexpros.com",
               "telephone": "(682) 466-2130",
               "address": {
                 "@type": "PostalAddress",
@@ -45,7 +45,7 @@ export default function ForRealtors() {
               "@type": "Audience",
               "audienceType": "Real Estate Professionals"
             },
-            "url": "https://metroplexpros.com/for-realtors"
+            "url": "https://www.metroplexpros.com/for-realtors"
           })
         }}
       />

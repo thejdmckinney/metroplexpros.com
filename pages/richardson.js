@@ -17,9 +17,9 @@ export default function Richardson() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "MetroPlex Pros - Richardson",
-            "image": "https://metroplexpros.com/logo.svg",
-            "@id": "https://metroplexpros.com/richardson",
-            "url": "https://metroplexpros.com/richardson",
+            "image": "https://www.metroplexpros.com/logo.svg",
+            "@id": "https://www.metroplexpros.com/richardson",
+            "url": "https://www.metroplexpros.com/richardson",
             "telephone": "(682) 466-2130",
             "priceRange": "$$",
             "address": {

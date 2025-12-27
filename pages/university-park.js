@@ -18,9 +18,9 @@ export default function UniversityPark() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "MetroPlex Pros - University Park",
-            "image": "https://metroplexpros.com/logo.svg",
-            "@id": "https://metroplexpros.com/university-park",
-            "url": "https://metroplexpros.com/university-park",
+            "image": "https://www.metroplexpros.com/logo.svg",
+            "@id": "https://www.metroplexpros.com/university-park",
+            "url": "https://www.metroplexpros.com/university-park",
             "telephone": "(682) 466-2130",
             "priceRange": "$$$",
             "address": {
