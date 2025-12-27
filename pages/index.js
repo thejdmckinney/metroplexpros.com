@@ -79,6 +79,12 @@ export default function Home() {
               <p>Transform your home with smart thermostats, automated lighting, security systems, door locks, cameras, voice control, and whole-home automation.</p>
               <Link href="/services/smart-home-installations" className="btn-link">Learn More →</Link>
             </div>
+            <div className="card">
+              <div className="service-icon">🔨</div>
+              <h3>Handyman Services</h3>
+              <p>Professional handyman solutions for repairs, installations, carpentry, painting, drywall, fixtures, and general home maintenance projects large and small.</p>
+              <Link href="/services/handyman" className="btn-link">Learn More →</Link>
+            </div>
           </div>
           
           {/* Detailed Service Lists */}
@@ -129,6 +135,22 @@ export default function Home() {
                 <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Smart switches & dimmers</li>
                 <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Whole-home integration</li>
                 <li style={{padding: '0.5rem 0', color: '#c9d1d9'}}>✓ Consultation & planning</li>
+              </ul>
+            </div>
+
+            <div style={{padding: '2rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+              <h4 style={{color: '#00f0ff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                <span style={{fontSize: '1.5rem'}}>🔨</span> Handyman Services Include:
+              </h4>
+              <ul style={{listStyle: 'none', padding: 0}}>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Drywall repair & patching</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Interior & exterior painting</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Door & window repair/installation</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Fixture installation (shelves, mirrors, art)</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Carpentry & trim work</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Deck & fence repairs</li>
+                <li style={{padding: '0.5rem 0', borderBottom: '1px solid #30363d', color: '#c9d1d9'}}>✓ Pressure washing</li>
+                <li style={{padding: '0.5rem 0', color: '#c9d1d9'}}>✓ General home maintenance</li>
               </ul>
             </div>
           </div>
