@@ -274,23 +274,23 @@ export default function HandymanServices() {
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 className="section-title" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>
-              How Our Handyman Service Works
+              Professional Handyman Solutions
             </h2>
           </div>
 
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', maxWidth: '1000px', margin: '0 auto'}}>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', maxWidth: '900px', margin: '0 auto'}}>
             {[
               { step: '1', title: 'Contact Us', desc: 'Call, text, or submit an online request with details about your project.' },
               { step: '2', title: 'Get a Quote', desc: "We'll provide an estimate and schedule a convenient time for the work." },
               { step: '3', title: 'We Do the Work', desc: 'Our skilled handyman completes your project with quality craftsmanship.' },
               { step: '4', title: 'Final Inspection', desc: 'We walk through the completed work with you to ensure your satisfaction.' }
             ].map((item, index) => (
-              <div key={index} style={{padding: '2rem', backgroundColor: '#0d1117', borderRadius: '12px', border: '2px solid rgba(0, 240, 255, 0.3)', textAlign: 'center'}}>
-                <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '1rem'}}>
-                  {item.step}
+              <div key={index} style={{padding: '2rem', backgroundColor: '#0d1117', borderRadius: '12px', border: '1px solid rgba(0, 240, 255, 0.3)', textAlign: 'center'}}>
+                <div style={{fontSize: '2rem', marginBottom: '1rem'}}>
+                  {item.step === '1' ? '📞' : item.step === '2' ? '💰' : item.step === '3' ? '🔧' : '✅'}
                 </div>
-                <h3 style={{color: '#00f0ff', fontSize: '1.4rem', marginBottom: '1rem'}}>{item.title}</h3>
-                <p style={{color: '#c9d1d9', lineHeight: '1.8'}}>{item.desc}</p>
+                <div style={{color: '#00f0ff', fontSize: '1.1rem', marginBottom: '0.5rem'}}>{item.title}</div>
+                <p style={{color: '#c9d1d9', lineHeight: '1.6', fontSize: '0.95rem'}}>{item.desc}</p>
               </div>
             ))}
           </div>
