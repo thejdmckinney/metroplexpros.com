@@ -54,7 +54,6 @@ export default function SmartLighting() {
               and complete home automation.
             </p>
 
-            {/* Temporarily commented until Vercel deployment completes
             <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
               <img 
                 src="/smart-lighting.png" 
@@ -62,7 +61,6 @@ export default function SmartLighting() {
                 style={{width: '100%', height: 'auto', display: 'block'}}
               />
             </div>
-            */}
 
             <h3 style={{fontSize: '2rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
               Smart Lighting Options

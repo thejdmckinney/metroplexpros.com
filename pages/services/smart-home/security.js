@@ -54,7 +54,6 @@ export default function SecuritySystems() {
               you can control from your phone.
             </p>
 
-            {/* Temporarily commented until Vercel deployment completes
             <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
               <img 
                 src="/security-cameras.png" 
@@ -62,7 +61,6 @@ export default function SecuritySystems() {
                 style={{width: '100%', height: 'auto', display: 'block'}}
               />
             </div>
-            */}
 
             <h3 style={{fontSize: '2rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
               Security System Components
