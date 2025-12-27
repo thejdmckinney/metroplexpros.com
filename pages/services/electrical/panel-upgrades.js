@@ -1,5 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../../../components/TrustSignals'
+
 
 export default function PanelUpgrades() {
   return (
@@ -69,6 +71,8 @@ export default function PanelUpgrades() {
           </div>
         </div>
       </section>
+
+      <TrustSignals />
 
       {/* Main Content */}
       <section className="section">

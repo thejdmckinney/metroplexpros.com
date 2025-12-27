@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals, { InlineTrustBadges } from '../components/TrustSignals'
 
 export default function Irving() {
   return (
@@ -140,6 +141,8 @@ export default function Irving() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Services Overview */}
       <section className="section" style={{background: '#0d1117'}}>

@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../../components/TrustSignals'
 
 export default function PlumbingServices() {
   return (
@@ -102,6 +103,8 @@ export default function PlumbingServices() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Our Plumbing Services */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../components/TrustSignals'
 
 export default function HighlandPark() {
   return (
@@ -137,6 +138,8 @@ export default function HighlandPark() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Why Highland Park Homeowners Choose Us */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>

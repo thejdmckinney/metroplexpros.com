@@ -136,6 +136,8 @@ export default function UniversityPark() {
         </div>
       </section>
 
+      <TrustSignals variant="compact" />
+
       {/* Why University Park Homeowners Choose Us */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">

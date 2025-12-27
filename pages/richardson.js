@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../components/TrustSignals'
 
 export default function Richardson() {
   return (
@@ -137,6 +138,8 @@ export default function Richardson() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Why Richardson Homeowners Choose Us */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>

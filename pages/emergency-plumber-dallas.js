@@ -1,7 +1,8 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../components/TrustSignals'
 
-export default function EmergencyPlumberDallas() {
+export default function EmergencyPlumber() {
   return (
     <Layout 
       title="Emergency Plumber Dallas | 24/7 Service Near Me | Fast Response | (682) 466-2130"
@@ -92,6 +93,8 @@ export default function EmergencyPlumberDallas() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Common Plumbing Emergencies */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>

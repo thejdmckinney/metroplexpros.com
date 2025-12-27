@@ -1,7 +1,8 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../components/TrustSignals'
 
-export default function EmergencyElectricianDallas() {
+export default function EmergencyElectrician() {
   return (
     <Layout 
       title="Emergency Electrician Dallas | 24/7 Service Near Me | 30-Min Response | (682) 466-2130"
@@ -92,6 +93,8 @@ export default function EmergencyElectricianDallas() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Common Electrical Emergencies */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>

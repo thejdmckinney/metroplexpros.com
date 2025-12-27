@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import TrustSignals, { InlineTrustBadges } from '../components/TrustSignals'
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
                   Call (682) 466-2130
                 </Link>
               </div>
+              <InlineTrustBadges />
             </div>
             <div className="hero-image">
               <div className="hero-logo-container">
@@ -41,6 +43,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Trust Signals Section */}
+      <section className="section" style={{background: '#0d1117', paddingTop: '3rem', paddingBottom: '3rem'}}>
+        <div className="container">
+          <TrustSignals variant="compact" />
         </div>
       </section>
 

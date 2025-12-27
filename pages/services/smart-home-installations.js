@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import TrustSignals from '../../components/TrustSignals'
 
 export default function SmartHomeInstallations() {
   return (
@@ -101,6 +102,8 @@ export default function SmartHomeInstallations() {
           </div>
         </div>
       </section>
+
+      <TrustSignals variant="compact" />
 
       {/* Our Electrical Services */}
       <section className="section" style={{backgroundColor: '#0d1117'}}>
