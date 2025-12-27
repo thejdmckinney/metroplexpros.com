@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function About() {
   return (
     <Layout 
-      title="About Us - Licensed Dallas Electricians & Plumbers | Metroplex Pros"
-      description="⭐ Trusted by 500+ DFW homeowners! Licensed electricians & plumbers with 15+ years experience in electrical repairs, plumbing services & smart home installations. 24/7 emergency service. Call (682) 466-2130!"
-      keywords="Dallas electrician about, Dallas plumber about, licensed electrician Dallas, licensed plumber DFW, smart home installer Dallas, electrical contractor Dallas, plumbing contractor Dallas"
+      title="About Us - Licensed Dallas Electricians, Plumbers & Handymen | Metroplex Pros"
+      description="⭐ Trusted by 500+ DFW homeowners! Licensed electricians, plumbers & handymen with 15+ years experience in electrical repairs, plumbing services, handyman work & smart home installations. 24/7 emergency service. Call (682) 466-2130!"
+      keywords="Dallas electrician about, Dallas plumber about, Dallas handyman about, licensed electrician Dallas, licensed plumber DFW, licensed handyman Dallas, smart home installer Dallas, electrical contractor Dallas, plumbing contractor Dallas"
       canonicalUrl="https://www.metroplexpros.com/about/"
     >
       {/* Hero Section */}

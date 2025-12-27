@@ -5,9 +5,9 @@ import TrustSignals, { InlineTrustBadges } from '../components/TrustSignals'
 export default function Home() {
   return (
     <Layout 
-      title="Dallas Electrician & Plumber | Smart Home Installation | Metroplex Pros"
-      description="Licensed Dallas Electrician & Plumber Near Me | 24/7 Emergency Service | Same-Day Appointments | FREE Estimates | Electrical & plumbing repairs you can trust. Call (682) 466-2130 now!"
-      keywords="Dallas electrician, electrician near me Dallas, Dallas plumber, plumber near me Dallas, home electrical repair service, electrical home repair, home electrical repair near me, smart home installation Dallas, emergency electrician near me, emergency plumber near me"
+      title="Dallas Electrician, Plumber & Handyman | Smart Home Installation | Metroplex Pros"
+      description="Licensed Dallas Electrician, Plumber & Handyman Near Me | 24/7 Emergency Service | Same-Day Appointments | FREE Estimates | Electrical, plumbing & handyman repairs you can trust. Call (682) 466-2130 now!"
+      keywords="Dallas electrician, electrician near me Dallas, Dallas plumber, plumber near me Dallas, Dallas handyman, handyman near me Dallas, home electrical repair service, electrical home repair, home electrical repair near me, smart home installation Dallas, emergency electrician near me, emergency plumber near me"
       canonicalUrl="https://www.metroplexpros.com"
     >
       {/* Hero Section */}
