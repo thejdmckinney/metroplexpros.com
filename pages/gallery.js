@@ -178,12 +178,17 @@ export default function Gallery() {
       </section>
 
       <style jsx>{`
+        .gallery-section {
+          overflow-x: hidden;
+        }
+
         .gallery-filters {
           display: flex;
           justify-content: center;
           gap: 1rem;
           margin: 2rem 0;
           flex-wrap: wrap;
+          max-width: 100%;
         }
 
         .filter-btn {
@@ -205,7 +210,7 @@ export default function Gallery() {
 
         .projects-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 2rem;
           margin-top: 3rem;
         }
@@ -216,6 +221,7 @@ export default function Gallery() {
           overflow: hidden;
           box-shadow: 0 8px 25px rgba(0,0,0,0.1);
           transition: transform 0.3s ease;
+          max-width: 100%;
         }
 
         .project-card:hover {
@@ -227,6 +233,7 @@ export default function Gallery() {
           height: 400px;
           overflow: hidden;
           background: #f5f5f5;
+          width: 100%;
         }
 
         .project-photo {
@@ -307,12 +314,29 @@ export default function Gallery() {
         }
 
         @media (max-width: 768px) {
+          .gallery-filters {
+            gap: 0.5rem;
+            padding: 0 1rem;
+          }
+
+          .filter-btn {
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+          }
+
           .projects-grid {
             grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 0 1rem;
           }
           
+          .project-card {
+            margin: 0 auto;
+            max-width: 100%;
+          }
+
           .project-image {
-            height: 300px;
+            height: 250px;
           }
 
           .project-caption h3 {
@@ -323,12 +347,47 @@ export default function Gallery() {
             font-size: 0.9rem;
           }
 
+          .project-caption {
+            padding: 1.5rem 1rem 1rem;
+          }
+
           .showcase-stats {
             justify-content: center;
           }
           
           .grid-2 {
             grid-template-columns: 1fr;
+          }
+
+          .showcase-text {
+            padding: 0 1rem;
+          }
+
+          .truck-image {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0 0.5rem;
+          }
+
+          .project-image {
+            height: 220px;
+          }
+
+          .filter-btn {
+            padding: 0.5rem 0.8rem;
+            font-size: 0.85rem;
+          }
+
+          .project-badge {
+            font-size: 0.75rem;
+            padding: 0.4rem 0.8rem;
           }
         }
       `}</style>
