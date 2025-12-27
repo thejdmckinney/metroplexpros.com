@@ -88,8 +88,19 @@ export default function Home() {
           </div>
           
           {/* Detailed Service Lists */}
-          <div className="service-details-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '4rem'}}>
-            <div style={{padding: '2rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
+          <div className="service-details-grid" style={{
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+            gap: '2rem', 
+            marginTop: '4rem'
+          }}>
+            <div style={{
+              padding: '2rem', 
+              backgroundColor: '#161b22', 
+              border: '1px solid #30363d', 
+              borderRadius: '8px',
+              maxWidth: '100%'
+            }}>
               <h4 style={{color: '#00f0ff', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 <span style={{fontSize: '1.5rem'}}>⚡</span> Electrical Services Include:
               </h4>
@@ -366,6 +377,75 @@ export default function Home() {
         </div>
       </section>
 
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .service-details-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+            padding: 0 0.5rem;
+          }
+
+          .services-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+
+          .features {
+            grid-template-columns: 1fr !important;
+          }
+
+          .feature {
+            padding: 1rem !important;
+          }
+
+          .faq-grid {
+            padding: 0 0.5rem;
+          }
+
+          .faq-item {
+            padding: 1.25rem !important;
+          }
+
+          .faq-item h3 {
+            font-size: 1.1rem !important;
+          }
+
+          .grid-2 {
+            grid-template-columns: 1fr !important;
+            gap: 2rem;
+          }
+
+          .stats-container {
+            margin-top: 2rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .service-details-grid {
+            gap: 1rem !important;
+            margin-top: 2rem !important;
+          }
+
+          .hero-buttons {
+            flex-direction: column;
+            width: 100%;
+          }
+
+          .hero-buttons .btn {
+            width: 100%;
+          }
+
+          .cta-buttons {
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .cta-buttons .btn {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      `}</style>
 
     </Layout>
   )
