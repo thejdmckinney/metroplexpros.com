@@ -54,6 +54,14 @@ export default function SmartLighting() {
               and complete home automation.
             </p>
 
+            <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
+              <img 
+                src="/smart-lighting.png" 
+                alt="Smart Lighting System with Color Control" 
+                style={{width: '100%', height: 'auto', display: 'block'}}
+              />
+            </div>
+
             <h3 style={{fontSize: '2rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
               Smart Lighting Options
             </h3>

@@ -54,6 +54,14 @@ export default function SecuritySystems() {
               you can control from your phone.
             </p>
 
+            <div style={{marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d'}}>
+              <img 
+                src="/security-cameras.png" 
+                alt="Smart Security Camera System Installation" 
+                style={{width: '100%', height: 'auto', display: 'block'}}
+              />
+            </div>
+
             <h3 style={{fontSize: '2rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
               Security System Components
             </h3>
