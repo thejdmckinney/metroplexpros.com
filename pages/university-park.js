@@ -5,9 +5,9 @@ import Image from 'next/image'
 export default function UniversityPark() {
   return (
     <Layout 
-      title="University Park Handyman, Electrical & Plumbing | Smart Home Integrations | MetroPlex Pros"
-      description="Professional home electrical repair service, handyman, plumbing, and smart home integrations for University Park, TX homes. Licensed, insured, fast response. Serving Highland Park ISD area. Call today!"
-      keywords="University Park electrician, home electrical repair University Park, electrical home repair, University Park plumber, University Park handyman, SMU area electrician, Highland Park ISD electrician, luxury home services Dallas"
+      title="University Park Electrician & Plumber Near Me | Luxury Home Services | MetroPlex Pros"
+      description="University Park Electrician & Plumber Near Me | Luxury Home Services | 24/7 Emergency Service | Same-Day | Licensed & Insured | Serving SMU area. Call (682) 466-2130!"
+      keywords="University Park electrician, electrician near me University Park, home electrical repair University Park, University Park plumber, plumber near me University Park, University Park handyman, SMU area electrician, Highland Park ISD electrician, luxury home services Dallas, emergency electrician University Park"
       canonicalUrl="https://www.metroplexpros.com/university-park"
       openGraph={{
         images: [

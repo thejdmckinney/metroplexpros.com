@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function SmartHomeInstallations() {
   return (
     <Layout 
-      title="Smart Home Installation Dallas | Home Automation Systems - MetroPlex Pros"
-      description="Professional smart home installation services in Dallas. Smart thermostats, security systems, lighting automation & WiFi optimization. Modernize your home today!"
-      keywords="smart home installation Dallas, home automation DFW, smart thermostat installation Dallas, security camera installation, smart lighting Dallas, WiFi network Dallas"
+      title="Dallas Smart Home Installation Near Me | Licensed Electricians | MetroPlex Pros"
+      description="Dallas Smart Home Installation Near Me | Licensed Electricians | Smart Locks, Thermostats, Lighting, Security | Same-Day Installation | FREE Consultation | Call (682) 466-2130 now!"
+      keywords="smart home installation Dallas, smart home installation near me, home automation DFW, smart thermostat installation Dallas, security camera installation, smart lighting Dallas, smart lock installation, WiFi network Dallas"
       canonicalUrl="https://www.metroplexpros.com/services/smart-home-installations"
     
 

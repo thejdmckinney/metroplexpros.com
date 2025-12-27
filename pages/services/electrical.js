@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function ElectricalServices() {
   return (
     <Layout 
-      title="Professional Electrical Services Dallas-Fort Worth | MetroPlex Pros"
-      description="Licensed electricians serving DFW. Home electrical repair service, electrical home repair near me, panel upgrades, wiring, lighting, smart home electrical, generators. 24/7 emergency service. Call (682) 466-2130."
-      keywords="electrician Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician"
+      title="Dallas Electrician Near Me | 24/7 Emergency Service | Licensed & Insured | MetroPlex Pros"
+      description="Dallas Electrician Near Me | Licensed & Insured | 24/7 Emergency Electrical Service | Panel Upgrades, Rewiring, Lighting, Generators | Same-Day Service Available | Call (682) 466-2130 now!"
+      keywords="electrician Dallas, electrician near me Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician, emergency electrician near me"
       canonicalUrl="https://www.metroplexpros.com/services/electrical"
     
 

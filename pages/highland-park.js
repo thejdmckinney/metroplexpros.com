@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function HighlandPark() {
   return (
     <Layout 
-      title="Highland Park Handyman, Electrical & Plumbing, Smart Home Integrations TX | MetroPlex Pros"
-      description="Premium home electrical repair service, handyman, plumbing, and smart home services for Highland Park Estates. Licensed technicians, luxury fixture expertise, 24/7 emergency service. Park Cities trusted contractor."
-      keywords="Highland Park electrician, home electrical repair Highland Park, electrical home repair, Highland Park plumber, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, smart home Highland Park"
+      title="Highland Park Electrician & Plumber Near Me | Luxury Home Specialists | MetroPlex Pros"
+      description="Highland Park Electrician & Plumber Near Me | Luxury Home Specialists | 24/7 Emergency Service | Same-Day | Licensed & Insured | Call (682) 466-2130 for FREE estimate!"
+      keywords="Highland Park electrician, electrician near me Highland Park, home electrical repair Highland Park, Highland Park plumber, plumber near me Highland Park, Highland Park handyman, Park Cities electrician, luxury home electrician Dallas, Highland Park Village contractor, smart home Highland Park, emergency electrician Highland Park"
       canonicalUrl="https://www.metroplexpros.com/highland-park"
     
 

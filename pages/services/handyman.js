@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function HandymanServices() {
   return (
     <Layout 
-      title="Professional Handyman Services Dallas-Fort Worth | MetroPlex Pros"
-      description="Reliable handyman services in DFW. Drywall repair, painting, carpentry, door/window repairs, deck maintenance, home repairs. Call (682) 466-2130."
-      keywords="handyman Dallas, handyman services DFW, home repairs, drywall repair, painting, carpentry, door repair, deck maintenance, general handyman"
+      title="Dallas Handyman Near Me | Same-Day Service | Licensed & Insured | MetroPlex Pros"
+      description="Dallas Handyman Near Me | Licensed & Insured | Same-Day Service | Drywall, Painting, Repairs, TV Mounting, Fixtures | Fast, Reliable, Affordable | Call (682) 466-2130 for FREE estimate!"
+      keywords="handyman Dallas, handyman near me Dallas, handyman services near me, home repairs, drywall repair, painting, carpentry, door repair, TV mounting, fixture installation, general handyman Dallas"
       canonicalUrl="https://www.metroplexpros.com/services/handyman"
     
 

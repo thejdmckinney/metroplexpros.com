@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function EmergencyPlumberDallas() {
   return (
     <Layout 
-      title="24/7 Emergency Plumber Dallas TX | (682) 466-2130 | Same-Day Service"
-      description="⚡ EMERGENCY PLUMBER DALLAS - Available 24/7! Burst pipes, sewer backups, water heater failures, gas leaks. Licensed plumber responds fast. Call (682) 466-2130 NOW!"
-      keywords="emergency plumber Dallas, 24 hour plumber Dallas, emergency plumbing service Dallas, burst pipe repair, sewer backup, water heater emergency, gas leak plumber, urgent plumbing repair Dallas"
+      title="Emergency Plumber Dallas | 24/7 Service Near Me | Fast Response | (682) 466-2130"
+      description="Emergency Plumber Dallas | 24/7 Service Near Me | Fast Response | Licensed & Insured | Burst Pipes, Leaks, Clogs, No Water | Call (682) 466-2130 NOW!"
+      keywords="emergency plumber Dallas, emergency plumber near me Dallas, 24 hour plumber Dallas, 24 hour plumber near me, emergency plumbing service Dallas, burst pipe repair, sewer backup, water heater emergency, gas leak plumber, urgent plumbing repair Dallas, plumber near me"
       canonicalUrl="https://www.metroplexpros.com/emergency-plumber-dallas"
     >
       {/* Emergency Service Schema */}

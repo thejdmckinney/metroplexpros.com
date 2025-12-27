@@ -1,0 +1,305 @@
+import Layout from '../components/Layout'
+import Link from 'next/link'
+
+export default function Garland() {
+  return (
+    <Layout 
+      title="Garland Electrician & Plumber | 24/7 Emergency Service | Same-Day Appointments | MetroPlex Pros"
+      description="Licensed Garland electrician & plumber near me! 24/7 emergency service, same-day appointments, FREE estimates. Electrical repair, plumbing, handyman services. Call (682) 466-2130 now!"
+      keywords="Garland electrician, electrician near me Garland, Garland plumber, plumber near me Garland, emergency electrician Garland, Garland handyman, electrician Garland TX, same day electrician Garland, 24 hour plumber Garland, licensed electrician Garland"
+      canonicalUrl="https://www.metroplexpros.com/garland"
+      openGraph={{
+        images: [
+          {
+            url: 'https://www.metroplexpros.com/og-image-university-park.png',
+            width: 1200,
+            height: 630,
+            alt: 'Garland Electrician & Plumber - Metroplex Pros',
+            type: 'image/png'
+          }
+        ]
+      }}
+    >
+      {/* LocalBusiness Schema for Garland */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Electrician", "Plumber", "ProfessionalService"],
+            "name": "MetroPlex Pros - Garland",
+            "image": "https://www.metroplexpros.com/logo.svg",
+            "@id": "https://www.metroplexpros.com/garland",
+            "url": "https://www.metroplexpros.com/garland",
+            "telephone": "(682) 466-2130",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Garland",
+              "addressLocality": "Garland",
+              "addressRegion": "TX",
+              "postalCode": "75040",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 32.9126,
+              "longitude": -96.6389
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            },
+            "sameAs": [
+              "https://www.facebook.com/metroplexpros",
+              "https://www.instagram.com/metroplexpros"
+            ],
+            "areaServed": {
+              "@type": "City",
+              "name": "Garland",
+              "sameAs": "https://en.wikipedia.org/wiki/Garland,_Texas"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Garland Electrical & Plumbing Services",
+              "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "24/7 Emergency Electrical Service"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing Repairs"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Panel Upgrades"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Heater Repair & Replacement"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smart Home Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Handyman Services"}}
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127"
+            }
+          })
+        }}
+      />
+
+      {/* Hero Section */}
+      <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)', position: 'relative', overflow: 'hidden'}}>
+        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.08, backgroundImage: 'radial-gradient(circle at 25% 30%, #00f0ff 0%, transparent 40%), radial-gradient(circle at 75% 70%, #00f0ff 0%, transparent 40%)'}}>
+        </div>
+        <div className="container" style={{position: 'relative', zIndex: 1}}>
+          <div className="hero-content text-center">
+            <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', background: 'linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(0, 240, 255, 0.05))', border: '1px solid #00f0ff', borderRadius: '30px', marginBottom: '2rem', fontSize: '0.9rem', letterSpacing: '2px', color: '#00f0ff', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.2)'}}>
+              SERVING GARLAND SINCE 2010 • 24/7 EMERGENCY SERVICE
+            </div>
+            <h1 className="hero-title" style={{fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.2'}}>
+              Garland's Trusted <span className="text-accent">Electrician & Plumber</span>
+            </h1>
+            <p className="hero-subtitle" style={{fontSize: '1.4rem', color: '#c9d1d9', marginBottom: '1.5rem', fontWeight: 300}}>
+              Licensed Professionals • Same-Day Service • FREE Estimates
+            </p>
+            <p className="hero-description" style={{maxWidth: '800px', margin: '0 auto 2rem', fontSize: '1.1rem', lineHeight: '1.8', color: '#8b949e'}}>
+              Need an electrician or plumber near me in Garland? MetroPlex Pros provides expert electrical repairs, 
+              plumbing services, and handyman work throughout Garland, TX. From Firewheel Town Center to Lake Ray Hubbard 
+              neighborhoods, we deliver fast, reliable, and affordable service 24/7.
+            </p>
+            <div className="hero-buttons" style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem'}}>
+              <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.2rem', padding: '1.2rem 2.5rem', background: 'linear-gradient(135deg, #00f0ff, #0088cc)', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.4)'}}>
+                📞 Call (682) 466-2130
+              </Link>
+              <Link href="/contact" className="btn btn-outline" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
+                Get FREE Estimate
+              </Link>
+            </div>
+            <div style={{display: 'flex', gap: '3rem', justifyContent: 'center', flexWrap: 'wrap', paddingTop: '2rem', borderTop: '1px solid #30363d'}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '0.5rem'}}>15+</div>
+                <div style={{color: '#8b949e', fontSize: '0.95rem'}}>Years in Garland</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '0.5rem'}}>24/7</div>
+                <div style={{color: '#8b949e', fontSize: '0.95rem'}}>Emergency Service</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '0.5rem'}}>Same Day</div>
+                <div style={{color: '#8b949e', fontSize: '0.95rem'}}>Appointments Available</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '0.5rem'}}>FREE</div>
+                <div style={{color: '#8b949e', fontSize: '0.95rem'}}>Estimates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="section" style={{background: '#0d1117'}}>
+        <div className="container">
+          <h2 className="section-title" style={{textAlign: 'center', marginBottom: '3rem'}}>
+            Professional Services for <span className="text-accent">Garland Homes & Businesses</span>
+          </h2>
+          
+          <div className="services-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '3rem'}}>
+            
+            {/* Electrical Services */}
+            <div className="service-card" style={{background: 'linear-gradient(135deg, #161b22 0%, #1a1f2e 100%)', padding: '2rem', borderRadius: '12px', border: '1px solid #30363d'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⚡</div>
+              <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>Electrical Services</h3>
+              <ul style={{listStyle: 'none', padding: 0, color: '#8b949e', lineHeight: '2'}}>
+                <li>✓ Emergency electrical repairs</li>
+                <li>✓ Panel upgrades & replacements</li>
+                <li>✓ Outlet & switch installation</li>
+                <li>✓ Lighting installation</li>
+                <li>✓ Circuit breaker repairs</li>
+                <li>✓ Code compliance inspections</li>
+                <li>✓ Generator installation</li>
+              </ul>
+              <Link href="/services/electrical" className="btn btn-outline" style={{marginTop: '1.5rem', display: 'inline-block'}}>
+                View Electrical Services →
+              </Link>
+            </div>
+
+            {/* Plumbing Services */}
+            <div className="service-card" style={{background: 'linear-gradient(135deg, #161b22 0%, #1a1f2e 100%)', padding: '2rem', borderRadius: '12px', border: '1px solid #30363d'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🔧</div>
+              <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>Plumbing Services</h3>
+              <ul style={{listStyle: 'none', padding: 0, color: '#8b949e', lineHeight: '2'}}>
+                <li>✓ Emergency plumbing repairs</li>
+                <li>✓ Water heater repair & replacement</li>
+                <li>✓ Drain cleaning & sewer repair</li>
+                <li>✓ Leak detection & repair</li>
+                <li>✓ Fixture installation</li>
+                <li>✓ Pipe replacement</li>
+                <li>✓ Slab leak repair</li>
+              </ul>
+              <Link href="/services/plumbing" className="btn btn-outline" style={{marginTop: '1.5rem', display: 'inline-block'}}>
+                View Plumbing Services →
+              </Link>
+            </div>
+
+            {/* Handyman Services */}
+            <div className="service-card" style={{background: 'linear-gradient(135deg, #161b22 0%, #1a1f2e 100%)', padding: '2rem', borderRadius: '12px', border: '1px solid #30363d'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🔨</div>
+              <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>Handyman Services</h3>
+              <ul style={{listStyle: 'none', padding: 0, color: '#8b949e', lineHeight: '2'}}>
+                <li>✓ Drywall repair & painting</li>
+                <li>✓ Door & window repairs</li>
+                <li>✓ Fixture installation</li>
+                <li>✓ Ceiling fan installation</li>
+                <li>✓ TV mounting & wall art</li>
+                <li>✓ General home repairs</li>
+                <li>✓ Smart home installation</li>
+              </ul>
+              <Link href="/services/handyman" className="btn btn-outline" style={{marginTop: '1.5rem', display: 'inline-block'}}>
+                View Handyman Services →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us - Garland Specific */}
+      <section className="section" style={{background: '#161b22'}}>
+        <div className="container">
+          <h2 className="section-title" style={{textAlign: 'center', marginBottom: '3rem'}}>
+            Why Garland Chooses <span className="text-accent">MetroPlex Pros</span>
+          </h2>
+          
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem'}}>
+            <div style={{textAlign: 'center', padding: '2rem'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🏆</div>
+              <h3 style={{fontSize: '1.3rem', marginBottom: '1rem', color: '#00f0ff'}}>Licensed & Insured</h3>
+              <p style={{color: '#8b949e'}}>Fully licensed electricians and plumbers. All work guaranteed and insured for your protection.</p>
+            </div>
+            
+            <div style={{textAlign: 'center', padding: '2rem'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⚡</div>
+              <h3 style={{fontSize: '1.3rem', marginBottom: '1rem', color: '#00f0ff'}}>Same-Day Service</h3>
+              <p style={{color: '#8b949e'}}>Need service today? We offer same-day appointments for most electrical and plumbing repairs in Garland.</p>
+            </div>
+            
+            <div style={{textAlign: 'center', padding: '2rem'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>💰</div>
+              <h3 style={{fontSize: '1.3rem', marginBottom: '1rem', color: '#00f0ff'}}>FREE Estimates</h3>
+              <p style={{color: '#8b949e'}}>Get a free, no-obligation estimate on all services. Transparent pricing with no hidden fees.</p>
+            </div>
+            
+            <div style={{textAlign: 'center', padding: '2rem'}}>
+              <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⏰</div>
+              <h3 style={{fontSize: '1.3rem', marginBottom: '1rem', color: '#00f0ff'}}>24/7 Emergency</h3>
+              <p style={{color: '#8b949e'}}>Electrical or plumbing emergency? We're available 24/7 to handle urgent repairs in Garland.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Neighborhoods We Serve */}
+      <section className="section" style={{background: '#0d1117'}}>
+        <div className="container">
+          <h2 className="section-title" style={{textAlign: 'center', marginBottom: '2rem'}}>
+            <span className="text-accent">Garland Neighborhoods</span> We Serve
+          </h2>
+          <p style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto 3rem', color: '#8b949e', fontSize: '1.1rem'}}>
+            Looking for an electrician or plumber near me in Garland? We proudly serve all Garland neighborhoods and surrounding areas:
+          </p>
+          
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', textAlign: 'center'}}>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Firewheel</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Duck Creek</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Lake Ray Hubbard</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Downtown Garland</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>North Garland</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>South Garland</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Rowlett Border</p>
+            </div>
+            <div style={{padding: '1rem', background: '#161b22', borderRadius: '8px'}}>
+              <p style={{color: '#c9d1d9', margin: 0}}>Sachse Border</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section" style={{background: 'linear-gradient(135deg, #00f0ff15, #0088cc15)', borderTop: '1px solid #30363d', borderBottom: '1px solid #30363d'}}>
+        <div className="container" style={{textAlign: 'center'}}>
+          <h2 style={{fontSize: '2.5rem', marginBottom: '1.5rem'}}>
+            Need an Electrician or Plumber in Garland?
+          </h2>
+          <p style={{fontSize: '1.2rem', color: '#8b949e', marginBottom: '2rem', maxWidth: '700px', margin: '0 auto 2rem'}}>
+            Don't wait! Call MetroPlex Pros now for fast, reliable service. We're available 24/7 for emergency electrical and plumbing repairs.
+          </p>
+          <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+            <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.2rem', padding: '1.2rem 2.5rem'}}>
+              📞 Call (682) 466-2130 Now
+            </Link>
+            <Link href="/contact" className="btn btn-outline" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
+              Schedule Service Online
+            </Link>
+          </div>
+        </div>
+      </section>
+
+    </Layout>
+  )
+}

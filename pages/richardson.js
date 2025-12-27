@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function Richardson() {
   return (
     <Layout 
-      title="Richardson Handyman, Electrical & Plumbing plus Smart Home Services TX | MetroPlex Pros"
-      description="Professional home electrical repair service, handyman, and plumbing for Richardson homes. Panel upgrades, slab leak repair, aluminum wiring, older home specialists. Fast service, honest pricing."
-      keywords="Richardson electrician, home electrical repair Richardson, electrical home repair, home electrical repair near me, Richardson plumber, Richardson handyman, electrical panel upgrade Richardson, slab leak Richardson, aluminum wiring Richardson"
+      title="Richardson Electrician & Plumber Near Me | 24/7 Emergency Service | MetroPlex Pros"
+      description="Richardson Electrician & Plumber Near Me | 24/7 Emergency Service | Same-Day Appointments | Licensed & Insured | Panel upgrades, slab leaks, aluminum wiring specialists. Call (682) 466-2130!"
+      keywords="Richardson electrician, electrician near me Richardson, home electrical repair Richardson, electrical home repair, home electrical repair near me, Richardson plumber, plumber near me Richardson, Richardson handyman, electrical panel upgrade Richardson, slab leak Richardson, aluminum wiring Richardson, emergency electrician Richardson"
       canonicalUrl="https://www.metroplexpros.com/richardson"
     
 
