@@ -20,7 +20,7 @@ export default function About() {
               Your Trusted Electrical & Plumbing Experts in Dallas
             </p>
             <p className="hero-description">
-              For over 15 years, we've been providing expert electrical services, plumbing solutions, and smart home installations throughout the Dallas-Fort Worth metroplex 
+              With over 15 years of industry experience, we provide expert electrical services, plumbing solutions, and smart home installations throughout the Dallas-Fort Worth metroplex 
               with quality workmanship, innovative technology, and unwavering commitment to excellence.
             </p>
           </div>
