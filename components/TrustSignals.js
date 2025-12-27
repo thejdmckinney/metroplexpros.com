@@ -29,8 +29,8 @@ export default function TrustSignals({ variant = 'default', className = '' }) {
     },
     {
       icon: '🏠',
-      title: 'Since 2010',
-      description: 'Serving DFW for 15+ years'
+      title: '15+ Years Experience',
+      description: 'Expert technicians'
     }
   ]
 
