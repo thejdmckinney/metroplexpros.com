@@ -281,6 +281,32 @@ export default function Gallery() {
 
         .company-showcase {
           background: var(--light-bg);
+          overflow-x: hidden;
+        }
+
+        .grid-2 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          align-items: center;
+        }
+
+        .showcase-text {
+          max-width: 100%;
+        }
+
+        .showcase-text h2 {
+          margin-bottom: 1.5rem;
+        }
+
+        .showcase-text p {
+          line-height: 1.8;
+          margin-bottom: 1.5rem;
+        }
+
+        .showcase-image {
+          max-width: 100%;
+          overflow: hidden;
         }
 
         .showcase-stats {
@@ -311,6 +337,8 @@ export default function Gallery() {
           height: auto;
           border-radius: 10px;
           box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          max-width: 100%;
+          display: block;
         }
 
         @media (max-width: 768px) {
@@ -352,20 +380,38 @@ export default function Gallery() {
           }
 
           .showcase-stats {
-            justify-content: center;
+            justify-content: flex-start;
+            gap: 1.5rem;
           }
           
           .grid-2 {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr !important;
+            gap: 2rem;
           }
 
           .showcase-text {
             padding: 0 1rem;
+            max-width: 100%;
+          }
+
+          .showcase-text h2 {
+            font-size: 1.8rem;
+          }
+
+          .showcase-image {
+            padding: 0 1rem;
+            max-width: 100%;
           }
 
           .truck-image {
             max-width: 100%;
             height: auto;
+            width: 100%;
+          }
+
+          .company-showcase .container {
+            padding: 0;
+            max-width: 100%;
           }
         }
 
@@ -388,6 +434,34 @@ export default function Gallery() {
           .project-badge {
             font-size: 0.75rem;
             padding: 0.4rem 0.8rem;
+          }
+
+          .showcase-text {
+            padding: 0 0.75rem;
+          }
+
+          .showcase-text h2 {
+            font-size: 1.5rem;
+          }
+
+          .showcase-text p {
+            font-size: 0.95rem;
+          }
+
+          .showcase-image {
+            padding: 0 0.75rem;
+          }
+
+          .showcase-stats {
+            gap: 1rem;
+          }
+
+          .stat-item strong {
+            font-size: 1rem;
+          }
+
+          .stat-item span {
+            font-size: 0.85rem;
           }
         }
       `}</style>
