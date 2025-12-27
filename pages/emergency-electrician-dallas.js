@@ -7,7 +7,7 @@ export default function EmergencyElectricianDallas() {
       title="24/7 Emergency Electrician Dallas TX | (682) 466-2130 | Same-Day Service"
       description="⚡ EMERGENCY ELECTRICIAN DALLAS - Available 24/7! Power outages, sparking outlets, electrical fires, panel problems. Licensed home electrical repair service responds fast. Call (682) 466-2130 NOW!"
       keywords="emergency electrician Dallas, 24 hour electrician Dallas, emergency electrical service Dallas, home electrical repair service, home electrical repair near me, power outage electrician, sparking outlet repair, electrical emergency Dallas, same day electrician"
-      canonicalUrl="https://metroplexpros.com/emergency-electrician-dallas"
+      canonicalUrl="https://www.metroplexpros.com/emergency-electrician-dallas"
     >
       {/* Emergency Service Schema */}
       <script

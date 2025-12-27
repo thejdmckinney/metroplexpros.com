@@ -7,7 +7,7 @@ export default function PipeReplacement() {
       title="Pipe Replacement & Repiping Dallas-Fort Worth | MetroPlex Pros"
       description="Professional pipe replacement and whole-home repiping in DFW. Copper, PEX, and PVC pipe installation. Licensed plumbers. Call (682) 466-2130."
       keywords="pipe replacement Dallas, repiping, copper pipe, PEX pipe, water line replacement, plumber Dallas"
-      canonicalUrl="https://metroplexpros.com/services/plumbing/pipe-replacement"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing/pipe-replacement"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

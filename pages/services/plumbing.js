@@ -7,7 +7,7 @@ export default function PlumbingServices() {
       title="Professional Plumbing Services Dallas-Fort Worth | MetroPlex Pros"
       description="Licensed plumbers serving DFW. Water heater repair, slab leak detection, drain cleaning, fixture installation, emergency plumbing. Call (682) 466-2130."
       keywords="plumber Dallas, plumbing services DFW, water heater repair, slab leak detection, drain cleaning, emergency plumber, fixture installation, pipe repair"
-      canonicalUrl="https://metroplexpros.com/services/plumbing"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing"
     >
       {/* Service Schema */}
       <script

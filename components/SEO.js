@@ -15,7 +15,7 @@ export default function SEO({
     type: 'website',
     locale: 'en_US',
     site_name: 'Metroplex Pros',
-    url: canonicalUrl || 'https://metroplexpros.com',
+    url: canonicalUrl || 'https://www.metroplexpros.com',
     images: [
       {
         url: 'https://metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png',
@@ -36,9 +36,9 @@ export default function SEO({
     "name": "Metroplex Pros",
     "alternateName": ["Metroplex Pros Electrical & Plumbing", "MetroPlex Pros Dallas"],
     "description": "Licensed Dallas electricians and plumbers providing expert electrical repairs, plumbing services, smart home installations, and 24/7 emergency service throughout the DFW metroplex since 2010.",
-    "url": "https://metroplexpros.com",
-    "logo": "https://metroplexpros.com/logo.svg",
-    "image": "https://metroplexpros.com/logo.svg",
+    "url": "https://www.metroplexpros.com",
+    "logo": "https://www.metroplexpros.com/logo.svg",
+    "image": "https://www.metroplexpros.com/logo.svg",
     "telephone": "(682) 466-2130",
     "email": "info@metroplexpros.com",
     "priceRange": "$$-$$$",

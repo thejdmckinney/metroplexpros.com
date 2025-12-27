@@ -7,7 +7,7 @@ export default function EmergencyPlumberDallas() {
       title="24/7 Emergency Plumber Dallas TX | (682) 466-2130 | Same-Day Service"
       description="⚡ EMERGENCY PLUMBER DALLAS - Available 24/7! Burst pipes, sewer backups, water heater failures, gas leaks. Licensed plumber responds fast. Call (682) 466-2130 NOW!"
       keywords="emergency plumber Dallas, 24 hour plumber Dallas, emergency plumbing service Dallas, burst pipe repair, sewer backup, water heater emergency, gas leak plumber, urgent plumbing repair Dallas"
-      canonicalUrl="https://metroplexpros.com/emergency-plumber-dallas"
+      canonicalUrl="https://www.metroplexpros.com/emergency-plumber-dallas"
     >
       {/* Emergency Service Schema */}
       <script

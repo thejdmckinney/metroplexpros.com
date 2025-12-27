@@ -7,7 +7,7 @@ export default function FixtureInstallation() {
       title="Fixture Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional fixture installation in DFW. Light fixtures, ceiling fans, bathroom fixtures, shelving. Expert handyman services. Call (682) 466-2130."
       keywords="fixture installation Dallas, light fixture installation, ceiling fan installation, bathroom fixtures, Dallas handyman"
-      canonicalUrl="https://metroplexpros.com/services/handyman/fixture-installation"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman/fixture-installation"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

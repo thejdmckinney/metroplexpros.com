@@ -7,7 +7,7 @@ export default function WallArtHanging() {
       title="Professional Picture & Art Hanging Dallas-Fort Worth | MetroPlex Pros"
       description="Expert picture and wall art hanging in DFW. Laser-leveled precision, secure mounting with professional anchors. Hang artwork, mirrors, shelves. Call (682) 466-2130."
       keywords="picture hanging Dallas, art hanging, mirror installation, wall mounting, professional picture hanger, Dallas handyman"
-      canonicalUrl="https://metroplexpros.com/services/handyman/wall-art-hanging"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman/wall-art-hanging"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

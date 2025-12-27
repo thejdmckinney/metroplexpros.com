@@ -7,7 +7,7 @@ export default function Lakewood() {
       title="Lakewood Handyman, Electrical & Plumbing | Smart Home Integrations Dallas | Metroplex Pros"
       description="Expert home electrical repair service, handyman, plumbing, and smart home integration for Lakewood, Dallas historic homes. Upgrade lighting, update outlets/receptacles, smart home installs. Licensed & Insured. Call today!"
       keywords="Lakewood electrician, home electrical repair Lakewood, electrical home repair, home electrical repair near me, Lakewood plumber, Lakewood handyman, White Rock Lake electrician, East Dallas plumber, historic home electrician Dallas"
-      canonicalUrl="https://metroplexpros.com/lakewood"
+      canonicalUrl="https://www.metroplexpros.com/lakewood"
     >
       {/* LocalBusiness Schema for Lakewood */}
       <script

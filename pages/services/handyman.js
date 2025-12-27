@@ -7,7 +7,7 @@ export default function HandymanServices() {
       title="Professional Handyman Services Dallas-Fort Worth | MetroPlex Pros"
       description="Reliable handyman services in DFW. Drywall repair, painting, carpentry, door/window repairs, deck maintenance, home repairs. Call (682) 466-2130."
       keywords="handyman Dallas, handyman services DFW, home repairs, drywall repair, painting, carpentry, door repair, deck maintenance, general handyman"
-      canonicalUrl="https://metroplexpros.com/services/handyman"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman"
     >
       {/* Service Schema */}
       <script

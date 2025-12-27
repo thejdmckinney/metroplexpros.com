@@ -7,7 +7,7 @@ export default function LightingInstallation() {
       title="Lighting Installation & Repair Dallas-Fort Worth | MetroPlex Pros"
       description="Professional lighting installation, repair, and design in DFW. Home electrical repair for indoor & outdoor lighting, LED upgrades, recessed lighting, chandeliers. Call (682) 466-2130."
       keywords="lighting installation Dallas, home electrical repair, electrical home repair, recessed lighting, LED lighting, outdoor lighting, chandelier installation, landscape lighting, Dallas electrician"
-      canonicalUrl="https://metroplexpros.com/services/electrical/lighting"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/lighting"
     >
       {/* Service Schema */}
       <script

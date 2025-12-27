@@ -7,7 +7,7 @@ export default function Generators() {
       title="Generator Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional generator installation in DFW. Standby & portable generators, transfer switches, automatic backup power. Licensed electricians. Call (682) 466-2130."
       keywords="generator installation Dallas, standby generator, backup generator, transfer switch, Generac, Kohler, Dallas electrician"
-      canonicalUrl="https://metroplexpros.com/services/electrical/generators"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/generators"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

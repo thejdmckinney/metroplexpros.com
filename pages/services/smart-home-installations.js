@@ -7,7 +7,7 @@ export default function SmartHomeInstallations() {
       title="Smart Home Installation Dallas | Home Automation Systems - MetroPlex Pros"
       description="Professional smart home installation services in Dallas. Smart thermostats, security systems, lighting automation & WiFi optimization. Modernize your home today!"
       keywords="smart home installation Dallas, home automation DFW, smart thermostat installation Dallas, security camera installation, smart lighting Dallas, WiFi network Dallas"
-      canonicalUrl="https://metroplexpros.com/services/smart-home-installations"
+      canonicalUrl="https://www.metroplexpros.com/services/smart-home-installations"
     >
       {/* Service Schema */}
       <script

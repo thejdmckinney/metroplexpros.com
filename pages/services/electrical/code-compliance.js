@@ -7,7 +7,7 @@ export default function CodeCompliance() {
       title="Electrical Code Compliance Dallas-Fort Worth | MetroPlex Pros"
       description="Electrical code compliance inspections and upgrades in DFW. Fix violations, pass inspections, ensure safety. Licensed electricians. Call (682) 466-2130."
       keywords="electrical code compliance Dallas, code violations, electrical inspection, NEC code, GFCI requirements, Dallas electrician"
-      canonicalUrl="https://metroplexpros.com/services/electrical/code-compliance"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/code-compliance"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

@@ -7,7 +7,7 @@ export default function SecuritySystems() {
       title="Smart Security System Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Professional smart security system installation in DFW. Cameras, sensors, alarms. 24/7 monitoring options. Call (682) 466-2130."
       keywords="security system Dallas, smart security, home security cameras, alarm system installation, Dallas electrician"
-      canonicalUrl="https://metroplexpros.com/services/smart-home/security"
+      canonicalUrl="https://www.metroplexpros.com/services/smart-home/security"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

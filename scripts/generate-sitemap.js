@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 function generateSitemap() {
-  const baseUrl = 'https://metroplexpros.com'
+  const baseUrl = 'https://www.metroplexpros.com'
   
   // Define all your pages with their priorities and change frequencies
   const pages = [

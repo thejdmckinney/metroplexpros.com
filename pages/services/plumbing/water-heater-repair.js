@@ -7,7 +7,7 @@ export default function WaterHeaterRepair() {
       title="Water Heater Repair & Installation Dallas-Fort Worth | MetroPlex Pros"
       description="Expert water heater repair and installation in DFW. Tank and tankless water heaters. Same-day service available. Licensed plumbers. Call (682) 466-2130."
       keywords="water heater repair, water heater installation, tankless water heater, water heater replacement, Dallas plumber"
-      canonicalUrl="https://metroplexpros.com/services/plumbing/water-heater-repair"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing/water-heater-repair"
     >
       {/* Service Schema */}
       <script

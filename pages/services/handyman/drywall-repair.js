@@ -7,7 +7,7 @@ export default function DrywallRepair() {
       title="Drywall Repair Dallas-Fort Worth | MetroPlex Pros"
       description="Professional drywall repair in DFW. Fix holes, cracks, water damage, texture matching. Same-day service available. Call (682) 466-2130."
       keywords="drywall repair Dallas, hole repair, wall repair, ceiling repair, texture matching, Dallas handyman"
-      canonicalUrl="https://metroplexpros.com/services/handyman/drywall-repair"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman/drywall-repair"
     >
       <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
         <div className="container">

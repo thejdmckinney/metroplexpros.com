@@ -7,7 +7,7 @@ export default function Home() {
       title="Dallas Electrician & Plumber | Smart Home Installation | Metroplex Pros"
       description="⭐ Licensed Dallas Electricians & Plumbers! Expert home electrical repair service, electrical home repair, plumbing services & smart home installations. 24/7 emergency service. Same-day appointments. FREE estimates! Call (682) 466-2130!"
       keywords="Dallas electrician, Dallas plumber, home electrical repair service, electrical home repair, home electrical repair near me, home electrical repair, smart home installation Dallas, electrical repairs Dallas, plumbing repairs Plano, emergency electrician DFW"
-      canonicalUrl="https://metroplexpros.com"
+      canonicalUrl="https://www.metroplexpros.com"
     >
       {/* Hero Section */}
       <section className="hero">
