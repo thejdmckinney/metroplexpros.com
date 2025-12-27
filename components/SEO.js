@@ -306,6 +306,37 @@ export default function SEO({
     }
   }
 
+  // Organization Schema for Google Logo Display in SERP
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Metroplex Pros",
+    "url": "https://www.metroplexpros.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.metroplexpros.com/logo.svg",
+      "width": 600,
+      "height": 60
+    },
+    "image": "https://www.metroplexpros.com/logo.svg",
+    "description": "Licensed Dallas electricians and plumbers providing expert electrical repairs, plumbing services, and smart home installations throughout the DFW metroplex.",
+    "telephone": "(682) 466-2130",
+    "email": "info@metroplexpros.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dallas-Fort Worth Metroplex",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.facebook.com/metroplexpros",
+      "https://www.instagram.com/metroplexpros",
+      "https://www.linkedin.com/company/metroplexpros",
+      "https://www.yelp.com/biz/metroplex-pros-dallas"
+    ]
+  }
+
   return (
     <Head>
       {/* Basic Meta Tags */}
@@ -377,6 +408,12 @@ export default function SEO({
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(serviceAreaSchema)
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(organizationSchema)
             }}
           />
         </>
