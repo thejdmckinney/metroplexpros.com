@@ -1,30 +1,10 @@
 #!/bin/bash
 
-# Build and deploy to gh-pages branch like other sites
+# Deploy to gh-pages branch using gh-pages package
+# This maintains proper git history unlike the old method
 
-echo "Building site..."
-npm run build
+echo "Deploying to GitHub Pages..."
+npm run deploy
 
-echo "Deploying to gh-pages branch..."
-
-# Navigate to output directory
-cd out
-
-# Initialize git if not already
-if [ ! -d ".git" ]; then
-    git init
-    git remote add origin https://github.com/thejdmckinney/metroplexpros.com.git
-fi
-
-# Add all files
-git add -A
-
-# Commit
-git commit -m "Deploy to GitHub Pages"
-
-# Force push to gh-pages branch
-git push --force origin main:gh-pages
-
-echo "Deployed successfully to gh-pages branch!"
-echo "Enable GitHub Pages in repository settings:"
-echo "Settings > Pages > Source: Deploy from branch > Branch: gh-pages"
+echo "✅ Deployment complete!"
+echo "Your site will be live at https://www.metroplexpros.com"
