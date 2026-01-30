@@ -51,12 +51,31 @@ export default function NinetyNinePlan() {
               padding: '2rem',
               marginBottom: '2rem'
             }}>
-              <div style={{fontSize: '3rem', fontWeight: '800', color: '#00f0ff', marginBottom: '0.5rem'}}>
-                $99<span style={{fontSize: '1.5rem', fontWeight: '400', color: '#8b949e'}}>/month</span>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: '2rem',
+                flexWrap: 'wrap'
+              }}>
+                <div>
+                  <div style={{fontSize: '3rem', fontWeight: '800', color: '#00f0ff', marginBottom: '0.5rem'}}>
+                    $99<span style={{fontSize: '1.5rem', fontWeight: '400', color: '#8b949e'}}>/month</span>
+                  </div>
+                  <p style={{color: '#8b949e', fontSize: '1rem', margin: 0}}>
+                    Monthly plan
+                  </p>
+                </div>
+                <div style={{color: '#8b949e', fontSize: '2rem'}}>or</div>
+                <div>
+                  <div style={{fontSize: '3rem', fontWeight: '800', color: '#ffa500', marginBottom: '0.5rem'}}>
+                    $988<span style={{fontSize: '1.5rem', fontWeight: '400', color: '#8b949e'}}>/year</span>
+                  </div>
+                  <p style={{color: '#ffa500', fontSize: '1rem', margin: 0, fontWeight: '600'}}>
+                    Save $200 annually!
+                  </p>
+                </div>
               </div>
-              <p style={{color: '#c9d1d9', fontSize: '1.1rem', margin: 0}}>
-                Peace of mind for less than a single service call
-              </p>
             </div>
             <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap'}}>
               <a 
@@ -611,58 +630,218 @@ export default function NinetyNinePlan() {
       {/* Final CTA Section */}
       <section id="subscribe" style={{padding: '5rem 0', background: '#161b22'}}>
         <div className="container">
-          <div style={{
-            maxWidth: '800px',
-            margin: '0 auto',
-            textAlign: 'center',
-            background: 'linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(0, 184, 212, 0.1) 100%)',
-            border: '2px solid #00f0ff',
-            borderRadius: '20px',
-            padding: '4rem 2rem'
-          }}>
-            <h2 style={{fontSize: 'clamp(2rem, 4vw, 2.8rem)', marginBottom: '1.5rem'}}>
+          <div style={{textAlign: 'center', marginBottom: '4rem'}}>
+            <h2 style={{fontSize: 'clamp(2rem, 4vw, 2.8rem)', marginBottom: '1rem'}}>
               Ready to Protect Your Home?
             </h2>
-            <p style={{fontSize: '1.2rem', color: '#c9d1d9', marginBottom: '2rem', lineHeight: '1.6'}}>
+            <p style={{fontSize: '1.2rem', color: '#c9d1d9', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6'}}>
               Join homeowners who care about their homes as much as their vehicles. 
-              Start your subscription today and get your first inspection scheduled within 48 hours.
+              Choose the plan that works best for you.
             </p>
-            
+          </div>
+
+          {/* Pricing Cards */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '2rem',
+            maxWidth: '900px',
+            margin: '0 auto 3rem'
+          }}>
+            {/* Monthly Plan */}
             <div style={{
-              background: '#0d1117',
-              borderRadius: '15px',
-              padding: '2rem',
-              marginBottom: '2rem'
+              background: 'linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(0, 184, 212, 0.1) 100%)',
+              border: '2px solid #00f0ff',
+              borderRadius: '20px',
+              padding: '3rem 2rem',
+              textAlign: 'center',
+              position: 'relative',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 15px 40px rgba(0, 240, 255, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
             }}>
-              <div style={{fontSize: '2.5rem', fontWeight: '800', color: '#00f0ff', marginBottom: '0.5rem'}}>
-                $99<span style={{fontSize: '1.2rem', fontWeight: '400', color: '#8b949e'}}>/month</span>
+              <div style={{
+                fontSize: '1.2rem',
+                color: '#8b949e',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                marginBottom: '1rem'
+              }}>
+                Monthly Plan
               </div>
-              <p style={{color: '#8b949e', fontSize: '1rem', margin: 0}}>
-                Cancel anytime • No hidden fees • No contracts
+              <div style={{
+                fontSize: '4rem',
+                fontWeight: '800',
+                color: '#00f0ff',
+                marginBottom: '1rem',
+                lineHeight: '1'
+              }}>
+                $99
+              </div>
+              <div style={{
+                fontSize: '1.2rem',
+                color: '#8b949e',
+                marginBottom: '2rem'
+              }}>
+                per month
+              </div>
+              <ul style={{
+                textAlign: 'left',
+                color: '#c9d1d9',
+                lineHeight: '2',
+                marginBottom: '2rem',
+                listStyle: 'none',
+                padding: 0
+              }}>
+                <li>✓ Monthly home inspection</li>
+                <li>✓ Minor fixes included</li>
+                <li>✓ Photo documentation</li>
+                <li>✓ Priority scheduling</li>
+                <li>✓ 10% off additional work</li>
+                <li>✓ Cancel anytime</li>
+              </ul>
+              <a 
+                href="https://buy.stripe.com/7sY9AM1esc2K37s77Zdby00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button"
+                style={{
+                  display: 'block',
+                  padding: '1.2rem 2rem',
+                  fontSize: '1.2rem',
+                  fontWeight: '700',
+                  textDecoration: 'none',
+                  width: '100%'
+                }}
+              >
+                Subscribe Monthly
+              </a>
+              <p style={{fontSize: '0.85rem', color: '#8b949e', marginTop: '1rem', marginBottom: 0}}>
+                No contracts • Cancel anytime
               </p>
             </div>
 
-            <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+            {/* Annual Plan */}
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(255, 165, 0, 0.15) 0%, rgba(255, 140, 0, 0.15) 100%)',
+              border: '2px solid #ffa500',
+              borderRadius: '20px',
+              padding: '3rem 2rem',
+              textAlign: 'center',
+              position: 'relative',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 15px 40px rgba(255, 165, 0, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: '-15px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                background: 'linear-gradient(135deg, #ffa500 0%, #ff8c00 100%)',
+                color: '#000',
+                padding: '8px 24px',
+                borderRadius: '50px',
+                fontSize: '0.9rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                boxShadow: '0 4px 12px rgba(255, 165, 0, 0.4)'
+              }}>
+                Save $200/year
+              </div>
+              <div style={{
+                fontSize: '1.2rem',
+                color: '#8b949e',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                marginBottom: '1rem',
+                marginTop: '0.5rem'
+              }}>
+                Annual Plan
+              </div>
+              <div style={{
+                fontSize: '4rem',
+                fontWeight: '800',
+                color: '#ffa500',
+                marginBottom: '0.5rem',
+                lineHeight: '1'
+              }}>
+                $988
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: '#8b949e',
+                marginBottom: '0.5rem'
+              }}>
+                <span style={{textDecoration: 'line-through'}}>$1,188</span> per year
+              </div>
+              <div style={{
+                fontSize: '1.1rem',
+                color: '#ffa500',
+                fontWeight: '600',
+                marginBottom: '2rem'
+              }}>
+                Only $82.33/month!
+              </div>
+              <ul style={{
+                textAlign: 'left',
+                color: '#c9d1d9',
+                lineHeight: '2',
+                marginBottom: '2rem',
+                listStyle: 'none',
+                padding: 0
+              }}>
+                <li>✓ Monthly home inspection</li>
+                <li>✓ Minor fixes included</li>
+                <li>✓ Photo documentation</li>
+                <li>✓ Priority scheduling</li>
+                <li>✓ 10% off additional work</li>
+                <li>✓ <strong style={{color: '#ffa500'}}>2 months FREE</strong></li>
+              </ul>
               <a 
-                href="#" 
-                className="cta-button"
+                href="https://buy.stripe.com/fZueV67CQd6O9vQdwndby01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button-annual"
                 style={{
-                  display: 'inline-block',
-                  padding: '1.2rem 3rem',
+                  display: 'block',
+                  padding: '1.2rem 2rem',
                   fontSize: '1.2rem',
                   fontWeight: '700',
-                  textDecoration: 'none'
-                }}
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert('Stripe subscription link coming soon! Call us at (682) 466-2130 to sign up now.');
+                  textDecoration: 'none',
+                  width: '100%',
+                  background: 'linear-gradient(135deg, #ffa500 0%, #ff8c00 100%)',
+                  color: '#000'
                 }}
               >
-                Subscribe to The 99 Plan
+                Subscribe Annually
               </a>
+              <p style={{fontSize: '0.85rem', color: '#8b949e', marginTop: '1rem', marginBottom: 0}}>
+                Best value • Pay upfront & save
+              </p>
             </div>
+          </div>
 
-            <p style={{fontSize: '0.9rem', color: '#8b949e', marginTop: '2rem', marginBottom: 0}}>
+          <div style={{textAlign: 'center'}}>
+            <p style={{fontSize: '1rem', color: '#c9d1d9', marginBottom: '1rem'}}>
+              🎉 <strong>Limited Time:</strong> First inspection scheduled within 48 hours of signup!
+            </p>
+            <p style={{fontSize: '0.95rem', color: '#8b949e', marginBottom: 0}}>
               Questions? Call us at <a href="tel:6824662130" style={{color: '#00f0ff', textDecoration: 'none', fontWeight: '600'}}>(682) 466-2130</a>
             </p>
           </div>
@@ -687,6 +866,25 @@ export default function NinetyNinePlan() {
         .cta-button:hover {
           transform: translateY(-2px);
           box-shadow: 0 10px 25px rgba(0, 240, 255, 0.3);
+        }
+
+        .cta-button-annual {
+          background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
+          color: #000;
+          padding: 0.8rem 1.8rem;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          display: inline-block;
+          border: none;
+          cursor: pointer;
+        }
+
+        .cta-button-annual:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(255, 165, 0, 0.4);
         }
 
         .cta-button-secondary {
