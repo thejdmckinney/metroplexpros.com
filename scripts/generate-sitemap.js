@@ -19,6 +19,12 @@ function generateSitemap() {
       lastmod: new Date().toISOString().split('T')[0]
     },
     {
+      url: '/99-plan',
+      changefreq: 'monthly',
+      priority: '0.9',
+      lastmod: new Date().toISOString().split('T')[0]
+    },
+    {
       url: '/services',
       changefreq: 'monthly',
       priority: '0.9',
