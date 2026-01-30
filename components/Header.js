@@ -40,6 +40,7 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services', hasMegaMenu: true },
+    { name: 'The 99 Plan', href: '/99-plan', highlight: true },
     { name: 'Shop', href: '/shop' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Locations', href: '/service-areas', hasLocationsMegaMenu: true },
@@ -370,7 +371,10 @@ export default function Header() {
                       )}
                     </div>
                   ) : (
-                    <Link href={item.href} className="nav-link">
+                    <Link 
+                      href={item.href} 
+                      className={`nav-link ${item.highlight ? 'nav-link-highlight' : ''}`}
+                    >
                       {item.name}
                     </Link>
                   )}
@@ -474,7 +478,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="nav-mobile-link"
+                  className={`nav-mobile-link ${item.highlight ? 'nav-mobile-link-highlight' : ''}`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
