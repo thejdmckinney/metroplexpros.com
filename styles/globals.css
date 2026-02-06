@@ -1023,8 +1023,8 @@ p {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -1275,6 +1275,11 @@ p {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   
   .hero {
