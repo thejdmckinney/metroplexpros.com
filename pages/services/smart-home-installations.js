@@ -243,7 +243,7 @@ export default function SmartHomeInstallations() {
             ].map((pkg, i) => (
               <div key={i} style={{background: pkg.popular ? 'linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(0, 128, 255, 0.1))' : '#0d1117', border: pkg.popular ? '2px solid #00f0ff' : '1px solid #30363d', borderRadius: '16px', padding: '2rem', position: 'relative', boxShadow: pkg.popular ? '0 8px 32px rgba(0, 240, 255, 0.2)' : 'none'}}>
                 {pkg.popular && (
-                  <div style={{position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#00f0ff', color: '#0a0e14', padding: '0.5rem 1.5rem', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', letterSpacing: '1px'}}>
+                  <div style={{position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: 'rgba(0, 240, 255, 0.9)', color: '#0a0e14', padding: '0.5rem 1.5rem', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', letterSpacing: '1px', backdropFilter: 'blur(10px)'}}>
                     🔥 MOST POPULAR
                   </div>
                 )}
