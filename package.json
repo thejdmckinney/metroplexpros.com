@@ -5,8 +5,7 @@
   "description": "Metroplex Pros - Dallas Home Improvement Services",
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-sitemap.js && next build && node scripts/prettify-html.js",
-    "deploy": "npm run build && gh-pages -d out -t true",
+    "build": "node scripts/generate-sitemap.js && next build",
     "start": "next start",
     "lint": "next lint",
     "generate-sitemap": "node scripts/generate-sitemap.js"
