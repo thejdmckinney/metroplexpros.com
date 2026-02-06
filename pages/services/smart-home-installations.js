@@ -134,13 +134,13 @@ export default function SmartHomeInstallations() {
                 features: ['Smart thermostat installation (Nest, Ecobee, Honeywell)', 'C-wire installation if needed', 'Zoned HVAC integration', 'Energy monitoring setup', 'Programmable scheduling', 'Voice control configuration']
               },
               {
-                icon: '�',
+                icon: '💡',
                 title: 'Smart Lighting Automation',
                 desc: 'Transform your lighting with smart switches, dimmers, and automated scenes. Create the perfect ambiance for any occasion.',
                 features: ['Smart switch & dimmer installation', 'Automated lighting scenes', 'Motion-activated lighting', 'Color-changing LED systems', 'Outdoor lighting automation', 'Voice and app control']
               },
               {
-                icon: '�',
+                icon: '🔒',
                 title: 'Security & Access Control',
                 desc: 'Complete home security with smart cameras, doorbells, locks, and sensors. Monitor and control access from your smartphone.',
                 features: ['Security camera installation', 'Video doorbell systems (Ring, Nest, Arlo)', 'Smart lock installation (August, Schlage, Yale)', 'Window & door sensors', 'Motion detectors', 'Remote monitoring setup']
@@ -188,7 +188,7 @@ export default function SmartHomeInstallations() {
                 features: ['Smart outlet installation', 'USB charging outlets', 'Energy monitoring outlets', 'Scheduled power control', 'Voice assistant compatible', 'Surge protection']
               },
               {
-                icon: '�',
+                icon: '🌿',
                 title: 'Outdoor Smart Systems',
                 desc: 'Extend your smart home outdoors with irrigation controllers, landscape lighting, and outdoor cameras.',
                 features: ['Smart irrigation controllers', 'Landscape lighting automation', 'Outdoor security cameras', 'Weather-based scheduling', 'Water conservation features', 'Remote outdoor control']
