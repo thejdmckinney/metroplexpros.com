@@ -29,6 +29,39 @@ export default function SEO({
 
   const ogData = { ...defaultOpenGraph, ...openGraph }
 
+  // Organization Schema - CRITICAL for Google SERP logo display
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Metroplex Pros",
+    "alternateName": "Metroplex Pros Electrical, Plumbing & Handyman",
+    "url": "https://www.metroplexpros.com",
+    "logo": "https://www.metroplexpros.com/metroplexpro_logo.png",
+    "description": "Licensed Dallas electricians, plumbers, and handymen providing expert electrical repairs, plumbing services, handyman work, smart home installations, and 24/7 emergency service throughout the DFW metroplex.",
+    "image": "https://www.metroplexpros.com/metroplexpro_logo.png",
+    "telephone": "+1-682-466-2130",
+    "email": "info@metroplexpros.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "addressCountry": "US",
+      "postalCode": "75201"
+    },
+    "sameAs": [
+      "https://www.facebook.com/metroplexpros",
+      "https://www.instagram.com/metroplexpros",
+      "https://twitter.com/metroplexpros"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-682-466-2130",
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    }
+  }
+
   // Local Business Schema Markup - Updated for Electrician/Plumber/Handyman Business
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -37,18 +70,8 @@ export default function SEO({
     "alternateName": ["Metroplex Pros Electrical, Plumbing & Handyman", "MetroPlex Pros Dallas"],
     "description": "Licensed Dallas electricians, plumbers, and handymen providing expert electrical repairs, plumbing services, handyman work, smart home installations, and 24/7 emergency service throughout the DFW metroplex.",
     "url": "https://www.metroplexpros.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png",
-      "width": 1456,
-      "height": 816
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://www.metroplexpros.com/Gemini_Generated_Image_gxha1ggxha1ggxha.png",
-      "width": 1456,
-      "height": 816
-    },
+    "logo": "https://www.metroplexpros.com/metroplexpro_logo.png",
+    "image": "https://www.metroplexpros.com/metroplexpro_logo.png",
     "telephone": "(682) 466-2130",
     "email": "info@metroplexpros.com",
     "priceRange": "$$-$$$",
@@ -331,37 +354,6 @@ export default function SEO({
         "availableLanguage": "English"
       }
     }
-  }
-
-  // Organization Schema for Google Logo Display in SERP
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Metroplex Pros",
-    "url": "https://www.metroplexpros.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.metroplexpros.com/logo.svg",
-      "width": 600,
-      "height": 60
-    },
-    "image": "https://www.metroplexpros.com/logo.svg",
-    "description": "Licensed Dallas electricians and plumbers providing expert electrical repairs, plumbing services, and smart home installations throughout the DFW metroplex.",
-    "telephone": "(682) 466-2130",
-    "email": "info@metroplexpros.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Dallas-Fort Worth Metroplex",
-      "addressLocality": "Dallas",
-      "addressRegion": "TX",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://www.facebook.com/metroplexpros",
-      "https://www.instagram.com/metroplexpros",
-      "https://www.linkedin.com/company/metroplexpros",
-      "https://www.yelp.com/biz/metroplex-pros-dallas"
-    ]
   }
 
   return (
