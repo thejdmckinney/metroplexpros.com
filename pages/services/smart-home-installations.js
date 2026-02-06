@@ -119,7 +119,7 @@ export default function SmartHomeInstallations() {
 
           <div style={{marginBottom: '4rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(0, 240, 255, 0.3)', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.1)'}}>
             <img 
-              src="/smart-home-hub.png" 
+              src="/voice-assistant-hub.png" 
               alt="Smart Home Hub and Control Center" 
               style={{width: '100%', height: 'auto', display: 'block'}}
             />
