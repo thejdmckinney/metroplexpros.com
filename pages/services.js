@@ -94,7 +94,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="section services-grid">
+      <section className="section">
         <div className="container">
           <div className="grid services-detail-grid">
             {services.map((service, index) => (
