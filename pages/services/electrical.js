@@ -225,8 +225,186 @@ export default function ElectricalServices() {
         </div>
       </section>
 
-      {/* Why Choose Our Electrical Services */}
+      {/* Electrical Inspections */}
       <section className="section" style={{backgroundColor: '#161b22'}}>
+        <div className="container">
+          <div style={{textAlign: 'center', marginBottom: '4rem'}}>
+            <h2 className="section-title" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>
+              Professional Electrical Inspections
+            </h2>
+            <p style={{fontSize: '1.1rem', color: '#8b949e', maxWidth: '700px', margin: '0 auto'}}>
+              Comprehensive electrical safety inspections for home buyers, homeowners, and real estate professionals
+            </p>
+          </div>
+
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto'}}>
+            {[
+              {
+                title: 'Basic Inspection',
+                price: '$150',
+                badge: 'Perfect for Standard Homes',
+                badgeColor: '#00f0ff',
+                description: 'Visual inspection of all accessible electrical components for homes up to 2,500 sq ft.',
+                features: [
+                  'Main panel assessment',
+                  'GFCI/AFCI verification',
+                  'Outlet & switch inspection',
+                  'Written report included'
+                ],
+                link: '/services/electrical/basic-inspection',
+                calendly: 'https://calendly.com/metroplexpros/basic-electrical-inspection'
+              },
+              {
+                title: 'Comprehensive Inspection',
+                price: '$200',
+                badge: 'Most Popular',
+                badgeColor: '#00f0ff',
+                description: 'Includes thermal imaging and detailed analysis for homes up to 4,000 sq ft.',
+                features: [
+                  'Everything in Basic',
+                  'Thermal imaging included',
+                  'Load capacity analysis',
+                  'Priority recommendations'
+                ],
+                link: '/services/electrical/comprehensive-inspection',
+                calendly: 'https://calendly.com/metroplexpros/comprehensive-electrical-inspection'
+              },
+              {
+                title: 'Luxury Inspection',
+                price: '$225',
+                badge: 'Premium Service',
+                badgeColor: '#ffd700',
+                description: 'White-glove service for luxury homes with smart systems. Unlimited square footage.',
+                features: [
+                  'Everything in Comprehensive',
+                  'Smart home system review',
+                  'Priority scheduling',
+                  'Executive report'
+                ],
+                link: '/services/electrical/luxury-inspection',
+                calendly: 'https://calendly.com/metroplexpros/luxury-electrical-inspection'
+              }
+            ].map((inspection, index) => (
+              <div 
+                key={index} 
+                style={{
+                  padding: '2rem',
+                  backgroundColor: '#0d1117',
+                  borderRadius: '12px',
+                  border: inspection.title === 'Luxury Inspection' ? '2px solid #ffd700' : '1px solid #30363d',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  position: 'relative'
+                }}
+              >
+                <div style={{
+                  position: 'absolute',
+                  top: '1rem',
+                  right: '1rem',
+                  padding: '0.4rem 0.8rem',
+                  background: `rgba(${inspection.badgeColor === '#ffd700' ? '255, 215, 0' : '0, 240, 255'}, 0.1)`,
+                  border: `1px solid ${inspection.badgeColor}`,
+                  borderRadius: '20px',
+                  fontSize: '0.75rem',
+                  fontWeight: '600',
+                  color: inspection.badgeColor
+                }}>
+                  {inspection.badge}
+                </div>
+
+                <h3 style={{
+                  color: '#c9d1d9',
+                  fontSize: '1.75rem',
+                  marginBottom: '0.5rem',
+                  marginTop: '1rem',
+                  fontWeight: '700'
+                }}>
+                  {inspection.title}
+                </h3>
+
+                <div style={{
+                  fontSize: '2.5rem',
+                  fontWeight: 'bold',
+                  color: inspection.badgeColor,
+                  marginBottom: '1rem'
+                }}>
+                  {inspection.price}
+                </div>
+
+                <p style={{
+                  color: '#8b949e',
+                  lineHeight: '1.7',
+                  marginBottom: '1.5rem',
+                  flexGrow: 1
+                }}>
+                  {inspection.description}
+                </p>
+
+                <ul style={{
+                  color: '#8b949e',
+                  lineHeight: '2',
+                  fontSize: '0.95rem',
+                  listStyle: 'none',
+                  padding: 0,
+                  marginBottom: '1.5rem'
+                }}>
+                  {inspection.features.map((feature, idx) => (
+                    <li key={idx} style={{
+                      paddingLeft: '1.2rem',
+                      position: 'relative',
+                      marginBottom: '0.5rem'
+                    }}>
+                      <span style={{
+                        position: 'absolute',
+                        left: 0,
+                        color: inspection.badgeColor,
+                        fontSize: '1rem'
+                      }}>
+                        {inspection.title === 'Luxury Inspection' ? '★' : '✓'}
+                      </span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div style={{display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
+                  <Link 
+                    href={inspection.link}
+                    className="btn btn-outline"
+                    style={{
+                      textAlign: 'center',
+                      fontSize: '1rem',
+                      padding: '0.75rem 1.5rem'
+                    }}
+                  >
+                    Learn More
+                  </Link>
+                  <a
+                    href={inspection.calendly}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    style={{
+                      textAlign: 'center',
+                      fontSize: '1rem',
+                      padding: '0.75rem 1.5rem',
+                      ...(inspection.title === 'Luxury Inspection' && {
+                        background: 'linear-gradient(135deg, #ffd700, #ffed4e)',
+                        color: '#000'
+                      })
+                    }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Our Electrical Services */}
+      <section className="section" style={{backgroundColor: '#0d1117'}}>
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 className="section-title" style={{fontSize: '2.5rem', marginBottom: '1rem'}}>

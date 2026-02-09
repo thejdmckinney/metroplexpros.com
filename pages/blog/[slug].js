@@ -252,9 +252,9 @@ export default function BlogPost({ post, recentPosts }) {
             {/* Categories */}
             {post.categories && post.categories.length > 0 && (
               <div style={{ marginBottom: '1rem' }}>
-                {post.categories.map((cat) => (
+                {post.categories.map((cat, index) => (
                   <span
-                    key={cat._id}
+                    key={cat._id || cat.slug?.current || index}
                     style={{
                       display: 'inline-block',
                       padding: '0.4rem 1rem',

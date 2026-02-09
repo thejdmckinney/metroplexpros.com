@@ -163,9 +163,9 @@ export default function Blog({ posts, categories }) {
                     <div style={{ padding: '1.5rem' }}>
                       {post.categories && post.categories.length > 0 && (
                         <div style={{ marginBottom: '1rem' }}>
-                          {post.categories.slice(0, 2).map((cat) => (
+                          {post.categories.slice(0, 2).map((cat, index) => (
                             <span
-                              key={cat._id}
+                              key={cat._id || cat.slug?.current || index}
                               style={{
                                 display: 'inline-block',
                                 padding: '0.25rem 0.75rem',

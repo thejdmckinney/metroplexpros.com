@@ -55,7 +55,9 @@ export default function Header() {
         title: 'Electrical Services',
         icon: '⚡',
         items: [
-          { name: 'Electrical Inspections', href: '/services/electrical/inspections' },
+          { name: 'Basic Inspection ($150)', href: '/services/electrical/basic-inspection' },
+          { name: 'Comprehensive Inspection ($200)', href: '/services/electrical/comprehensive-inspection' },
+          { name: 'Luxury Inspection ($225)', href: '/services/electrical/luxury-inspection' },
           { name: 'Panel Upgrades', href: '/services/electrical/panel-upgrades' },
           { name: 'Home Rewiring', href: '/services/electrical/rewiring' },
           { name: 'Lighting Installation', href: '/services/electrical/lighting' },
