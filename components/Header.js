@@ -41,6 +41,7 @@ export default function Header() {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services', hasMegaMenu: true },
     { name: 'The 99 Plan', href: '/99-plan', highlight: true },
+    { name: 'Blog', href: '/blog' },
     { name: 'Shop', href: '/shop' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Locations', href: '/service-areas', hasLocationsMegaMenu: true },

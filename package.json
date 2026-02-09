@@ -8,21 +8,35 @@
     "build": "node scripts/generate-sitemap.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-sitemap": "node scripts/generate-sitemap.js"
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "test-sanity": "node scripts/test-sanity.js"
   },
   "dependencies": {
+    "@portabletext/react": "^3.2.4",
+    "@sanity/client": "^6.29.1",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^3.99.0",
     "@supabase/supabase-js": "^2.89.0",
     "@vercel/analytics": "^1.6.1",
+    "dotenv": "^17.2.4",
     "mapbox-gl": "^3.16.0",
     "next": "14.0.3",
+    "next-sanity": "^9.12.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "resend": "^6.6.0"
+    "react-is": "^19.2.4",
+    "resend": "^6.6.0",
+    "sanity": "^3.99.0",
+    "styled-components": "^6.3.9"
   },
   "devDependencies": {
+    "@types/node": "^25.2.2",
+    "@types/react": "^19.2.13",
     "eslint": "^8.54.0",
     "eslint-config-next": "14.0.3",
     "gh-pages": "^6.3.0",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
   }
 }
