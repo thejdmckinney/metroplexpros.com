@@ -55,6 +55,7 @@ export default function Header() {
         title: 'Electrical Services',
         icon: '⚡',
         items: [
+          { name: 'Electrical Inspections', href: '/services/electrical/inspections' },
           { name: 'Panel Upgrades', href: '/services/electrical/panel-upgrades' },
           { name: 'Home Rewiring', href: '/services/electrical/rewiring' },
           { name: 'Lighting Installation', href: '/services/electrical/lighting' },
