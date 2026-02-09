@@ -9,6 +9,7 @@ export default defineConfig({
 
   projectId: 'h3o584t2',
   dataset: 'production',
+  organizationId: 'ot13dSvF3',
 
   plugins: [
     structureTool(),
