@@ -520,15 +520,24 @@ export default function BlogPost({ post, recentPosts }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getAllPosts()
+  try {
+    const posts = await getAllPosts()
 
-  const paths = posts.map((post) => ({
-    params: { slug: post.slug.current },
-  }))
+    const paths = posts.map((post) => ({
+      params: { slug: post.slug.current },
+    }))
 
-  return {
-    paths,
-    fallback: 'blocking',
+    return {
+      paths,
+      fallback: 'blocking',
+    }
+  } catch (error) {
+    console.error('Error fetching posts for static paths:', error)
+    // Return empty paths and let fallback handle dynamic requests
+    return {
+      paths: [],
+      fallback: 'blocking',
+    }
   }
 }
 
