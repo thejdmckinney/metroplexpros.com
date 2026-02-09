@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "generate-sitemap": "node scripts/generate-sitemap.js",
-    "test-sanity": "node scripts/test-sanity.js"
+    "test-sanity": "node scripts/test-sanity.js",
+    "studio:deploy": "sanity deploy"
   },
   "dependencies": {
     "@portabletext/react": "^3.2.4",

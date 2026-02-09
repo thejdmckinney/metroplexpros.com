@@ -4,12 +4,14 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemas'
 
 export default defineConfig({
-  name: 'default',
+  name: 'metroplex-pros-studio',
   title: 'Metroplex Pros Blog',
 
   projectId: 'h3o584t2',
   dataset: 'production',
   organizationId: 'ot13dSvF3',
+
+  basePath: '/studio',
 
   plugins: [
     structureTool(),
