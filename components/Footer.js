@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NewsletterSignup from './NewsletterSignup'
 
 export default function Footer() {
   return (
@@ -78,6 +79,16 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+        
+        <div className="footer-newsletter">
+          <div className="newsletter-container">
+            <div className="newsletter-header">
+              <h3>Stay Updated with Home Improvement Tips</h3>
+              <p>Get expert advice, seasonal maintenance tips, and exclusive offers delivered to your inbox.</p>
+            </div>
+            <NewsletterSignup source="footer" />
           </div>
         </div>
         

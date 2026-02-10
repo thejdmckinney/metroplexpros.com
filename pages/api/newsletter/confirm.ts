@@ -1,6 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
+import { welcomeEmailTemplate } from '../../../emails/templates/welcome'
 
+const resend = new Resend(process.env.RESEND_API_KEY)
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseServiceKey = process.env.SUPABSE_SERVICE_ROLE_KEY!
 
@@ -47,6 +50,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (updateError) {
       console.error('Update error:', updateError)
       return res.redirect(302, '/newsletter-error?reason=update-failed')
+    }
+
+    // Send welcome email
+    try {
+      const welcomeHtml = welcomeEmailTemplate({
+        name: subscriber.name,
+        email: subscriber.email,
+      })
+
+      await resend.emails.send({
+        from: 'Metroplex Pros <newsletter@metroplexpros.com>',
+        to: subscriber.email,
+        subject: 'Welcome to Metroplex Pros Newsletter! 🎉',
+        html: welcomeHtml,
+      })
+    } catch (emailError) {
+      // Don't fail the confirmation if email fails
+      console.error('Welcome email error:', emailError)
     }
 
     // Redirect to success page

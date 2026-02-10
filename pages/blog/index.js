@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import Link from 'next/link'
 import { getAllPosts, getAllCategories, urlFor } from '../../lib/sanityClient'
 import TrustSignals from '../../components/TrustSignals'
+import NewsletterSignup from '../../components/NewsletterSignup'
 
 export default function Blog({ posts, categories }) {
   const [filteredPosts, setFilteredPosts] = useState(posts)
@@ -244,6 +245,41 @@ export default function Blog({ posts, categories }) {
       <section style={{ background: '#0d1117', paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="container">
           <TrustSignals variant="compact" />
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section style={{
+        backgroundColor: '#0d1117',
+        padding: '4rem 0',
+        borderTop: '1px solid #30363d'
+      }}>
+        <div className="container">
+          <div style={{
+            maxWidth: '600px',
+            margin: '0 auto',
+            textAlign: 'center'
+          }}>
+            <h2 style={{
+              fontSize: '2.5rem',
+              marginBottom: '1rem',
+              fontWeight: '700',
+              background: 'linear-gradient(135deg, #00f0ff, #0080ff)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>
+              Never Miss a Tip
+            </h2>
+            <p style={{
+              fontSize: '1.15rem',
+              color: '#8b949e',
+              marginBottom: '2rem',
+              lineHeight: '1.6'
+            }}>
+              Get our latest home improvement guides, seasonal maintenance tips, and exclusive offers delivered straight to your inbox.
+            </p>
+            <NewsletterSignup source="blog" />
+          </div>
         </div>
       </section>
 

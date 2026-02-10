@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from '@supabase/supabase-js'
 import { Resend } from 'resend'
+import { confirmationEmailTemplate } from '../../../emails/templates/confirmation'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseServiceKey = process.env.SUPABSE_SERVICE_ROLE_KEY!
@@ -80,33 +81,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Generate confirmation link
     const confirmLink = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metroplexpros.com'}/api/newsletter/confirm?token=${confirmToken}`
 
-    // Send confirmation email
-    const emailHtml = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <div style="background: #2563eb; color: white; padding: 20px; text-align: center;">
-          <h1 style="margin: 0;">MetroPlex Pros</h1>
-        </div>
-        <div style="padding: 30px; background: #f9fafb;">
-          <h2 style="color: #1f2937; margin-top: 0;">Thanks for subscribing${name ? `, ${name}` : ''}!</h2>
-          <p style="color: #4b5563; line-height: 1.6;">Click the button below to confirm your subscription:</p>
-          <div style="text-align: center; margin: 30px 0;">
-            <a href="${confirmLink}" style="display: inline-block; background: #2563eb; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">
-              Confirm Subscription
-            </a>
-          </div>
-          <p style="color: #4b5563; line-height: 1.6;">You'll get notified when we publish new home maintenance and electrical tips for North Texas homeowners.</p>
-          <p style="color: #6b7280; font-size: 14px; margin-top: 30px;">
-            If the button doesn't work, copy and paste this link into your browser:<br/>
-            <a href="${confirmLink}" style="color: #2563eb; word-break: break-all;">${confirmLink}</a>
-          </p>
-        </div>
-        <div style="text-align: center; padding: 20px; background: #f9fafb; border-top: 1px solid #e5e7eb;">
-          <p style="color: #6b7280; font-size: 12px; margin: 0;">MetroPlex Pros - Licensed Electrical Contractor</p>
-          <p style="color: #9ca3af; font-size: 11px; margin: 5px 0 0 0;">Dallas-Fort Worth, TX</p>
-        </div>
-      </div>
-    `
+    // Generate email HTML using template
+    const emailHtml = confirmationEmailTemplate({
+      name,
+      confirmLink,
+    })
 
+    // Send confirmation email
     try {
       await resend.emails.send({
         from: 'MetroPlex Pros <noreply@metroplexpros.com>',

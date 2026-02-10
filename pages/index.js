@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
 import TrustSignals, { InlineTrustBadges } from '../components/TrustSignals'
+import NewsletterSignup from '../components/NewsletterSignup'
 
 export default function Home() {
   return (
@@ -563,6 +564,49 @@ export default function Home() {
           })
         }}
       />
+
+      {/* Newsletter Section */}
+      <section style={{
+        backgroundColor: '#161b22',
+        padding: '4rem 0',
+        borderTop: '1px solid #30363d',
+        borderBottom: '1px solid #30363d'
+      }}>
+        <div className="container">
+          <div style={{
+            maxWidth: '650px',
+            margin: '0 auto',
+            textAlign: 'center'
+          }}>
+            <h2 style={{
+              fontSize: '2.5rem',
+              marginBottom: '1rem',
+              fontWeight: '700',
+              background: 'linear-gradient(135deg, #00f0ff, #0080ff)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>
+              Home Improvement Tips & Exclusive Offers
+            </h2>
+            <p style={{
+              fontSize: '1.15rem',
+              color: '#8b949e',
+              marginBottom: '2.5rem',
+              lineHeight: '1.6'
+            }}>
+              Join thousands of Dallas homeowners getting expert maintenance tips, seasonal guides, and special discounts delivered monthly.
+            </p>
+            <NewsletterSignup source="homepage" />
+            <p style={{
+              fontSize: '0.9rem',
+              color: '#6e7681',
+              marginTop: '1.5rem'
+            }}>
+              ✓ Monthly home maintenance guides &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Seasonal checklists &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Exclusive subscriber discounts
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="section cta">
