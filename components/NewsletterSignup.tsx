@@ -33,16 +33,26 @@ export default function NewsletterSignup({ source, className = '' }: NewsletterS
         }),
       })
 
-      const data = await response.json()
+      // Check if response has content before parsing JSON
+      const contentType = response.headers.get('content-type')
+      let data: any = null
+      
+      if (contentType && contentType.includes('application/json')) {
+        const text = await response.text()
+        if (text) {
+          data = JSON.parse(text)
+        }
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || 'Something went wrong')
+        throw new Error(data?.error || 'Something went wrong. Please try again.')
       }
 
       setState('success')
       setEmail('')
       setName('')
     } catch (error) {
+      console.error('Newsletter signup error:', error)
       setState('error')
       setErrorMessage(error instanceof Error ? error.message : 'Failed to subscribe. Please try again.')
     }
