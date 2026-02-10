@@ -60,7 +60,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       })
 
       await resend.emails.send({
-        from: 'Metroplex Pros <newsletter@metroplexpros.com>',
+        from: 'Metroplex Pros <onboarding@resend.dev>',
         to: subscriber.email,
         subject: 'Welcome to Metroplex Pros Newsletter! 🎉',
         html: welcomeHtml,

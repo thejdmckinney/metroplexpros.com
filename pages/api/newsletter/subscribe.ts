@@ -19,12 +19,30 @@ interface SubscribeRequest {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // Add CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
+  
+  // Handle preflight
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end()
+  }
+  
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
   try {
     const { email, name, source }: SubscribeRequest = req.body
+    
+    // Debug logging
+    console.log('Newsletter subscription attempt:', { email, name, source })
+    console.log('Environment check:', {
+      hasSupabaseUrl: !!supabaseUrl,
+      hasSupabaseKey: !!supabaseServiceKey,
+      hasResendKey: !!process.env.RESEND_API_KEY
+    })
 
     // Validate email
     if (!email || !EMAIL_REGEX.test(email)) {
@@ -90,7 +108,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Send confirmation email
     try {
       await resend.emails.send({
-        from: 'MetroPlex Pros <noreply@metroplexpros.com>',
+        from: 'MetroPlex Pros <onboarding@resend.dev>',
         to: email,
         subject: 'Confirm your subscription to MetroPlex Pros',
         html: emailHtml,
