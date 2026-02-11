@@ -21,12 +21,12 @@ export default function NinetyNinePlan() {
         }
 
         .section-padding {
-          padding: 5rem 0;
+          padding: 3.5rem 0;
         }
 
         @media (max-width: 768px) {
           .section-padding {
-            padding: 3rem 0;
+            padding: 2.5rem 0;
           }
           .container-narrow {
             padding: 0 1.5rem;
@@ -35,7 +35,7 @@ export default function NinetyNinePlan() {
 
         .hero-section {
           background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-          padding: 8rem 0 6rem;
+          padding: 5rem 0 4rem;
           position: relative;
           overflow: hidden;
         }
@@ -174,15 +174,15 @@ export default function NinetyNinePlan() {
 
         .pricing-section {
           background: #0d1117;
-          padding: 6rem 0;
+          padding: 3.5rem 0;
         }
 
         .pricing-cards {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-          gap: 2.5rem;
+          gap: 2rem;
           max-width: 900px;
-          margin: 3rem auto 0;
+          margin: 2rem auto 0;
         }
 
         .pricing-card {
@@ -290,9 +290,9 @@ export default function NinetyNinePlan() {
         .benefits-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 2.5rem;
+          gap: 2rem;
           max-width: 1200px;
-          margin: 3rem auto 0;
+          margin: 2rem auto 0;
         }
 
         .benefit-card {
@@ -330,15 +330,15 @@ export default function NinetyNinePlan() {
 
         .social-proof-section {
           background: linear-gradient(135deg, rgba(80, 200, 120, 0.1) 0%, rgba(40, 160, 90, 0.05) 100%);
-          padding: 5rem 0;
+          padding: 3.5rem 0;
         }
 
         .stats-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 3rem;
+          gap: 2.5rem;
           max-width: 1000px;
-          margin: 3rem auto 0;
+          margin: 2rem auto 0;
           text-align: center;
         }
 
@@ -358,12 +358,12 @@ export default function NinetyNinePlan() {
 
         .faq-section {
           background: #161b22;
-          padding: 5rem 0;
+          padding: 3.5rem 0;
         }
 
         .faq-container {
           max-width: 800px;
-          margin: 3rem auto 0;
+          margin: 2rem auto 0;
         }
 
         .faq-item {
@@ -399,7 +399,7 @@ export default function NinetyNinePlan() {
 
         .final-cta-section {
           background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-          padding: 6rem 0;
+          padding: 3.5rem 0;
           text-align: center;
         }
 
@@ -439,7 +439,7 @@ export default function NinetyNinePlan() {
           font-size: 1.2rem;
           color: #8b949e;
           max-width: 700px;
-          margin: 0 auto 3rem;
+          margin: 0 auto 2rem;
           text-align: center;
           line-height: 1.6;
         }
@@ -486,7 +486,11 @@ export default function NinetyNinePlan() {
       </section>
 
       {/* Trust Signals */}
-      <TrustSignals />
+      <section style={{background: '#0d1117', padding: '2.5rem 0'}}>
+        <div className="container-narrow">
+          <TrustSignals />
+        </div>
+      </section>
 
       {/* Social Proof Stats */}
       <section className="social-proof-section">
