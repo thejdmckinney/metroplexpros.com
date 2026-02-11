@@ -1,14 +1,8 @@
-import Layout from '../components/Layout'import Layout from '../components/Layout'
+import Layout from '../components/Layout'
+import { useState } from 'react'
+import TrustSignals from '../components/TrustSignals'
 
-import { useState } from 'react'import { useState } from 'react'
-
-import TrustSignals from '../components/TrustSignals'import TrustSignals from '../components/TrustSignals'
-
-
-
-export default function NinetyNinePlan() {export default function NinetyNinePlan() {
-
-  const [showModal, setShowModal] = useState(false)  const [selectedPlan, setSelectedPlan] = useState('annual')
+export default function NinetyNinePlan() {  const [showModal, setShowModal] = useState(false)  const [selectedPlan, setSelectedPlan] = useState('annual')
 
   const [showModal, setShowModal] = useState(false)
 
