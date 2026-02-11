@@ -1,0 +1,1746 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "author",
+        "type": "reference"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "fields": [
+          {
+            "name": "alt",
+            "type": "string",
+            "title": "Alternative Text"
+          }
+        ],
+        "name": "mainImage",
+        "type": "image",
+        "title": "Main image"
+      },
+      {
+        "of": [
+          {
+            "to": [
+              {
+                "type": "category"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to category"
+          }
+        ],
+        "name": "categories",
+        "type": "array"
+      },
+      {
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Published at"
+      },
+      {
+        "rows": 4,
+        "name": "excerpt",
+        "type": "text"
+      },
+      {
+        "name": "body",
+        "type": "blockContent"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "keywords",
+            "type": "array"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "post",
+    "type": "document",
+    "title": "Blog Post"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "image",
+        "type": "image"
+      },
+      {
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "bio",
+        "type": "array"
+      }
+    ],
+    "name": "author",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      }
+    ],
+    "name": "category",
+    "type": "document"
+  },
+  {
+    "of": [
+      {
+        "marks": {
+          "annotations": [
+            {
+              "fields": [
+                {
+                  "validation": [
+                    {
+                      "rules": [
+                        {
+                          "flag": "uri",
+                          "constraint": {
+                            "options": {
+                              "scheme": [
+                                "/^http$/",
+                                "/^https$/"
+                              ],
+                              "allowRelative": false,
+                              "relativeOnly": false,
+                              "allowCredentials": false
+                            }
+                          }
+                        }
+                      ],
+                      "level": "error"
+                    }
+                  ],
+                  "name": "href",
+                  "type": "url",
+                  "title": "URL"
+                }
+              ],
+              "name": "link",
+              "type": "object",
+              "title": "URL"
+            }
+          ],
+          "decorators": [
+            {
+              "value": "strong",
+              "title": "Strong"
+            },
+            {
+              "value": "em",
+              "title": "Emphasis"
+            },
+            {
+              "value": "code",
+              "title": "Code"
+            }
+          ]
+        },
+        "lists": [
+          {
+            "value": "bullet",
+            "title": "Bullet"
+          },
+          {
+            "value": "number",
+            "title": "Numbered"
+          }
+        ],
+        "styles": [
+          {
+            "value": "normal",
+            "title": "Normal"
+          },
+          {
+            "value": "h1",
+            "title": "H1"
+          },
+          {
+            "value": "h2",
+            "title": "H2"
+          },
+          {
+            "value": "h3",
+            "title": "H3"
+          },
+          {
+            "value": "h4",
+            "title": "H4"
+          },
+          {
+            "value": "blockquote",
+            "title": "Quote"
+          }
+        ],
+        "of": [],
+        "type": "block"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "fields": [
+          {
+            "name": "alt",
+            "type": "string",
+            "title": "Alternative Text"
+          }
+        ],
+        "type": "image"
+      },
+      {
+        "type": "callToAction",
+        "title": "Call to Action"
+      }
+    ],
+    "name": "blockContent",
+    "type": "array"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "text",
+        "type": "string",
+        "title": "Button Text"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "url",
+        "type": "string",
+        "title": "Button URL"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Primary (Blue)",
+              "value": "primary"
+            },
+            {
+              "title": "Secondary (Dark)",
+              "value": "secondary"
+            },
+            {
+              "title": "Success (Green)",
+              "value": "success"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "primary",
+        "name": "style",
+        "type": "string",
+        "title": "Button Style"
+      }
+    ],
+    "name": "callToAction",
+    "type": "object",
+    "title": "Call to Action"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"Electrical Services\", \"Plumbing Services\"",
+        "name": "title",
+        "type": "string",
+        "title": "Service Title"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"electrical\", \"plumbing\"",
+        "name": "slug",
+        "type": "slug",
+        "title": "URL Slug"
+      },
+      {
+        "description": "Main headline at the top of the page",
+        "name": "heroHeadline",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "description": "Supporting text under the headline",
+        "name": "heroSubheadline",
+        "type": "text"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "fields": [
+          {
+            "description": "Important for SEO and accessibility",
+            "name": "alt",
+            "type": "string",
+            "title": "Alt Text"
+          }
+        ],
+        "name": "heroImage",
+        "type": "image"
+      },
+      {
+        "description": "Main content describing the service",
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bulleted list"
+              },
+              {
+                "value": "number",
+                "title": "Numbered list"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h1",
+                "title": "Heading 1"
+              },
+              {
+                "value": "h2",
+                "title": "Heading 2"
+              },
+              {
+                "value": "h3",
+                "title": "Heading 3"
+              },
+              {
+                "value": "h4",
+                "title": "Heading 4"
+              },
+              {
+                "value": "h5",
+                "title": "Heading 5"
+              },
+              {
+                "value": "h6",
+                "title": "Heading 6"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "description",
+        "type": "array",
+        "title": "Service Description"
+      },
+      {
+        "description": "Bullet points or features of this service",
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "feature",
+                "type": "string"
+              },
+              {
+                "rows": 2,
+                "name": "description",
+                "type": "text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "features",
+        "type": "array",
+        "title": "Key Features"
+      },
+      {
+        "description": "Related sub-services (e.g., Panel Upgrades, Rewiring)",
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string",
+                "title": "Sub-Service Name"
+              },
+              {
+                "rows": 3,
+                "name": "description",
+                "type": "text"
+              },
+              {
+                "description": "e.g., ⚡, 🔧, 💡",
+                "name": "icon",
+                "type": "string",
+                "title": "Icon Emoji"
+              },
+              {
+                "description": "e.g., \"panel-upgrades\", \"rewiring\"",
+                "name": "slug",
+                "type": "string",
+                "title": "URL Path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "subservices",
+        "type": "array",
+        "title": "Sub-Services"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "question",
+                "type": "string"
+              },
+              {
+                "rows": 4,
+                "name": "answer",
+                "type": "text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "faqs",
+        "type": "array",
+        "title": "FAQs"
+      },
+      {
+        "fields": [
+          {
+            "name": "headline",
+            "type": "string",
+            "title": "CTA Headline"
+          },
+          {
+            "name": "buttonText",
+            "type": "string"
+          },
+          {
+            "name": "phoneNumber",
+            "type": "string"
+          }
+        ],
+        "name": "callToAction",
+        "type": "object",
+        "title": "Call to Action"
+      },
+      {
+        "description": "Link to SEO metadata for this page",
+        "to": [
+          {
+            "type": "seoSettings"
+          }
+        ],
+        "name": "seo",
+        "type": "reference",
+        "title": "SEO Settings"
+      },
+      {
+        "description": "Order to display services (lower numbers first)",
+        "name": "displayOrder",
+        "type": "number"
+      },
+      {
+        "initialValue": true,
+        "description": "Show this service on the website",
+        "name": "isActive",
+        "type": "boolean",
+        "title": "Active"
+      }
+    ],
+    "name": "servicePage",
+    "type": "document",
+    "title": "Service Pages"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"Garland\", \"Irving\", \"Richardson\"",
+        "name": "name",
+        "type": "string",
+        "title": "Area Name"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL Slug"
+      },
+      {
+        "description": "e.g., \"Professional Home Services in Garland, TX\"",
+        "name": "heroHeadline",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "name": "heroSubheadline",
+        "type": "text"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "Photo representing this area",
+        "fields": [
+          {
+            "name": "alt",
+            "type": "string",
+            "title": "Alt Text"
+          }
+        ],
+        "name": "areaImage",
+        "type": "image"
+      },
+      {
+        "description": "Information about serving this area",
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bulleted list"
+              },
+              {
+                "value": "number",
+                "title": "Numbered list"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h1",
+                "title": "Heading 1"
+              },
+              {
+                "value": "h2",
+                "title": "Heading 2"
+              },
+              {
+                "value": "h3",
+                "title": "Heading 3"
+              },
+              {
+                "value": "h4",
+                "title": "Heading 4"
+              },
+              {
+                "value": "h5",
+                "title": "Heading 5"
+              },
+              {
+                "value": "h6",
+                "title": "Heading 6"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "description",
+        "type": "array",
+        "title": "Area Description"
+      },
+      {
+        "description": "Specific neighborhoods or ZIP codes served",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "neighborhoods",
+        "type": "array"
+      },
+      {
+        "fields": [
+          {
+            "name": "population",
+            "type": "string"
+          },
+          {
+            "name": "medianHomeValue",
+            "type": "string"
+          },
+          {
+            "name": "medianHomeAge",
+            "type": "string"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "name": "label",
+                    "type": "string",
+                    "title": "Stat Label"
+                  },
+                  {
+                    "name": "value",
+                    "type": "string",
+                    "title": "Stat Value"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "customStats",
+            "type": "array",
+            "title": "Custom Statistics"
+          }
+        ],
+        "name": "localStats",
+        "type": "object",
+        "title": "Local Statistics"
+      },
+      {
+        "description": "Which services are available in this area",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "servicePage"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to service pages"
+          }
+        ],
+        "name": "servicesOffered",
+        "type": "array"
+      },
+      {
+        "description": "Testimonials from customers in this area",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "testimonials",
+        "type": "array",
+        "title": "Local Testimonials"
+      },
+      {
+        "description": "e.g., \"30-minute response time\"",
+        "name": "responseTime",
+        "type": "string"
+      },
+      {
+        "initialValue": true,
+        "name": "emergencyServices",
+        "type": "boolean",
+        "title": "24/7 Emergency Services Available"
+      },
+      {
+        "description": "Optional area-specific CTA",
+        "fields": [
+          {
+            "name": "headline",
+            "type": "string",
+            "title": "CTA Headline"
+          },
+          {
+            "rows": 3,
+            "name": "message",
+            "type": "text",
+            "title": "CTA Message"
+          }
+        ],
+        "name": "customCTA",
+        "type": "object",
+        "title": "Custom Call to Action"
+      },
+      {
+        "to": [
+          {
+            "type": "seoSettings"
+          }
+        ],
+        "name": "seo",
+        "type": "reference",
+        "title": "SEO Settings"
+      },
+      {
+        "name": "displayOrder",
+        "type": "number"
+      },
+      {
+        "initialValue": true,
+        "name": "isActive",
+        "type": "boolean",
+        "title": "Active"
+      }
+    ],
+    "name": "serviceArea",
+    "type": "document",
+    "title": "Service Areas"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"$99 Plan\", \"Emergency Service\", \"Panel Upgrade\"",
+        "name": "name",
+        "type": "string",
+        "title": "Package Name"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL Slug"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Subscription Plan",
+              "value": "subscription"
+            },
+            {
+              "title": "One-Time Service",
+              "value": "one-time"
+            },
+            {
+              "title": "Emergency Service",
+              "value": "emergency"
+            },
+            {
+              "title": "Service Bundle",
+              "value": "bundle"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "subscription",
+                  "one-time",
+                  "emergency",
+                  "bundle"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "packageType",
+        "type": "string"
+      },
+      {
+        "fields": [
+          {
+            "description": "Enter number only (e.g., 99 for $99)",
+            "name": "amount",
+            "type": "number",
+            "title": "Price Amount"
+          },
+          {
+            "initialValue": "USD",
+            "options": {
+              "list": [
+                "USD",
+                "CAD"
+              ]
+            },
+            "name": "currency",
+            "type": "string"
+          },
+          {
+            "options": {
+              "list": [
+                {
+                  "title": "One-Time",
+                  "value": "one-time"
+                },
+                {
+                  "title": "Monthly",
+                  "value": "monthly"
+                },
+                {
+                  "title": "Yearly",
+                  "value": "yearly"
+                },
+                {
+                  "title": "Per Hour",
+                  "value": "hourly"
+                }
+              ]
+            },
+            "name": "frequency",
+            "type": "string",
+            "title": "Billing Frequency"
+          },
+          {
+            "description": "How to show the price (e.g., \"$99/month\", \"Starting at $150\")",
+            "name": "displayPrice",
+            "type": "string"
+          }
+        ],
+        "name": "price",
+        "type": "object"
+      },
+      {
+        "rows": 2,
+        "description": "Brief one-liner about this package",
+        "name": "shortDescription",
+        "type": "text"
+      },
+      {
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bulleted list"
+              },
+              {
+                "value": "number",
+                "title": "Numbered list"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h1",
+                "title": "Heading 1"
+              },
+              {
+                "value": "h2",
+                "title": "Heading 2"
+              },
+              {
+                "value": "h3",
+                "title": "Heading 3"
+              },
+              {
+                "value": "h4",
+                "title": "Heading 4"
+              },
+              {
+                "value": "h5",
+                "title": "Heading 5"
+              },
+              {
+                "value": "h6",
+                "title": "Heading 6"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "fullDescription",
+        "type": "array"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "feature",
+                "type": "string"
+              },
+              {
+                "initialValue": true,
+                "name": "included",
+                "type": "boolean"
+              },
+              {
+                "name": "details",
+                "type": "string",
+                "title": "Additional Details"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "features",
+        "type": "array",
+        "title": "Included Features"
+      },
+      {
+        "description": "Why customers should choose this package",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "benefits",
+        "type": "array",
+        "title": "Key Benefits"
+      },
+      {
+        "description": "Which services are part of this package",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "servicePage"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to service pages"
+          }
+        ],
+        "name": "servicesIncluded",
+        "type": "array"
+      },
+      {
+        "description": "What is NOT included",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "limitations",
+        "type": "array",
+        "title": "Limitations or Exclusions"
+      },
+      {
+        "initialValue": false,
+        "description": "Highlight this package (e.g., \"Most Popular\")",
+        "name": "isFeatured",
+        "type": "boolean",
+        "title": "Featured Package"
+      },
+      {
+        "description": "e.g., \"Most Popular\", \"Best Value\"",
+        "name": "featuredLabel",
+        "type": "string"
+      },
+      {
+        "initialValue": "Get Started",
+        "name": "buttonText",
+        "type": "string",
+        "title": "Call to Action Button Text"
+      },
+      {
+        "fields": [
+          {
+            "name": "hasDiscount",
+            "type": "boolean",
+            "title": "Discount Active"
+          },
+          {
+            "description": "e.g., \"$20 off\", \"10% off\"",
+            "name": "discountAmount",
+            "type": "string"
+          },
+          {
+            "name": "discountExpiry",
+            "type": "date",
+            "title": "Discount Expiration Date"
+          }
+        ],
+        "name": "discounts",
+        "type": "object",
+        "title": "Active Discounts"
+      },
+      {
+        "description": "Which service areas offer this package",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "serviceArea"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to service areas"
+          }
+        ],
+        "name": "serviceAreas",
+        "type": "array",
+        "title": "Available In"
+      },
+      {
+        "name": "displayOrder",
+        "type": "number"
+      },
+      {
+        "initialValue": true,
+        "description": "Show this package on the website",
+        "name": "isActive",
+        "type": "boolean",
+        "title": "Active"
+      }
+    ],
+    "name": "pricingPackage",
+    "type": "document",
+    "title": "Pricing & Packages"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Internal reference (e.g., \"Electrical Services Page\", \"Garland Area Page\")",
+        "name": "pageName",
+        "type": "string"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 60
+              }
+            ],
+            "level": "warning",
+            "message": "Should be 50-60 characters"
+          }
+        ],
+        "description": "SEO title (50-60 characters recommended)",
+        "name": "metaTitle",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 160
+              }
+            ],
+            "level": "warning",
+            "message": "Should be 150-160 characters"
+          }
+        ],
+        "description": "SEO description (150-160 characters recommended)",
+        "name": "metaDescription",
+        "type": "text"
+      },
+      {
+        "options": {
+          "layout": "tags"
+        },
+        "description": "Main keywords for this page",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "keywords",
+        "type": "array",
+        "title": "Focus Keywords"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "Image for social media sharing (1200x630px recommended)",
+        "fields": [
+          {
+            "name": "alt",
+            "type": "string",
+            "title": "Alt Text"
+          }
+        ],
+        "name": "ogImage",
+        "type": "image",
+        "title": "Open Graph Image"
+      },
+      {
+        "description": "Social media title (optional, uses Meta Title if empty)",
+        "name": "ogTitle",
+        "type": "string",
+        "title": "Open Graph Title"
+      },
+      {
+        "rows": 2,
+        "description": "Social media description (optional, uses Meta Description if empty)",
+        "name": "ogDescription",
+        "type": "text",
+        "title": "Open Graph Description"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Full URL to prevent duplicate content issues (e.g., https://metroplexpros.com/services/electrical)",
+        "name": "canonicalUrl",
+        "type": "url",
+        "title": "Canonical URL"
+      },
+      {
+        "initialValue": false,
+        "description": "Prevent search engines from indexing this page",
+        "name": "noindex",
+        "type": "boolean",
+        "title": "No Index"
+      },
+      {
+        "initialValue": false,
+        "description": "Prevent search engines from following links on this page",
+        "name": "nofollow",
+        "type": "boolean",
+        "title": "No Follow"
+      },
+      {
+        "description": "JSON-LD structured data for rich snippets",
+        "fields": [
+          {
+            "options": {
+              "list": [
+                {
+                  "title": "Local Business",
+                  "value": "LocalBusiness"
+                },
+                {
+                  "title": "Service",
+                  "value": "Service"
+                },
+                {
+                  "title": "Product",
+                  "value": "Product"
+                },
+                {
+                  "title": "Article",
+                  "value": "Article"
+                },
+                {
+                  "title": "FAQ",
+                  "value": "FAQPage"
+                }
+              ]
+            },
+            "name": "type",
+            "type": "string",
+            "title": "Schema Type"
+          },
+          {
+            "rows": 8,
+            "description": "Advanced: Paste custom JSON-LD code",
+            "name": "customSchema",
+            "type": "text",
+            "title": "Custom JSON-LD"
+          }
+        ],
+        "name": "structuredData",
+        "type": "object",
+        "title": "Structured Data (Schema.org)"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Service Page",
+              "value": "service"
+            },
+            {
+              "title": "Service Area Page",
+              "value": "area"
+            },
+            {
+              "title": "Pricing Page",
+              "value": "pricing"
+            },
+            {
+              "title": "Blog Post",
+              "value": "blog"
+            },
+            {
+              "title": "Homepage",
+              "value": "homepage"
+            },
+            {
+              "title": "Other",
+              "value": "other"
+            }
+          ]
+        },
+        "description": "What type of page is this for?",
+        "name": "pageType",
+        "type": "string"
+      },
+      {
+        "description": "Auto-updated when changes are saved",
+        "readOnly": true,
+        "name": "lastUpdated",
+        "type": "datetime",
+        "title": "Last SEO Update"
+      }
+    ],
+    "name": "seoSettings",
+    "type": "document",
+    "title": "SEO Settings"
+  }
+]
