@@ -13,9 +13,17 @@ export default function ToolsIndex() {
       benefits: ['Instant estimates', 'No obligation', 'Personalized results'],
     },
     {
+      title: 'Outlet & Switch Pricing Calculator',
+      description: 'Get instant pricing for outlet and switch replacements with automatic volume discounts. Save up to 30% on bulk orders.',
+      icon: '🔌',
+      link: '/tools/outlet-switch-pricing',
+      available: true,
+      benefits: ['Volume discounts', '8 device types', 'Instant pricing'],
+    },
+    {
       title: 'Electrical Project Cost Estimator',
       description: 'Estimate costs for any electrical project including outlets, lighting, circuits, appliances, safety upgrades, and smart home installations.',
-      icon: '🔌',
+      icon: '⚡',
       link: '/tools/electrical-cost-estimator',
       available: true,
       benefits: ['50+ project types', 'Combine projects', 'Urgent pricing'],

@@ -17,10 +17,17 @@ export default function BlogSidebar() {
       available: true
     },
     {
+      name: 'Outlet & Switch Pricing Calculator',
+      href: '/tools/outlet-switch-pricing',
+      description: 'Volume discounts up to 30% on bulk replacements',
+      icon: '🔌',
+      available: true
+    },
+    {
       name: 'Electrical Project Cost Estimator',
       href: '/tools/electrical-cost-estimator',
       description: '50+ electrical project types with instant estimates',
-      icon: '�',
+      icon: '⚡',
       available: true
     },
     {
