@@ -1,20 +1,13 @@
-import Head from 'next/head'
 import Layout from '../../components/Layout'
 import OutletSwitchPricing from '../../components/OutletSwitchPricing'
 
 export default function OutletSwitchPricingPage() {
   return (
-    <Layout>
-      <Head>
-        <title>Outlet & Switch Replacement Pricing Calculator | Metroplex Pros</title>
-        <meta 
-          name="description" 
-          content="Get instant pricing for outlet and switch replacements in Dallas. Volume discounts up to 30% off for bulk orders. Standard, GFCI, USB, dimmer, and smart device installations." 
-        />
-        <meta property="og:title" content="Outlet & Switch Replacement Pricing Calculator | Metroplex Pros" />
-        <meta property="og:description" content="Get instant pricing for outlet and switch replacements in Dallas. Volume discounts up to 30% off for bulk orders." />
-      </Head>
-
+    <Layout
+      title="Outlet & Switch Replacement Pricing Calculator | Metroplex Pros"
+      description="Get instant pricing for outlet and switch replacements in Dallas. Volume discounts up to 30% off for bulk orders. Standard, GFCI, USB, dimmer, and smart device installations."
+      keywords="outlet replacement cost, switch replacement pricing, GFCI outlet installation, USB outlet cost, dimmer switch installation, Dallas electrician pricing"
+    >
       <div style={{ 
         minHeight: '100vh', 
         backgroundColor: '#0d1117',

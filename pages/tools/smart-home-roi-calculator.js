@@ -1,20 +1,13 @@
-import Head from 'next/head'
 import Layout from '../../components/Layout'
 import SmartHomeROICalculator from '../../components/SmartHomeROICalculator'
 
 export default function SmartHomeROICalculatorPage() {
   return (
-    <Layout>
-      <Head>
-        <title>Smart Home ROI Calculator | Calculate Your Return on Investment | Metroplex Pros</title>
-        <meta 
-          name="description" 
-          content="Calculate the ROI of smart home upgrades in Dallas. See energy savings, home value increase, and payback period for smart thermostats, lighting, security, and more." 
-        />
-        <meta property="og:title" content="Smart Home ROI Calculator | Metroplex Pros" />
-        <meta property="og:description" content="Calculate your return on investment for smart home upgrades with energy savings and home value analysis." />
-      </Head>
-
+    <Layout
+      title="Smart Home ROI Calculator | Calculate Your Return on Investment | Metroplex Pros"
+      description="Calculate the ROI of smart home upgrades in Dallas. See energy savings, home value increase, and payback period for smart thermostats, lighting, security, and more."
+      keywords="smart home ROI, smart home return on investment, home automation savings, smart thermostat savings, smart home cost calculator Dallas"
+    >
       <div style={{ 
         minHeight: '100vh', 
         backgroundColor: '#0d1117',
