@@ -35,7 +35,7 @@ export default function BlogSidebar() {
       href: '/tools/smart-home-roi-calculator',
       description: 'Calculate your return on smart home investments',
       icon: '🏠',
-      available: false
+      available: true
     }
   ]
 

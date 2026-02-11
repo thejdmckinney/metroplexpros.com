@@ -48,9 +48,9 @@ export default function ToolsIndex() {
       title: 'Smart Home ROI Calculator',
       description: 'Calculate the return on investment for smart home upgrades including energy savings and increased home value.',
       icon: '🤖',
-      link: '#',
-      available: false,
-      benefits: ['Coming soon', 'Energy savings', 'Home value impact'],
+      link: '/tools/smart-home-roi-calculator',
+      available: true,
+      benefits: ['Energy savings', 'Home value increase', '10-year projections'],
     },
   ]
 
