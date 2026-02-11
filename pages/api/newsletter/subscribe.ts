@@ -3,12 +3,6 @@ import { createClient } from '@supabase/supabase-js'
 import { Resend } from 'resend'
 import { confirmationEmailTemplate } from '../../../emails/templates/confirmation'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
-const resend = new Resend(process.env.RESEND_API_KEY!)
-
-const supabase = createClient(supabaseUrl, supabaseServiceKey)
-
 // Email validation regex
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -34,6 +28,29 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    // Initialize clients inside handler to ensure env vars are loaded
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+    const resendApiKey = process.env.RESEND_API_KEY
+    
+    // Check for missing environment variables
+    if (!supabaseUrl) {
+      console.error('Missing NEXT_PUBLIC_SUPABASE_URL')
+      return res.status(500).json({ error: 'Server configuration error: Missing Supabase URL' })
+    }
+    
+    if (!supabaseServiceKey) {
+      console.error('Missing SUPABASE_SERVICE_ROLE_KEY')
+      return res.status(500).json({ error: 'Server configuration error: Missing Supabase key' })
+    }
+    
+    if (!resendApiKey) {
+      console.error('Missing RESEND_API_KEY')
+      return res.status(500).json({ error: 'Server configuration error: Missing email API key' })
+    }
+    
+    const supabase = createClient(supabaseUrl, supabaseServiceKey)
+    const resend = new Resend(resendApiKey)
     const { email, name, source }: SubscribeRequest = req.body
     
     // Debug logging
