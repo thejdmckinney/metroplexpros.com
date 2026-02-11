@@ -34,105 +34,145 @@ export default function NinetyNinePlan() {
         }
 
         .hero-section {
-          background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-          padding: 5rem 0 4rem;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .hero-bg {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          opacity: 0.1;
-          background-image: radial-gradient(circle at 20% 50%, #00f0ff 0%, transparent 50%), 
-                            radial-gradient(circle at 80% 80%, #00b8d4 0%, transparent 50%);
+          background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+          padding: 3rem 0 2rem;
+          border-bottom: 1px solid #30363d;
         }
 
         .hero-content {
-          position: relative;
-          z-index: 1;
-          text-align: center;
-          max-width: 900px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          align-items: center;
+          max-width: 1200px;
           margin: 0 auto;
         }
 
-        .badge {
-          display: inline-flex;
+        @media (max-width: 968px) {
+          .hero-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+          }
+        }
+
+        .hero-left h1 {
+          font-size: clamp(2.5rem, 5vw, 3.5rem);
+          font-weight: 900;
+          margin-bottom: 1rem;
+          line-height: 1.2;
+          color: #ffffff;
+        }
+
+        .hero-left .price-highlight {
+          color: #00f0ff;
+          font-size: clamp(3rem, 6vw, 4rem);
+        }
+
+        .hero-left p {
+          font-size: 1.15rem;
+          color: #8b949e;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+        }
+
+        .hero-features {
+          list-style: none;
+          padding: 0;
+          margin: 1.5rem 0;
+        }
+
+        .hero-features li {
+          padding: 0.5rem 0;
+          color: #c9d1d9;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          font-size: 1.05rem;
+        }
+
+        .hero-features li:before {
+          content: '✓';
+          color: #50c878;
+          font-weight: 900;
+          font-size: 1.3rem;
+          flex-shrink: 0;
+        }
+
+        .hero-right {
+          background: linear-gradient(135deg, #161b22 0%, #1c2128 100%);
+          border: 2px solid #30363d;
+          border-radius: 20px;
+          padding: 2.5rem;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .value-prop {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        .value-prop h3 {
+          font-size: 1.5rem;
+          color: #00f0ff;
+          margin-bottom: 0.75rem;
+          font-weight: 700;
+        }
+
+        .value-prop p {
+          color: #8b949e;
+          font-size: 1rem;
+          margin: 0;
+        }
+
+        .included-services {
+          background: rgba(0, 240, 255, 0.05);
+          border: 1px solid rgba(0, 240, 255, 0.2);
+          border-radius: 12px;
+          padding: 1.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .included-services h4 {
+          color: #00f0ff;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          font-weight: 700;
+        }
+
+        .service-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .service-list li {
+          padding: 0.4rem 0;
+          color: #c9d1d9;
+          font-size: 0.95rem;
+          display: flex;
           align-items: center;
           gap: 0.5rem;
-          background: rgba(255, 165, 0, 0.2);
-          border: 2px solid #ffa500;
-          padding: 0.75rem 1.5rem;
-          border-radius: 50px;
-          margin-bottom: 2rem;
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: #ffa500;
-          animation: pulse 2s ease-in-out infinite;
         }
 
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-        }
-
-        .hero-title {
-          font-size: clamp(2.5rem, 6vw, 4.5rem);
+        .service-list li:before {
+          content: '•';
+          color: #00f0ff;
           font-weight: 900;
-          margin-bottom: 1.5rem;
-          line-height: 1.1;
-          background: linear-gradient(135deg, #ffffff 0%, #00f0ff 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .hero-subtitle {
-          font-size: 1.4rem;
-          color: #c9d1d9;
-          margin-bottom: 2.5rem;
-          line-height: 1.6;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .pain-point {
-          background: rgba(255, 59, 48, 0.12);
-          border: 2px solid rgba(255, 59, 48, 0.3);
-          border-radius: 15px;
-          padding: 1.5rem;
-          margin-bottom: 3rem;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .pain-point p {
-          color: #ffb3b3;
-          font-size: 1.1rem;
-          margin: 0;
-          line-height: 1.7;
         }
 
         .cta-group {
           display: flex;
-          gap: 1.5rem;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-bottom: 2rem;
+          flex-direction: column;
+          gap: 1rem;
         }
 
         .cta-primary {
-          display: inline-block;
-          padding: 1.5rem 3rem;
-          font-size: 1.2rem;
+          display: block;
+          padding: 1.25rem 2rem;
+          font-size: 1.1rem;
           font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
+          text-align: center;
           background: linear-gradient(135deg, #00f0ff 0%, #00b8d4 100%);
           color: #0d1117;
           border-radius: 12px;
@@ -142,34 +182,34 @@ export default function NinetyNinePlan() {
         }
 
         .cta-primary:hover {
-          transform: translateY(-3px);
+          transform: translateY(-2px);
           box-shadow: 0 12px 35px rgba(0, 240, 255, 0.6);
         }
 
         .cta-secondary {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 1.5rem 2.5rem;
+          display: block;
+          padding: 1.25rem 2rem;
           font-size: 1.1rem;
           font-weight: 700;
-          background: rgba(255, 255, 255, 0.08);
-          border: 2px solid rgba(255, 255, 255, 0.3);
-          color: #fff;
+          text-align: center;
+          background: transparent;
+          border: 2px solid #30363d;
+          color: #c9d1d9;
           border-radius: 12px;
           text-decoration: none;
           transition: all 0.3s ease;
         }
 
         .cta-secondary:hover {
-          background: rgba(255, 255, 255, 0.15);
-          border-color: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.05);
+          border-color: #00f0ff;
         }
 
         .trust-line {
-          font-size: 1rem;
-          color: #8b949e;
+          font-size: 0.9rem;
+          color: #6e7681;
           text-align: center;
+          margin-top: 1rem;
         }
 
         .pricing-section {
@@ -447,40 +487,60 @@ export default function NinetyNinePlan() {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-bg"></div>
         <div className="container-narrow">
           <div className="hero-content">
-            <div className="badge">
-              <span>🔥</span> STOP Wasting Money on Emergency Repairs
-            </div>
-            
-            <h1 className="hero-title">
-              One $3,500 Repair Avoided Pays for 3 Years
-            </h1>
-            
-            <p className="hero-subtitle">
-              A licensed electrician, plumber, or handyman visits your home <strong style={{color: '#00f0ff'}}>every month</strong> for just $99 to catch problems <em>before</em> they explode into expensive nightmares.
-            </p>
-            
-            <div className="pain-point">
+            {/* Left Column - Main Pitch */}
+            <div className="hero-left">
+              <h1>
+                Monthly Home Maintenance for Just <span className="price-highlight">$99/month</span>
+              </h1>
+              
               <p>
-                <strong>Reality check:</strong> A burst pipe? $2,000-$5,000. Electrical fire damage? $10,000+. 
-                AC failure in Texas summer? $5,000-$8,000. <strong style={{color: '#00f0ff'}}>Why wait for disaster?</strong>
+                A licensed professional visits your home every month to inspect, maintain, and catch small problems before they become expensive emergencies.
+              </p>
+              
+              <ul className="hero-features">
+                <li>1-hour professional inspection every month</li>
+                <li>Minor repairs included on every visit</li>
+                <li>Priority scheduling for emergencies</li>
+                <li>Photo reports after each visit</li>
+                <li>10% discount on all additional work</li>
+                <li>Cancel anytime, no contract required</li>
+              </ul>
+            </div>
+
+            {/* Right Column - Value Box */}
+            <div className="hero-right">
+              <div className="value-prop">
+                <h3>What's Included Every Month</h3>
+                <p>1 full hour with a licensed electrician, plumber, or handyman</p>
+              </div>
+
+              <div className="included-services">
+                <h4>Monthly Inspection Covers:</h4>
+                <ul className="service-list">
+                  <li>Electrical outlets, switches, and panels</li>
+                  <li>Plumbing fixtures and water heaters</li>
+                  <li>HVAC filters and thermostat checks</li>
+                  <li>Door locks, hinges, and hardware</li>
+                  <li>Smoke detectors and safety devices</li>
+                  <li>Minor repairs during each visit</li>
+                </ul>
+              </div>
+
+              <div className="cta-group">
+                <a href="#pricing" className="cta-primary">
+                  Get Started Today
+                </a>
+                <a href="tel:4699939740" className="cta-secondary">
+                  📞 (469) 993-9740
+                </a>
+              </div>
+
+              <p className="trust-line">
+                ✓ Licensed & insured • ✓ Cancel anytime • ✓ First visit in 48hrs
               </p>
             </div>
-            
-            <div className="cta-group">
-              <a href="#pricing" className="cta-primary">
-                🚀 Start Protecting Your Home
-              </a>
-              <a href="tel:4699939740" className="cta-secondary">
-                📞 Call (469) 993-9740
-              </a>
-            </div>
-            
-            <p className="trust-line">
-              ✓ Licensed professionals only • ✓ Cancel anytime • ✓ First visit within 48 hours
-            </p>
           </div>
         </div>
       </section>
