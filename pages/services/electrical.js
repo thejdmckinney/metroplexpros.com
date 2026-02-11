@@ -112,8 +112,8 @@ export default function ElectricalServices() {
         <div className="container">
           <div style={{borderRadius: '12px', overflow: 'hidden', border: '1px solid #30363d', maxWidth: '1000px', margin: '0 auto'}}>
             <img 
-              src="/og-image-electrical-metroplex.png" 
-              alt="Professional Electrical Services in Dallas-Fort Worth" 
+              src="/electrical-services-banner-mpp.png" 
+              alt="MetroPlex Pros electrician installing electrical panel in Dallas-Fort Worth" 
               style={{width: '100%', height: 'auto', display: 'block'}}
             />
           </div>
