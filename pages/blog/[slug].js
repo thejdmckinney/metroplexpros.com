@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import Link from 'next/link'
 import { getAllPosts, getPostBySlug, getRecentPosts, urlFor } from '../../lib/sanityClient'
 import TrustSignals from '../../components/TrustSignals'
+import BlogSidebar from '../../components/BlogSidebar'
 
 // Portable Text components for custom rendering
 const portableTextComponents = {
@@ -230,6 +231,21 @@ export default function BlogPost({ post, recentPosts }) {
         image: post.mainImage ? urlFor(post.mainImage).width(1200).height(630).url() : undefined,
       }}
     >
+      <style jsx>{`
+        @media (max-width: 1024px) {
+          .article-layout {
+            flex-direction: column !important;
+          }
+          .article-main {
+            flex: 1 !important;
+            max-width: 100% !important;
+          }
+          .article-sidebar {
+            flex: 1 !important;
+            max-width: 100% !important;
+          }
+        }
+      `}</style>
       {/* Article Header */}
       <article>
         <header style={{
@@ -347,57 +363,71 @@ export default function BlogPost({ post, recentPosts }) {
           backgroundColor: '#0d1117',
           padding: '3rem 0'
         }}>
-          <div className="container" style={{ maxWidth: '900px' }}>
-            <div style={{
-              backgroundColor: '#161b22',
-              padding: '3rem',
-              borderRadius: '12px',
-              border: '1px solid #30363d'
+          <div className="container">
+            <div className="article-layout" style={{
+              display: 'flex',
+              gap: '2rem',
+              alignItems: 'flex-start'
             }}>
-              <PortableText
-                value={post.body}
-                components={portableTextComponents}
-              />
-            </div>
-
-            {/* Author Bio */}
-            {post.author?.bio && (
-              <div style={{
-                marginTop: '3rem',
-                padding: '2rem',
-                backgroundColor: '#161b22',
-                borderRadius: '12px',
-                border: '1px solid #30363d',
-                display: 'flex',
-                gap: '1.5rem',
-                alignItems: 'flex-start'
-              }}>
-                {post.author.image && (
-                  <img
-                    src={urlFor(post.author.image).width(100).height(100).url()}
-                    alt={post.author.name}
-                    style={{
-                      width: '100px',
-                      height: '100px',
-                      borderRadius: '50%',
-                      flexShrink: 0
-                    }}
+              {/* Main Content - 70% */}
+              <div className="article-main" style={{ flex: '0 0 70%', minWidth: 0 }}>
+                <div style={{
+                  backgroundColor: '#161b22',
+                  padding: '3rem',
+                  borderRadius: '12px',
+                  border: '1px solid #30363d'
+                }}>
+                  <PortableText
+                    value={post.body}
+                    components={portableTextComponents}
                   />
-                )}
-                <div>
-                  <h3 style={{
-                    color: '#00f0ff',
-                    fontSize: '1.3rem',
-                    marginBottom: '0.5rem'
-                  }}>
-                    About {post.author.name}
-                  </h3>
-                  <div style={{ color: '#c9d1d9', lineHeight: '1.6' }}>
-                    <PortableText value={post.author.bio} />
-                  </div>
                 </div>
+
+                {/* Author Bio */}
+                {post.author?.bio && (
+                  <div style={{
+                    marginTop: '3rem',
+                    padding: '2rem',
+                    backgroundColor: '#161b22',
+                    borderRadius: '12px',
+                    border: '1px solid #30363d',
+                    display: 'flex',
+                    gap: '1.5rem',
+                    alignItems: 'flex-start'
+                  }}>
+                    {post.author.image && (
+                      <img
+                        src={urlFor(post.author.image).width(100).height(100).url()}
+                        alt={post.author.name}
+                        style={{
+                          width: '100px',
+                          height: '100px',
+                          borderRadius: '50%',
+                          flexShrink: 0
+                        }}
+                      />
+                    )}
+                    <div>
+                      <h3 style={{
+                        color: '#00f0ff',
+                        fontSize: '1.3rem',
+                        marginBottom: '0.5rem'
+                      }}>
+                        About {post.author.name}
+                      </h3>
+                      <div style={{ color: '#c9d1d9', lineHeight: '1.6' }}>
+                        <PortableText value={post.author.bio} />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
+
+              {/* Sidebar - 30% */}
+              <div className="article-sidebar" style={{ flex: '0 0 30%', minWidth: 0 }}>
+                <BlogSidebar />
+              </div>
+            </div>
           </div>
         </section>
 
