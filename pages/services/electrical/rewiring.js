@@ -45,45 +45,158 @@ export default function Rewiring() {
       />
 
       {/* Hero Section */}
-      <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)'}}>
-        <div className="container">
-          <div className="hero-content text-center">
-            <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', background: 'linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(0, 240, 255, 0.05))', border: '1px solid #00f0ff', borderRadius: '30px', marginBottom: '2rem', fontSize: '0.9rem', letterSpacing: '2px', color: '#00f0ff'}}>
-              LICENSED ELECTRICIANS
+      <section className="hero" style={{background: 'linear-gradient(135deg, #0a0e14 0%, #161b22 50%, #1a1f2e 100%)', position: 'relative', overflow: 'hidden'}}>
+        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 25% 30%, #ff6b6b 0%, transparent 40%), radial-gradient(circle at 75% 70%, #00f0ff 0%, transparent 40%)'}}></div>
+        <div className="container" style={{position: 'relative', zIndex: 1}}>
+          <div className="hero-content">
+            <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', background: 'linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 107, 107, 0.05))', border: '1px solid #ff6b6b', borderRadius: '30px', marginBottom: '2rem', fontSize: '0.9rem', letterSpacing: '2px', color: '#ff6b6b', animation: 'pulse 2s infinite'}}>
+              ⚠️ SAFETY CRITICAL SERVICE
             </div>
-            <h1 className="hero-title" style={{fontSize: '3.5rem', marginBottom: '1.5rem'}}>
-              <span className="text-accent">House Rewiring Services</span><br />
-              in Dallas-Fort Worth
+            
+            <h1 className="hero-title" style={{fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '1.5rem', lineHeight: '1.1'}}>
+              <span style={{color: '#fff'}}>Professional</span>{' '}
+              <span className="text-accent">House Rewiring</span><br />
+              <span style={{color: '#fff'}}>Services in Dallas</span>
             </h1>
-            <p className="hero-subtitle" style={{fontSize: '1.3rem', color: '#c9d1d9', marginBottom: '2rem'}}>
-              Safe, Modern Electrical Systems for Your Home
+            
+            <p style={{fontSize: '1.3rem', color: '#c9d1d9', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem', lineHeight: '1.6'}}>
+              Is your home's wiring from the 1960s or earlier? Aluminum wiring? Knob and tube? 
+              <strong style={{color: '#ff6b6b'}}> You could be sitting on a fire hazard.</strong>
             </p>
-            <div className="hero-buttons" style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+            
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', maxWidth: '900px', margin: '0 auto 2rem', background: 'rgba(255, 107, 107, 0.1)', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(255, 107, 107, 0.3)'}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#ff6b6b'}}>55x</div>
+                <div style={{color: '#c9d1d9', fontSize: '0.9rem'}}>Higher fire risk with aluminum wiring</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#ff6b6b'}}>100+</div>
+                <div style={{color: '#c9d1d9', fontSize: '0.9rem'}}>Years old for knob & tube systems</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#00f0ff'}}>$10K+</div>
+                <div style={{color: '#c9d1d9', fontSize: '0.9rem'}}>Avg. fire damage cost</div>
+              </div>
+            </div>
+            
+            <div className="hero-buttons" style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1.5rem'}}>
               <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
-                Call (682) 466-2130
+                📞 Call Now: (682) 466-2130
               </Link>
               <Link href="/contact" className="btn btn-outline" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
-                Get Free Estimate
+                Get Free Safety Inspection
               </Link>
             </div>
+            
+            <p style={{color: '#8b949e', textAlign: 'center'}}>
+              ⚡ Licensed Electricians • 24/7 Emergency Service • FREE Estimates
+            </p>
           </div>
         </div>
       </section>
 
-      <TrustSignals />
+      {/* Trust Signals - Fixed Container */}
+      <section style={{background: '#0d1117', padding: '2rem 0'}}>
+        <div className="container">
+          <TrustSignals />
+        </div>
+      </section>
 
       {/* Main Content */}
       <section className="section">
         <div className="container">
           <div style={{maxWidth: '900px', margin: '0 auto'}}>
+            {/* Before & After Section */}
+            <div style={{marginBottom: '4rem'}}>
+              <h2 style={{fontSize: '2.5rem', marginBottom: '2rem', color: '#00f0ff', textAlign: 'center'}}>
+                The Shocking Truth About Old Wiring
+              </h2>
+              
+              <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem'}}>
+                {/* BEFORE - Old Wiring Dangers */}
+                <div style={{background: 'linear-gradient(135deg, #2d0a0a 0%, #1a0606 100%)', border: '2px solid #ff6b6b', borderRadius: '16px', padding: '2rem', position: 'relative'}}>
+                  <div style={{position: 'absolute', top: '-15px', left: '20px', background: '#ff6b6b', color: '#fff', padding: '0.5rem 1.5rem', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '800'}}>
+                    ❌ OLD WIRING
+                  </div>
+                  <h3 style={{color: '#ff6b6b', marginTop: '1rem', marginBottom: '1.5rem', fontSize: '1.5rem'}}>Dangerous & Outdated</h3>
+                  <ul style={{listStyle: 'none', padding: 0, color: '#ffb3b3'}}>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(255, 107, 107, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>🔥</span>
+                      <span>Fire hazard from degraded insulation</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(255, 107, 107, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>⚠️</span>
+                      <span>Aluminum wiring 55x more fire-prone</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(255, 107, 107, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>⚡</span>
+                      <span>No grounding = shock risk</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(255, 107, 107, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>🚫</span>
+                      <span>Can't handle modern electrical loads</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(255, 107, 107, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>💰</span>
+                      <span>Higher insurance premiums (or denied)</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#ff6b6b', fontSize: '1.3rem'}}>📉</span>
+                      <span>Lowers home value significantly</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* AFTER - Modern Safe Wiring */}
+                <div style={{background: 'linear-gradient(135deg, #0a2d1a 0%, #061a0f 100%)', border: '2px solid #50c878', borderRadius: '16px', padding: '2rem', position: 'relative'}}>
+                  <div style={{position: 'absolute', top: '-15px', left: '20px', background: '#50c878', color: '#0d1117', padding: '0.5rem 1.5rem', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '800'}}>
+                    ✅ MODERN WIRING
+                  </div>
+                  <h3 style={{color: '#50c878', marginTop: '1rem', marginBottom: '1.5rem', fontSize: '1.5rem'}}>Safe & Future-Proof</h3>
+                  <ul style={{listStyle: 'none', padding: 0, color: '#b3ffcc'}}>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(80, 200, 120, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>🛡️</span>
+                      <span>Full AFCI/GFCI fire & shock protection</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(80, 200, 120, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>⚡</span>
+                      <span>Copper wiring with proper gauge</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(80, 200, 120, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>✓</span>
+                      <span>Fully grounded 3-prong outlets</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(80, 200, 120, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>🔌</span>
+                      <span>Handles EVs, smart homes, appliances</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', borderBottom: '1px solid rgba(80, 200, 120, 0.2)', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>💰</span>
+                      <span>Lower insurance rates</span>
+                    </li>
+                    <li style={{padding: '0.75rem 0', display: 'flex', alignItems: 'start', gap: '0.5rem'}}>
+                      <span style={{color: '#50c878', fontSize: '1.3rem'}}>📈</span>
+                      <span>Increases home value & saleability</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <style jsx>{`
+                @media (max-width: 768px) {
+                  div[style*="grid-template-columns: 1fr 1fr"] {
+                    grid-template-columns: 1fr !important;
+                  }
+                }
+              `}</style>
+            </div>
+
             <h2 style={{fontSize: '2.5rem', marginBottom: '1.5rem', color: '#00f0ff'}}>
-              Professional Home Rewiring Services
+              When Your Home Definitely Needs Rewiring
             </h2>
             <p style={{fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '2rem', color: '#c9d1d9'}}>
-              Is your home's electrical wiring outdated, damaged, or unsafe? MetroPlex Pros provides comprehensive 
-              house rewiring services throughout the Dallas-Fort Worth metroplex. Our licensed electricians specialize 
-              in whole home rewiring, partial rewiring, and replacing dangerous old wiring systems with modern, 
-              code-compliant electrical infrastructure.
+              MetroPlex Pros provides comprehensive house rewiring services throughout Dallas-Fort Worth. 
+              Our licensed electricians specialize in replacing dangerous outdated wiring with modern, code-compliant systems.
             </p>
 
             <div className="card" style={{padding: '2rem', marginBottom: '2rem', background: 'linear-gradient(135deg, #161b22 0%, #1a1f2e 100%)', border: '1px solid #00f0ff'}}>
@@ -304,8 +417,65 @@ export default function Rewiring() {
       <section className="section" style={{background: '#0d1117'}}>
         <div className="container">
           <div style={{maxWidth: '900px', margin: '0 auto'}}>
+            {/* Customer Testimonials */}
+            <div style={{marginBottom: '4rem'}}>
+              <h2 style={{fontSize: '2.5rem', marginBottom: '2rem', color: '#00f0ff', textAlign: 'center'}}>
+                Real Stories from Dallas Homeowners
+              </h2>
+              
+              <div style={{display: 'grid', gap: '2rem', marginBottom: '3rem'}}>
+                <div style={{background: 'linear-gradient(135deg, #161b22 0%, #1c2128 100%)', border: '1px solid #30363d', borderRadius: '12px', padding: '2rem', position: 'relative'}}>
+                  <div style={{fontSize: '3rem', color: '#00f0ff', marginBottom: '1rem'}}>★★★★★</div>
+                  <p style={{color: '#c9d1d9', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem', fontStyle: 'italic'}}>
+                    "Our 1968 home had aluminum wiring that our insurance company flagged. MetroPlex Pros rewired our entire house in 5 days with minimal disruption. Jeremy and his team were professional, clean, and explained everything clearly. Our insurance premiums dropped by $800/year!"
+                  </p>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <div style={{width: '50px', height: '50px', borderRadius: '50%', background: 'linear-gradient(135deg, #00f0ff, #0088cc)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#0d1117'}}>
+                      SM
+                    </div>
+                    <div>
+                      <div style={{color: '#00f0ff', fontWeight: '600'}}>Sarah M.</div>
+                      <div style={{color: '#8b949e', fontSize: '0.9rem'}}>Richardson, TX • Whole House Rewiring</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{background: 'linear-gradient(135deg, #161b22 0%, #1c2128 100%)', border: '1px solid #30363d', borderRadius: '12px', padding: '2rem', position: 'relative'}}>
+                  <div style={{fontSize: '3rem', color: '#00f0ff', marginBottom: '1rem'}}>★★★★★</div>
+                  <p style={{color: '#c9d1d9', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem', fontStyle: 'italic'}}>
+                    "We bought a 1950s home with knob and tube wiring. No insurance company would cover us. MetroPlex Pros gave us a fair quote, completed the rewiring on schedule, and handled all the permits and inspections. Now we're fully insured and our home value increased!"
+                  </p>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <div style={{width: '50px', height: '50px', borderRadius: '50%', background: 'linear-gradient(135deg, #00f0ff, #0088cc)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#0d1117'}}>
+                      JR
+                    </div>
+                    <div>
+                      <div style={{color: '#00f0ff', fontWeight: '600'}}>James R.</div>
+                      <div style={{color: '#8b949e', fontSize: '0.9rem'}}>Dallas, TX • Knob & Tube Removal</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{background: 'linear-gradient(135deg, #161b22 0%, #1c2128 100%)', border: '1px solid #30363d', borderRadius: '12px', padding: '2rem', position: 'relative'}}>
+                  <div style={{fontSize: '3rem', color: '#00f0ff', marginBottom: '1rem'}}>★★★★★</div>
+                  <p style={{color: '#c9d1d9', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem', fontStyle: 'italic'}}>
+                    "After flickering lights and warm outlets, we knew something was wrong. MetroPlex Pros found multiple fire hazards in our 40-year-old wiring. They rewired our kitchen, bathrooms, and bedrooms. Peace of mind knowing our family is safe!"
+                  </p>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <div style={{width: '50px', height: '50px', borderRadius: '50%', background: 'linear-gradient(135deg, #00f0ff, #0088cc)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#0d1117'}}>
+                      LC
+                    </div>
+                    <div>
+                      <div style={{color: '#00f0ff', fontWeight: '600'}}>Linda C.</div>
+                      <div style={{color: '#8b949e', fontSize: '0.9rem'}}>Garland, TX • Partial Rewiring</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <h2 style={{fontSize: '2.5rem', marginBottom: '2rem', color: '#00f0ff', textAlign: 'center'}}>
-              Frequently Asked Questions
+              Common Questions About Rewiring
             </h2>
 
             <div style={{display: 'grid', gap: '1.5rem'}}>
