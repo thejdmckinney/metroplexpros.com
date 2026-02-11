@@ -22,11 +22,11 @@ export default function ToolsIndex() {
     },
     {
       title: 'Electrical Project Cost Estimator',
-      description: 'Estimate costs for any electrical project including outlets, lighting, circuits, appliances, safety upgrades, and smart home installations.',
+      description: 'Estimate costs for lighting, circuits, appliances, safety upgrades, and smart home installations. Combine multiple projects for accurate quotes.',
       icon: '⚡',
       link: '/tools/electrical-cost-estimator',
       available: true,
-      benefits: ['50+ project types', 'Combine projects', 'Urgent pricing'],
+      benefits: ['40+ project types', 'Combine projects', 'Urgent pricing'],
     },
     {
       title: 'HVAC Sizing Calculator',

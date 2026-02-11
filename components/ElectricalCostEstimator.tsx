@@ -44,18 +44,6 @@ export default function ElectricalCostEstimator() {
 
   // Project categories and pricing
   const projectCategories = {
-    outlets: {
-      name: 'Outlets & Switches',
-      icon: '🔌',
-      projects: {
-        'Standard Outlet Installation': { low: 125, high: 200, unit: 'per outlet' },
-        'GFCI Outlet Installation': { low: 150, high: 250, unit: 'per outlet' },
-        'USB Outlet Installation': { low: 175, high: 275, unit: 'per outlet' },
-        'Switch Installation': { low: 100, high: 175, unit: 'per switch' },
-        'Dimmer Switch Installation': { low: 150, high: 225, unit: 'per switch' },
-        'Smart Switch Installation': { low: 200, high: 350, unit: 'per switch' },
-      },
-    },
     lighting: {
       name: 'Lighting',
       icon: '💡',

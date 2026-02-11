@@ -26,7 +26,7 @@ export default function BlogSidebar() {
     {
       name: 'Electrical Project Cost Estimator',
       href: '/tools/electrical-cost-estimator',
-      description: '50+ electrical project types with instant estimates',
+      description: 'Lighting, circuits, appliances, safety & smart home',
       icon: '⚡',
       available: true
     },

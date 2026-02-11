@@ -7,8 +7,8 @@ export default function ElectricalCostEstimatorPage() {
   return (
     <Layout
       title="Electrical Project Cost Estimator | Free Dallas-Fort Worth Quote Tool"
-      description="Calculate the cost of your electrical project in Dallas-Fort Worth. Get instant estimates for outlets, lighting, circuits, appliances, safety upgrades, and smart home installations."
-      keywords="electrical cost calculator, electrician estimate Dallas, outlet installation cost, lighting installation price, circuit installation estimate, electrical project cost"
+      description="Calculate the cost of your electrical project in Dallas-Fort Worth. Get instant estimates for lighting, circuits, appliances, safety upgrades, and smart home installations."
+      keywords="electrical cost calculator, electrician estimate Dallas, lighting installation cost, circuit installation price, electrical project cost"
     >
       {/* Hero Section */}
       <section
@@ -54,7 +54,7 @@ export default function ElectricalCostEstimatorPage() {
                 marginBottom: '2rem',
               }}
             >
-              Select your electrical projects and get an instant cost estimate. From simple outlet installations to complete home rewiring.
+              Select your electrical projects and get an instant cost estimate. Lighting, circuits, appliances, safety upgrades, and smart home installations.
             </p>
 
             {/* Quick Stats */}
@@ -75,7 +75,7 @@ export default function ElectricalCostEstimatorPage() {
                     marginBottom: '0.5rem',
                   }}
                 >
-                  50+
+                  40+
                 </div>
                 <div style={{ color: '#8b949e', fontSize: '1rem' }}>
                   Project Types
@@ -148,11 +148,22 @@ export default function ElectricalCostEstimatorPage() {
                 color: '#8b949e',
                 fontSize: '1.1rem',
                 textAlign: 'center',
-                marginBottom: '3rem',
+                marginBottom: '1rem',
                 lineHeight: '1.8',
               }}
             >
               From simple fixes to major installations, we handle all your electrical needs
+            </p>
+            <p
+              style={{
+                color: '#00f0ff',
+                fontSize: '0.95rem',
+                textAlign: 'center',
+                marginBottom: '3rem',
+                lineHeight: '1.6',
+              }}
+            >
+              💡 Looking for outlet & switch pricing? Check out our <Link href="/tools/outlet-switch-pricing" style={{ color: '#00f0ff', textDecoration: 'underline' }}>dedicated calculator</Link> with volume discounts
             </p>
 
             <div
@@ -162,26 +173,6 @@ export default function ElectricalCostEstimatorPage() {
                 gap: '2rem',
               }}
             >
-              <div
-                style={{
-                  backgroundColor: '#0d1117',
-                  padding: '2rem',
-                  borderRadius: '12px',
-                  border: '1px solid #30363d',
-                }}
-              >
-                <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔌</div>
-                <h3 style={{ color: '#c9d1d9', fontSize: '1.3rem', marginBottom: '1rem' }}>
-                  Outlets & Switches
-                </h3>
-                <p style={{ color: '#8b949e', lineHeight: '1.6', marginBottom: '1rem' }}>
-                  Standard, GFCI, USB outlets, and smart switches for every room in your home.
-                </p>
-                <div style={{ color: '#00f0ff', fontSize: '0.9rem' }}>
-                  Starting at $100
-                </div>
-              </div>
-
               <div
                 style={{
                   backgroundColor: '#0d1117',
