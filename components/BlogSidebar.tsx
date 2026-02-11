@@ -18,10 +18,10 @@ export default function BlogSidebar() {
     },
     {
       name: 'Electrical Project Cost Estimator',
-      href: '/tools/project-cost-estimator',
-      description: 'Get ballpark pricing for common electrical projects',
-      icon: '💰',
-      available: false
+      href: '/tools/electrical-cost-estimator',
+      description: '50+ electrical project types with instant estimates',
+      icon: '�',
+      available: true
     },
     {
       name: 'Smart Home ROI Calculator',
