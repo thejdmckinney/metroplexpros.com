@@ -102,6 +102,124 @@ export default function Rewiring() {
         </div>
       </section>
 
+      {/* Interactive Tools Section */}
+      <section style={{backgroundColor: '#161b22', padding: '3rem 0', borderTop: '1px solid #30363d', borderBottom: '1px solid #30363d'}}>
+        <div className="container">
+          <div style={{textAlign: 'center', marginBottom: '2.5rem'}}>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '1rem', color: '#00f0ff'}}>
+              💡 Free Electrical Calculators & Tools
+            </h2>
+            <p style={{fontSize: '1.2rem', color: '#8b949e', maxWidth: '700px', margin: '0 auto'}}>
+              Plan your electrical project with our free calculators. Get instant estimates before you call.
+            </p>
+          </div>
+          
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '1200px', margin: '0 auto'}}>
+            {/* Panel Upgrade Calculator */}
+            <Link href="/tools/panel-upgrade-calculator" style={{textDecoration: 'none'}}>
+              <div style={{
+                background: 'linear-gradient(135deg, #1c2128 0%, #161b22 100%)',
+                border: '2px solid #30363d',
+                borderRadius: '12px',
+                padding: '2rem',
+                height: '100%',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-5px)'
+                e.currentTarget.style.borderColor = '#00f0ff'
+                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 240, 255, 0.2)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)'
+                e.currentTarget.style.borderColor = '#30363d'
+                e.currentTarget.style.boxShadow = 'none'
+              }}>
+                <div style={{fontSize: '3rem', marginBottom: '1rem'}}>⚡</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '0.75rem', fontWeight: '700'}}>
+                  Panel Upgrade Calculator
+                </h3>
+                <p style={{color: '#8b949e', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem'}}>
+                  Estimate the cost to upgrade your electrical panel during rewiring. Essential for older homes.
+                </p>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#00f0ff', fontSize: '0.9rem', fontWeight: '600'}}>
+                  Get Instant Estimate →
+                </div>
+              </div>
+            </Link>
+
+            {/* Electrical Cost Estimator */}
+            <Link href="/tools/electrical-cost-estimator" style={{textDecoration: 'none'}}>
+              <div style={{
+                background: 'linear-gradient(135deg, #1c2128 0%, #161b22 100%)',
+                border: '2px solid #30363d',
+                borderRadius: '12px',
+                padding: '2rem',
+                height: '100%',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-5px)'
+                e.currentTarget.style.borderColor = '#00f0ff'
+                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 240, 255, 0.2)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)'
+                e.currentTarget.style.borderColor = '#30363d'
+                e.currentTarget.style.boxShadow = 'none'
+              }}>
+                <div style={{fontSize: '3rem', marginBottom: '1rem'}}>💰</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '0.75rem', fontWeight: '700'}}>
+                  Rewiring Cost Estimator
+                </h3>
+                <p style={{color: '#8b949e', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem'}}>
+                  Calculate costs for whole house or partial rewiring projects with our comprehensive estimator.
+                </p>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#00f0ff', fontSize: '0.9rem', fontWeight: '600'}}>
+                  Start Estimating →
+                </div>
+              </div>
+            </Link>
+
+            {/* Outlet & Switch Pricing */}
+            <Link href="/tools/outlet-switch-pricing" style={{textDecoration: 'none'}}>
+              <div style={{
+                background: 'linear-gradient(135deg, #1c2128 0%, #161b22 100%)',
+                border: '2px solid #30363d',
+                borderRadius: '12px',
+                padding: '2rem',
+                height: '100%',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-5px)'
+                e.currentTarget.style.borderColor = '#00f0ff'
+                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 240, 255, 0.2)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)'
+                e.currentTarget.style.borderColor = '#30363d'
+                e.currentTarget.style.boxShadow = 'none'
+              }}>
+                <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🔌</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.3rem', marginBottom: '0.75rem', fontWeight: '700'}}>
+                  Outlet & Switch Pricing
+                </h3>
+                <p style={{color: '#8b949e', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem'}}>
+                  Price new outlets and switches after rewiring. Includes GFCI, USB, and smart device options.
+                </p>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#00f0ff', fontSize: '0.9rem', fontWeight: '600'}}>
+                  Calculate Pricing →
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="section">
         <div className="container">
