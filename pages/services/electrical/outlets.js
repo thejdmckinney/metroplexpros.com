@@ -72,6 +72,162 @@ export default function OutletsSwitchRepair() {
         </div>
       </section>
 
+      {/* Interactive Electrical Tools Section */}
+      <section style={{
+        backgroundColor: '#161b22',
+        padding: '3rem 0',
+        borderTop: '1px solid #30363d',
+        borderBottom: '1px solid #30363d'
+      }}>
+        <div className="container">
+          <div style={{textAlign: 'center', marginBottom: '2.5rem'}}>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '0.5rem', color: '#00f0ff'}}>
+              Free Electrical Calculators & Tools
+            </h2>
+            <p style={{fontSize: '1.1rem', color: '#8b949e'}}>
+              Estimate costs and plan your outlet or electrical project
+            </p>
+          </div>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1.5rem',
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}>
+            {/* Panel Upgrade Calculator */}
+            <Link href="/tools/panel-upgrade-calculator">
+              <div
+                style={{
+                  backgroundColor: '#0d1117',
+                  border: '1px solid #30363d',
+                  borderRadius: '8px',
+                  padding: '2rem',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-5px)'
+                  e.currentTarget.style.borderColor = '#00f0ff'
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 240, 255, 0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.borderColor = '#30363d'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>⚡</div>
+                <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>
+                  Panel Upgrade Calculator
+                </h3>
+                <p style={{fontSize: '1rem', color: '#8b949e', marginBottom: '1.5rem', flexGrow: 1}}>
+                  Need more outlets or circuits? Calculate if you need a panel upgrade to support additional outlets and electrical loads in your home.
+                </p>
+                <div style={{
+                  display: 'inline-block',
+                  color: '#00f0ff',
+                  fontWeight: 'bold',
+                  fontSize: '1rem'
+                }}>
+                  Try Calculator →
+                </div>
+              </div>
+            </Link>
+
+            {/* Outlet & Switch Pricing */}
+            <Link href="/tools/outlet-switch-pricing">
+              <div
+                style={{
+                  backgroundColor: '#0d1117',
+                  border: '1px solid #30363d',
+                  borderRadius: '8px',
+                  padding: '2rem',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-5px)'
+                  e.currentTarget.style.borderColor = '#00f0ff'
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 240, 255, 0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.borderColor = '#30363d'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>💡</div>
+                <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>
+                  Outlet & Switch Pricing Tool
+                </h3>
+                <p style={{fontSize: '1rem', color: '#8b949e', marginBottom: '1.5rem', flexGrow: 1}}>
+                  Get instant pricing estimates for outlet and switch replacements, repairs, and installations—including GFCI and USB outlets.
+                </p>
+                <div style={{
+                  display: 'inline-block',
+                  color: '#00f0ff',
+                  fontWeight: 'bold',
+                  fontSize: '1rem'
+                }}>
+                  Get Pricing →
+                </div>
+              </div>
+            </Link>
+
+            {/* Electrical Cost Estimator */}
+            <Link href="/tools/electrical-cost-estimator">
+              <div
+                style={{
+                  backgroundColor: '#0d1117',
+                  border: '1px solid #30363d',
+                  borderRadius: '8px',
+                  padding: '2rem',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-5px)'
+                  e.currentTarget.style.borderColor = '#00f0ff'
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 240, 255, 0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.borderColor = '#30363d'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
+                <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>📊</div>
+                <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#00f0ff'}}>
+                  Electrical Project Estimator
+                </h3>
+                <p style={{fontSize: '1rem', color: '#8b949e', marginBottom: '1.5rem', flexGrow: 1}}>
+                  Planning multiple electrical upgrades? Estimate total costs for outlet installations, circuit additions, and other electrical work.
+                </p>
+                <div style={{
+                  display: 'inline-block',
+                  color: '#00f0ff',
+                  fontWeight: 'bold',
+                  fontSize: '1rem'
+                }}>
+                  Estimate Costs →
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="section">
         <div className="container">
