@@ -1,29 +1,20 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../components/TrustSignals'
-import { getServiceBySlug } from '../../lib/sanityQueries'
-import { PortableText } from '@portabletext/react'
 
-export default function ElectricalServices({ service }) {
-  // Fallback to hardcoded values if Sanity data isn't available yet
-  const seoTitle = service?.seo?.metaTitle || "Dallas Electrician Near Me | 24/7 Emergency Service | Licensed & Insured | MetroPlex Pros"
-  const seoDescription = service?.seo?.metaDescription || "Dallas Electrician Near Me | Licensed & Insured | 24/7 Emergency Electrical Service | Panel Upgrades, Rewiring, Lighting, Generators | Same-Day Service Available | Call (682) 466-2130 now!"
-  const seoKeywords = service?.seo?.keywords?.join(', ') || "electrician Dallas, electrician near me Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician, emergency electrician near me"
-  const canonicalUrl = service?.seo?.canonicalUrl || "https://www.metroplexpros.com/services/electrical/"
-  const ogImage = service?.seo?.ogImageUrl || 'https://www.metroplexpros.com/og-image-electrical-metroplex.png'
-
+export default function ElectricalServices() {
   return (
     <Layout 
-      title={seoTitle}
-      description={seoDescription}
-      keywords={seoKeywords}
-      canonicalUrl={canonicalUrl}
+      title="Dallas Electrician Near Me | 24/7 Emergency Service | Licensed & Insured | MetroPlex Pros"
+      description="Dallas Electrician Near Me | Licensed & Insured | 24/7 Emergency Electrical Service | Panel Upgrades, Rewiring, Lighting, Generators | Same-Day Service Available | Call (682) 466-2130 now!"
+      keywords="electrician Dallas, electrician near me Dallas, electrical services DFW, home electrical repair service, electrical home repair, home electrical repair near me, panel upgrade, electrical wiring, lighting installation, generator installation, emergency electrician, emergency electrician near me"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/"
     
 
       openGraph={{
         images: [
           {
-            url: ogImage,
+            url: 'https://www.metroplexpros.com/og-image-electrical-metroplex.png',
             width: 1200,
             height: 630,
             alt: 'Metroplex Pros - Professional Home Services in Dallas',
@@ -76,18 +67,18 @@ export default function ElectricalServices({ service }) {
               LICENSED & INSURED ELECTRICIANS
             </div>
             <h1 className="hero-title" style={{fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.2'}}>
-              <span className="text-accent">{service?.heroHeadline || 'Professional Electrical Services for Dallas-Fort Worth'}</span>
+              <span className="text-accent">Professional Electrical Services</span><br />
+              for Dallas-Fort Worth
             </h1>
             <p className="hero-subtitle" style={{fontSize: '1.4rem', color: '#c9d1d9', marginBottom: '1.5rem', fontWeight: 300}}>
-              {service?.heroSubheadline || 'Panel Upgrades • Wiring • Lighting • Smart Home • Generators'}
+              Panel Upgrades • Wiring • Lighting • Smart Home • Generators
             </p>
-            <div className="hero-description" style={{maxWidth: '900px', margin: '0 auto 2rem', fontSize: '1.1rem', lineHeight: '1.9', color: '#8b949e'}}>
-              {service?.description ? (
-                <PortableText value={service.description} />
-              ) : (
-                <p>MetroPlex Pros provides comprehensive home electrical repair service throughout the Dallas-Fort Worth area. Our licensed electricians handle everything from simple outlet installations to complete electrical panel upgrades, ensuring your home's electrical system is safe, efficient, and up to code. Whether you need electrical home repair near me or scheduled installations, we're here to help 24/7.</p>
-              )}
-            </div>
+            <p className="hero-description" style={{maxWidth: '900px', margin: '0 auto 2rem', fontSize: '1.1rem', lineHeight: '1.9', color: '#8b949e'}}>
+              MetroPlex Pros provides comprehensive home electrical repair service throughout the Dallas-Fort Worth area. Our licensed 
+              electricians handle everything from simple outlet installations to complete electrical panel upgrades, ensuring 
+              your home's electrical system is safe, efficient, and up to code. Whether you need electrical home repair near me 
+              or scheduled installations, we're here to help 24/7.
+            </p>
             <div className="hero-buttons" style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem'}}>
               <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.1rem', padding: '1rem 2.5rem'}}>
                 Call (682) 466-2130
@@ -260,72 +251,92 @@ export default function ElectricalServices({ service }) {
           </div>
 
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem'}}>
-            {(service?.subservices || [
+            {[
               {
                 icon: '⚡',
-                name: 'Electrical Panel Upgrades',
-                description: 'Upgrade from 100-150 amp to 200 amp service. Essential for modern homes with increased electrical demands from HVAC, appliances, home offices, and EV charging.'
+                title: 'Electrical Panel Upgrades',
+                desc: 'Upgrade from 100-150 amp to 200 amp service. Essential for modern homes with increased electrical demands from HVAC, appliances, home offices, and EV charging.',
+                features: ['100 to 200 amp upgrades', 'Circuit breaker replacement', 'Panel relocation', 'Subpanel installation']
               },
               {
                 icon: '🔌',
-                name: 'Outlets & Switches',
-                description: 'Installation, replacement, and upgrades for outlets and switches throughout your property. GFCI and AFCI protection for safety and code compliance.'
+                title: 'Outlets & Switches',
+                desc: 'Installation, replacement, and upgrades for outlets and switches throughout your property. GFCI and AFCI protection for safety and code compliance.',
+                features: ['GFCI outlet installation', 'USB charging outlets', 'Smart switches & dimmers', 'Dedicated appliance circuits']
               },
               {
                 icon: '💡',
-                name: 'Lighting Installation',
-                description: 'Interior and exterior lighting solutions including recessed lighting, chandeliers, landscape lighting, and security lighting.'
+                title: 'Lighting Installation',
+                desc: 'Interior and exterior lighting solutions including recessed lighting, chandeliers, landscape lighting, and security lighting.',
+                features: ['Recessed lighting', 'Chandelier installation', 'Landscape lighting', 'Motion sensor lights']
               },
               {
                 icon: '🏠',
-                name: 'Smart Home Electrical',
-                description: 'Electrical infrastructure for smart home devices. Proper wiring for thermostats, doorbells, security systems, and whole-home automation.'
+                title: 'Smart Home Electrical',
+                desc: 'Electrical infrastructure for smart home devices. Proper wiring for thermostats, doorbells, security systems, and whole-home automation.',
+                features: ['C-wire installation', 'Smart switch wiring', 'Doorbell transformer upgrades', 'Home automation circuits']
               },
               {
                 icon: '🔧',
-                name: 'Wiring & Rewiring',
-                description: 'New construction wiring, home rewiring, aluminum wiring remediation, and code compliance upgrades for older homes.'
+                title: 'Wiring & Rewiring',
+                desc: 'New construction wiring, home rewiring, aluminum wiring remediation, and code compliance upgrades for older homes.',
+                features: ['Whole house rewiring', 'Aluminum wiring fixes', 'Knob and tube replacement', 'Code compliance upgrades']
               },
               {
                 icon: '⚙️',
-                name: 'Generator Installation',
-                description: 'Whole-home and portable generator installation. Keep your home powered during outages with properly installed backup power systems.'
+                title: 'Generator Installation',
+                desc: 'Whole-home and portable generator installation. Keep your home powered during outages with properly installed backup power systems.',
+                features: ['Whole-home generators', 'Transfer switches', 'Generator maintenance', 'Load calculation']
               },
               {
                 icon: '🚗',
-                name: 'EV Charger Installation',
-                description: 'Electric vehicle charging station installation. Level 2 chargers for faster, more efficient home charging of your EV.'
+                title: 'EV Charger Installation',
+                desc: 'Electric vehicle charging station installation. Level 2 chargers for faster, more efficient home charging of your EV.',
+                features: ['Level 2 EV chargers', 'Dedicated 240V circuits', 'Tesla & universal chargers', 'Garage & outdoor installation']
               },
               {
                 icon: '🏊',
-                name: 'Pool & Spa Electrical',
-                description: 'Specialized electrical work for pools, hot tubs, and spas. Pumps, heaters, lighting, and automated control systems.'
+                title: 'Pool & Spa Electrical',
+                desc: 'Specialized electrical work for pools, hot tubs, and spas. Pumps, heaters, lighting, and automated control systems.',
+                features: ['Pool pump circuits', 'Spa heater wiring', 'Pool lighting', 'Automation systems']
               },
               {
                 icon: '🌳',
-                name: 'Outdoor Electrical',
-                description: 'Exterior outlets, landscape lighting, security lighting, and electrical for outdoor living spaces.'
+                title: 'Outdoor Electrical',
+                desc: 'Exterior outlets, landscape lighting, security lighting, and electrical for outdoor living spaces.',
+                features: ['GFCI outdoor outlets', 'Landscape lighting systems', 'Patio lighting & fans', 'Security lighting']
               },
               {
                 icon: '🔥',
-                name: 'Ceiling Fan Installation',
-                description: 'Professional ceiling fan installation and replacement. Proper support and wiring for safe, balanced operation.'
+                title: 'Ceiling Fan Installation',
+                desc: 'Professional ceiling fan installation and replacement. Proper support and wiring for safe, balanced operation.',
+                features: ['New fan installation', 'Fan replacement', 'Ceiling box upgrades', 'Remote controls']
               },
               {
                 icon: '🏢',
-                name: 'Commercial Electrical',
-                description: 'Electrical services for offices, retail spaces, and small commercial properties. Code-compliant installations.'
+                title: 'Commercial Electrical',
+                desc: 'Electrical services for offices, retail spaces, and small commercial properties. Code-compliant installations.',
+                features: ['Commercial lighting', 'Office electrical', 'Retail spaces', 'Code compliance']
               },
               {
                 icon: '🚨',
-                name: 'Emergency Electrical',
-                description: '24/7 emergency electrical service for power outages, electrical hazards, sparking outlets, and urgent safety issues.'
+                title: 'Emergency Electrical',
+                desc: '24/7 emergency electrical service for power outages, electrical hazards, sparking outlets, and urgent safety issues.',
+                features: ['Power outage diagnosis', 'Electrical fire hazards', 'Sparking outlets/panels', 'Storm damage repair']
               }
-            ]).map((subservice, index) => (
+            ].map((service, index) => (
               <div key={index} style={{padding: '2.5rem', backgroundColor: '#161b22', borderRadius: '12px', border: '1px solid rgba(0, 240, 255, 0.3)', boxShadow: '0 4px 20px rgba(0, 240, 255, 0.1)'}}>
-                <div style={{fontSize: '3rem', marginBottom: '1rem'}}>{subservice.icon}</div>
-                <h3 style={{color: '#00f0ff', fontSize: '1.5rem', marginBottom: '1rem'}}>{subservice.name}</h3>
-                <p style={{color: '#c9d1d9', lineHeight: '1.8', marginBottom: '1.5rem'}}>{subservice.description}</p>
+                <div style={{fontSize: '3rem', marginBottom: '1rem'}}>{service.icon}</div>
+                <h3 style={{color: '#00f0ff', fontSize: '1.5rem', marginBottom: '1rem'}}>{service.title}</h3>
+                <p style={{color: '#c9d1d9', lineHeight: '1.8', marginBottom: '1.5rem'}}>{service.desc}</p>
+                <ul style={{color: '#8b949e', lineHeight: '2', fontSize: '0.95rem', listStyle: 'none', padding: 0}}>
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} style={{paddingLeft: '1.2rem', position: 'relative', marginBottom: '0.5rem'}}>
+                      <span style={{position: 'absolute', left: 0, color: '#00f0ff', fontSize: '0.8rem'}}>▸</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -701,26 +712,4 @@ export default function ElectricalServices({ service }) {
 
     </Layout>
   )
-}
-
-// Fetch service data from Sanity
-export async function getStaticProps() {
-  try {
-    const service = await getServiceBySlug('electrical')
-    
-    return {
-      props: {
-        service: service || null
-      },
-      revalidate: 60 // Revalidate every 60 seconds
-    }
-  } catch (error) {
-    console.error('Error fetching service data:', error)
-    return {
-      props: {
-        service: null
-      },
-      revalidate: 60
-    }
-  }
 }
