@@ -1,22 +1,13 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
-import { getServiceBySlug } from '../../../lib/sanityQueries'
-import { PortableText } from '@portabletext/react'
 
-export default function LuxuryInspection({ service }) {
-  // Fallback to hardcoded values if Sanity data isn't available yet
-  const seoTitle = service?.seo?.metaTitle || "Luxury Electrical Inspection - $225 | MetroPlex Pros Dallas"
-  const seoDescription = service?.seo?.metaDescription || "Premium electrical inspection for luxury homes and estates. Includes thermal imaging, smart home systems, and priority service. Expert electricians. Book online!"
-  const seoKeywords = service?.seo?.keywords?.join(', ') || "luxury electrical inspection, premium home inspection Dallas, smart home inspection, estate electrical assessment"
-  const canonicalUrl = service?.seo?.canonicalUrl || "https://www.metroplexpros.com/services/electrical/luxury-inspection/"
-
+export default function LuxuryInspection() {
   return (
     <Layout
-      title={seoTitle}
-      description={seoDescription}
-      keywords={seoKeywords}
-      canonicalUrl={canonicalUrl}
+      title="Luxury Electrical Inspection - $225 | MetroPlex Pros Dallas"
+      description="Premium electrical inspection for luxury homes and estates. Includes thermal imaging, smart home systems, and priority service. Expert electricians. Book online!"
+      keywords="luxury electrical inspection, premium home inspection Dallas, smart home inspection, estate electrical assessment"
     >
       {/* Hero Section */}
       <section style={{
@@ -56,7 +47,7 @@ export default function LuxuryInspection({ service }) {
               fontWeight: '800',
               color: '#c9d1d9'
             }}>
-              {service?.heroHeadline || 'Luxury Electrical Inspection'}
+              Luxury Electrical Inspection
             </h1>
             
             <div style={{
@@ -76,7 +67,7 @@ export default function LuxuryInspection({ service }) {
               lineHeight: '1.8',
               marginBottom: '2rem'
             }}>
-              {service?.heroSubheadline || 'Our premium service for luxury homes, estates, and properties with advanced smart home systems. Unlimited square footage with white-glove service.'}
+              Our premium service for luxury homes, estates, and properties with advanced smart home systems. Unlimited square footage with white-glove service.
             </p>
 
             <a
@@ -401,25 +392,4 @@ export default function LuxuryInspection({ service }) {
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  try {
-    const service = await getServiceBySlug('luxury-inspection')
-    
-    return {
-      props: {
-        service
-      },
-      revalidate: 60 // Regenerate page every 60 seconds
-    }
-  } catch (error) {
-    console.error('Error fetching luxury inspection service:', error)
-    return {
-      props: {
-        service: null
-      },
-      revalidate: 60
-    }
-  }
 }

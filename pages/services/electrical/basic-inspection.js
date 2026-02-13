@@ -1,13 +1,22 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import { getServiceBySlug } from '../../../lib/sanityQueries'
+import { PortableText } from '@portabletext/react'
 
-export default function BasicInspection() {
+export default function BasicInspection({ service }) {
+  // Fallback to hardcoded values if Sanity data isn't available yet
+  const seoTitle = service?.seo?.metaTitle || "Basic Electrical Inspection - $150 | MetroPlex Pros Dallas"
+  const seoDescription = service?.seo?.metaDescription || "Comprehensive basic electrical inspection for homes up to 2,500 sq ft. Visual assessment of all accessible electrical components. Licensed electricians. Book online today!"
+  const seoKeywords = service?.seo?.keywords?.join(', ') || "electrical inspection, home inspection Dallas, electrical safety check, basic inspection, electrical assessment"
+  const canonicalUrl = service?.seo?.canonicalUrl || "https://www.metroplexpros.com/services/electrical/basic-inspection/"
+
   return (
     <Layout
-      title="Basic Electrical Inspection - $150 | MetroPlex Pros Dallas"
-      description="Comprehensive basic electrical inspection for homes up to 2,500 sq ft. Visual assessment of all accessible electrical components. Licensed electricians. Book online today!"
-      keywords="electrical inspection, home inspection Dallas, electrical safety check, basic inspection, electrical assessment"
+      title={seoTitle}
+      description={seoDescription}
+      keywords={seoKeywords}
+      canonicalUrl={canonicalUrl}
     >
       {/* Hero Section */}
       <section style={{
@@ -47,7 +56,7 @@ export default function BasicInspection() {
               fontWeight: '800',
               color: '#c9d1d9'
             }}>
-              Basic Electrical Inspection
+              {service?.heroHeadline || 'Basic Electrical Inspection'}
             </h1>
             
             <div style={{
@@ -65,7 +74,7 @@ export default function BasicInspection() {
               lineHeight: '1.8',
               marginBottom: '2rem'
             }}>
-              Ideal for routine home maintenance or pre-purchase assessments of standard residential properties up to 2,500 square feet.
+              {service?.heroSubheadline || 'Ideal for routine home maintenance or pre-purchase assessments of standard residential properties up to 2,500 square feet.'}
             </p>
 
             <a
@@ -303,4 +312,25 @@ export default function BasicInspection() {
       </section>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  try {
+    const service = await getServiceBySlug('basic-inspection')
+    
+    return {
+      props: {
+        service
+      },
+      revalidate: 60 // Regenerate page every 60 seconds
+    }
+  } catch (error) {
+    console.error('Error fetching basic inspection service:', error)
+    return {
+      props: {
+        service: null
+      },
+      revalidate: 60
+    }
+  }
 }

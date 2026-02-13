@@ -1,22 +1,13 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
-import { getServiceBySlug } from '../../../lib/sanityQueries'
-import { PortableText } from '@portabletext/react'
 
-export default function LuxuryInspection({ service }) {
-  // Fallback to hardcoded values if Sanity data isn't available yet
-  const seoTitle = service?.seo?.metaTitle || "Luxury Electrical Inspection - $225 | MetroPlex Pros Dallas"
-  const seoDescription = service?.seo?.metaDescription || "Premium electrical inspection for luxury homes and estates. Includes thermal imaging, smart home systems, and priority service. Expert electricians. Book online!"
-  const seoKeywords = service?.seo?.keywords?.join(', ') || "luxury electrical inspection, premium home inspection Dallas, smart home inspection, estate electrical assessment"
-  const canonicalUrl = service?.seo?.canonicalUrl || "https://www.metroplexpros.com/services/electrical/luxury-inspection/"
-
+export default function ComprehensiveInspection() {
   return (
     <Layout
-      title={seoTitle}
-      description={seoDescription}
-      keywords={seoKeywords}
-      canonicalUrl={canonicalUrl}
+      title="Comprehensive Electrical Inspection - $200 | MetroPlex Pros Dallas"
+      description="Detailed electrical inspection for larger homes up to 4,000 sq ft. Includes thermal imaging and detailed load analysis. Licensed electricians. Book online!"
+      keywords="comprehensive electrical inspection, thermal imaging inspection, electrical load analysis, detailed inspection Dallas"
     >
       {/* Hero Section */}
       <section style={{
@@ -39,15 +30,15 @@ export default function LuxuryInspection({ service }) {
             <div style={{
               display: 'inline-block',
               padding: '0.5rem 1rem',
-              background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(218, 165, 32, 0.1))',
-              border: '1px solid #ffd700',
+              background: 'rgba(0, 240, 255, 0.1)',
+              border: '1px solid #00f0ff',
               borderRadius: '20px',
               fontSize: '0.85rem',
               fontWeight: '600',
-              color: '#ffd700',
+              color: '#00f0ff',
               marginBottom: '1.5rem'
             }}>
-              PREMIUM SERVICE
+              MOST POPULAR CHOICE
             </div>
 
             <h1 style={{
@@ -56,18 +47,16 @@ export default function LuxuryInspection({ service }) {
               fontWeight: '800',
               color: '#c9d1d9'
             }}>
-              {service?.heroHeadline || 'Luxury Electrical Inspection'}
+              Comprehensive Electrical Inspection
             </h1>
             
             <div style={{
               fontSize: '3rem',
               fontWeight: 'bold',
-              background: 'linear-gradient(135deg, #ffd700, #ffed4e)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: '#00f0ff',
               marginBottom: '1rem'
             }}>
-              $225
+              $200
             </div>
             
             <p style={{
@@ -76,23 +65,21 @@ export default function LuxuryInspection({ service }) {
               lineHeight: '1.8',
               marginBottom: '2rem'
             }}>
-              {service?.heroSubheadline || 'Our premium service for luxury homes, estates, and properties with advanced smart home systems. Unlimited square footage with white-glove service.'}
+              Our most popular package with thermal imaging and detailed analysis for homes up to 4,000 square feet. Perfect for larger properties or when you need deeper insights.
             </p>
 
             <a
-              href="https://calendly.com/metroplexpros/luxury-electrical-inspection"
+              href="https://calendly.com/metroplexpros/comprehensive-electrical-inspection"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
               style={{
                 display: 'inline-block',
                 fontSize: '1.1rem',
-                padding: '1rem 2.5rem',
-                background: 'linear-gradient(135deg, #ffd700, #ffed4e)',
-                color: '#000'
+                padding: '1rem 2.5rem'
               }}
             >
-              Book Luxury Inspection
+              Book Comprehensive Inspection
             </a>
           </div>
         </div>
@@ -117,39 +104,39 @@ export default function LuxuryInspection({ service }) {
             }}>
               {[
                 {
-                  title: 'Everything in Comprehensive, Plus:',
+                  title: 'Everything in Basic, Plus:',
                   items: [
-                    'Unlimited square footage coverage',
-                    'Smart home system integration review',
-                    'Generator and backup power assessment',
-                    'Pool, spa, and outdoor electrical'
+                    'Thermal imaging of electrical panels',
+                    'Hot spot detection and analysis',
+                    'Load capacity assessment',
+                    'Future expansion planning'
                   ]
                 },
                 {
-                  title: 'Premium Features',
+                  title: 'Advanced Testing',
                   items: [
-                    'Home automation system analysis',
-                    'Electric vehicle charger inspection',
-                    'Luxury lighting system review',
-                    'Security system electrical assessment'
+                    'Detailed voltage drop testing',
+                    'Circuit load analysis',
+                    'Power quality measurement',
+                    'Grounding resistance testing'
                   ]
                 },
                 {
-                  title: 'White-Glove Service',
+                  title: 'Comprehensive Report',
                   items: [
-                    'Dedicated master electrician',
-                    'Priority scheduling (24-48 hours)',
-                    'Concierge-level communication',
-                    'Follow-up consultation included'
+                    'Detailed written findings',
+                    'Thermal imaging photos included',
+                    'Priority-ranked recommendations',
+                    'Cost estimates for repairs'
                   ]
                 },
                 {
-                  title: 'Executive Report',
+                  title: 'Service Details',
                   items: [
-                    'Comprehensive bound report',
-                    'Thermal imaging analysis',
-                    'Smart home optimization plan',
-                    'Long-term maintenance schedule'
+                    'Homes up to 4,000 sq ft',
+                    '2-3 hour inspection time',
+                    'Same-day scheduling available',
+                    'Master electrician included'
                   ]
                 }
               ].map((section, index) => (
@@ -164,7 +151,7 @@ export default function LuxuryInspection({ service }) {
                 >
                   <h3 style={{
                     fontSize: '1.5rem',
-                    color: '#ffd700',
+                    color: '#00f0ff',
                     marginBottom: '1rem',
                     fontWeight: '700'
                   }}>
@@ -187,7 +174,7 @@ export default function LuxuryInspection({ service }) {
                           gap: '0.75rem'
                         }}
                       >
-                        <span style={{ color: '#ffd700', fontSize: '1.2rem' }}>★</span>
+                        <span style={{ color: '#00f0ff', fontSize: '1.2rem' }}>✓</span>
                         {item}
                       </li>
                     ))}
@@ -219,19 +206,19 @@ export default function LuxuryInspection({ service }) {
             }}>
               {[
                 {
-                  icon: '🏰',
-                  title: 'Luxury Estates',
-                  description: 'Unlimited coverage for high-end properties of any size'
+                  icon: '🏡',
+                  title: 'Larger Homes',
+                  description: 'Comprehensive coverage for properties up to 4,000 sq ft'
                 },
                 {
-                  icon: '🏠',
-                  title: 'Smart Homes',
-                  description: 'Comprehensive review of automation and integration'
+                  icon: '🔬',
+                  title: 'Pre-Purchase',
+                  description: 'Detailed analysis before buying high-value properties'
                 },
                 {
-                  icon: '⚡',
-                  title: 'Complex Systems',
-                  description: 'Generators, pools, EVs, and advanced electrical setups'
+                  icon: '🏢',
+                  title: 'Older Homes',
+                  description: 'Thermal imaging reveals hidden issues in aging systems'
                 }
               ].map((item, index) => (
                 <div
@@ -240,7 +227,7 @@ export default function LuxuryInspection({ service }) {
                     backgroundColor: '#0d1117',
                     padding: '2rem',
                     borderRadius: '12px',
-                    border: '1px solid #ffd700',
+                    border: '1px solid #30363d',
                     textAlign: 'center'
                   }}
                 >
@@ -263,7 +250,7 @@ export default function LuxuryInspection({ service }) {
         </div>
       </section>
 
-      {/* Premium Benefits */}
+      {/* Thermal Imaging Benefits */}
       <section style={{ backgroundColor: '#0d1117', padding: '4rem 0' }}>
         <div className="container">
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -273,7 +260,7 @@ export default function LuxuryInspection({ service }) {
               textAlign: 'center',
               color: '#c9d1d9'
             }}>
-              Premium Service Benefits
+              Why Thermal Imaging Matters
             </h2>
             <p style={{
               fontSize: '1.1rem',
@@ -282,7 +269,7 @@ export default function LuxuryInspection({ service }) {
               marginBottom: '3rem',
               lineHeight: '1.8'
             }}>
-              Experience the difference of our white-glove electrical inspection service designed for discerning homeowners.
+              Thermal imaging reveals problems invisible to the naked eye, preventing costly repairs and potential fire hazards.
             </p>
             
             <div style={{
@@ -291,30 +278,12 @@ export default function LuxuryInspection({ service }) {
               gap: '1.5rem'
             }}>
               {[
-                {
-                  title: 'Priority Access',
-                  description: 'Schedule within 24-48 hours, not weeks'
-                },
-                {
-                  title: 'Master Electrician',
-                  description: 'Dedicated senior technician for your property'
-                },
-                {
-                  title: 'Smart Home Expertise',
-                  description: 'Advanced knowledge of luxury automation systems'
-                },
-                {
-                  title: 'Detailed Documentation',
-                  description: 'Professional bound report with photos and analysis'
-                },
-                {
-                  title: 'Follow-Up Support',
-                  description: 'Post-inspection consultation and planning included'
-                },
-                {
-                  title: 'Concierge Service',
-                  description: 'Direct communication with your inspection team'
-                }
+                'Detects overheating circuits before failure',
+                'Identifies loose connections',
+                'Reveals hidden electrical issues',
+                'Prevents potential fire hazards',
+                'Validates proper installation',
+                'Confirms load distribution'
               ].map((benefit, index) => (
                 <div
                   key={index}
@@ -322,20 +291,14 @@ export default function LuxuryInspection({ service }) {
                     backgroundColor: '#161b22',
                     padding: '1.5rem',
                     borderRadius: '8px',
-                    border: '1px solid #30363d'
+                    border: '1px solid #30363d',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1rem'
                   }}
                 >
-                  <h3 style={{
-                    color: '#ffd700',
-                    fontSize: '1.1rem',
-                    marginBottom: '0.5rem',
-                    fontWeight: '700'
-                  }}>
-                    {benefit.title}
-                  </h3>
-                  <p style={{ color: '#8b949e', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                    {benefit.description}
-                  </p>
+                  <span style={{ color: '#00f0ff', fontSize: '1.5rem' }}>🔥</span>
+                  <span style={{ color: '#c9d1d9' }}>{benefit}</span>
                 </div>
               ))}
             </div>
@@ -353,14 +316,14 @@ export default function LuxuryInspection({ service }) {
             backgroundColor: '#0d1117',
             padding: '3rem',
             borderRadius: '16px',
-            border: '2px solid #ffd700'
+            border: '1px solid #30363d'
           }}>
             <h2 style={{
               fontSize: '2rem',
               marginBottom: '1rem',
               color: '#c9d1d9'
             }}>
-              Ready for Premium Service?
+              Ready to Book Your Comprehensive Inspection?
             </h2>
             <p style={{
               fontSize: '1.1rem',
@@ -368,22 +331,17 @@ export default function LuxuryInspection({ service }) {
               marginBottom: '2rem',
               lineHeight: '1.8'
             }}>
-              Experience our white-glove electrical inspection service designed for luxury properties.
+              Get the detailed analysis you need with our most popular inspection package.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="https://calendly.com/metroplexpros/luxury-electrical-inspection"
+                href="https://calendly.com/metroplexpros/comprehensive-electrical-inspection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
-                style={{
-                  fontSize: '1.1rem',
-                  padding: '1rem 2.5rem',
-                  background: 'linear-gradient(135deg, #ffd700, #ffed4e)',
-                  color: '#000'
-                }}
+                style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}
               >
-                Book Now - $225
+                Book Now - $200
               </a>
               <Link href="/services/electrical" className="btn btn-outline" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
                 View All Services
@@ -401,25 +359,4 @@ export default function LuxuryInspection({ service }) {
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  try {
-    const service = await getServiceBySlug('luxury-inspection')
-    
-    return {
-      props: {
-        service
-      },
-      revalidate: 60 // Regenerate page every 60 seconds
-    }
-  } catch (error) {
-    console.error('Error fetching luxury inspection service:', error)
-    return {
-      props: {
-        service: null
-      },
-      revalidate: 60
-    }
-  }
 }
