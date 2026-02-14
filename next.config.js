@@ -14,6 +14,22 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Explicitly handle pages without trailing slashes for Google Search Console
+      {
+        source: '/about',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/services/',
+        permanent: true,
+      },
+      {
+        source: '/service-areas',
+        destination: '/service-areas/',
+        permanent: true,
+      },
     ]
   },
 }

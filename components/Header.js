@@ -365,7 +365,7 @@ export default function Header() {
                                 ))}
                               </div>
                               <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-                                <Link href="/service-areas" className="mega-menu-view-all">
+                                <Link href="/service-areas/" className="mega-menu-view-all">
                                   View Complete Service Area Map →
                                 </Link>
                               </div>
@@ -414,7 +414,7 @@ export default function Header() {
                       {item.hasMegaMenu ? (
                         /* Mobile Services Mega Menu Content */
                         <>
-                          <Link href="/services" className="nav-mobile-dropdown-link" onClick={() => setIsMenuOpen(false)}>
+                          <Link href="/services/" className="nav-mobile-dropdown-link" onClick={() => setIsMenuOpen(false)}>
                             All Services
                           </Link>
                           {megaMenuContent.services.map((service) => (
@@ -448,7 +448,7 @@ export default function Header() {
                       ) : (
                         /* Mobile Locations Mega Menu Content */
                         <>
-                          <Link href="/service-areas" className="nav-mobile-dropdown-link" onClick={() => setIsMenuOpen(false)}>
+                          <Link href="/service-areas/" className="nav-mobile-dropdown-link" onClick={() => setIsMenuOpen(false)}>
                             All Service Areas
                           </Link>
                           <div className="mobile-service-title">⭐ Featured Areas</div>
