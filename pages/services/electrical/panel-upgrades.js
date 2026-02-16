@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function PanelUpgrades() {
@@ -211,6 +212,13 @@ export default function PanelUpgrades() {
           </div>
         </div>
       </section>
+
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/electrical/panel-upgrades"
+        currentSilo="electrical"
+        variant="full"
+      />
     </Layout>
   )
 }
