@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  trailingSlash: true,
+  trailingSlash: false,
   // Add proper redirects for SEO
   async redirects() {
     return [
@@ -14,20 +14,20 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
-      // Explicitly handle pages without trailing slashes for Google Search Console
+      // Redirect trailing slash versions to non-trailing slash (canonical)
       {
-        source: '/about',
-        destination: '/about/',
+        source: '/about/',
+        destination: '/about',
         permanent: true,
       },
       {
-        source: '/services',
-        destination: '/services/',
+        source: '/services/',
+        destination: '/services',
         permanent: true,
       },
       {
-        source: '/service-areas',
-        destination: '/service-areas/',
+        source: '/service-areas/',
+        destination: '/service-areas',
         permanent: true,
       },
     ]

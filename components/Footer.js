@@ -39,9 +39,9 @@ export default function Footer() {
             <h4 className="footer-title">Quick Links</h4>
             <ul className="footer-links">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about/">About Us</Link></li>
-              <li><Link href="/gallery/">Gallery</Link></li>
-              <li><Link href="/contact/">Contact</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/gallery">Gallery</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
             <h4 className="footer-title" style={{marginTop: '2rem'}}>Maintenance Plans</h4>
             <ul className="footer-links">

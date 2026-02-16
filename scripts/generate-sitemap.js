@@ -287,7 +287,7 @@ function generateSitemap() {
 ${pages
   .map(
     (page) => `  <url>
-    <loc>${baseUrl}${page.url}${page.url ? '/' : ''}</loc>
+    <loc>${baseUrl}${page.url}</loc>
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
