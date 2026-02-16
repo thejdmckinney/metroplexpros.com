@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function WaterHeaterRepair() {
@@ -236,6 +237,13 @@ export default function WaterHeaterRepair() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/plumbing/water-heater-repair"
+        currentSilo="plumbing"
+        variant="full"
+      />
+
     </Layout>
   )
 }

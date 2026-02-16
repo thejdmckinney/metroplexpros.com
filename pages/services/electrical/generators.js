@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function Generators() {
@@ -194,6 +195,13 @@ export default function Generators() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/electrical/generators"
+        currentSilo="electrical"
+        variant="full"
+      />
+
     </Layout>
   )
 }

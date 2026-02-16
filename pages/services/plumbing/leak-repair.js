@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function LeakRepair() {
@@ -288,6 +289,13 @@ export default function LeakRepair() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/plumbing/leak-repair"
+        currentSilo="plumbing"
+        variant="full"
+      />
+
     </Layout>
   )
 }

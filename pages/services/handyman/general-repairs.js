@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function GeneralRepairs() {
@@ -165,6 +166,13 @@ export default function GeneralRepairs() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/handyman/general-repairs"
+        currentSilo="handyman"
+        variant="full"
+      />
+
     </Layout>
   )
 }

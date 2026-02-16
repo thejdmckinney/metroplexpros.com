@@ -3,6 +3,7 @@ import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
 import { getServiceBySlug } from '../../../lib/sanityQueries'
 import { PortableText } from '@portabletext/react'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 export default function ComprehensiveInspection({ service }) {
   // Fallback to hardcoded values if Sanity data isn't available yet
@@ -366,6 +367,13 @@ export default function ComprehensiveInspection({ service }) {
           <TrustSignals variant="compact" />
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/electrical/comprehensive-inspection"
+        currentSilo="electrical"
+        variant="full"
+      />
+
     </Layout>
   )
 }

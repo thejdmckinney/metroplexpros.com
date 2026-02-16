@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function FixtureInstallation() {
@@ -289,6 +290,13 @@ export default function FixtureInstallation() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/plumbing/fixture-installation"
+        currentSilo="plumbing"
+        variant="full"
+      />
+
     </Layout>
   )
 }

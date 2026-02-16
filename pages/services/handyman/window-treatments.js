@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 
 export default function WindowTreatments() {
@@ -221,6 +222,13 @@ export default function WindowTreatments() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/handyman/window-treatments"
+        currentSilo="handyman"
+        variant="full"
+      />
+
     </Layout>
   )
 }

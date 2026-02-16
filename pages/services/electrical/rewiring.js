@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
 import TrustSignals from '../../../components/TrustSignals'
+import ReverseSiloLinks from '../../../components/ReverseSiloLinks'
 
 export default function Rewiring() {
   return (
@@ -726,6 +727,13 @@ export default function Rewiring() {
           </div>
         </div>
       </section>
+      {/* Reverse Silo Links - SEO Internal Linking */}
+      <ReverseSiloLinks 
+        currentPage="/services/electrical/rewiring"
+        currentSilo="electrical"
+        variant="full"
+      />
+
 
     </Layout>
   )
