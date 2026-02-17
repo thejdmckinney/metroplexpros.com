@@ -7,7 +7,7 @@ export default function About() {
       title="About Us - Licensed Dallas Electricians, Plumbers & Handymen | Metroplex Pros"
       description="⭐ Trusted by 500+ DFW homeowners! Licensed electricians, plumbers & handymen with 15+ years experience in electrical repairs, plumbing services, handyman work & smart home installations. 24/7 emergency service. Call (682) 466-2130!"
       keywords="Dallas electrician about, Dallas plumber about, Dallas handyman about, licensed electrician Dallas, licensed plumber DFW, licensed handyman Dallas, smart home installer Dallas, electrical contractor Dallas, plumbing contractor Dallas"
-      canonicalUrl="https://www.metroplexpros.com/about/"
+      canonicalUrl="https://www.metroplexpros.com/about"
     >
       {/* Hero Section */}
       <section style={{background: 'linear-gradient(135deg, #0a0e14, #161b22, #1a1f2e)', padding: '5rem 0 4rem', position: 'relative', overflow: 'hidden'}}>

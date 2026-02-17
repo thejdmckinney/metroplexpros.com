@@ -9,7 +9,7 @@ export default function KitchenRemodeling() {
       title="Kitchen Remodeling Dallas | Custom Kitchen Renovation - Metroplex Pros"
       description="Transform your kitchen with Metroplex Pros' expert remodeling services in Dallas. Custom cabinets, countertops, appliances & complete kitchen renovations. Free estimates!"
       keywords="kitchen remodeling Dallas, kitchen renovation DFW, custom kitchen cabinets Dallas, kitchen countertops installation, kitchen appliances Dallas, kitchen design Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/kitchen-remodeling/"
+      canonicalUrl="https://www.metroplexpros.com/services/kitchen-remodeling"
     >
       {/* Hero Section */}
       <section className="hero">

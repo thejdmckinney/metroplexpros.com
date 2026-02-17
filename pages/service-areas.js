@@ -47,7 +47,7 @@ export default function ServiceAreas() {
       title="Electrician, Plumber & Handyman Service Areas: Dallas, Plano, Frisco | DFW"
       description="⭐ Licensed electricians, plumbers & handymen serving 30+ DFW cities! Expert electrical repairs, plumbing services, handyman work & smart home installations in Dallas, Plano, Frisco, McKinney, Allen. 24/7 emergency service. Call (682) 466-2130!"
       keywords="Dallas electrician service area, Plano plumber, Frisco electrician, McKinney plumber, Allen electrician, Richardson plumber, DFW electrician, North Dallas plumber, DFW handyman, handyman service areas Dallas, smart home installer DFW"
-      canonicalUrl="https://www.metroplexpros.com/service-areas/"
+      canonicalUrl="https://www.metroplexpros.com/service-areas"
     >
       {/* Service Areas Schema */}
       <script

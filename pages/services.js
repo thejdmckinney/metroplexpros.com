@@ -65,7 +65,7 @@ export default function Services() {
       title="Electrical & Plumbing Services Dallas | Smart Home Installation | Metroplex Pros"
       description="Licensed Dallas electricians & plumbers + smart home experts. Electrical repairs, plumbing services, EV chargers, smart thermostats, home automation. 24/7 emergency service. FREE estimates!"
       keywords="Dallas electrician, Dallas plumber, smart home installation Dallas, electrical services Dallas, plumbing repairs Plano, EV charger installation, emergency electrician DFW, licensed plumber Dallas, home automation Dallas, smart thermostat installation"
-      canonicalUrl="https://www.metroplexpros.com/services/"
+      canonicalUrl="https://www.metroplexpros.com/services"
     >
       {/* Hero Section */}
       <section className="hero">

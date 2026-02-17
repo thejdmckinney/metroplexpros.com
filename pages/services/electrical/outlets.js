@@ -10,7 +10,7 @@ export default function OutletsSwitchRepair() {
       title="Outlet & Switch Repair Dallas-Fort Worth | MetroPlex Pros"
       description="Professional outlet and switch installation, repair, and replacement in DFW. Home electrical repair service for outlets, USB outlets, GFCI, dimmer switches, smart switches. Call (682) 466-2130."
       keywords="outlet repair Dallas, switch replacement, GFCI outlet, USB outlet installation, home electrical repair, electrical home repair, dimmer switch, electrical outlet repair, Dallas electrician"
-      canonicalUrl="https://www.metroplexpros.com/services/electrical/outlets/"
+      canonicalUrl="https://www.metroplexpros.com/services/electrical/outlets"
     
 
       openGraph={{

@@ -11,7 +11,7 @@ export default function NinetyNinePlan() {
       title="The $99 Plan - Monthly Home Maintenance Subscription | Metroplex Pros"
       description="Your home's monthly check-up for just $99/month. Preventative maintenance, priority service, and peace of mind. Catch problems before they become expensive emergencies."
       keywords="home maintenance plan, monthly home inspection, preventative maintenance Dallas, home maintenance subscription, 99 plan, home care plan"
-      canonicalUrl="https://www.metroplexpros.com/99-plan/"
+      canonicalUrl="https://www.metroplexpros.com/99-plan"
     >
       <style jsx>{`
         .container-narrow {

@@ -9,7 +9,7 @@ export default function BathroomRenovation() {
       title="Bathroom Renovation Dallas | Luxury Bathroom Remodeling - Metroplex Pros"
       description="Complete bathroom renovations in Dallas. Walk-in showers, vanities, tile work & luxury upgrades. Expert bathroom remodeling contractors. Free estimates!"
       keywords="bathroom renovation Dallas, bathroom remodeling DFW, walk-in shower installation Dallas, bathroom tile installation, vanity installation Dallas, bathroom contractors Texas"
-      canonicalUrl="https://www.metroplexpros.com/services/bathroom-renovation/"
+      canonicalUrl="https://www.metroplexpros.com/services/bathroom-renovation"
     >
       {/* Hero Section */}
       <section className="hero">

@@ -8,7 +8,7 @@ export default function EmergencyPlumber() {
       title="Emergency Plumber Dallas | 24/7 Service Near Me | Fast Response | (682) 466-2130"
       description="Emergency Plumber Dallas | 24/7 Service Near Me | Fast Response | Licensed & Insured | Burst Pipes, Leaks, Clogs, No Water | Call (682) 466-2130 NOW!"
       keywords="emergency plumber Dallas, emergency plumber near me Dallas, 24 hour plumber Dallas, 24 hour plumber near me, emergency plumbing service Dallas, burst pipe repair, sewer backup, water heater emergency, gas leak plumber, urgent plumbing repair Dallas, plumber near me"
-      canonicalUrl="https://www.metroplexpros.com/emergency-plumber-dallas/"
+      canonicalUrl="https://www.metroplexpros.com/emergency-plumber-dallas"
     >
       {/* Emergency Service Schema */}
       <script

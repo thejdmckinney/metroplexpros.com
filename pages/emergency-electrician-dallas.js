@@ -8,7 +8,7 @@ export default function EmergencyElectrician() {
       title="Emergency Electrician Dallas | 24/7 Service Near Me | 30-Min Response | (682) 466-2130"
       description="Emergency Electrician Dallas | 24/7 Service Near Me | 30-Min Response Time | Licensed & Insured | Power Outages, Panel Issues, Electrical Fires | Call (682) 466-2130 NOW!"
       keywords="emergency electrician Dallas, emergency electrician near me Dallas, 24 hour electrician Dallas, 24 hour electrician near me, emergency electrical service Dallas, home electrical repair service, home electrical repair near me, power outage electrician, sparking outlet repair, electrical emergency Dallas, same day electrician"
-      canonicalUrl="https://www.metroplexpros.com/emergency-electrician-dallas/"
+      canonicalUrl="https://www.metroplexpros.com/emergency-electrician-dallas"
     >
       {/* Emergency Service Schema */}
       <script

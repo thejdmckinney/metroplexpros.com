@@ -10,7 +10,7 @@ export default function SewerRepair() {
       title="Sewer Line Repair & Replacement Dallas-Fort Worth | MetroPlex Pros"
       description="Professional sewer line repair, replacement, and cleaning in DFW. Trenchless sewer repair available. Licensed plumbers. Emergency service. Call (682) 466-2130."
       keywords="sewer line repair Dallas, sewer replacement, trenchless sewer repair, sewer line cleaning, Dallas plumber"
-      canonicalUrl="https://www.metroplexpros.com/services/plumbing/sewer-repair/"
+      canonicalUrl="https://www.metroplexpros.com/services/plumbing/sewer-repair"
     
 
       openGraph={{

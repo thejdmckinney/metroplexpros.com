@@ -8,7 +8,7 @@ export default function HandymanServices() {
       title="Dallas Handyman Near Me | Same-Day Service | Licensed & Insured | MetroPlex Pros"
       description="Dallas Handyman Near Me | Licensed & Insured | Same-Day Service | Drywall, Painting, Repairs, TV Mounting, Fixtures | Fast, Reliable, Affordable | Call (682) 466-2130 for FREE estimate!"
       keywords="handyman Dallas, handyman near me Dallas, handyman services near me, home repairs, drywall repair, painting, carpentry, door repair, TV mounting, fixture installation, general handyman Dallas"
-      canonicalUrl="https://www.metroplexpros.com/services/handyman/"
+      canonicalUrl="https://www.metroplexpros.com/services/handyman"
     
 
       openGraph={{

@@ -6,7 +6,7 @@ export default function TermsOfService() {
       title="Terms of Service - Metroplex Pros Electrician & Plumber Dallas"
       description="Terms of Service for Metroplex Pros electrical, plumbing, and smart home installation services in Dallas, Texas. Review our service terms and conditions."
       keywords="terms of service, Metroplex Pros terms, electrician terms, plumber terms, service conditions Dallas"
-      canonicalUrl="https://www.metroplexpros.com/terms-of-service/"
+      canonicalUrl="https://www.metroplexpros.com/terms-of-service"
     >
       <div className="legal-page">
         <div className="container">
