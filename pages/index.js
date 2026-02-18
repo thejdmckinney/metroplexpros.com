@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout 
       title="Dallas Electrician, Plumber & Handyman | Smart Home Installation | Metroplex Pros"
-      description="Licensed Dallas Electrician, Plumber & Handyman Near Me | 24/7 Emergency Service | Same-Day Appointments | FREE Estimates | Electrical, plumbing & handyman repairs you can trust. Call (682) 466-2130 now!"
+      description="Dallas Electrician, Plumber & Handyman Near Me | 24/7 Emergency Service | Same-Day Appointments | FREE Estimates | Electrical, plumbing & handyman repairs you can trust. Call (682) 466-2130 now!"
       keywords="Dallas electrician, electrician near me Dallas, Dallas plumber, plumber near me Dallas, Dallas handyman, handyman near me Dallas, home electrical repair service, electrical home repair, home electrical repair near me, smart home installation Dallas, emergency electrician near me, emergency plumber near me"
       canonicalUrl="https://www.metroplexpros.com"
     >
@@ -24,11 +24,11 @@ export default function Home() {
               <h1 style={{fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.1', fontWeight: '700'}}>
                 <span style={{color: '#ffffff'}}>Dallas's Most Trusted</span><br/>
                 <span style={{background: 'linear-gradient(135deg, #00f0ff, #0080ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
-                  Electrician & Plumber
+                  Handyman
                 </span>
               </h1>
               <p style={{fontSize: '1.3rem', color: '#c9d1d9', marginBottom: '1.5rem', lineHeight: '1.7'}}>
-                <strong style={{color: '#00f0ff'}}>Licensed experts</strong> fixing electrical & plumbing problems right the first time. From <strong>leaky faucets</strong> to <strong>smart home automation</strong> - we handle it all.
+                <strong style={{color: '#00f0ff'}}>Expert professionals</strong> fixing electrical & plumbing problems right the first time. From <strong>leaky faucets</strong> to <strong>smart home automation</strong> - we handle it all.
               </p>
               
               <div style={{background: 'rgba(0, 240, 255, 0.08)', border: '1px solid rgba(0, 240, 255, 0.2)', borderRadius: '12px', padding: '1.5rem', marginBottom: '2rem'}}>
@@ -60,7 +60,7 @@ export default function Home() {
               <div style={{display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', paddingTop: '1rem', borderTop: '1px solid rgba(0, 240, 255, 0.2)'}}>
                 <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                   <span style={{fontSize: '1.5rem'}}>✅</span>
-                  <span style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Licensed & Insured</span>
+                  <span style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Fully Insured</span>
                 </div>
                 <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                   <span style={{fontSize: '1.5rem'}}>⚡</span>
@@ -192,7 +192,7 @@ export default function Home() {
               {
                 icon: '⚡',
                 title: 'Electrical Services',
-                desc: 'Licensed electricians for all your electrical needs',
+                desc: 'Expert electricians for all your electrical needs',
                 services: ['Circuit breaker panel upgrades', 'Outlet & switch installation', 'LED lighting & ceiling fans', 'EV charger installation', 'Emergency repairs 24/7'],
                 link: '/services',
                 popular: true
@@ -302,7 +302,7 @@ export default function Home() {
             <div style={{textAlign: 'center'}}>
               <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#00f0ff', marginBottom: '0.5rem'}}>15+</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Years Experience</div>
-              <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Licensed & Insured</div>
+              <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Fully Insured</div>
             </div>
           </div>
 
@@ -365,7 +365,7 @@ export default function Home() {
           {/* Why Choose Us Features */}
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem'}}>
             {[
-              {icon: '🛡️', title: 'Licensed & Insured', desc: 'All technicians fully licensed, bonded, and background-checked'},
+              {icon: '🛡️', title: 'Fully Insured', desc: 'All technicians bonded, insured, and background-checked'},
               {icon: '💰', title: 'Upfront Pricing', desc: 'No hidden fees. You know the cost before we start work'},
               {icon: '⚡', title: '24/7 Emergency Service', desc: 'Same-day service available. We answer calls day or night'},
               {icon: '✅', title: '100% Satisfaction Guarantee', desc: 'Not happy? We make it right or refund your money'},
@@ -434,7 +434,7 @@ export default function Home() {
               </div>
               <div style={{textAlign: 'center'}}>
                 <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>🛡️</div>
-                <div style={{color: '#ffffff', fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.25rem'}}>Licensed & Insured</div>
+                <div style={{color: '#ffffff', fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.25rem'}}>Fully Insured</div>
                 <div style={{color: '#8b949e', fontSize: '0.9rem'}}>15+ years experience</div>
               </div>
               <div style={{textAlign: 'center'}}>
@@ -472,8 +472,8 @@ export default function Home() {
           
           <div className="faq-grid" style={{maxWidth: '900px', margin: '0 auto'}}>
             <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>Are your electricians and plumbers licensed in Texas?</h3>
-              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! All our electricians and plumbers are fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB.</p>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#00f0ff'}}>Are your electricians and plumbers insured in Texas?</h3>
+              <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! All our electricians and plumbers are fully bonded and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB.</p>
             </div>
             
             <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px'}}>
@@ -514,10 +514,10 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Are your electricians and plumbers licensed in Texas?",
+                "name": "Are your electricians and plumbers insured in Texas?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! All our electricians and plumbers are fully licensed, bonded, and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB."
+                  "text": "Yes! All our electricians and plumbers are fully bonded and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB."
                 }
               },
               {
