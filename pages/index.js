@@ -12,44 +12,44 @@ export default function Home() {
       canonicalUrl="https://www.metroplexpros.com"
     >
       {/* Hero Section */}
-      <section className="hero" style={{background: 'linear-gradient(135deg, #0a1628 0%, #132642 50%, #1e3a5f 100%)', position: 'relative', overflow: 'hidden', padding: '4rem 0'}}>
-        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.08, backgroundImage: 'radial-gradient(circle at 25% 30%, #FF6600 0%, transparent 40%), radial-gradient(circle at 75% 70%, #FF6600 0%, transparent 40%)'}}>
+      <section className="hero" style={{background: 'linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #333333 100%)', position: 'relative', overflow: 'hidden', padding: '4rem 0'}}>
+        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.08, backgroundImage: 'radial-gradient(circle at 25% 30%, #0EA5E9 0%, transparent 40%), radial-gradient(circle at 75% 70%, #0EA5E9 0%, transparent 40%)'}}>
         </div>
         <div className="container" style={{position: 'relative', zIndex: 1}}>
           <div style={{display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem', alignItems: 'center'}}>
             <div>
-              <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.15), rgba(255, 102, 0, 0.05))', border: '1px solid #FF6600', borderRadius: '30px', marginBottom: '1.5rem', fontSize: '0.85rem', letterSpacing: '2px', color: '#FF6600', boxShadow: '0 4px 20px rgba(255, 102, 0, 0.3)', animation: 'pulse 2s infinite'}}>
+              <div style={{display: 'inline-block', padding: '0.5rem 1.5rem', background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(14, 165, 233, 0.05))', border: '1px solid #0EA5E9', borderRadius: '30px', marginBottom: '1.5rem', fontSize: '0.85rem', letterSpacing: '2px', color: '#0EA5E9', boxShadow: '0 4px 20px rgba(14, 165, 233, 0.3)', animation: 'pulse 2s infinite'}}>
                 ⚡ 24/7 EMERGENCY SERVICE • SAME-DAY APPOINTMENTS
               </div>
               <h1 style={{fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.1', fontWeight: '700'}}>
                 <span style={{color: '#ffffff'}}>Dallas's Most Trusted</span><br/>
-                <span style={{background: 'linear-gradient(135deg, #FF6600, #FF8833)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
+                <span style={{background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
                   Handyman
                 </span>
               </h1>
               <p style={{fontSize: '1.3rem', color: '#c9d1d9', marginBottom: '1.5rem', lineHeight: '1.7'}}>
-                <strong style={{color: '#FF6600'}}>Expert professionals</strong> fixing electrical & plumbing problems right the first time. From <strong>leaky faucets</strong> to <strong>smart home automation</strong> - we handle it all.
+                <strong style={{color: '#0EA5E9'}}>Expert professionals</strong> fixing electrical & plumbing problems right the first time. From <strong>leaky faucets</strong> to <strong>smart home automation</strong> - we handle it all.
               </p>
               
-              <div style={{background: 'rgba(255, 102, 0, 0.08)', border: '1px solid rgba(255, 102, 0, 0.3)', borderRadius: '12px', padding: '1.5rem', marginBottom: '2rem'}}>
+              <div style={{background: 'rgba(14, 165, 233, 0.08)', border: '1px solid rgba(14, 165, 233, 0.3)', borderRadius: '12px', padding: '1.5rem', marginBottom: '2rem'}}>
                 <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', textAlign: 'center'}}>
                   <div>
-                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.25rem'}}>4.9★</div>
+                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.25rem'}}>4.9★</div>
                     <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Google Rating</div>
                   </div>
                   <div>
-                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.25rem'}}>1,200+</div>
+                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.25rem'}}>1,200+</div>
                     <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Happy Customers</div>
                   </div>
                   <div>
-                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.25rem'}}>Same Day</div>
+                    <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.25rem'}}>Same Day</div>
                     <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Service Available</div>
                   </div>
                 </div>
               </div>
 
               <div style={{display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap'}}>
-                <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.2rem', padding: '1.25rem 2.5rem', boxShadow: '0 4px 20px rgba(255, 102, 0, 0.3)', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.2rem', padding: '1.25rem 2.5rem', boxShadow: '0 4px 20px rgba(14, 165, 233, 0.3)', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                   📞 Call (682) 466-2130
                 </Link>
                 <Link href="/contact" className="btn btn-outline" style={{fontSize: '1.2rem', padding: '1.25rem 2.5rem'}}>
@@ -57,7 +57,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div style={{display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', paddingTop: '1rem', borderTop: '1px solid rgba(255, 102, 0, 0.3)'}}>
+              <div style={{display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', paddingTop: '1rem', borderTop: '1px solid rgba(14, 165, 233, 0.3)'}}>
                 <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                   <span style={{fontSize: '1.5rem'}}>✅</span>
                   <span style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Fully Insured</span>
@@ -74,14 +74,14 @@ export default function Home() {
             </div>
 
             <div style={{position: 'relative'}}>
-              <div style={{borderRadius: '20px', overflow: 'hidden', border: '2px solid rgba(255, 102, 0, 0.3)', boxShadow: '0 10px 40px rgba(255, 102, 0, 0.2)', background: '#132642', padding: '3rem', textAlign: 'center'}}>
-                <img src="/logo.svg" alt="Metroplex Pros - Dallas Home Services" style={{width: '100%', height: 'auto', maxWidth: '300px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 20px rgba(255, 102, 0, 0.3))'}} />
-                <div style={{marginTop: '2rem', padding: '1rem', background: 'rgba(255, 102, 0, 0.1)', borderRadius: '12px'}}>
-                  <div style={{color: '#FF6600', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.5rem'}}>🏆 Nextdoor Neighborhood Fave 2025</div>
+              <div style={{borderRadius: '20px', overflow: 'hidden', border: '2px solid rgba(14, 165, 233, 0.3)', boxShadow: '0 10px 40px rgba(14, 165, 233, 0.2)', background: '#252525', padding: '3rem', textAlign: 'center'}}>
+                <img src="/logo.svg" alt="Metroplex Pros - Dallas Home Services" style={{width: '100%', height: 'auto', maxWidth: '300px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 20px rgba(14, 165, 233, 0.3))'}} />
+                <div style={{marginTop: '2rem', padding: '1rem', background: 'rgba(14, 165, 233, 0.1)', borderRadius: '12px'}}>
+                  <div style={{color: '#0EA5E9', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.5rem'}}>🏆 Nextdoor Neighborhood Fave 2025</div>
                   <div style={{color: '#8b949e', fontSize: '0.9rem'}}>Voted Best in Dallas</div>
                 </div>
               </div>
-              <div style={{position: 'absolute', top: '-20px', right: '-20px', background: '#FF6600', color: '#0a1628', padding: '1rem 1.5rem', borderRadius: '12px', fontWeight: 'bold', fontSize: '1rem', boxShadow: '0 8px 24px rgba(255, 102, 0, 0.4)', transform: 'rotate(5deg)'}}>
+              <div style={{position: 'absolute', top: '-20px', right: '-20px', background: '#0EA5E9', color: '#1a1a1a', padding: '1rem 1.5rem', borderRadius: '12px', fontWeight: 'bold', fontSize: '1rem', boxShadow: '0 8px 24px rgba(14, 165, 233, 0.4)', transform: 'rotate(5deg)'}}>
                 💰 $50 OFF<br/>First Service
               </div>
             </div>
@@ -97,11 +97,11 @@ export default function Home() {
       </section>
 
       {/* Emergency Response Section */}
-      <section className="section" style={{backgroundColor: '#132642', padding: '5rem 0'}}>
+      <section className="section" style={{backgroundColor: '#252525', padding: '5rem 0'}}>
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 style={{fontSize: '2.8rem', marginBottom: '1rem', fontWeight: '700'}}>
-              <span style={{background: 'linear-gradient(135deg, #FF6600, #FF8833)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
+              <span style={{background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
                 Common Problems We Fix Daily
               </span>
             </h2>
@@ -149,7 +149,7 @@ export default function Home() {
                 emergency: true
               }
             ].map((item, i) => (
-              <div key={i} style={{background: '#0d1117', border: item.emergency ? '2px solid #ff4444' : '1px solid rgba(255, 102, 0, 0.2)', borderRadius: '12px', padding: '2rem', position: 'relative'}}>
+              <div key={i} style={{background: '#0d1117', border: item.emergency ? '2px solid #ff4444' : '1px solid rgba(14, 165, 233, 0.2)', borderRadius: '12px', padding: '2rem', position: 'relative'}}>
                 {item.emergency && (
                   <div style={{position: 'absolute', top: '-12px', right: '12px', background: '#ff4444', color: '#ffffff', padding: '0.25rem 0.75rem', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold'}}>
                     🚨 EMERGENCY
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
 
           <div style={{textAlign: 'center'}}>
-            <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.3rem', padding: '1.25rem 3rem', boxShadow: '0 4px 20px rgba(255, 102, 0, 0.3)'}}>
+            <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.3rem', padding: '1.25rem 3rem', boxShadow: '0 4px 20px rgba(14, 165, 233, 0.3)'}}>
               🚨 Need Help Now? Call (682) 466-2130
             </Link>
             <p style={{color: '#8b949e', marginTop: '1rem', fontSize: '0.95rem'}}>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 style={{fontSize: '2.8rem', marginBottom: '1rem', fontWeight: '700'}}>
-              <span style={{background: 'linear-gradient(135deg, #FF6600, #FF8833)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
+              <span style={{background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
                 Complete Home Services Under One Roof
               </span>
             </h2>
@@ -222,9 +222,9 @@ export default function Home() {
                 popular: false
               }
             ].map((service, i) => (
-              <div key={i} style={{background: 'linear-gradient(135deg, #132642, #1e3a5f)', border: service.popular ? '2px solid #FF6600' : '1px solid #1e3a5f', borderRadius: '16px', padding: '2.5rem', position: 'relative', boxShadow: service.popular ? '0 8px 32px rgba(255, 102, 0, 0.2)' : 'none'}}>
+              <div key={i} style={{background: 'linear-gradient(135deg, #252525, #333333)', border: service.popular ? '2px solid #0EA5E9' : '1px solid #333333', borderRadius: '16px', padding: '2.5rem', position: 'relative', boxShadow: service.popular ? '0 8px 32px rgba(14, 165, 233, 0.2)' : 'none'}}>
                 {service.popular && (
-                  <div style={{position: 'absolute', top: '-12px', right: '20px', background: 'rgba(255, 102, 0, 0.9)', color: '#0a1628', padding: '0.4rem 1.2rem', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '1px', backdropFilter: 'blur(10px)'}}>
+                  <div style={{position: 'absolute', top: '-12px', right: '20px', background: 'rgba(14, 165, 233, 0.9)', color: '#1a1a1a', padding: '0.4rem 1.2rem', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '1px', backdropFilter: 'blur(10px)'}}>
                     🔥 MOST REQUESTED
                   </div>
                 )}
@@ -233,8 +233,8 @@ export default function Home() {
                 <p style={{fontSize: '1.1rem', color: '#8b949e', marginBottom: '2rem'}}>{service.desc}</p>
                 <ul style={{listStyle: 'none', padding: 0, margin: '0 0 2rem 0'}}>
                   {service.services.map((item, j) => (
-                    <li key={j} style={{padding: '0.75rem 0', color: '#c9d1d9', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', borderBottom: j < service.services.length - 1 ? '1px solid rgba(255, 102, 0, 0.1)' : 'none'}}>
-                      <span style={{color: '#FF6600', fontSize: '1.2rem', flexShrink: 0}}>✓</span>
+                    <li key={j} style={{padding: '0.75rem 0', color: '#c9d1d9', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', borderBottom: j < service.services.length - 1 ? '1px solid rgba(14, 165, 233, 0.1)' : 'none'}}>
+                      <span style={{color: '#0EA5E9', fontSize: '1.2rem', flexShrink: 0}}>✓</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -246,7 +246,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div style={{textAlign: 'center', padding: '3rem', background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.1), rgba(0, 128, 255, 0.1))', border: '1px solid rgba(255, 102, 0, 0.3)', borderRadius: '16px'}}>
+          <div style={{textAlign: 'center', padding: '3rem', background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(0, 128, 255, 0.1))', border: '1px solid rgba(14, 165, 233, 0.3)', borderRadius: '16px'}}>
             <h3 style={{fontSize: '1.8rem', color: '#ffffff', marginBottom: '1rem'}}>Not sure what you need?</h3>
             <p style={{fontSize: '1.1rem', color: '#c9d1d9', marginBottom: '2rem'}}>
               Tell us your problem and we'll recommend the best solution. Free consultations available.
@@ -264,11 +264,11 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us - Testimonials & Results */}
-      <section className="section why-choose-us" style={{background: 'linear-gradient(180deg, #0a1628, #132642)', padding: '6rem 0'}}>
+      <section className="section why-choose-us" style={{background: 'linear-gradient(180deg, #1a1a1a, #252525)', padding: '6rem 0'}}>
         <div className="container">
           <div style={{textAlign: 'center', marginBottom: '4rem'}}>
             <h2 style={{fontSize: '2.8rem', marginBottom: '1rem', fontWeight: '700'}}>
-              <span style={{background: 'linear-gradient(135deg, #FF6600, #FF8833)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
+              <span style={{background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
                 Why Dallas Homeowners Choose Us
               </span>
             </h2>
@@ -278,29 +278,29 @@ export default function Home() {
           </div>
 
           {/* Stats Bar */}
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', marginBottom: '5rem', padding: '3rem', background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.05), rgba(0, 128, 255, 0.05))', border: '1px solid rgba(255, 102, 0, 0.2)', borderRadius: '16px'}}>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', marginBottom: '5rem', padding: '3rem', background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(0, 128, 255, 0.05))', border: '1px solid rgba(14, 165, 233, 0.2)', borderRadius: '16px'}}>
             <div style={{textAlign: 'center'}}>
-              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.5rem'}}>4.9★</div>
+              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.5rem'}}>4.9★</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Average Rating</div>
               <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Google Reviews</div>
             </div>
             <div style={{textAlign: 'center'}}>
-              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.5rem'}}>1,200+</div>
+              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.5rem'}}>1,200+</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Happy Customers</div>
               <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Since 2009</div>
             </div>
             <div style={{textAlign: 'center'}}>
-              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.5rem'}}>⭐</div>
+              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.5rem'}}>⭐</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Nextdoor Fave</div>
               <div style={{color: '#8b949e', fontSize: '0.85rem'}}>2025 Winner</div>
             </div>
             <div style={{textAlign: 'center'}}>
-              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.5rem'}}>&lt;2hr</div>
+              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.5rem'}}>&lt;2hr</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Response Time</div>
               <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Emergency Calls</div>
             </div>
             <div style={{textAlign: 'center'}}>
-              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#FF6600', marginBottom: '0.5rem'}}>15+</div>
+              <div style={{fontSize: '3rem', fontWeight: 'bold', color: '#0EA5E9', marginBottom: '0.5rem'}}>15+</div>
               <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>Years Experience</div>
               <div style={{color: '#8b949e', fontSize: '0.85rem'}}>Fully Insured</div>
             </div>
@@ -338,7 +338,7 @@ export default function Home() {
                   rating: 5
                 }
               ].map((testimonial, i) => (
-                <div key={i} style={{background: 'linear-gradient(135deg, #132642, #1e3a5f)', border: '1px solid #1e3a5f', borderRadius: '16px', padding: '2rem'}}>
+                <div key={i} style={{background: 'linear-gradient(135deg, #252525, #333333)', border: '1px solid #333333', borderRadius: '16px', padding: '2rem'}}>
                   <div style={{display: 'flex', gap: '0.5rem', marginBottom: '1rem'}}>
                     {[...Array(testimonial.rating)].map((_, j) => (
                       <span key={j} style={{color: '#ffd700', fontSize: '1.5rem'}}>★</span>
@@ -347,14 +347,14 @@ export default function Home() {
                   <p style={{color: '#c9d1d9', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '1.5rem', fontStyle: 'italic'}}>
                     "{testimonial.review}"
                   </p>
-                  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '1rem', borderTop: '1px solid rgba(255, 102, 0, 0.2)'}}>
+                  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '1rem', borderTop: '1px solid rgba(14, 165, 233, 0.2)'}}>
                     <div>
                       <div style={{color: '#ffffff', fontWeight: 'bold', marginBottom: '0.25rem'}}>{testimonial.name}</div>
                       <div style={{color: '#8b949e', fontSize: '0.9rem'}}>{testimonial.location}</div>
                       <div style={{color: '#8b949e', fontSize: '0.85rem'}}>{testimonial.service}</div>
                     </div>
-                    <div style={{background: 'rgba(255, 102, 0, 0.1)', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid rgba(255, 102, 0, 0.3)'}}>
-                      <div style={{color: '#FF6600', fontWeight: 'bold', fontSize: '0.9rem', textAlign: 'center'}}>{testimonial.result}</div>
+                    <div style={{background: 'rgba(14, 165, 233, 0.1)', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid rgba(14, 165, 233, 0.3)'}}>
+                      <div style={{color: '#0EA5E9', fontWeight: 'bold', fontSize: '0.9rem', textAlign: 'center'}}>{testimonial.result}</div>
                     </div>
                   </div>
                 </div>
@@ -372,7 +372,7 @@ export default function Home() {
               {icon: '🧹', title: 'Clean Job Sites', desc: 'We treat your home like our own and clean up completely'},
               {icon: '🎓', title: 'Ongoing Training', desc: 'Certified in latest electrical, plumbing, and smart home tech'}
             ].map((feature, i) => (
-              <div key={i} style={{background: '#132642', border: '1px solid #1e3a5f', borderRadius: '12px', padding: '2rem', textAlign: 'center'}}>
+              <div key={i} style={{background: '#252525', border: '1px solid #333333', borderRadius: '12px', padding: '2rem', textAlign: 'center'}}>
                 <div style={{fontSize: '3rem', marginBottom: '1rem'}}>{feature.icon}</div>
                 <h4 style={{fontSize: '1.3rem', color: '#ffffff', marginBottom: '0.75rem'}}>{feature.title}</h4>
                 <p style={{color: '#8b949e', fontSize: '0.95rem', lineHeight: '1.6'}}>{feature.desc}</p>
@@ -383,22 +383,22 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section style={{background: 'linear-gradient(135deg, #0a1628, #132642, #1e3a5f)', padding: '6rem 0', position: 'relative', overflow: 'hidden'}}>
+      <section style={{background: 'linear-gradient(135deg, #1a1a1a, #252525, #333333)', padding: '6rem 0', position: 'relative', overflow: 'hidden'}}>
         {/* Animated background elements */}
-        <div style={{position: 'absolute', top: '20%', right: '10%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(255, 102, 0, 0.1), transparent)', borderRadius: '50%', filter: 'blur(80px)'}}></div>
+        <div style={{position: 'absolute', top: '20%', right: '10%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(14, 165, 233, 0.1), transparent)', borderRadius: '50%', filter: 'blur(80px)'}}></div>
         <div style={{position: 'absolute', bottom: '10%', left: '5%', width: '300px', height: '300px', background: 'radial-gradient(circle, rgba(0, 128, 255, 0.1), transparent)', borderRadius: '50%', filter: 'blur(60px)'}}></div>
         
         <div className="container" style={{position: 'relative', zIndex: 1}}>
           <div style={{textAlign: 'center', maxWidth: '900px', margin: '0 auto'}}>
-            <div style={{display: 'inline-block', background: 'rgba(255, 102, 0, 0.1)', border: '1px solid rgba(255, 102, 0, 0.3)', borderRadius: '30px', padding: '0.75rem 2rem', marginBottom: '2rem'}}>
-              <span style={{color: '#FF6600', fontSize: '0.95rem', fontWeight: 'bold', letterSpacing: '1px'}}>
+            <div style={{display: 'inline-block', background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.3)', borderRadius: '30px', padding: '0.75rem 2rem', marginBottom: '2rem'}}>
+              <span style={{color: '#0EA5E9', fontSize: '0.95rem', fontWeight: 'bold', letterSpacing: '1px'}}>
                 🔥 LIMITED TIME OFFER
               </span>
             </div>
             
             <h2 style={{fontSize: '3.5rem', fontWeight: '700', marginBottom: '1.5rem', lineHeight: '1.2'}}>
               <span style={{color: '#ffffff'}}>Get </span>
-              <span style={{background: 'linear-gradient(135deg, #FF6600, #FF8833)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>$50 OFF</span>
+              <span style={{background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>$50 OFF</span>
               <span style={{color: '#ffffff'}}> Your First Service</span>
             </h2>
             
@@ -411,7 +411,7 @@ export default function Home() {
             </p>
 
             <div style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', marginBottom: '3rem', flexWrap: 'wrap'}}>
-              <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.3rem', padding: '1.5rem 3rem', display: 'flex', alignItems: 'center', gap: '0.75rem', boxShadow: '0 8px 32px rgba(255, 102, 0, 0.3)'}}>
+              <Link href="tel:682-466-2130" className="btn" style={{fontSize: '1.3rem', padding: '1.5rem 3rem', display: 'flex', alignItems: 'center', gap: '0.75rem', boxShadow: '0 8px 32px rgba(14, 165, 233, 0.3)'}}>
                 <span style={{fontSize: '1.5rem'}}>📞</span>
                 Call Now: (682) 466-2130
               </Link>
@@ -445,14 +445,14 @@ export default function Home() {
             </div>
 
             {/* Trust badges */}
-            <div style={{marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid rgba(255, 102, 0, 0.2)'}}>
+            <div style={{marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid rgba(14, 165, 233, 0.2)'}}>
               <div style={{color: '#8b949e', marginBottom: '1.5rem', fontSize: '0.9rem'}}>Trusted by over 1,200 Dallas homeowners</div>
               <div style={{display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
                 <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                   <span style={{color: '#ffd700', fontSize: '1.5rem'}}>★★★★★</span>
                   <span style={{color: '#c9d1d9', fontSize: '0.95rem'}}>4.9 Google Rating</span>
                 </div>
-                <div style={{padding: '0.5rem 1.5rem', background: 'rgba(255, 102, 0, 0.1)', border: '1px solid rgba(255, 102, 0, 0.3)', borderRadius: '8px', color: '#FF6600', fontSize: '0.9rem', fontWeight: 'bold'}}>
+                <div style={{padding: '0.5rem 1.5rem', background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.3)', borderRadius: '8px', color: '#0EA5E9', fontSize: '0.9rem', fontWeight: 'bold'}}>
                   ⭐ Nextdoor Fave 2025
                 </div>
                 <div style={{color: '#c9d1d9', fontSize: '0.95rem'}}>
@@ -471,33 +471,33 @@ export default function Home() {
           <p className="text-center text-muted mb-5">Common questions about our Dallas electrical, plumbing, and smart home services</p>
           
           <div className="faq-grid" style={{maxWidth: '900px', margin: '0 auto'}}>
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>Are your electricians and plumbers insured in Texas?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>Are your electricians and plumbers insured in Texas?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! All our electricians and plumbers are fully bonded and insured to operate in Texas. We carry comprehensive liability insurance and workers' compensation coverage. Our work comes with warranties on both parts and labor, and we maintain an A+ rating with the BBB.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>Do you offer 24/7 emergency electrical and plumbing services?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>Do you offer 24/7 emergency electrical and plumbing services?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Absolutely! We provide 24/7 emergency services for urgent issues like electrical outages, circuit breaker problems, plumbing leaks, burst pipes, and clogged drains. Call (682) 466-2130 anytime for immediate assistance. Our emergency response team is available nights, weekends, and holidays.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>What smart home systems do you install?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>What smart home systems do you install?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>We install all major smart home brands including Nest and Ecobee thermostats, Philips Hue and Lutron lighting, Ring and Nest video doorbells, smart locks, security cameras, and whole-home automation hubs like Amazon Alexa and Google Home. We'll help you design a system that fits your needs and budget.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>How much does it cost to install an EV charger at my home?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>How much does it cost to install an EV charger at my home?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>EV charger installation typically ranges from $800-$2,500 depending on your electrical panel capacity, distance from the panel, and charger type (Level 1 or Level 2). We offer free in-home assessments to provide accurate quotes and can help you take advantage of available rebates and tax credits.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>What areas do you serve in the Dallas-Fort Worth metroplex?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>What areas do you serve in the Dallas-Fort Worth metroplex?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>We serve Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, Carrollton, and all surrounding DFW areas. We offer free estimates for all electrical, plumbing, and smart home services with same-day availability for emergency repairs.</p>
             </div>
             
-            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#132642', border: '1px solid #1e3a5f', borderRadius: '8px'}}>
-              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#FF6600'}}>Do you offer financing for larger electrical or plumbing projects?</h3>
+            <div className="faq-item" style={{marginBottom: '2rem', padding: '1.5rem', backgroundColor: '#252525', border: '1px solid #333333', borderRadius: '8px'}}>
+              <h3 style={{fontSize: '1.25rem', marginBottom: '1rem', color: '#0EA5E9'}}>Do you offer financing for larger electrical or plumbing projects?</h3>
               <p style={{color: '#c9d1d9', lineHeight: '1.6'}}>Yes! We offer flexible financing options with approved credit, including 0% interest plans for 12-18 months on qualifying projects. We also accept all major credit cards and can work with your home equity line of credit. Payment plans can be customized to fit your budget.</p>
             </div>
           </div>
@@ -567,10 +567,10 @@ export default function Home() {
 
       {/* Newsletter Section */}
       <section style={{
-        backgroundColor: '#132642',
+        backgroundColor: '#252525',
         padding: '4rem 0',
-        borderTop: '1px solid #1e3a5f',
-        borderBottom: '1px solid #1e3a5f'
+        borderTop: '1px solid #333333',
+        borderBottom: '1px solid #333333'
       }}>
         <div className="container">
           <div style={{
@@ -582,7 +582,7 @@ export default function Home() {
               fontSize: '2.5rem',
               marginBottom: '1rem',
               fontWeight: '700',
-              background: 'linear-gradient(135deg, #FF6600, #FF8833)',
+              background: 'linear-gradient(135deg, #0EA5E9, #38BDF8)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>
