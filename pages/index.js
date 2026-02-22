@@ -672,6 +672,56 @@ export default function Home() {
           .stats-container {
             margin-top: 2rem;
           }
+          
+          /* MOBILE OVERFLOW FIXES */
+          * {
+            max-width: 100%;
+          }
+          
+          /* Fix all grid layouts */
+          [style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+          }
+          
+          /* Fix hero grid specifically */
+          section.hero [style*="gridTemplateColumns"] {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          
+          /* Fix stats grids */
+          [style*="minmax(180px"] {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+          
+          /* Fix flexible buttons */
+          [style*="flex"][style*="gap"] {
+            flex-wrap: wrap !important;
+            gap: 1rem !important;
+          }
+          
+          /* Fix images */
+          img {
+            max-width: 100% !important;
+            height: auto !important;
+          }
+          
+          /* Fix container padding on small screens */
+          .container {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+          }
+          
+          /* Fix h1 sizing */
+          h1 {
+            font-size: 2rem !important;
+          }
+          
+          /* Fix large padding */
+          section {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
         }
 
         @media (max-width: 480px) {
@@ -697,6 +747,11 @@ export default function Home() {
           .cta-buttons .btn {
             width: 100%;
             max-width: 100%;
+          }
+          
+          /* Extra small mobile fixes */
+          [style*="minmax(180px"] {
+            grid-template-columns: 1fr !important;
           }
         }
       `}</style>

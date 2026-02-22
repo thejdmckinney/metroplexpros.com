@@ -31,6 +31,7 @@
 
 html {
   max-width: 100vw;
+  overflow-x: hidden;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +40,7 @@ html {
 
 body {
   max-width: 100vw;
-  overflow-x: clip; /* Use clip instead of hidden to allow sticky positioning */
+  overflow-x: hidden;
 }
 
 body {
@@ -2459,6 +2460,45 @@ textarea.form-control {
   
   .legal-section h2 {
     font-size: 1.3rem;
+  }
+}
+
+/* MOBILE FIX - Prevent horizontal overflow on all devices */
+@media (max-width: 768px) {
+  * {
+    max-width: 100%;
+  }
+  
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  
+  .container {
+    padding: 0 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  /* Fix grid layouts that cause overflow */
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Fix any elements with minmax that are too wide */
+  [style*="minmax(320px"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  [style*="minmax(280px"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  [style*="minmax(200px"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  [style*="minmax(180px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
